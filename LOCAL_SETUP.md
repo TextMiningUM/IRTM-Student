@@ -197,29 +197,126 @@ is **not** strictly required — they will just run slower.
 | 08 — Detecting Patterns 1 | BERT sentiment fine-tuning on IMDB | **High** (~2–4 min on RTX 4070 vs ~20+ min on CPU) |
 | 09 — Detecting Patterns 2 | BERT masked LM, BERTopic | Moderate |
 
+### GPU Compatibility
+
+**Works with ALL modern NVIDIA GPUs:**
+- ✅ RTX 30xx series (3060, 3070, 3080, 3090)
+- ✅ RTX 40xx series (4060, 4070, 4080, 4090)
+- ✅ RTX 50xx series (5080, 5090) — when available
+- ✅ Professional cards (A100, H100, L40, RTX 6000, etc.)
+- ✅ Older cards: GTX 1660, RTX 20xx series
+
+**Minimum requirement:** NVIDIA GPU with Compute Capability 5.0+ (GTX 900 series from 2014+)
+
+### VRAM Requirements
+
+The amount of GPU memory determines which models and batch sizes you can use:
+
+| GPU VRAM | Suitable for | Typical models | Batch size |
+|---|---|---|---|
+| 4–6 GB | Basic training | DistilBERT, small models | 4–8 |
+| 8–12 GB | All tutorials | BERT-base, GPT-2 | 8–16 |
+| 16–24 GB | Large batches | BERT-large, larger datasets | 16–32 |
+| 24+ GB | Research experiments | Multiple models, ensembles | 32+ |
+
+> **Note:** All IRTM tutorials work fine with 8GB VRAM. If you have less,
+> reduce batch sizes as needed (see Troubleshooting below).
+
 ### Installing PyTorch with CUDA
 
-First, **uninstall** the CPU-only version:
+First, **uninstall** any existing PyTorch:
 
 ```bash
 pip uninstall torch torchvision torchaudio -y
 ```
 
-Then install the CUDA version matching your GPU driver. Check your CUDA version
-with `nvidia-smi`, then visit <https://pytorch.org/get-started/locally/> for
-the correct command. For example (CUDA 12.1):
+Install PyTorch with CUDA 12.4 (works on all NVIDIA drivers 525.60.13+):
 
 ```bash
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+# Windows / Linux / macOS
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
 ```
 
-Verify GPU access:
+> **Why cu124?** CUDA 12.4 is **backward compatible** with all modern GPUs.
+> It works whether your `nvidia-smi` shows CUDA 11.x, 12.x, or 13.x.
+> The driver version matters more than the CUDA version shown.
+
+### Verify GPU Access
+
+Create a test script `test_gpu.py`:
 
 ```python
 import torch
-print(torch.cuda.is_available())     # Should print True
-print(torch.cuda.get_device_name(0)) # Should print your GPU name
+
+print(f"PyTorch version: {torch.__version__}")
+print(f"CUDA available: {torch.cuda.is_available()}")
+
+if torch.cuda.is_available():
+    print(f"CUDA version: {torch.version.cuda}")
+    print(f"GPU: {torch.cuda.get_device_name(0)}")
+    
+    # Check VRAM
+    props = torch.cuda.get_device_properties(0)
+    print(f"VRAM: {props.total_memory / 1024**3:.1f} GB")
+    print(f"Compute capability: {props.major}.{props.minor}")
+else:
+    print("No GPU detected — using CPU only")
 ```
+
+Run it:
+
+```bash
+python test_gpu.py
+```
+
+Expected output:
+```
+PyTorch version: 2.6.0+cu124
+CUDA available: True
+CUDA version: 12.4
+GPU: NVIDIA GeForce RTX 3090
+VRAM: 24.0 GB
+Compute capability: 8.6
+```
+
+### Troubleshooting
+
+**Problem:** `CUDA available: False`
+
+**Solutions:**
+1. Check if you have an NVIDIA GPU: `nvidia-smi`
+2. Update NVIDIA drivers: <https://www.nvidia.com/Download/index.aspx>
+3. Reinstall PyTorch with CUDA (see above)
+4. Verify you're using the correct Python environment
+
+**Problem:** `OutOfMemoryError` during training
+
+**Solutions:**
+1. **Reduce batch size** in the notebook (e.g., `batch_size=4` instead of `batch_size=16`)
+2. **Enable mixed precision training:**
+   ```python
+   trainer = Trainer(..., fp16=True)  # or bf16=True for newer GPUs
+   ```
+3. **Clear GPU cache:**
+   ```python
+   import torch
+   torch.cuda.empty_cache()
+   ```
+4. **Use gradient accumulation** to simulate larger batches:
+   ```python
+   trainer = Trainer(..., per_device_train_batch_size=4, gradient_accumulation_steps=4)
+   # Effective batch size = 4 × 4 = 16
+   ```
+
+**Problem:** Training is slow even with GPU
+
+**Check:**
+1. Verify GPU is actually being used:
+   ```python
+   print(next(model.parameters()).device)  # Should show 'cuda:0'
+   ```
+2. Monitor GPU utilization: `nvidia-smi -l 1` (refreshes every second)
+3. Ensure data is on GPU: `inputs = inputs.to('cuda')`
 
 ---
 

@@ -6,6 +6,13 @@
 # issues with some packages.
 #
 # Install with:  pip install -r requirements.txt
+#
+# GPU SUPPORT (NVIDIA only):
+#   This installs CPU-only PyTorch by default. For GPU acceleration:
+#   1. First uninstall: pip uninstall torch torchvision torchaudio -y
+#   2. Then install CUDA version: pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
+#   3. Works with all modern NVIDIA GPUs (RTX 30xx, 40xx, 50xx, A100, H100, etc.)
+#   4. See LOCAL_SETUP.md section 8 for full instructions
 # =============================================================================
 
 # --- Core scientific stack ---------------------------------------------------
