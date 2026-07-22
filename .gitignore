@@ -29,5 +29,8 @@ env/
 *.sqlite
 custom_corpus/
 
+# Generated outputs / scorecards
+*_scorecard_summary.json
+
 # Large model files
 *.tagger
