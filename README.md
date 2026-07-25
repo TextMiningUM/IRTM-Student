@@ -1,4 +1,4 @@
-# IRTM 2025-2026 — Student Repository
+# IRTM — Student Repository
 
 **Information Retrieval & Text Mining** — Maastricht University  
 Department of Advanced Computer Sciences, Faculty of Science and Engineering
