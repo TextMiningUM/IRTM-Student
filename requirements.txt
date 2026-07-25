@@ -1,19 +1,15 @@
 # =============================================================================
-# IRTM 2025-2026 — Python Dependencies
+# IRTM 2026-2027 — Python Dependencies
 # =============================================================================
-# Tested with Python 3.10 (same as the course JupyterHub cluster).
-# Python 3.9–3.11 should also work; Python 3.12+ may have compatibility
-# issues with some packages.
+# Tested with Python 3.13 (same as the course JupyterHub cluster).
 #
 # Install with:  pip install -r requirements.txt
 #
-# GPU SUPPORT (NVIDIA only):
-#   This installs CPU-only PyTorch by default. For GPU acceleration:
-#   1. First uninstall: pip uninstall torch torchvision torchaudio -y
-#   2. Then install CUDA version: pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
-#   3. Works with all modern NVIDIA GPUs (RTX 30xx, 40xx, 50xx, A100, H100, etc.)
-#   4. See LOCAL_SETUP.md section 8 for full instructions
-# =============================================================================
+# PyTorch CUDA support: De extra-index-url hieronder zorgt ervoor dat
+# torch en torchvision automatisch met GPU/CUDA 12.4 support worden geïnstalleerd.
+# 
+
+--extra-index-url https://download.pytorch.org/whl/cu124
 
 # --- Core scientific stack ---------------------------------------------------
 numpy
@@ -35,6 +31,7 @@ unidecode
 
 # --- Deep learning / Transformers --------------------------------------------
 torch
+torchvision
 transformers
 accelerate
 sentence-transformers
