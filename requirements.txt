@@ -77,3 +77,8 @@ networkx
 openai>=1.40.0
 openai-agents
 tiktoken
+
+# --- Jupyter / Notebook tooling ----------------------------------------------
+jupyter
+nbconvert
+ipykernel
