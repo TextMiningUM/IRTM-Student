@@ -6,7 +6,7 @@ This repository contains Jupyter Notebook tutorials for the **Information Retrie
 ### Key Characteristics
 - **Format**: Jupyter Notebooks (.ipynb) in Python
 - **Target Runtime**: Google Colab (not local execution)
-- **Course Years**: Contains versions for 2024-2025 and 2025-2026
+- **Course Years**: Contains versions for 2024-2025, 2025-2026, and 2026-2027
 - **Audience**: University students learning IR and Text Mining fundamentals
 
 ## Architecture & Tutorial Structure
