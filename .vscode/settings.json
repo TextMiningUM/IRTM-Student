@@ -1,0 +1,6 @@
+{
+    "files.exclude": {
+        "**/.venvANLP3.13": false,
+        "**/.venvIRTM3.13": false
+    }
+}
