@@ -42,7 +42,7 @@ evaluate
 
 # --- Search & retrieval ------------------------------------------------------
 pyserini                  # requires Java JDK 11+ (see LOCAL_SETUP.md)
-faiss-cpu
+faiss-cpu                 # for GPU: uninstall and `pip install faiss-gpu` (16GB+ VRAM recommended)
 rank_bm25
 PyMuPDF                   # imported as "fitz"
 

@@ -14,7 +14,7 @@
 2. [Clone the Repository](#2-clone-the-repository)
 3. [Create a Python Environment](#3-create-a-python-environment)
 4. [Install Python Dependencies](#4-install-python-dependencies)
-5. [Install Java (for Tutorial 03)](#5-install-java-for-tutorial-03)
+5. [Install Java (for Tutorial 05)](#5-install-java-for-tutorial-05)
 6. [Download NLTK Data](#6-download-nltk-data)
 7. [Download spaCy Models](#7-download-spacy-models)
 8. [GPU Support (optional but recommended)](#8-gpu-support-optional-but-recommended)
@@ -29,10 +29,10 @@
 
 | Requirement | Details |
 |---|---|
-| **Python** | 3.10 (recommended — same as the cluster). Versions 3.9–3.11 should work. Python 3.12+ may cause compatibility issues with some packages. |
+| **Python** | 3.13 (recommended — same as the cluster). Python 3.13.14 is used in the course. |
 | **pip** | Latest version (`python -m pip install --upgrade pip`) |
 | **Git** | To clone the repository |
-| **Java JDK 11+** | Only needed for Tutorial 03 (Search Engines / Pyserini) |
+| **Java JDK 11+** | Only needed for Tutorial 05 (Search Engines / Pyserini) |
 | **OS** | Windows 10/11, macOS 12+, or Linux (Ubuntu 20.04+) |
 | **RAM** | Minimum 8 GB; 16 GB recommended |
 | **Disk space** | ~10 GB free (for packages, models, and datasets) |
@@ -42,8 +42,8 @@
 ## 2. Clone the Repository
 
 ```bash
-git clone https://github.com/TextMiningUM/IRTM-2025-2026.git
-cd IRTM-2025-2026
+git clone https://github.com/TextMiningUM/IRTM-Student.git
+cd IRTM-Student
 ```
 
 ---
@@ -56,7 +56,7 @@ other projects.
 ### Option A — conda (recommended if you have Anaconda/Miniconda)
 
 ```bash
-conda create -n irtm python=3.10 -y
+conda create -n irtm python=3.13 -y
 conda activate irtm
 ```
 
@@ -86,18 +86,19 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-This installs **all** packages needed across all 11 tutorials. The full
+This installs **all** packages needed across all 13 tutorials. The full
 install takes roughly 5–15 minutes depending on your network and hardware.
 
-> **Note on PyTorch:** The command above installs the CPU version of PyTorch.
-> If you have an NVIDIA GPU, see [Section 8](#8-gpu-support-optional-but-recommended)
-> for GPU-accelerated installation.
+> **PyTorch with GPU support:** The `requirements.txt` automatically installs
+> PyTorch with CUDA 12.4 GPU support via the `--extra-index-url` directive.
+> This works on all modern NVIDIA GPUs. If you don't have a GPU, PyTorch will
+> automatically fall back to CPU mode.
 
 ---
 
-## 5. Install Java (for Tutorial 03)
+## 5. Install Java (for Tutorial 05)
 
-Tutorial 03 (*Search Engines*) uses **Pyserini**, which depends on Apache
+Tutorial 05 (*Search Engines*) uses **Pyserini**, which depends on Apache
 Lucene and requires **Java JDK 11 or higher**.
 
 ### Windows
@@ -131,7 +132,7 @@ export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 > **Tip:** Add the `JAVA_HOME` export to your `~/.bashrc` / `~/.zshrc` so it
 > persists across sessions.
 
-If you don't need Tutorial 03, you can skip Java entirely.
+If you don't need Tutorial 05, you can skip Java entirely.
 
 ---
 
@@ -181,21 +182,25 @@ python -m spacy download en_core_web_sm
 
 ---
 
-## 8. GPU Support (optional but recommended)
+## 8. GPU Support (Included by Default)
+
+**PyTorch with GPU support is automatically installed** via `requirements.txt`.
 
 A CUDA-capable **NVIDIA GPU** significantly speeds up the deep-learning
-tutorials (04, 06, 07, 08, 09). All tutorials include CPU fallbacks, so a GPU
-is **not** strictly required — they will just run slower.
+tutorials. All tutorials include CPU fallbacks, so a GPU is **not** strictly
+required — they will just run slower.
 
 ### Which tutorials benefit from a GPU?
 
 | Tutorial | Task | GPU benefit |
 |---|---|---|
-| 04 — Measuring Quality | GPT-2 perplexity, BERTScore | Moderate |
+| 03 — Measuring Quality | GPT-2 perplexity, BERTScore | Moderate |
+| 04 — Dense Retrieval | Semantic search with embeddings | Moderate |
 | 06 — Structured Representations 1 | Coreference resolution (F-Coref) | Moderate |
 | 07 — Structured Representations 2 | BERT NER fine-tuning | **High** (~2–3 min on RTX 4070 vs ~15+ min on CPU) |
 | 08 — Detecting Patterns 1 | BERT sentiment fine-tuning on IMDB | **High** (~2–4 min on RTX 4070 vs ~20+ min on CPU) |
 | 09 — Detecting Patterns 2 | BERT masked LM, BERTopic | Moderate |
+| 10-12 — Conversational & Agents | Transformers, embeddings, LLM workflows | Moderate |
 
 ### GPU Compatibility
 
@@ -222,28 +227,62 @@ The amount of GPU memory determines which models and batch sizes you can use:
 > **Note:** All IRTM tutorials work fine with 8GB VRAM. If you have less,
 > reduce batch sizes as needed (see Troubleshooting below).
 
-### Installing PyTorch with CUDA
+### How GPU Support Works
 
-First, **uninstall** any existing PyTorch:
-
-```bash
-pip uninstall torch torchvision torchaudio -y
+The `requirements.txt` includes this directive:
+```
+--extra-index-url https://download.pytorch.org/whl/cu124
 ```
 
-Install PyTorch with CUDA 12.4 (works on all NVIDIA drivers 525.60.13+):
+This ensures `torch` and `torchvision` are automatically installed with **CUDA 12.4
+GPU support**. No additional installation steps are needed.
 
-```bash
-# Windows / Linux / macOS
-pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
-```
-
-> **Why cu124?** CUDA 12.4 is **backward compatible** with all modern GPUs.
-> It works whether your `nvidia-smi` shows CUDA 11.x, 12.x, or 13.x.
-> The driver version matters more than the CUDA version shown.
+**Key points:**
+- Works on all modern NVIDIA GPUs (RTX 20xx, 30xx, 40xx, 50xx, professional cards)
+- Compatible with NVIDIA drivers 525.60.13+ (most recent drivers)
+- CUDA 12.4 is backward compatible — works whether your `nvidia-smi` shows CUDA 11.x, 12.x, or 13.x
+- If no GPU is detected, PyTorch automatically uses CPU mode
+- You do **not** need to install CUDA toolkit separately
 
 ### Verify GPU Access
 
-Create a test script `test_gpu.py`:
+Run the provided test script:
+
+```bash
+python test_gpu.py
+```
+
+This will show:
+- PyTorch version and CUDA support
+- Your GPU name and VRAM
+- Compute capability
+- Whether GPU acceleration is working
+
+### Optional: FAISS GPU Support (Advanced)
+
+**Who needs this?** Only users with **16GB+ VRAM** working with very large dense retrieval datasets (100k+ vectors).
+
+Tutorial 04 (Dense Retrieval) uses `faiss-cpu` by default, which works fine for the course datasets. If you have a powerful GPU and want faster similarity search:
+
+```bash
+pip uninstall faiss-cpu -y
+pip install faiss-gpu
+```
+
+**Performance comparison** (1M vectors, 768 dimensions):
+- faiss-cpu: ~500ms per search
+- faiss-gpu: ~50ms per search (10x faster)
+
+**Requirements:**
+- NVIDIA GPU with 16GB+ VRAM
+- CUDA 11.x or 12.x installed
+- Only beneficial for large-scale experiments beyond course requirements
+
+> **Note:** All tutorials work perfectly with `faiss-cpu`. Only switch to `faiss-gpu` if you're doing extended research or working with massive datasets.
+
+### Test Script
+
+A test script is provided in the repository:
 
 ```python
 import torch
@@ -281,13 +320,18 @@ Compute capability: 8.6
 
 ### Troubleshooting
 
-**Problem:** `CUDA available: False`
+**Problem:** `CUDA available: False` (but you have an NVIDIA GPU)
 
 **Solutions:**
-1. Check if you have an NVIDIA GPU: `nvidia-smi`
-2. Update NVIDIA drivers: <https://www.nvidia.com/Download/index.aspx>
-3. Reinstall PyTorch with CUDA (see above)
-4. Verify you're using the correct Python environment
+1. Verify you have an NVIDIA GPU: `nvidia-smi`
+2. Update NVIDIA drivers to 525.60.13+: <https://www.nvidia.com/Download/index.aspx>
+3. Verify you installed from the IRTM `requirements.txt` (includes CUDA support)
+4. Check your virtual environment is activated
+5. If PyTorch was installed without the `--extra-index-url`, reinstall:
+   ```bash
+   pip uninstall torch torchvision -y
+   pip install -r requirements.txt
+   ```
 
 **Problem:** `OutOfMemoryError` during training
 
@@ -352,8 +396,11 @@ $env:OPENAI_API_KEY = "sk-..."
 ### Tutorial 01 — Tokenization
 - Fetches a live webpage via `urllib.request`; requires internet access.
 
-### Tutorial 03 — Search Engines
-- Requires **Java JDK 11+** (see [Section 5](#5-install-java-for-tutorial-03)).
+### Tutorial 03 — Measuring Quality  
+- Evaluates text quality metrics and retrieval performance.
+
+### Tutorial 05 — Search Engines
+- Requires **Java JDK 11+** (see [Section 5](#5-install-java-for-tutorial-05)).
 - On first run, Pyserini downloads the **MS MARCO passage index** (~2 GB).
   This is cached for subsequent runs.
 - Downloads a text file from Project Gutenberg (Sherlock Holmes).
@@ -380,7 +427,7 @@ Even if you develop locally, you must **submit via the JupyterHub**:
 1. Before submitting, **restart the kernel and run all cells** to ensure
    the notebook executes cleanly from top to bottom.
 2. Upload your completed notebook to the JupyterHub by copying it into the
-   appropriate `SubmittedWork/<topic>/` folder on the cluster.
+   appropriate `Submitted Work/` folder on the cluster.
 3. Keep the **original filename** — do not rename the notebook.
 
 > **Tip:** As a final check, download your notebook from JupyterHub after
@@ -419,7 +466,7 @@ downloading models on a different network and copying the cache folder.
 ### Package version conflicts
 If you encounter version incompatibilities, try creating a fresh environment:
 ```bash
-conda create -n irtm-fresh python=3.10 -y
+conda create -n irtm-fresh python=3.13 -y
 conda activate irtm-fresh
 pip install -r requirements.txt
 ```
@@ -429,6 +476,16 @@ Reduce the batch size in training cells, or switch to CPU by setting:
 ```python
 device = torch.device("cpu")
 ```
+
+### FAISS errors with GPU
+If you installed `faiss-gpu` and encounter errors:
+- Verify your GPU has 16GB+ VRAM
+- Check CUDA version compatibility: `nvidia-smi`
+- Fall back to `faiss-cpu`:
+  ```bash
+  pip uninstall faiss-gpu -y
+  pip install faiss-cpu
+  ```
 
 ---
 
@@ -442,4 +499,4 @@ device = torch.device("cpu")
 
 ---
 
-*Last updated: February 2026*
+*Last updated: July 2026*
