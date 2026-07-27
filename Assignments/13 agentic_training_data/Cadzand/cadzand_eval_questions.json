@@ -1,0 +1,77 @@
+[
+  {
+    "id": "cad-001",
+    "question": "Onder welke historische naam staat het Zwin in de oudste documenten vermeld, en in welke wet uit de 8ste eeuw vormt het de zuidelijke grens van het Friezenland?",
+    "expected_points": ["Sincfal", "Lex Frisionum"]
+  },
+  {
+    "id": "cad-002",
+    "question": "Welke Gentse abdij bezat het patronaatsrecht over de Mariakerk in Cadzand, en welk recht hield dat concreet in?",
+    "expected_points": ["St-Baafsabdij", "tienden heffen", "pastoor benoemen"]
+  },
+  {
+    "id": "cad-003",
+    "question": "In welk jaar werd voor het eerst over polders op Cadzand geschreven, en welke ridder deed toen afstand van zijn leengoed ten gunste van de St-Baafsabdij?",
+    "expected_points": ["1177", "Walter van Axel"]
+  },
+  {
+    "id": "cad-004",
+    "question": "Wanneer werden de zuidelijke en de noordelijke beuk van de Mariakerk gebouwd, en in welke stijl met welke opvallende afwijking?",
+    "expected_points": ["zuidelijke beuk 1250-1300", "noordelijke beuk 1300-1325", "Schelde-gotiek (vroeg-gotisch)", "Romaanse zuilen"]
+  },
+  {
+    "id": "cad-005",
+    "question": "Hoe heette de oorspronkelijke toren van de Mariakerk en in welke zeeatlas uit welk jaar wordt hij door Joris Carolus als baken beschreven?",
+    "expected_points": ["Sint-Lambertustoren", "zeeatlas 1634"]
+  },
+  {
+    "id": "cad-006",
+    "question": "In welk jaar werd de Vrede van Cadzand gesloten en welke vorst had het eiland het jaar daarvoor laten innemen?",
+    "expected_points": ["1492", "1491", "Maximiliaan van Oostenrijk"]
+  },
+  {
+    "id": "cad-007",
+    "question": "Wie was de eerste eigen predikant van Cadzand, in welk jaar aanvaardde hij zijn dienst, en in welk jaar daarvoor besloten de Staten-Generaal tot een wekelijkse predikbeurt vanuit Sluis?",
+    "expected_points": ["Marcus ab Halle", "1609", "1606"]
+  },
+  {
+    "id": "cad-008",
+    "question": "Tot welk jaar bleef de noordelijke beuk als ruïne liggen, en wie schonk bij het herstel een gebrandschilderd raam?",
+    "expected_points": ["1641", "Het Vrije van Sluis"]
+  },
+  {
+    "id": "cad-009",
+    "question": "Hoeveel hectare grondbezit had de kerk van Cadzand in 1610 vergeleken met 1665, en wat gebeurde er in 1677 met de landerijen én met de toren?",
+    "expected_points": ["1610: bijna 100 ha", "1665: ~58 ha", "1677 landerijen verkocht", "1677 toren afgebroken"]
+  },
+  {
+    "id": "cad-010",
+    "question": "Door wie en in welke stad werd de huidige klok van Cadzand gegoten, en in welk jaar?",
+    "expected_points": ["Jan Burgerhuys", "Middelburg", "1611"]
+  },
+  {
+    "id": "cad-011",
+    "question": "In welke drie golven (jaren en herkomstgebieden) kwamen de Hugenoten/Waalse vluchtelingen naar Cadzand?",
+    "expected_points": ["1685 omgeving Calais (na herroeping Edict van Nantes)", "1713 omgeving Rijssel", "1771 Picardië/Champagne/Orléans"]
+  },
+  {
+    "id": "cad-012",
+    "question": "In welk jaar ging de Waals-Hervormde Gemeente op in de Hervormde Gemeente van Cadzand, en welk fysiek voorwerp in de kerk herinnert nu nog aan haar?",
+    "expected_points": ["1809", "lichtkroon midden in de kerk"]
+  },
+  {
+    "id": "cad-013",
+    "question": "Welk verdrag uit welk jaar droeg Staats-Vlaanderen over aan de Franse Republiek, en in welk jaar kreeg het gebied de naam Zeeuws-Vlaanderen?",
+    "expected_points": ["Haags Verdrag 1795", "1814"]
+  },
+  {
+    "id": "cad-014",
+    "question": "Welke koning schonk in 1821 een subsidie voor het nieuwe dak van de kerk, en hoeveel gulden bedroeg die subsidie?",
+    "expected_points": ["Willem I", "1000 gulden"]
+  },
+  {
+    "id": "cad-015",
+    "question": "Welke rijksbouwmeester leidde de restauratie vanaf 1929, en wat verving het oude dakruitertje als torenoplossing tegen de kerk?",
+    "expected_points": ["Van Heeswijk", "renaissance-torentje (door burgerlijke gemeente aangebouwd)"]
+  }
+]

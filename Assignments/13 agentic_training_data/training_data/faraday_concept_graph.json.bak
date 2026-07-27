@@ -1,0 +1,378 @@
+[
+  {
+    "concept": "electromagnetic induction",
+    "aliases": ["induction", "magneto-electric induction"],
+    "definition": "Generation of electromotive effects from changing magnetic conditions.",
+    "related_concepts": ["transient current", "flux change", "galvanometer deflection", "lines of force"],
+    "category": "foundational",
+    "source_chunk_ids": ["faraday_001", "faraday_002", "faraday_003"]
+  },
+  {
+    "concept": "transient current",
+    "aliases": ["momentary current", "make-break current"],
+    "definition": "Induced current that appears on circuit changes and vanishes at steady state.",
+    "related_concepts": ["electromagnetic induction", "flux change", "galvanometer deflection"],
+    "category": "foundational",
+    "source_chunk_ids": ["faraday_001", "faraday_002", "faraday_003", "faraday_004"]
+  },
+  {
+    "concept": "flux change",
+    "aliases": ["changing magnetic condition", "dB/dt condition"],
+    "definition": "Condition required for induction effects in Faraday's early experiments.",
+    "related_concepts": ["electromagnetic induction", "transient current", "Lenz precursor"],
+    "category": "foundational",
+    "source_chunk_ids": ["faraday_001", "faraday_002", "faraday_003"]
+  },
+  {
+    "concept": "galvanometer deflection",
+    "aliases": ["needle deflection", "needle response"],
+    "definition": "Measured indicator of induced current direction and strength.",
+    "related_concepts": ["transient current", "needle spin", "direction of induced current"],
+    "category": "instrumentation",
+    "source_chunk_ids": ["faraday_001", "faraday_004", "faraday_005"]
+  },
+  {
+    "concept": "needle spin",
+    "aliases": ["four or five turns", "rapid rotation"],
+    "definition": "Strong impulse response in §31 under 100 pairs of plates.",
+    "related_concepts": ["galvanometer deflection", "battery strength", "induction amplitude"],
+    "category": "quantitative",
+    "source_chunk_ids": ["faraday_004"]
+  },
+  {
+    "concept": "direction of induced current",
+    "aliases": ["polarity of induced current", "induced sign rule"],
+    "definition": "Observed orientation of induced flow relative to the primary current changes.",
+    "related_concepts": ["Lenz precursor", "make-break asymmetry", "opposition to change"],
+    "category": "foundational",
+    "source_chunk_ids": ["faraday_005"]
+  },
+  {
+    "concept": "Lenz precursor",
+    "aliases": ["opposes change rule", "pre-Lenz statement"],
+    "definition": "Faraday's directional observation later formalized as Lenz's Law.",
+    "related_concepts": ["direction of induced current", "flux change", "opposition to change"],
+    "category": "historical",
+    "source_chunk_ids": ["faraday_005"]
+  },
+  {
+    "concept": "homopolar generator",
+    "aliases": ["copper disc generator", "disc machine"],
+    "definition": "Rotating-disc apparatus producing continuous EMF.",
+    "related_concepts": ["continuous emf", "electromagnetic induction", "horseshoe magnet"],
+    "category": "apparatus",
+    "source_chunk_ids": ["faraday_006"]
+  },
+  {
+    "concept": "continuous emf",
+    "aliases": ["non-transient output", "steady electromotive force"],
+    "definition": "Continuous electrical output from rotational induction machine.",
+    "related_concepts": ["homopolar generator", "rotational speed", "electrochemical verification"],
+    "category": "quantitative",
+    "source_chunk_ids": ["faraday_006"]
+  },
+  {
+    "concept": "Waterloo Bridge experiment",
+    "aliases": ["tidal electricity test", "Thames induction trial"],
+    "definition": "Large-scale field attempt to detect tidal magneto-electric currents.",
+    "related_concepts": ["confounding variables", "inconclusive result", "960-foot wire"],
+    "category": "field_experiment",
+    "source_chunk_ids": ["faraday_008"]
+  },
+  {
+    "concept": "identity of electricities",
+    "aliases": ["common vs voltaic identity", "equivalence of electricities"],
+    "definition": "Series III argument that multiple electrical sources produce the same classes of effects.",
+    "related_concepts": ["magnetic effect", "chemical decomposition", "physiological effect", "spark effect"],
+    "category": "theory",
+    "source_chunk_ids": ["faraday_009"]
+  },
+  {
+    "concept": "electrochemical quantification",
+    "aliases": ["charge equivalence measurement", "quantitative electricity"],
+    "definition": "Use of controlled geometry and chemistry to compare electrical quantities.",
+    "related_concepts": ["platina-zinc experiment", "Leyden battery equivalence", "electrochemical equivalent"],
+    "category": "quantitative",
+    "source_chunk_ids": ["faraday_010", "faraday_014", "faraday_015"]
+  },
+  {
+    "concept": "platina-zinc experiment",
+    "aliases": ["§371 wire setup", "draw-plate pair experiment"],
+    "definition": "Calibrated arrangement comparing voltaic action to Leyden machine charging.",
+    "related_concepts": ["electrochemical quantification", "Leyden battery equivalence", "acid composition"],
+    "category": "apparatus",
+    "source_chunk_ids": ["faraday_010"]
+  },
+  {
+    "concept": "Leyden battery equivalence",
+    "aliases": ["thirty-turn equivalent", "30 turns equivalence"],
+    "definition": "Reference benchmark used in Faraday's quantitative electricity comparisons.",
+    "related_concepts": ["platina-zinc experiment", "800000 charges", "electrochemical equivalent"],
+    "category": "quantitative",
+    "source_chunk_ids": ["faraday_010", "faraday_014", "faraday_015"]
+  },
+  {
+    "concept": "ice non-conductor",
+    "aliases": ["congelation blocks current", "solid ice insulation"],
+    "definition": "Observation that thin ice interrupted current even under strong batteries.",
+    "related_concepts": ["law of liquefaction", "chloride of lead", "phase-dependent conduction"],
+    "category": "materials",
+    "source_chunk_ids": ["faraday_011"]
+  },
+  {
+    "concept": "law of liquefaction",
+    "aliases": ["conductivity on melting", "phase-conduction law"],
+    "definition": "Faraday's generalization that melting enables conduction while freezing removes it in tested cases.",
+    "related_concepts": ["ice non-conductor", "chloride of lead", "electrolytic conduction"],
+    "category": "theory",
+    "source_chunk_ids": ["faraday_011"]
+  },
+  {
+    "concept": "sulphuret of silver",
+    "aliases": ["silver sulphide", "Ag2S"],
+    "definition": "Material showing conductivity increase with temperature, opposite to ordinary metals.",
+    "related_concepts": ["semiconductor-like behavior", "negative temperature coefficient", "material contrast"],
+    "category": "materials",
+    "source_chunk_ids": ["faraday_012"]
+  },
+  {
+    "concept": "semiconductor-like behavior",
+    "aliases": ["non-metallic thermal conduction trend", "heat-enhanced conductivity"],
+    "definition": "Behavior where conductivity rises with heating in certain non-metallic compounds.",
+    "related_concepts": ["sulphuret of silver", "temperature dependence", "material transport"],
+    "category": "materials",
+    "source_chunk_ids": ["faraday_012"]
+  },
+  {
+    "concept": "definite electrolytic action",
+    "aliases": ["Faraday electrolysis law", "charge-proportional chemistry"],
+    "definition": "Law that chemical action is proportional to electricity quantity passed.",
+    "related_concepts": ["electrochemical equivalent", "series circuit proof", "combining weights"],
+    "category": "electrochemistry",
+    "source_chunk_ids": ["faraday_013", "faraday_015"]
+  },
+  {
+    "concept": "electrochemical equivalent",
+    "aliases": ["equivalent weight in electrolysis", "zinc equivalent"],
+    "definition": "Mass equivalent associated with a fixed quantity of electricity.",
+    "related_concepts": ["definite electrolytic action", "32.31 zinc", "Leyden battery equivalence"],
+    "category": "electrochemistry",
+    "source_chunk_ids": ["faraday_015"]
+  },
+  {
+    "concept": "800000 charges",
+    "aliases": ["800,000 Leyden charges", "grain of water estimate"],
+    "definition": "Estimated quantity of charge needed to decompose one grain of water.",
+    "related_concepts": ["Leyden battery equivalence", "electrochemical quantification", "electrochemical equivalent"],
+    "category": "quantitative",
+    "source_chunk_ids": ["faraday_014", "faraday_015"]
+  },
+  {
+    "concept": "self-induction",
+    "aliases": ["self-induced emf", "back emf"],
+    "definition": "Circuit's own changing current producing opposing electromotive effects.",
+    "related_concepts": ["break spark", "doubled wire cancellation", "Jenkin observation"],
+    "category": "electrodynamics",
+    "source_chunk_ids": ["faraday_016", "faraday_017"]
+  },
+  {
+    "concept": "Jenkin observation",
+    "aliases": ["break-shock observation", "electromagnet wire shock"],
+    "definition": "Reported stronger break-shock behavior in electromagnet-connected wire paths.",
+    "related_concepts": ["self-induction", "break spark", "long wire effects"],
+    "category": "historical",
+    "source_chunk_ids": ["faraday_016"]
+  },
+  {
+    "concept": "doubled wire cancellation",
+    "aliases": ["folded-wire cancellation", "opposite-direction cancellation"],
+    "definition": "Suppression of spark when adjacent segments carry opposing magnetic contributions.",
+    "related_concepts": ["self-induction", "magnetic field cancellation", "break spark"],
+    "category": "electrodynamics",
+    "source_chunk_ids": ["faraday_017"]
+  },
+  {
+    "concept": "dielectric",
+    "aliases": ["insulating medium", "inductive medium"],
+    "definition": "Material medium through which induction is propagated in Faraday's model.",
+    "related_concepts": ["contiguous particles", "specific inductive capacity", "induction"],
+    "category": "field_theory",
+    "source_chunk_ids": ["faraday_018", "faraday_022"]
+  },
+  {
+    "concept": "specific inductive capacity",
+    "aliases": ["SIC", "dielectric constant"],
+    "definition": "Relative ability of a dielectric medium to support induction.",
+    "related_concepts": ["shell-lac SIC", "sulphur SIC", "dielectric"],
+    "category": "field_theory",
+    "source_chunk_ids": ["faraday_020", "faraday_021"]
+  },
+  {
+    "concept": "shell-lac SIC",
+    "aliases": ["176/113", "1.558"],
+    "definition": "Measured specific inductive capacity for shell-lac relative to air.",
+    "related_concepts": ["specific inductive capacity", "shell-lac cylinder", "dielectric"],
+    "category": "quantitative",
+    "source_chunk_ids": ["faraday_019", "faraday_020"]
+  },
+  {
+    "concept": "sulphur SIC",
+    "aliases": ["280 to 162", "approximately 2.24"],
+    "definition": "Measured specific inductive capacity for sulphur relative to air.",
+    "related_concepts": ["specific inductive capacity", "shell-lac SIC", "dielectric comparison"],
+    "category": "quantitative",
+    "source_chunk_ids": ["faraday_021"]
+  },
+  {
+    "concept": "contiguous particles",
+    "aliases": ["particle-to-particle induction", "mediated propagation"],
+    "definition": "Faraday's claim that induction propagates through adjacent particles in dielectric matter.",
+    "related_concepts": ["dielectric", "field mediation", "conduction-induction continuum"],
+    "category": "field_theory",
+    "source_chunk_ids": ["faraday_022", "faraday_023"]
+  },
+  {
+    "concept": "conduction-induction continuum",
+    "aliases": ["difference in degree", "not different in kind"],
+    "definition": "Claim that conductors and insulators differ by degree within one broad mechanism.",
+    "related_concepts": ["contiguous particles", "dielectric", "conduction"],
+    "category": "field_theory",
+    "source_chunk_ids": ["faraday_023"]
+  },
+  {
+    "concept": "force distribution",
+    "aliases": ["arrangement of forces", "distribution-based theory"],
+    "definition": "Methodological focus on how electric forces are arranged rather than ontological fluid commitments.",
+    "related_concepts": ["one-fluid theory", "two-fluid theory", "intervening particles"],
+    "category": "methodology",
+    "source_chunk_ids": ["faraday_024", "faraday_025"]
+  },
+  {
+    "concept": "one-fluid theory",
+    "aliases": ["Franklinian model", "single electric fluid"],
+    "definition": "Historical electric model that Faraday treated as compatible with his distribution framing.",
+    "related_concepts": ["two-fluid theory", "force distribution", "methodological neutrality"],
+    "category": "historical_theory",
+    "source_chunk_ids": ["faraday_024"]
+  },
+  {
+    "concept": "two-fluid theory",
+    "aliases": ["Dufay-Poisson model", "dual fluid model"],
+    "definition": "Historical model of electrical action considered alongside one-fluid accounts.",
+    "related_concepts": ["one-fluid theory", "force distribution", "methodological neutrality"],
+    "category": "historical_theory",
+    "source_chunk_ids": ["faraday_024"]
+  },
+  {
+    "concept": "intervening particles",
+    "aliases": ["mediating particles", "through the medium"],
+    "definition": "Interpretation that electric and magnetic effects act through matter between bodies.",
+    "related_concepts": ["force distribution", "contiguous particles", "electric-magnetic relation"],
+    "category": "field_theory",
+    "source_chunk_ids": ["faraday_025"]
+  },
+  {
+    "concept": "electric-magnetic relation",
+    "aliases": ["relation of electric and magnetic forces", "field linkage"],
+    "definition": "Faraday's argument for deep analogies and mediation principles across electric and magnetic actions.",
+    "related_concepts": ["intervening particles", "lines of force", "field theory precursor"],
+    "category": "field_theory",
+    "source_chunk_ids": ["faraday_025"]
+  },
+  {
+    "concept": "Faraday effect",
+    "aliases": ["magneto-optical rotation", "magnetisation of light"],
+    "definition": "Rotation of polarized light in a medium under magnetic field influence.",
+    "related_concepts": ["polarization rotation", "field-length proportionality", "Volume III"],
+    "category": "optics",
+    "source_chunk_ids": ["faraday_026"]
+  },
+  {
+    "concept": "polarization rotation",
+    "aliases": ["plane of polarization rotation", "optical rotation"],
+    "definition": "Observable angle change of polarized light used in Faraday effect experiments.",
+    "related_concepts": ["Faraday effect", "field-length proportionality", "heavy glass"],
+    "category": "optics",
+    "source_chunk_ids": ["faraday_026"]
+  },
+  {
+    "concept": "diamagnetics",
+    "aliases": ["diamagnetic substances", "new magnetic class"],
+    "definition": "Substances repelled by both magnetic poles with induced polarity opposite the applied field.",
+    "related_concepts": ["bismuth", "equatorial orientation", "opposite polarity"],
+    "category": "magnetism",
+    "source_chunk_ids": ["faraday_027"]
+  },
+  {
+    "concept": "bismuth",
+    "aliases": ["diamagnetic benchmark material"],
+    "definition": "Material used to demonstrate strong diamagnetic response and equatorial setting.",
+    "related_concepts": ["diamagnetics", "equatorial orientation", "1/3400 comparison"],
+    "category": "materials",
+    "source_chunk_ids": ["faraday_027"]
+  },
+  {
+    "concept": "equatorial orientation",
+    "aliases": ["equatorial setting", "perpendicular setting"],
+    "definition": "Characteristic orientation of diamagnetic rods between magnetic poles.",
+    "related_concepts": ["diamagnetics", "bismuth", "opposite polarity"],
+    "category": "magnetism",
+    "source_chunk_ids": ["faraday_027"]
+  },
+  {
+    "concept": "chemical action in voltaic pile",
+    "aliases": ["chemical source of current", "chemical sustaining cause"],
+    "definition": "Faraday's conclusion that chemical action sustains voltaic current rather than contact alone.",
+    "related_concepts": ["contact theory", "electrochemical quantification", "Series VII conclusion"],
+    "category": "electrochemistry",
+    "source_chunk_ids": ["faraday_028"]
+  },
+  {
+    "concept": "contact theory",
+    "aliases": ["contact-only explanation", "voltaic contact doctrine"],
+    "definition": "Competing explanation for battery current discussed and qualified by Faraday.",
+    "related_concepts": ["chemical action in voltaic pile", "Series VII conclusion", "experimental caution"],
+    "category": "historical_theory",
+    "source_chunk_ids": ["faraday_028"]
+  },
+  {
+    "concept": "lines of force",
+    "aliases": ["magnetic curves of force", "force lines"],
+    "definition": "Geometric representation of directional field action central to Faraday's interpretation.",
+    "related_concepts": ["flux change", "electric-magnetic relation", "contiguous particles"],
+    "category": "field_theory",
+    "source_chunk_ids": ["faraday_003", "faraday_018", "faraday_025"]
+  },
+  {
+    "concept": "make-break asymmetry",
+    "aliases": ["circuit make/break polarity", "onset-offset contrast"],
+    "definition": "Opposite induced directions on circuit establishment and interruption.",
+    "related_concepts": ["direction of induced current", "Lenz precursor", "transient current"],
+    "category": "electrodynamics",
+    "source_chunk_ids": ["faraday_001", "faraday_005"]
+  },
+  {
+    "concept": "field-theory precursor",
+    "aliases": ["Maxwell precursor", "pre-Maxwellian field idea"],
+    "definition": "Faraday's medium-mediated interpretations that influenced later field formalism.",
+    "related_concepts": ["contiguous particles", "electric-magnetic relation", "dielectric"],
+    "category": "historical",
+    "source_chunk_ids": ["faraday_022", "faraday_025"]
+  },
+  {
+    "concept": "uncertainty calibration",
+    "aliases": ["inconclusive reporting", "evidence-bounded answer"],
+    "definition": "Reporting negative or uncertain outcomes explicitly instead of overstating findings.",
+    "related_concepts": ["Waterloo Bridge experiment", "field experiment", "hallucination control"],
+    "category": "methodology",
+    "source_chunk_ids": ["faraday_008"]
+  },
+  {
+    "concept": "Volume III attribution",
+    "aliases": ["non-Volume-I source boundary", "cross-volume citation"],
+    "definition": "Requirement to attribute Faraday effect and diamagnetics to Volume III sections.",
+    "related_concepts": ["Faraday effect", "diamagnetics", "citation safety"],
+    "category": "provenance",
+    "source_chunk_ids": ["faraday_026", "faraday_027"]
+  }
+]

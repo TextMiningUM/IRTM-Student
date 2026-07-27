@@ -1,0 +1,135 @@
+[
+  {
+    "trajectory_id": "med-0042",
+    "domain": "medical",
+    "task": "Decide whether to start anticoagulation in a 72-year-old patient with new-onset atrial fibrillation.",
+    "context_snapshot": {
+      "timestamp": "2026-04-28T10:14Z",
+      "setting": "outpatient cardiology"
+    },
+    "steps": [
+      {
+        "observation": "Patient reports palpitations x 3 days. ECG: AF, ventricular rate 96 bpm.",
+        "reasoning": "Need CHA2DS2-VASc components and bleeding-risk inputs before deciding.",
+        "tool_call": {
+          "name": "ehr.lookup",
+          "args": {
+            "patient_id": "P-7714",
+            "fields": [
+              "age",
+              "sex",
+              "htn",
+              "dm",
+              "stroke_hx",
+              "vasc_dis",
+              "chf"
+            ]
+          }
+        },
+        "tool_result": {
+          "age": 72,
+          "sex": "F",
+          "htn": true,
+          "dm": false,
+          "stroke_hx": false,
+          "vasc_dis": true,
+          "chf": false
+        },
+        "why": "These six fields determine CHA2DS2-VASc; without them the next step is a guess.",
+        "what_not": "Do NOT estimate from patient self-report — the EHR is the authoritative source."
+      },
+      {
+        "observation": "CHA2DS2-VASc computed: 4 (age 65-74 = 1, F = 1, HTN = 1, vascular disease = 1).",
+        "reasoning": "Score >= 2 supports anticoagulation; now check renal function and bleeding screen.",
+        "tool_call": {
+          "name": "labs.recent",
+          "args": {
+            "patient_id": "P-7714",
+            "panel": [
+              "CBC",
+              "CMP",
+              "INR"
+            ]
+          }
+        },
+        "tool_result": {
+          "hgb": 11.8,
+          "platelets": 188,
+          "creat": 1.4,
+          "egfr": 42,
+          "inr": 1.0
+        },
+        "why": "eGFR 42 forces a dose reduction for apixaban; INR/Hgb screen for occult bleeding.",
+        "what_not": "Do not pick a fixed apixaban dose without eGFR — wrong-dose harm is the most common error."
+      }
+    ],
+    "final_answer": "Start apixaban 2.5 mg BID (reduced dose: meets the creatinine >= 1.5 / eGFR < 50 criterion).",
+    "grounding": [
+      "ehr.lookup:P-7714@2026-04-28",
+      "labs.recent:P-7714@2026-04-27"
+    ]
+  },
+  {
+    "trajectory_id": "sap-0017",
+    "domain": "enterprise (SAP)",
+    "task": "Customer asks whether order #SO-44823 can ship today; agent must decide and reply.",
+    "context_snapshot": {
+      "timestamp": "2026-04-28T08:05Z",
+      "channel": "B2B portal"
+    },
+    "steps": [
+      {
+        "observation": "Customer message: 'Can SO-44823 ship today?' Order references material MAT-9912 x 50 units, plant DE10.",
+        "reasoning": "Need current stock at plant DE10 and any open reservations against MAT-9912 before promising a date.",
+        "tool_call": {
+          "name": "sap.mm.stock_check",
+          "args": {
+            "material": "MAT-9912",
+            "plant": "DE10"
+          }
+        },
+        "tool_result": {
+          "on_hand": 38,
+          "reserved": 12,
+          "available": 26,
+          "uom": "EA"
+        },
+        "why": "On-hand alone is misleading: MM reservations can already be earmarked for other orders.",
+        "what_not": "Do not quote on_hand to the customer — quote available (on_hand minus reservations)."
+      },
+      {
+        "observation": "Available stock 26 < requested 50; confirm replenishment ETA before declining.",
+        "reasoning": "Check open purchase orders for MAT-9912 at plant DE10 with goods-receipt date <= today.",
+        "tool_call": {
+          "name": "sap.mm.po_status",
+          "args": {
+            "material": "MAT-9912",
+            "plant": "DE10",
+            "open_only": true
+          }
+        },
+        "tool_result": {
+          "po_number": "4500021187",
+          "qty_open": 100,
+          "expected_gr_date": "2026-04-29"
+        },
+        "why": "If the GR posts tomorrow, today-shipment is impossible regardless of customer urgency.",
+        "what_not": "Do not promise partial shipment without checking the customer's split-delivery flag in the sales order."
+      },
+      {
+        "observation": "Open PO arrives 2026-04-29; partial-delivery allowed flag on SO-44823 is FALSE.",
+        "reasoning": "Cannot ship today, cannot split. Earliest full-shipment date = 2026-04-29 + 1 day handling.",
+        "tool_call": null,
+        "tool_result": null,
+        "why": "Decision is now fully grounded in three SAP facts; no further tool call needed.",
+        "what_not": "Do not silently change the requested delivery date in VBAK — propose it back to the customer first."
+      }
+    ],
+    "final_answer": "Order SO-44823 cannot ship today (26 EA available vs 50 requested, partial delivery not allowed). Earliest full-shipment date is 2026-04-30, pending PO 4500021187 receipt on 2026-04-29.",
+    "grounding": [
+      "sap.mm.stock_check:MAT-9912@DE10@2026-04-28T08:05Z",
+      "sap.mm.po_status:MAT-9912@DE10@2026-04-28T08:05Z",
+      "sap.sd.so_lookup:SO-44823@2026-04-28T08:05Z"
+    ]
+  }
+]

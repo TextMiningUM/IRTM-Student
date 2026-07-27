@@ -1,0 +1,740 @@
+{
+  "kind": "kg_rag",
+  "answer_model": "gpt-4o-mini",
+  "judge_model": "gpt-4o-mini",
+  "embed_model": "text-embedding-3-small",
+  "top_k": 5,
+  "summary": {
+    "n_questions": 15,
+    "n_points": 39,
+    "judge_hits": 32,
+    "overall": {
+      "CORRECT": 10,
+      "PARTIAL": 4,
+      "WRONG": 1,
+      "HALLUCINATED": 0,
+      "ERROR": 0
+    }
+  },
+  "rows": [
+    {
+      "id": "cad-001",
+      "question": "Under what historical name is the Zwin recorded in the oldest documents, and in which 8th-century law does it form the southern border of Friezenland (Frisia)?",
+      "retrieved_ids": [
+        "cadzand_001",
+        "cadzand_029",
+        "cadzand_009",
+        "cadzand_004",
+        "cadzand_032"
+      ],
+      "kg_node_ids": [
+        "zwin",
+        "cadzand",
+        "wulpen",
+        "lex_frisionum",
+        "boekje_cadzand_1998",
+        "zeeuws_vlaanderen",
+        "hugenoten",
+        "st_baafsabdij",
+        "walter_van_axel",
+        "philips_van_de_elzas",
+        "poldervorming",
+        "st_pietersabdij",
+        "noormannen",
+        "kudrunsage",
+        "haags_verdrag_1795"
+      ],
+      "kg_edge_count": 15,
+      "answer": "The Zwin is recorded as \"Sincfal\" in the oldest historical documents, and it forms the southern border of Friezenland in the Lex Frisionum, an 8th-century law.",
+      "judge_per_point": [
+        {
+          "point": "Sincfal",
+          "verdict": "HIT",
+          "reason": "matches expected name"
+        },
+        {
+          "point": "Lex Frisionum",
+          "verdict": "HIT",
+          "reason": "matches expected law"
+        }
+      ],
+      "judge_overall": "CORRECT",
+      "judge_note": "all facts hit"
+    },
+    {
+      "id": "cad-002",
+      "question": "Which Ghent abbey held the right of patronage (patronaatsrecht) over the Mariakerk in Cadzand, and what did that right concretely entail?",
+      "retrieved_ids": [
+        "cadzand_012",
+        "cadzand_007",
+        "cadzand_026",
+        "cadzand_027",
+        "cadzand_017"
+      ],
+      "kg_node_ids": [
+        "cadzand",
+        "gent",
+        "mariakerk",
+        "st_baafsabdij",
+        "patronaatsrecht",
+        "tienden",
+        "wulpen",
+        "aardenburg",
+        "sluis",
+        "vrijheid_van_sluis",
+        "schelde_gotiek"
+      ],
+      "kg_edge_count": 15,
+      "answer": "The Ghent abbey that held the right of patronage over the Mariakerk in Cadzand was the St-Baafsabdij. This right entailed the ability to collect tithes (church taxes) and appoint a pastor when a church was established.",
+      "judge_per_point": [
+        {
+          "point": "St-Baafsabdij",
+          "verdict": "HIT",
+          "reason": "correct name variant"
+        },
+        {
+          "point": "collect tithes (church taxes)",
+          "verdict": "HIT",
+          "reason": "correct meaning of levy tithes"
+        },
+        {
+          "point": "appoint a pastor",
+          "verdict": "MISS",
+          "reason": "wrong phrasing; expected 'appoint the parish priest'"
+        }
+      ],
+      "judge_overall": "PARTIAL",
+      "judge_note": "One fact is missing/wrong."
+    },
+    {
+      "id": "cad-003",
+      "question": "In what year were polders on Cadzand first written about, and which knight then ceded his fief in favour of the St-Baafs abbey?",
+      "retrieved_ids": [
+        "cadzand_009",
+        "cadzand_007",
+        "cadzand_012",
+        "cadzand_019",
+        "cadzand_027"
+      ],
+      "kg_node_ids": [
+        "cadzand",
+        "st_baafsabdij",
+        "walter_van_axel",
+        "philips_van_de_elzas",
+        "poldervorming",
+        "wulpen",
+        "aardenburg",
+        "gent",
+        "tienden",
+        "mariakerk",
+        "patronaatsrecht"
+      ],
+      "kg_edge_count": 15,
+      "answer": "Polders on Cadzand were first written about in 1177, and the knight who ceded his fief in favor of the St-Baafsabdij was Walter van Axel.",
+      "judge_per_point": [
+        {
+          "point": "1177",
+          "verdict": "HIT",
+          "reason": "correct year"
+        },
+        {
+          "point": "Walter van Axel",
+          "verdict": "HIT",
+          "reason": "correct name variant"
+        }
+      ],
+      "judge_overall": "CORRECT",
+      "judge_note": "all facts hit"
+    },
+    {
+      "id": "cad-004",
+      "question": "When were the southern and northern aisles of the Mariakerk built, in what style, and with what striking deviation?",
+      "retrieved_ids": [
+        "cadzand_017",
+        "cadzand_028",
+        "cadzand_026",
+        "cadzand_034",
+        "cadzand_033"
+      ],
+      "kg_node_ids": [
+        "mariakerk",
+        "schelde_gotiek",
+        "cadzand",
+        "sluis",
+        "middelburg",
+        "sint_lambertustoren",
+        "pastorie_1623",
+        "vrijheid_van_sluis",
+        "jan_burgerhuys",
+        "gent",
+        "st_baafsabdij",
+        "tienden",
+        "zeeuws_vlaanderen",
+        "renaissancetorentje",
+        "van_heeswijk",
+        "restauratie_1929",
+        "willem_i"
+      ],
+      "kg_edge_count": 15,
+      "answer": "The southern aisle of the Mariakerk was built between 1250 and 1300, and the northern aisle was built between 1300 and 1325. The style is primarily early Gothic (Scheldt Gothic), but the striking deviation is that the heavy columns are still Romanesque.",
+      "judge_per_point": [
+        {
+          "point": "southern aisle 1250-1300",
+          "verdict": "HIT",
+          "reason": "exact match"
+        },
+        {
+          "point": "northern aisle 1300-1325",
+          "verdict": "HIT",
+          "reason": "exact match"
+        },
+        {
+          "point": "Scheldt Gothic (early Gothic)",
+          "verdict": "HIT",
+          "reason": "correct style description"
+        },
+        {
+          "point": "Romanesque columns",
+          "verdict": "HIT",
+          "reason": "correct description of columns"
+        }
+      ],
+      "judge_overall": "CORRECT",
+      "judge_note": "all facts hit"
+    },
+    {
+      "id": "cad-005",
+      "question": "What was the name of the original tower of the Mariakerk, and in which sea-atlas of which year does Joris Carolus describe it as a beacon?",
+      "retrieved_ids": [
+        "cadzand_018",
+        "cadzand_017",
+        "cadzand_028",
+        "cadzand_034",
+        "cadzand_012"
+      ],
+      "kg_node_ids": [
+        "joris_carolus",
+        "sluis",
+        "vlissingen",
+        "mariakerk",
+        "sint_lambertustoren",
+        "zeeatlas_joris_carolus",
+        "schelde_gotiek",
+        "cadzand",
+        "middelburg",
+        "pastorie_1623",
+        "vrijheid_van_sluis",
+        "jan_burgerhuys",
+        "zeeuws_vlaanderen",
+        "renaissancetorentje",
+        "van_heeswijk",
+        "restauratie_1929",
+        "st_baafsabdij",
+        "patronaatsrecht",
+        "tienden"
+      ],
+      "kg_edge_count": 15,
+      "answer": "The original tower of the Mariakerk was called the Sint-Lambertustoren. Joris Carolus describes it as a beacon in his sea atlas published in 1634.",
+      "judge_per_point": [
+        {
+          "point": "Sint-Lambertustoren",
+          "verdict": "HIT",
+          "reason": "correct name variant"
+        },
+        {
+          "point": "sea atlas 1634",
+          "verdict": "HIT",
+          "reason": "correct year and context"
+        }
+      ],
+      "judge_overall": "CORRECT",
+      "judge_note": "all facts are accurate"
+    },
+    {
+      "id": "cad-006",
+      "question": "In what year was the Peace of Cadzand concluded, and which sovereign had had the island taken the year before?",
+      "retrieved_ids": [
+        "cadzand_021",
+        "cadzand_007",
+        "cadzand_009",
+        "cadzand_016",
+        "cadzand_019"
+      ],
+      "kg_node_ids": [
+        "cadzand",
+        "zwin",
+        "sluis",
+        "mariakerk",
+        "maximiliaan_van_oostenrijk",
+        "vrede_van_cadzand_1492",
+        "wulpen",
+        "aardenburg",
+        "gent",
+        "st_baafsabdij",
+        "tienden",
+        "walter_van_axel",
+        "philips_van_de_elzas",
+        "poldervorming",
+        "zuidzande",
+        "oostburg",
+        "groede"
+      ],
+      "kg_edge_count": 15,
+      "answer": "The Peace of Cadzand was concluded in 1492, and the island was taken by Maximilian of Austria in 1491.",
+      "judge_per_point": [
+        {
+          "point": "1492",
+          "verdict": "HIT",
+          "reason": "correct year for the Peace of Cadzand"
+        },
+        {
+          "point": "1491",
+          "verdict": "HIT",
+          "reason": "correct year for the island being taken"
+        },
+        {
+          "point": "Maximilian of Austria",
+          "verdict": "HIT",
+          "reason": "correct sovereign name"
+        }
+      ],
+      "judge_overall": "CORRECT",
+      "judge_note": "All facts are accurate."
+    },
+    {
+      "id": "cad-007",
+      "question": "Who was the first dedicated minister (predikant) of Cadzand, in what year did he take up his post, and in what year before that did the States-General decide on a weekly preaching turn from Sluis?",
+      "retrieved_ids": [
+        "cadzand_024",
+        "cadzand_023",
+        "cadzand_013",
+        "cadzand_012",
+        "cadzand_009"
+      ],
+      "kg_node_ids": [
+        "cadzand",
+        "sluis",
+        "zwin",
+        "aardenburg",
+        "filippine",
+        "ijzendijke",
+        "mariakerk",
+        "staten_generaal",
+        "prins_maurits",
+        "tachtigjarige_oorlog",
+        "breskens",
+        "protestantse_classis_breskens",
+        "parma",
+        "st_baafsabdij",
+        "patronaatsrecht",
+        "tienden",
+        "walter_van_axel",
+        "philips_van_de_elzas",
+        "poldervorming"
+      ],
+      "kg_edge_count": 15,
+      "answer": "I cannot find this in the source.",
+      "judge_per_point": [
+        {
+          "point": "Marcus ab Halle",
+          "verdict": "MISS",
+          "reason": "not mentioned in the model answer"
+        },
+        {
+          "point": "1609",
+          "verdict": "MISS",
+          "reason": "not mentioned in the model answer"
+        },
+        {
+          "point": "1606",
+          "verdict": "MISS",
+          "reason": "not mentioned in the model answer"
+        }
+      ],
+      "judge_overall": "WRONG",
+      "judge_note": "no hits and says 'don't know'"
+    },
+    {
+      "id": "cad-008",
+      "question": "Until what year did the northern aisle remain in ruins, and who donated a stained-glass window during its restoration?",
+      "retrieved_ids": [
+        "cadzand_026",
+        "cadzand_035",
+        "cadzand_034",
+        "cadzand_028",
+        "cadzand_033"
+      ],
+      "kg_node_ids": [
+        "cadzand",
+        "sluis",
+        "gent",
+        "mariakerk",
+        "st_baafsabdij",
+        "vrijheid_van_sluis",
+        "tienden",
+        "zeeuws_vlaanderen",
+        "bevrijding_1944",
+        "renaissancetorentje",
+        "van_heeswijk",
+        "restauratie_1929",
+        "middelburg",
+        "sint_lambertustoren",
+        "pastorie_1623",
+        "jan_burgerhuys",
+        "willem_i"
+      ],
+      "kg_edge_count": 15,
+      "answer": "The northern aisle remained in ruins until 1641, and the Vrije van Sluis donated a stained glass window during its restoration.",
+      "judge_per_point": [
+        {
+          "point": "1641",
+          "verdict": "HIT",
+          "reason": "exact year"
+        },
+        {
+          "point": "Vrije van Sluis",
+          "verdict": "MISS",
+          "reason": "incorrect phrasing of the name"
+        }
+      ],
+      "judge_overall": "PARTIAL",
+      "judge_note": "One fact hit, one fact missed."
+    },
+    {
+      "id": "cad-009",
+      "question": "How many hectares of land did the church of Cadzand own in 1610 compared with 1665, and what happened in 1677 to both the lands and the tower?",
+      "retrieved_ids": [
+        "cadzand_027",
+        "cadzand_019",
+        "cadzand_007",
+        "cadzand_009",
+        "cadzand_012"
+      ],
+      "kg_node_ids": [
+        "cadzand",
+        "mariakerk",
+        "wulpen",
+        "aardenburg",
+        "gent",
+        "st_baafsabdij",
+        "tienden",
+        "walter_van_axel",
+        "philips_van_de_elzas",
+        "poldervorming",
+        "patronaatsrecht"
+      ],
+      "kg_edge_count": 15,
+      "answer": "In 1610, the church of Cadzand owned nearly 100 hectares of land. By 1665, this had decreased to about 58 hectares. In 1677, all the lands had to be sold to pay off loans and overdue interest. The context does not provide specific information about the tower in 1677.",
+      "judge_per_point": [
+        {
+          "point": "1610: nearly 100 ha",
+          "verdict": "HIT",
+          "reason": "matches expected fact"
+        },
+        {
+          "point": "1665: ~58 ha",
+          "verdict": "HIT",
+          "reason": "matches expected fact"
+        },
+        {
+          "point": "1677 lands sold",
+          "verdict": "HIT",
+          "reason": "matches expected fact"
+        },
+        {
+          "point": "1677 tower demolished",
+          "verdict": "MISS",
+          "reason": "missing information about the tower"
+        }
+      ],
+      "judge_overall": "PARTIAL",
+      "judge_note": "one fact missing about the tower"
+    },
+    {
+      "id": "cad-010",
+      "question": "By whom and in which city was the current bell of Cadzand cast, and in what year?",
+      "retrieved_ids": [
+        "cadzand_017",
+        "cadzand_012",
+        "cadzand_028",
+        "cadzand_019",
+        "cadzand_007"
+      ],
+      "kg_node_ids": [
+        "cadzand",
+        "mariakerk",
+        "schelde_gotiek",
+        "st_baafsabdij",
+        "patronaatsrecht",
+        "tienden",
+        "sluis",
+        "middelburg",
+        "sint_lambertustoren",
+        "pastorie_1623",
+        "vrijheid_van_sluis",
+        "jan_burgerhuys",
+        "wulpen",
+        "aardenburg",
+        "gent"
+      ],
+      "kg_edge_count": 15,
+      "answer": "The current bell of Cadzand was cast by Jan Burgerhuys in Middelburg in the year 1611.",
+      "judge_per_point": [
+        {
+          "point": "Jan Burgerhuys",
+          "verdict": "HIT",
+          "reason": "correct name"
+        },
+        {
+          "point": "Middelburg",
+          "verdict": "HIT",
+          "reason": "correct city"
+        },
+        {
+          "point": "1611",
+          "verdict": "HIT",
+          "reason": "correct year"
+        }
+      ],
+      "judge_overall": "CORRECT",
+      "judge_note": "all facts are accurate"
+    },
+    {
+      "id": "cad-011",
+      "question": "In which three waves (years and regions of origin) did the Huguenot / Walloon refugees come to Cadzand?",
+      "retrieved_ids": [
+        "cadzand_030",
+        "cadzand_029",
+        "cadzand_019",
+        "cadzand_023",
+        "cadzand_001"
+      ],
+      "kg_node_ids": [
+        "cadzand",
+        "calais",
+        "rijssel",
+        "picardie",
+        "champagne",
+        "orleans",
+        "waalse_gemeente",
+        "hugenoten",
+        "edict_van_nantes",
+        "zeeuws_vlaanderen",
+        "mariakerk",
+        "sluis",
+        "breskens",
+        "protestantse_classis_breskens",
+        "parma",
+        "tachtigjarige_oorlog",
+        "wulpen",
+        "zwin",
+        "lex_frisionum",
+        "boekje_cadzand_1998"
+      ],
+      "kg_edge_count": 15,
+      "answer": "The Huguenot / Walloon refugees came to Cadzand in three waves: \n\n1. After the revocation of the Edict of Nantes in 1685, with refugees from the vicinity of Calais.\n2. In 1713, with additional refugees from the area around Lille (Rijssel).\n3. In 1771, with more refugees from the regions of Picardy, Champagne, and the area of Orléans.",
+      "judge_per_point": [
+        {
+          "point": "1685 region of Calais (after revocation of the Edict of Nantes)",
+          "verdict": "HIT",
+          "reason": "matches expected fact"
+        },
+        {
+          "point": "1713 region of Lille",
+          "verdict": "HIT",
+          "reason": "matches expected fact"
+        },
+        {
+          "point": "1771 Picardy / Champagne / Orleans",
+          "verdict": "HIT",
+          "reason": "matches expected fact"
+        }
+      ],
+      "judge_overall": "CORRECT",
+      "judge_note": "all facts hit"
+    },
+    {
+      "id": "cad-012",
+      "question": "In what year did the Walloon-Reformed Congregation merge into the Reformed Congregation of Cadzand, and what physical object in the church still commemorates it today?",
+      "retrieved_ids": [
+        "cadzand_031",
+        "cadzand_030",
+        "cadzand_012",
+        "cadzand_027",
+        "cadzand_017"
+      ],
+      "kg_node_ids": [
+        "cadzand",
+        "waalse_kerk",
+        "waalse_gemeente",
+        "calais",
+        "rijssel",
+        "picardie",
+        "champagne",
+        "orleans",
+        "hugenoten",
+        "edict_van_nantes",
+        "mariakerk",
+        "st_baafsabdij",
+        "patronaatsrecht",
+        "tienden",
+        "schelde_gotiek"
+      ],
+      "kg_edge_count": 15,
+      "answer": "The Walloon-Reformed Congregation merged into the Reformed Congregation of Cadzand in 1809, and the physical object that still commemorates it today is a chandelier in the middle of the church.",
+      "judge_per_point": [
+        {
+          "point": "1809",
+          "verdict": "HIT",
+          "reason": "correct year"
+        },
+        {
+          "point": "chandelier in the middle of the church",
+          "verdict": "HIT",
+          "reason": "correct object"
+        }
+      ],
+      "judge_overall": "CORRECT",
+      "judge_note": "all facts are accurate"
+    },
+    {
+      "id": "cad-013",
+      "question": "Which treaty of which year ceded Staats-Vlaanderen to the French Republic, and in what year did the area receive the name Zeeuws-Vlaanderen?",
+      "retrieved_ids": [
+        "cadzand_032",
+        "cadzand_029",
+        "cadzand_024",
+        "cadzand_021",
+        "cadzand_001"
+      ],
+      "kg_node_ids": [
+        "cadzand",
+        "zeeuws_vlaanderen",
+        "haags_verdrag_1795",
+        "hugenoten",
+        "zwin",
+        "aardenburg",
+        "sluis",
+        "filippine",
+        "ijzendijke",
+        "mariakerk",
+        "staten_generaal",
+        "prins_maurits",
+        "tachtigjarige_oorlog",
+        "maximiliaan_van_oostenrijk",
+        "vrede_van_cadzand_1492",
+        "wulpen",
+        "lex_frisionum",
+        "boekje_cadzand_1998"
+      ],
+      "kg_edge_count": 15,
+      "answer": "The Hague Treaty ceded Staats-Vlaanderen to the French Republic in 1795, and the area received the name Zeeuws-Vlaanderen in 1814.",
+      "judge_per_point": [
+        {
+          "point": "Treaty of The Hague 1795",
+          "verdict": "HIT",
+          "reason": "correct treaty and year"
+        },
+        {
+          "point": "1814",
+          "verdict": "HIT",
+          "reason": "correct year"
+        }
+      ],
+      "judge_overall": "CORRECT",
+      "judge_note": "all facts are accurate"
+    },
+    {
+      "id": "cad-014",
+      "question": "Which king granted a subsidy in 1821 for the new roof of the church, and how many guilders did that subsidy amount to?",
+      "retrieved_ids": [
+        "cadzand_033",
+        "cadzand_026",
+        "cadzand_028",
+        "cadzand_038",
+        "cadzand_027"
+      ],
+      "kg_node_ids": [
+        "cadzand",
+        "mariakerk",
+        "pastorie_1623",
+        "willem_i",
+        "sluis",
+        "gent",
+        "st_baafsabdij",
+        "vrijheid_van_sluis",
+        "tienden",
+        "middelburg",
+        "sint_lambertustoren",
+        "jan_burgerhuys",
+        "stichting_behoud_dorpskerk",
+        "boekje_cadzand_1998"
+      ],
+      "kg_edge_count": 15,
+      "answer": "King Willem I granted a subsidy of one thousand guilders in 1821 for the new roof of the church.",
+      "judge_per_point": [
+        {
+          "point": "William I",
+          "verdict": "HIT",
+          "reason": "correct name variant"
+        },
+        {
+          "point": "1000 guilders",
+          "verdict": "HIT",
+          "reason": "correct amount"
+        }
+      ],
+      "judge_overall": "CORRECT",
+      "judge_note": "all facts hit"
+    },
+    {
+      "id": "cad-015",
+      "question": "Which state architect (rijksbouwmeester) led the restoration from 1929 onward, and what replaced the old roof turret as the tower solution against the church?",
+      "retrieved_ids": [
+        "cadzand_034",
+        "cadzand_028",
+        "cadzand_033",
+        "cadzand_036",
+        "cadzand_026"
+      ],
+      "kg_node_ids": [
+        "cadzand",
+        "zeeuws_vlaanderen",
+        "mariakerk",
+        "renaissancetorentje",
+        "van_heeswijk",
+        "restauratie_1929",
+        "sluis",
+        "middelburg",
+        "sint_lambertustoren",
+        "pastorie_1623",
+        "vrijheid_van_sluis",
+        "jan_burgerhuys",
+        "willem_i",
+        "oostburg",
+        "stichting_behoud_dorpskerk",
+        "stichting_monumentenzorg",
+        "gemeente_oostburg",
+        "gent",
+        "st_baafsabdij",
+        "tienden"
+      ],
+      "kg_edge_count": 15,
+      "answer": "The state architect who led the restoration from 1929 onward was Van Heeswijk. The old roof turret was replaced by an elegant Renaissance turret against the church.",
+      "judge_per_point": [
+        {
+          "point": "Van Heeswijk",
+          "verdict": "HIT",
+          "reason": "correct name"
+        },
+        {
+          "point": "Renaissance-style turret (built by the civil municipality)",
+          "verdict": "MISS",
+          "reason": "missing 'built by the civil municipality' part"
+        }
+      ],
+      "judge_overall": "PARTIAL",
+      "judge_note": "One fact hit, one fact missing."
+    }
+  ]
+}

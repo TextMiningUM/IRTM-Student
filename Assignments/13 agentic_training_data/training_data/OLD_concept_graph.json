@@ -1,0 +1,231 @@
+[
+  {
+    "concept": "Code",
+    "definition": "text readable by a computer and based on instructions regulating a device or program.",
+    "related_to": [],
+    "chapter_refs": [
+      "The Hacking Lingo: Hacking Terms and Definitions",
+      "The Hacking Lingo: Hacking Terms and Definitions"
+    ],
+    "category": "tool"
+  },
+  {
+    "concept": "A server",
+    "definition": "program that regulates the access to the network service or a centralized resource center.",
+    "related_to": [],
+    "chapter_refs": [
+      "The Hacking Lingo: Hacking Terms and Definitions"
+    ],
+    "category": "tool"
+  },
+  {
+    "concept": "Configuration",
+    "definition": "the technical computer specifications that include but not limited to the processor speed, the RAM, and the amount of hard drive space.",
+    "related_to": [],
+    "chapter_refs": [
+      "The Hacking Lingo: Hacking Terms and Definitions",
+      "The Hacking Lingo: Hacking Terms and Definitions"
+    ],
+    "category": "technique"
+  },
+  {
+    "concept": "Protocols",
+    "definition": "set of rules under which a computer operates to control how a document on the internet gets transmission to your screen.",
+    "related_to": [],
+    "chapter_refs": [
+      "The Hacking Lingo: Hacking Terms and Definitions"
+    ],
+    "category": "term"
+  },
+  {
+    "concept": "Protocol implementation",
+    "definition": "process of negotiating some transaction through a specific connection.",
+    "related_to": [],
+    "chapter_refs": [
+      "The Hacking Lingo: Hacking Terms and Definitions",
+      "The Hacking Lingo: Hacking Terms and Definitions"
+    ],
+    "category": "technique"
+  },
+  {
+    "concept": "NetBIOS",
+    "definition": "program that allows software applications contained in various computers within the same network to communicate.",
+    "related_to": [],
+    "chapter_refs": [
+      "The Hacking Lingo: Hacking Terms and Definitions"
+    ],
+    "category": "tool"
+  },
+  {
+    "concept": "IP address",
+    "definition": "the numbers separated by periods whose role is to recognize every computer by use of the internet protocol to communicate over a network.",
+    "related_to": [],
+    "chapter_refs": [
+      "The Hacking Lingo: Hacking Terms and Definitions",
+      "The Hacking Lingo: Hacking Terms and Definitions"
+    ],
+    "category": "term"
+  },
+  {
+    "concept": "Server",
+    "definition": "A server is a program that regulates the access to the network service or a centralized resource center.",
+    "related_to": [],
+    "chapter_refs": [
+      "The Hacking Lingo: Hacking Terms and Definitions"
+    ],
+    "category": "tool"
+  },
+  {
+    "concept": "Keystroke Logging",
+    "definition": "It is the tracking of the keys pressed on a computer besides the touchscreen points.",
+    "related_to": [],
+    "chapter_refs": [
+      "The Hacking Lingo: Hacking Terms and Definitions"
+    ],
+    "category": "term"
+  },
+  {
+    "concept": "Protocol",
+    "definition": "Protocols are the set of rules under which a computer operates to control how a document on the internet gets transmission to your screen.",
+    "related_to": [],
+    "chapter_refs": [
+      "The Hacking Lingo: Hacking Terms and Definitions"
+    ],
+    "category": "term"
+  },
+  {
+    "concept": "Rootkits",
+    "definition": "the software tools that help ethical hackers gain unapproved control of a computer system without notice.",
+    "related_to": [],
+    "chapter_refs": [
+      "The Hacking Lingo: Hacking Terms and Definitions",
+      "The Hacking Lingo: Hacking Terms and Definitions"
+    ],
+    "category": "attack"
+  },
+  {
+    "concept": "A piggyback",
+    "definition": "use of an established session by another user to gain access to a blocked or restricted communication channel.",
+    "related_to": [],
+    "chapter_refs": [
+      "The Hacking Lingo: Hacking Terms and Definitions"
+    ],
+    "category": "term"
+  },
+  {
+    "concept": "A false positive",
+    "definition": "the rejection of a null hypothesis; for example, when the computer identifies legitimate messages as illegitimate and either deletes them or moves them to a special folder.",
+    "related_to": [],
+    "chapter_refs": [
+      "The Hacking Lingo: Hacking Terms and Definitions"
+    ],
+    "category": "term"
+  },
+  {
+    "concept": "Piggyback",
+    "definition": "A piggyback is the use of an established session by another user to gain access to a blocked or restricted communication channel.",
+    "related_to": [
+      "piggyback"
+    ],
+    "chapter_refs": [
+      "The Hacking Lingo: Hacking Terms and Definitions"
+    ],
+    "category": "term"
+  },
+  {
+    "concept": "False positive",
+    "definition": "A false positive refers to the rejection of a null hypothesis; for example, when the computer identifies legitimate messages as illegitimate and either deletes them or moves them to a special folder.",
+    "related_to": [
+      "false positive"
+    ],
+    "chapter_refs": [
+      "The Hacking Lingo: Hacking Terms and Definitions"
+    ],
+    "category": "term"
+  },
+  {
+    "concept": "Theirs",
+    "definition": "125 multiple choice questions exam, which is a version eight, unlike the version seven which has 150 questions costs about $500.",
+    "related_to": [],
+    "chapter_refs": [
+      "The Ethics of Ethical Hacking"
+    ],
+    "category": "term"
+  },
+  {
+    "concept": "Since it",
+    "definition": "java app, you may need to install java JRE.",
+    "related_to": [],
+    "chapter_refs": [
+      "How to Set Up Burp Proxy"
+    ],
+    "category": "tool"
+  },
+  {
+    "concept": "Google",
+    "definition": "redirection of 301, which will inform your browser the location header to go to www.",
+    "related_to": [],
+    "chapter_refs": [
+      "How to Set Up Burp Proxy"
+    ],
+    "category": "term"
+  },
+  {
+    "concept": "Since the application",
+    "definition": "corporate HR, you will be right to guess that most users have the @onemonthsimple.",
+    "related_to": [],
+    "chapter_refs": [
+      "Let Us Guess Accounts"
+    ],
+    "category": "tool"
+  },
+  {
+    "concept": "Interface 1",
+    "definition": "loopback interface, and interface 2 links with the IP 192.",
+    "related_to": [],
+    "chapter_refs": [
+      "Begin!"
+    ],
+    "category": "term"
+  },
+  {
+    "concept": "NMap",
+    "definition": "tool available for Windows, OS X, and Linux platforms.",
+    "related_to": [],
+    "chapter_refs": [
+      "2: NMap (Network Mapper)",
+      "2: NMap (Network Mapper)"
+    ],
+    "category": "tool"
+  },
+  {
+    "concept": "Wireshark",
+    "definition": "tool that comes with T-shark, a command line version.",
+    "related_to": [],
+    "chapter_refs": [
+      "4: Wireshark"
+    ],
+    "category": "tool"
+  },
+  {
+    "concept": "Hashcat",
+    "definition": "CPU based tool that cracks passwords; its advanced version is oclHashcat, and is very popular as the quickest password cracking tool.",
+    "related_to": [
+      "hash",
+      "hashcat"
+    ],
+    "chapter_refs": [
+      "5: OCLHashcat"
+    ],
+    "category": "tool"
+  },
+  {
+    "concept": "Learning how to hack",
+    "definition": "handy skill whether you are a security professional or not because it helps you implement the toughest security practices possible.",
+    "related_to": [],
+    "chapter_refs": [
+      "Conclusion"
+    ],
+    "category": "attack"
+  }
+]

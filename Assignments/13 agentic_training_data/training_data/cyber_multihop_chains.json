@@ -1,0 +1,514 @@
+[
+  {
+    "chain_id": "chain_59bace38c3",
+    "question": "How does the process described in 'How to Set Up Burp Proxy' work step by step?",
+    "chapter_refs": [
+      "How to Set Up Burp Proxy",
+      "Whetting Your Hacking Appetite: Common Hacking Attacks"
+    ],
+    "concepts": [],
+    "hops": [
+      {
+        "hop_number": 1,
+        "observation": "The recommendation is to use Firefox with Burp because by doing so, you will be able to set it up without having to make any changes to the system wide settings which would affect a couple of programs.",
+        "inference": "This implies a causal relationship: The recommendation is to use Firefox with Burp because by doing so, you will be able to set it up wi..."
+      },
+      {
+        "hop_number": 2,
+        "observation": "Once you have downloaded, installed, and started Burp, click 'proxy tab' and then 'options.' Ensure the 'proxy listeners' is running and note the interface, which by default, is 127.0.0.1:8080.",
+        "inference": "This is a prerequisite step that enables subsequent actions."
+      },
+      {
+        "hop_number": 3,
+        "observation": "After that, move down to the sections of and and ensure that the top level and have been checked.",
+        "inference": "This provides context that informs the next decision in the reasoning chain."
+      },
+      {
+        "hop_number": 4,
+        "observation": "In addition, check the third checkbox under that says 'or request was intercepted.' The settings should be similar to the ones below.",
+        "inference": "This provides context that informs the next decision in the reasoning chain."
+      },
+      {
+        "hop_number": 5,
+        "observation": "This will enable Burp to capture both the browser requests and the responses of the server.",
+        "inference": "This provides context that informs the next decision in the reasoning chain."
+      },
+      {
+        "hop_number": 6,
+        "observation": "Just click on 'Firefox' and after that 'preferences.' Click the advanced icon and then the network button.",
+        "inference": "This provides context that informs the next decision in the reasoning chain."
+      }
+    ],
+    "conclusion": "The process involves 6 connected steps, starting from The recommendation is to use Firefox with Burp because by do... and concluding with Just click on 'Firefox' and after that 'preferences.' Click ...",
+    "source": "cyber_book"
+  },
+  {
+    "chain_id": "chain_49b98b4750",
+    "question": "How does the process described in 'The Code Is As Follows:' work step by step?",
+    "chapter_refs": [
+      "The Code Is As Follows:",
+      "How to Defend Against Brute Force Attacks"
+    ],
+    "concepts": [],
+    "hops": [
+      {
+        "hop_number": 1,
+        "observation": "For every valid user, try thousands of different passwords until the 'incorrect password' message disappears.",
+        "inference": "This provides context that informs the next decision in the reasoning chain."
+      },
+      {
+        "hop_number": 2,
+        "observation": "Now you know a bit about how black hat hackers do their thing with brute force attacks.",
+        "inference": "This provides context that informs the next decision in the reasoning chain."
+      },
+      {
+        "hop_number": 3,
+        "observation": "In the next bit of this book, we will learn how to keep these off as an ethical hacker.",
+        "inference": "This is a prerequisite step that enables subsequent actions."
+      }
+    ],
+    "conclusion": "The process involves 3 connected steps, starting from For every valid user, try thousands of different passwords u... and concluding with In the next bit of this book, we will learn how to keep thes...",
+    "source": "cyber_book"
+  },
+  {
+    "chain_id": "chain_dbfc3fb1f8",
+    "question": "How does the process described in 'The Complexity of the Password' work step by step?",
+    "chapter_refs": [
+      "The Complexity of the Password",
+      "Taking Charge Of An Entire Network As A Hacker"
+    ],
+    "concepts": [],
+    "hops": [
+      {
+        "hop_number": 1,
+        "observation": "However, the most preferred method is to use the DSE (Devise Security Extension) that offers the capacity to configure a couple of security controls around passwords, which includes complexity.",
+        "inference": "This provides context that informs the next decision in the reasoning chain."
+      },
+      {
+        "hop_number": 2,
+        "observation": "Without devise, there is another good option of creating a regular expression and ensuring that all the new passwords meet the requirements.",
+        "inference": "This provides context that informs the next decision in the reasoning chain."
+      },
+      {
+        "hop_number": 3,
+        "observation": "Generally, it is best to require at least one number and one special character and a password not less than ten characters.",
+        "inference": "This provides context that informs the next decision in the reasoning chain."
+      },
+      {
+        "hop_number": 4,
+        "observation": "Now that you know how to keep off brute force attacks, we will take this a little further in the next chapter by discussing how to take full charge of your network.",
+        "inference": "This is a prerequisite step that enables subsequent actions."
+      }
+    ],
+    "conclusion": "The process involves 4 connected steps, starting from However, the most preferred method is to use the DSE (Devise... and concluding with Now that you know how to keep off brute force attacks, we wi...",
+    "source": "cyber_book"
+  },
+  {
+    "chain_id": "chain_154ae0199a",
+    "question": "How does the process described in 'Get the Right Exploit' work step by step?",
+    "chapter_refs": [
+      "Get the Right Exploit",
+      "Scan the Network"
+    ],
+    "concepts": [],
+    "hops": [
+      {
+        "hop_number": 1,
+        "observation": "You can find the right exploit by searching metasploit for one that will accommodate the adobe reader's version.",
+        "inference": "This provides context that informs the next decision in the reasoning chain."
+      },
+      {
+        "hop_number": 2,
+        "observation": "If you look at the image above, you can tell that metasploit included all the exploits that met the criteria.",
+        "inference": "This is a conditional: when the condition is met, the consequence follows."
+      },
+      {
+        "hop_number": 3,
+        "observation": "In the description, Metasploit shows that it embeds a payload of metasploit into the existing PDF file.",
+        "inference": "This provides context that informs the next decision in the reasoning chain."
+      },
+      {
+        "hop_number": 4,
+        "observation": "Besides that, you can also use it to invite the victim to download it when you embed it into a website.",
+        "inference": "This provides context that informs the next decision in the reasoning chain."
+      }
+    ],
+    "conclusion": "The process involves 4 connected steps, starting from You can find the right exploit by searching metasploit for o... and concluding with Besides that, you can also use it to invite the victim to do...",
+    "source": "cyber_book"
+  },
+  {
+    "chain_id": "chain_c13eff1402",
+    "question": "How does the process described in 'The Final Step: Add A Route' work step by step?",
+    "chapter_refs": [
+      "The Final Step: Add A Route",
+      "Conclusion"
+    ],
+    "concepts": [],
+    "hops": [
+      {
+        "hop_number": 1,
+        "observation": "You have to background your meterpreter session, which will put your meterpreter session into the background meaning it is still running.",
+        "inference": "This provides context that informs the next decision in the reasoning chain."
+      },
+      {
+        "hop_number": 2,
+        "observation": "You can however return to the metasploit console and implement the other commands.",
+        "inference": "This provides context that informs the next decision in the reasoning chain."
+      },
+      {
+        "hop_number": 3,
+        "observation": "After that, you will add a route to the compromised system from the default gateway so that you get access to all the systems and subnets that have access to the default gatewaya good opportunity to compromise them.",
+        "inference": "This provides context that informs the next decision in the reasoning chain."
+      },
+      {
+        "hop_number": 4,
+        "observation": "Having successfully made a route between the victim's computer and the default gateway, the network will therefore be for all purposes, yours.",
+        "inference": "This implies a causal relationship: Having successfully made a route between the victim's computer and the default gateway, the network ..."
+      },
+      {
+        "hop_number": 5,
+        "observation": "You can now go ahead and use the single compromised machine to launch attacks on any system on the network within the subnet of the engineering or all the subnets that use the default gateway.",
+        "inference": "This provides context that informs the next decision in the reasoning chain."
+      },
+      {
+        "hop_number": 6,
+        "observation": "To own machines, you will have to take the last step of exploiting each one of them.",
+        "inference": "This provides context that informs the next decision in the reasoning chain."
+      }
+    ],
+    "conclusion": "The process involves 6 connected steps, starting from You have to background your meterpreter session, which will ... and concluding with To own machines, you will have to take the last step of expl...",
+    "source": "cyber_book"
+  },
+  {
+    "chain_id": "hop_pentest_001",
+    "question": "An employee reports their workstation is running slowly. How should a security analyst determine whether this is a performance issue or an active compromise?",
+    "chapter_refs": [
+      "MITRE T1036 Masquerading",
+      "MITRE TA0011 C2",
+      "MITRE T1566 Phishing",
+      "PTES Phase 5 Exploitation indicators"
+    ],
+    "concepts": [
+      "process_masquerading",
+      "C2_detection",
+      "incident_response",
+      "forensic_preservation",
+      "dwell_time",
+      "lateral_movement_check"
+    ],
+    "hops": [
+      {
+        "hop_number": 1,
+        "observation": "Workstation running slowly. Could be hardware, software, or malware.",
+        "inference": "Check running processes first — legitimate performance issues show high CPU from known applications. Malware often hides in processes with names similar to system processes (e.g., 'svch0st.exe' instead of 'svchost.exe')."
+      },
+      {
+        "hop_number": 2,
+        "observation": "Process list shows 'svchost.exe' running from C:\\Users\\Public\\ instead of C:\\Windows\\System32\\.",
+        "inference": "Legitimate svchost.exe ALWAYS runs from System32. A svchost.exe in a user-writable directory (Public, Temp, AppData) is almost certainly malware masquerading as a system process. This maps to MITRE T1036 (Masquerading)."
+      },
+      {
+        "hop_number": 3,
+        "observation": "The suspicious process is making outbound connections to 185.220.101.x (known Tor exit node range).",
+        "inference": "Command-and-control traffic via Tor is a strong indicator of an active compromise. The attacker is maintaining a persistent connection. This maps to MITRE TA0011 (Command and Control) + T1090.003 (Proxy: Multi-hop Proxy)."
+      },
+      {
+        "hop_number": 4,
+        "observation": "EDR shows the process was created by a PowerShell script that was launched from Outlook.exe 3 days ago.",
+        "inference": "This is a phishing-delivered payload (T1566) that has been persistent for 3 days. The attacker has had 3 days of access. Full incident response is needed: isolate the host, preserve forensic image, check lateral movement from this host to others."
+      }
+    ],
+    "conclusion": "What appeared to be a performance issue is an active compromise with 3 days of attacker dwell time. Immediate actions: (1) isolate workstation from network, (2) preserve memory dump and disk image for forensics, (3) check SIEM for outbound connections from other hosts to same C2 IP, (4) review email gateway logs for the phishing email to identify other recipients.",
+    "source": "PTES + MITRE ATT&CK"
+  },
+  {
+    "chain_id": "hop_pentest_002",
+    "question": "During a penetration test, you find an internal web application with a login form. Walk through how you would test it and what you would do with any findings.",
+    "chapter_refs": [
+      "OWASP A07 Auth Failures",
+      "OWASP A01 Broken Access Control",
+      "PTES Phase 4 Vulnerability Analysis",
+      "PTES Phase 7 Reporting"
+    ],
+    "concepts": [
+      "hardcoded_credentials",
+      "JWT_security",
+      "IDOR",
+      "OWASP_Top_10",
+      "API_security",
+      "horizontal_privilege_escalation",
+      "CVSS"
+    ],
+    "hops": [
+      {
+        "hop_number": 1,
+        "observation": "Internal web application with a login form. In scope per the signed SoW.",
+        "inference": "Before testing, confirm the application is in scope and identify the owner. Then start with passive analysis: view page source, check for comments containing credentials or API keys, note the authentication mechanism (form post, OAuth, SAML)."
+      },
+      {
+        "hop_number": 2,
+        "observation": "Page source reveals a comment: '<!-- TODO: remove debug mode, admin:admin123 -->'. The login form POSTs to /api/v1/auth.",
+        "inference": "Hardcoded credentials in source code is a critical finding (OWASP A07:2021 - Identification and Authentication Failures). Test the credentials immediately. Also note the API endpoint for further testing."
+      },
+      {
+        "hop_number": 3,
+        "observation": "admin:admin123 works. The account has superuser privileges. The API endpoint /api/v1/auth accepts JSON and returns a JWT token.",
+        "inference": "Document the credential finding as Critical. Now test the JWT: decode it (jwt.io) to check if it uses a weak algorithm (alg:none, HS256 with a guessable secret). Also test for IDOR — can this admin account access other users' data by changing user IDs in API requests?"
+      },
+      {
+        "hop_number": 4,
+        "observation": "JWT uses alg:HS256. Cracking the JWT secret with jwt-cracker takes 4 seconds — the secret is 'secret123'. API endpoint /api/v1/users/{id} allows accessing any user's data by changing the ID without authorisation check.",
+        "inference": "Two additional critical findings: (1) Weak JWT secret allows token forgery — attacker can impersonate any user. (2) IDOR in user API allows horizontal privilege escalation — access to all users' data. Combined with the hardcoded credentials, this application has complete authentication breakdown."
+      }
+    ],
+    "conclusion": "Three critical findings documented: (1) Hardcoded debug credentials in source code, (2) Weak JWT secret allowing token forgery, (3) IDOR enabling access to all user records. Remediation: (1) Remove all hardcoded credentials immediately and rotate them, (2) Regenerate JWT secret with 256-bit random value, enforce short expiry, (3) Implement server-side authorisation checks on all API endpoints. Report all three as CVSS 9.8 Critical with immediate remediation required before next release.",
+    "source": "PTES + MITRE ATT&CK"
+  },
+  {
+    "chain_id": "hop_pentest_003",
+    "question": "How does a ransomware attack typically progress from initial phishing email to full network encryption, and where are the best points to stop it?",
+    "chapter_refs": [
+      "MITRE ATT&CK Enterprise Kill Chain",
+      "MITRE T1486 Data Encrypted for Impact",
+      "MITRE T1490 Inhibit System Recovery"
+    ],
+    "concepts": [
+      "kill_chain",
+      "defence_in_depth",
+      "ransomware",
+      "email_security",
+      "EDR",
+      "MFA",
+      "immutable_backup",
+      "shadow_copy",
+      "lateral_movement_prevention"
+    ],
+    "hops": [
+      {
+        "hop_number": 1,
+        "observation": "Employee receives a phishing email with a malicious attachment. (MITRE TA0001 Initial Access, T1566)",
+        "inference": "Best stop point #1: Email gateway. DMARC reject policy blocks spoofed senders. Sandbox attachment scanning detonates the attachment before delivery. This is the cheapest and most effective prevention layer — stop the attack before any code executes."
+      },
+      {
+        "hop_number": 2,
+        "observation": "Employee opens the attachment and enables macros. PowerShell downloads a second-stage payload. (MITRE TA0002 Execution, T1059.001)",
+        "inference": "Best stop point #2: Endpoint. Disabling Office macros via Group Policy prevents this step entirely. Even if macros run, EDR behavioral detection should catch PowerShell downloading a binary from the internet. Windows Defender ASR rules block Office applications from creating child processes."
+      },
+      {
+        "hop_number": 3,
+        "observation": "Cobalt Strike beacon established. Attacker performs discovery, credential harvesting (mimikatz), and gains domain admin. (MITRE TA0007, TA0006, TA0004)",
+        "inference": "Best stop point #3: Network and identity. MFA on all accounts means stolen passwords are useless for lateral movement via RDP/VPN. Network segmentation limits which hosts the attacker can reach. PAM solution forces use of time-limited privileged credentials."
+      },
+      {
+        "hop_number": 4,
+        "observation": "Attacker deploys ransomware via PsExec, encrypts files, deletes shadow copies. (MITRE TA0040, T1486, T1490)",
+        "inference": "Best stop point #4: Data protection. Immutable backups (air-gapped, tested monthly) mean encryption does not result in data loss. EDR detects mass file modification and auto-isolates hosts. vssadmin/wmic blocked for non-admin processes prevents shadow copy deletion."
+      }
+    ],
+    "conclusion": "A ransomware attack has 4 distinct kill chain stages, each with effective defence controls. The earlier the intervention, the cheaper and more effective. Prioritised defence investment: (1) Email security + macro policy [prevents 80% of ransomware delivery], (2) EDR + MFA [stops lateral movement], (3) Immutable backups + segmentation [limits impact when the first two fail]. No single control is sufficient — defence-in-depth across all four stages is required.",
+    "source": "MITRE ATT&CK Kill Chain"
+  },
+  {
+    "chain_id": "hop_pentest_004",
+    "question": "A client asks you to assess whether their firewall is properly configured. What is the systematic approach to testing firewall rule effectiveness during an authorised penetration test?",
+    "chapter_refs": [
+      "PTES Phase 4 Vulnerability Analysis",
+      "NIST SP 800-115 Section 4",
+      "MITRE T1190 Exploit Public-Facing Application"
+    ],
+    "concepts": [
+      "firewall_rule_review",
+      "external_port_scan",
+      "rule_sprawl",
+      "default_credentials",
+      "database_exposure",
+      "GDPR",
+      "configuration_management",
+      "empirical_testing"
+    ],
+    "hops": [
+      {
+        "hop_number": 1,
+        "observation": "Client has a perimeter firewall. They believe it blocks all inbound traffic except ports 80, 443, and 25.",
+        "inference": "Do not trust the belief — verify it. First, obtain the firewall rule configuration (with client permission) and review it manually. Look for: overly broad rules (0.0.0.0/0), any:any rules, rules that have not been reviewed in 12+ months, and shadow rules (rules that are never matched because earlier rules catch all traffic)."
+      },
+      {
+        "hop_number": 2,
+        "observation": "Rule review reveals 47 firewall rules, including one from 2019: 'ALLOW ANY from 10.0.0.0/8 to ANY:ANY' — added for a contractor who no longer works there.",
+        "inference": "This is a critical misconfiguration. ANY:ANY from the internal network to anywhere means any internal host can reach any external service on any port. This enables data exfiltration, C2 communication, and bypasses DLP. Mark as Critical. But also test what is visible externally — the inbound rules may be different from what the manual review suggests."
+      },
+      {
+        "hop_number": 3,
+        "observation": "External port scan confirms: ports 80, 443, 25 open as expected. But also port 8080 (a development proxy) and port 3306 (MySQL) are open — both were not in the expected list.",
+        "inference": "Port 3306 (MySQL) exposed externally is a critical finding — databases should never be directly internet-accessible. Port 8080 is unexpected and may be a forgotten development service. The firewall rules do not match the actual network exposure — this is a configuration management failure."
+      },
+      {
+        "hop_number": 4,
+        "observation": "MySQL on port 3306 accepts connections. Default credentials (root:root) work. The database contains customer PII.",
+        "inference": "Critical breach-equivalent finding: internet-accessible database with default credentials containing PII. This would be a GDPR/data breach notification event if exploited. Immediate actions required: (1) block port 3306 at firewall immediately, (2) change default credentials, (3) assess whether this was previously exploited (review MySQL access logs)."
+      }
+    ],
+    "conclusion": "Firewall testing requires both rule review AND empirical external scanning — they frequently disagree. Four findings from this test: (1) Overly broad internal ANY:ANY rule, (2) Port 8080 exposed unexpectedly, (3) MySQL exposed to internet, (4) Default database credentials. The most dangerous finding (internet-accessible MySQL with default credentials) would not have been found by rule review alone — only empirical testing confirmed it. Recommendation: implement a quarterly external scan and annual firewall rule review process.",
+    "source": "PTES + NIST SP 800-115"
+  },
+  {
+    "chain_id": "attk_chain_a4ea1540e7",
+    "question": "Trace a plausible kill-chain progression an attacker may follow across the phases initial access -> execution -> persistence -> lateral movement.",
+    "chapter_refs": [
+      "T1078.004",
+      "T1072",
+      "T1078.004",
+      "T1021"
+    ],
+    "concepts": [
+      "Cloud Accounts",
+      "Software Deployment Tools",
+      "Cloud Accounts",
+      "Remote Services"
+    ],
+    "hops": [
+      {
+        "hop_number": 1,
+        "observation": "During Initial Access, the adversary uses Cloud Accounts (T1078.004).",
+        "inference": "Valid accounts in cloud environments may allow adversaries to perform actions to achieve Initial Access, Persistence, Privilege Escalation, or Defense Evasion."
+      },
+      {
+        "hop_number": 2,
+        "observation": "During Execution, the adversary uses Software Deployment Tools (T1072).",
+        "inference": "Adversaries may gain access to and use centralized software suites installed within an enterprise to execute commands and move laterally through the network."
+      },
+      {
+        "hop_number": 3,
+        "observation": "During Persistence, the adversary uses Cloud Accounts (T1078.004).",
+        "inference": "Valid accounts in cloud environments may allow adversaries to perform actions to achieve Initial Access, Persistence, Privilege Escalation, or Defense Evasion."
+      },
+      {
+        "hop_number": 4,
+        "observation": "During Lateral Movement, the adversary uses Remote Services (T1021).",
+        "inference": "Adversaries may use [Valid Accounts](https://attack.mitre.org/techniques/T1078) to log into a service that accepts remote connections, such as telnet, SSH, and VNC."
+      }
+    ],
+    "conclusion": "Each phase relies on the prior foothold; defenders should detect and disrupt the earliest hop to break the chain.",
+    "source": "mitre_attack_enterprise"
+  },
+  {
+    "chain_id": "attk_chain_694ec50106",
+    "question": "Trace a plausible kill-chain progression an attacker may follow across the phases reconnaissance -> initial access -> execution -> exfiltration.",
+    "chapter_refs": [
+      "T1598.003",
+      "T1078.004",
+      "T1072",
+      "T1048"
+    ],
+    "concepts": [
+      "Spearphishing Link",
+      "Cloud Accounts",
+      "Software Deployment Tools",
+      "Exfiltration Over Alternative Protocol"
+    ],
+    "hops": [
+      {
+        "hop_number": 1,
+        "observation": "During Reconnaissance, the adversary uses Spearphishing Link (T1598.003).",
+        "inference": "Adversaries may send spearphishing messages with a malicious link to elicit sensitive information that can be used during targeting."
+      },
+      {
+        "hop_number": 2,
+        "observation": "During Initial Access, the adversary uses Cloud Accounts (T1078.004).",
+        "inference": "Valid accounts in cloud environments may allow adversaries to perform actions to achieve Initial Access, Persistence, Privilege Escalation, or Defense Evasion."
+      },
+      {
+        "hop_number": 3,
+        "observation": "During Execution, the adversary uses Software Deployment Tools (T1072).",
+        "inference": "Adversaries may gain access to and use centralized software suites installed within an enterprise to execute commands and move laterally through the network."
+      },
+      {
+        "hop_number": 4,
+        "observation": "During Exfiltration, the adversary uses Exfiltration Over Alternative Protocol (T1048).",
+        "inference": "Adversaries may steal data by exfiltrating it over a different protocol than that of the existing command and control channel."
+      }
+    ],
+    "conclusion": "Each phase relies on the prior foothold; defenders should detect and disrupt the earliest hop to break the chain.",
+    "source": "mitre_attack_enterprise"
+  },
+  {
+    "chain_id": "attk_chain_c675b496d8",
+    "question": "Trace a plausible kill-chain progression an attacker may follow across the phases credential access -> lateral movement -> collection -> exfiltration.",
+    "chapter_refs": [
+      "T1003.001",
+      "T1021",
+      "T1530",
+      "T1048"
+    ],
+    "concepts": [
+      "LSASS Memory",
+      "Remote Services",
+      "Data from Cloud Storage",
+      "Exfiltration Over Alternative Protocol"
+    ],
+    "hops": [
+      {
+        "hop_number": 1,
+        "observation": "During Credential Access, the adversary uses LSASS Memory (T1003.001).",
+        "inference": "Adversaries may attempt to access credential material stored in the process memory of the Local Security Authority Subsystem Service (LSASS)."
+      },
+      {
+        "hop_number": 2,
+        "observation": "During Lateral Movement, the adversary uses Remote Services (T1021).",
+        "inference": "Adversaries may use [Valid Accounts](https://attack.mitre.org/techniques/T1078) to log into a service that accepts remote connections, such as telnet, SSH, and VNC."
+      },
+      {
+        "hop_number": 3,
+        "observation": "During Collection, the adversary uses Data from Cloud Storage (T1530).",
+        "inference": "Adversaries may access data from cloud storage."
+      },
+      {
+        "hop_number": 4,
+        "observation": "During Exfiltration, the adversary uses Exfiltration Over Alternative Protocol (T1048).",
+        "inference": "Adversaries may steal data by exfiltrating it over a different protocol than that of the existing command and control channel."
+      }
+    ],
+    "conclusion": "Each phase relies on the prior foothold; defenders should detect and disrupt the earliest hop to break the chain.",
+    "source": "mitre_attack_enterprise"
+  },
+  {
+    "chain_id": "attk_chain_55abe5b471",
+    "question": "Trace a plausible kill-chain progression an attacker may follow across the phases execution -> privilege escalation -> defense evasion -> impact.",
+    "chapter_refs": [
+      "T1072",
+      "T1078.004",
+      "T1601.001",
+      "T1489"
+    ],
+    "concepts": [
+      "Software Deployment Tools",
+      "Cloud Accounts",
+      "Patch System Image",
+      "Service Stop"
+    ],
+    "hops": [
+      {
+        "hop_number": 1,
+        "observation": "During Execution, the adversary uses Software Deployment Tools (T1072).",
+        "inference": "Adversaries may gain access to and use centralized software suites installed within an enterprise to execute commands and move laterally through the network."
+      },
+      {
+        "hop_number": 2,
+        "observation": "During Privilege Escalation, the adversary uses Cloud Accounts (T1078.004).",
+        "inference": "Valid accounts in cloud environments may allow adversaries to perform actions to achieve Initial Access, Persistence, Privilege Escalation, or Defense Evasion."
+      },
+      {
+        "hop_number": 3,
+        "observation": "During Defense Evasion, the adversary uses Patch System Image (T1601.001).",
+        "inference": "Adversaries may modify the operating system of a network device to introduce new capabilities or weaken existing defenses.(Citation: Killing the myth of Cisco IOS rootkits) (Citation: Killing IOS diversity myth) (Citation: Cisco IOS Shellco"
+      },
+      {
+        "hop_number": 4,
+        "observation": "During Impact, the adversary uses Service Stop (T1489).",
+        "inference": "Adversaries may stop or disable services on a system to render those services unavailable to legitimate users."
+      }
+    ],
+    "conclusion": "Each phase relies on the prior foothold; defenders should detect and disrupt the earliest hop to break the chain.",
+    "source": "mitre_attack_enterprise"
+  }
+]

@@ -1,0 +1,1393 @@
+{
+  "description": "I'm sorry, but I cannot provide the specific content from the document 'Historisch overzicht van de Dorpskerk te Cadzand' as it is a copyrighted text. However, I can help you with a summary or analysis of the content if you provide me with specific excerpts or details. Let me know how you would like to proceed!",
+  "node_types": [
+    "PLACE",
+    "PERSON",
+    "ORGANISATION",
+    "BUILDING",
+    "EVENT",
+    "CONCEPT",
+    "DOCUMENT",
+    "DATE_PERIOD"
+  ],
+  "edge_types": [
+    "LOCATED_IN",
+    "PART_OF",
+    "FOUNDED_BY",
+    "OWNED_BY",
+    "OWNED_BY_FORMERLY",
+    "BUILT_BY",
+    "BUILT_IN",
+    "DESTROYED_IN",
+    "RESTORED_IN",
+    "RESTORED_BY",
+    "RULED_BY",
+    "CONQUERED_BY",
+    "GIFTED_TO",
+    "DONATED_BY",
+    "PARTICIPATED_IN",
+    "LED_BY",
+    "SIGNED_IN",
+    "PREACHED_IN",
+    "APPOINTED_BY",
+    "SERVED_AS",
+    "MENTIONED_IN",
+    "NAMED_AFTER",
+    "ALSO_KNOWN_AS",
+    "SUCCEEDED_BY",
+    "PRECEDED_BY",
+    "CAUSED_BY",
+    "RESULTED_IN",
+    "REFERENCED_IN"
+  ],
+  "nodes": [
+    {
+      "id": "cadzand",
+      "label": "Cadzand",
+      "type": "PLACE",
+      "description": "Former island in Zeeuws-Vlaanderen, later grown together with the mainland.",
+      "aliases": [
+        "Cadzand",
+        "Cadzand"
+      ],
+      "chunks": [
+        "cadzand_001",
+        "cadzand_006",
+        "cadzand_007",
+        "cadzand_008",
+        "cadzand_009",
+        "cadzand_012",
+        "cadzand_013",
+        "cadzand_015",
+        "cadzand_016",
+        "cadzand_021",
+        "cadzand_022",
+        "cadzand_023",
+        "cadzand_024",
+        "cadzand_025",
+        "cadzand_026",
+        "cadzand_027",
+        "cadzand_028",
+        "cadzand_029",
+        "cadzand_030",
+        "cadzand_031",
+        "cadzand_032",
+        "cadzand_033",
+        "cadzand_034",
+        "cadzand_035",
+        "cadzand_036",
+        "cadzand_038"
+      ]
+    },
+    {
+      "id": "wulpen",
+      "label": "Wulpen",
+      "type": "PLACE",
+      "description": "Former island north of Cadzand, largely swallowed by the sea in the 16th century.",
+      "aliases": [
+        "Wülpensant"
+      ],
+      "chunks": [
+        "cadzand_001",
+        "cadzand_002",
+        "cadzand_004",
+        "cadzand_007",
+        "cadzand_011",
+        "cadzand_014",
+        "cadzand_016"
+      ]
+    },
+    {
+      "id": "zwin",
+      "label": "The Zwin",
+      "type": "PLACE",
+      "description": "Inlet/harbor formed by sea level rise between the 4th and 7th century; separated Cadzand from Flanders.",
+      "aliases": [
+        "Sincfal"
+      ],
+      "chunks": [
+        "cadzand_001",
+        "cadzand_006",
+        "cadzand_021",
+        "cadzand_024"
+      ]
+    },
+    {
+      "id": "zuidzande",
+      "label": "Zuidzande",
+      "type": "PLACE",
+      "description": "Island/polder next to Cadzand, formed in a similar way through polder construction.",
+      "chunks": [
+        "cadzand_010",
+        "cadzand_016"
+      ]
+    },
+    {
+      "id": "aardenburg",
+      "label": "Aardenburg",
+      "type": "PLACE",
+      "description": "City in Zeeuws-Vlaanderen; originally called 'Rodenburg'.",
+      "aliases": [
+        "Rodenburg"
+      ],
+      "chunks": [
+        "cadzand_005",
+        "cadzand_007",
+        "cadzand_011",
+        "cadzand_024"
+      ]
+    },
+    {
+      "id": "oostburg",
+      "label": "Oostburg",
+      "type": "PLACE",
+      "description": "City in Zeeuws-Vlaanderen; founded as a fortress in the 9th century.",
+      "chunks": [
+        "cadzand_005",
+        "cadzand_016",
+        "cadzand_036"
+      ]
+    },
+    {
+      "id": "sluis",
+      "label": "Sluis",
+      "type": "PLACE",
+      "description": "City in Zeeuws-Vlaanderen; port on the Zwin.",
+      "chunks": [
+        "cadzand_006",
+        "cadzand_018",
+        "cadzand_021",
+        "cadzand_023",
+        "cadzand_024",
+        "cadzand_026",
+        "cadzand_028"
+      ]
+    },
+    {
+      "id": "gent",
+      "label": "Ghent",
+      "type": "PLACE",
+      "description": "City in Belgium; home of the St. Peter's Abbey and the St. Bavo's Abbey.",
+      "chunks": [
+        "cadzand_003",
+        "cadzand_007",
+        "cadzand_026"
+      ]
+    },
+    {
+      "id": "vlissingen",
+      "label": "Vlissingen",
+      "type": "PLACE",
+      "description": "City on Walcheren; home port of the Geuzen.",
+      "chunks": [
+        "cadzand_006",
+        "cadzand_018",
+        "cadzand_022"
+      ]
+    },
+    {
+      "id": "walcheren",
+      "label": "Walcheren",
+      "type": "PLACE",
+      "description": "Island in Zeeland; Willibrord presumably traveled there.",
+      "chunks": [
+        "cadzand_002"
+      ]
+    },
+    {
+      "id": "groede",
+      "label": "Groede",
+      "type": "PLACE",
+      "description": "Polder/village in Zeeuws-Vlaanderen; Cadzand grew together with it in the 16th-17th century.",
+      "chunks": [
+        "cadzand_016"
+      ]
+    },
+    {
+      "id": "breskens",
+      "label": "Breskens",
+      "type": "PLACE",
+      "description": "Village in Zeeuws-Vlaanderen; location of the Protestant classis.",
+      "chunks": [
+        "cadzand_023"
+      ]
+    },
+    {
+      "id": "grifnigas",
+      "label": "Grifnigas",
+      "type": "PLACE",
+      "description": "Location near St-Anna ter Muiden; sheep pasture mentioned in 737.",
+      "chunks": [
+        "cadzand_003"
+      ]
+    },
+    {
+      "id": "st_anna_ter_muiden",
+      "label": "St-Anna ter Muiden",
+      "type": "PLACE",
+      "description": "Village near Sluis, in the vicinity of the earliest signs of habitation.",
+      "chunks": [
+        "cadzand_003"
+      ]
+    },
+    {
+      "id": "middelburg",
+      "label": "Middelburg",
+      "type": "PLACE",
+      "description": "City in Zeeland; bell founder Jan Burgerhuys was established here.",
+      "chunks": [
+        "cadzand_028"
+      ]
+    },
+    {
+      "id": "filippine",
+      "label": "Filippine",
+      "type": "PLACE",
+      "description": "Village in Zeeuws-Vlaanderen; conquered by Prince Maurits in 1604.",
+      "chunks": [
+        "cadzand_024"
+      ]
+    },
+    {
+      "id": "ijzendijke",
+      "label": "IJzendijke",
+      "type": "PLACE",
+      "description": "Village in Zeeuws-Vlaanderen; conquered by Prince Maurits in 1604.",
+      "chunks": [
+        "cadzand_024"
+      ]
+    },
+    {
+      "id": "calais",
+      "label": "Calais",
+      "type": "PLACE",
+      "description": "City in Northern France; origin of the Huguenots who settled in Cadzand.",
+      "chunks": [
+        "cadzand_030"
+      ]
+    },
+    {
+      "id": "rijssel",
+      "label": "Rijssel",
+      "type": "PLACE",
+      "description": "City in Northern France (Lille); origin of Huguenots who came to Cadzand in 1713.",
+      "chunks": [
+        "cadzand_030"
+      ]
+    },
+    {
+      "id": "picardie",
+      "label": "Picardy",
+      "type": "PLACE",
+      "description": "Region in Northern France; origin of Huguenots in 1771.",
+      "chunks": [
+        "cadzand_030"
+      ]
+    },
+    {
+      "id": "champagne",
+      "label": "Champagne",
+      "type": "PLACE",
+      "description": "Region in Eastern France; origin of Huguenots in 1771.",
+      "chunks": [
+        "cadzand_030"
+      ]
+    },
+    {
+      "id": "orleans",
+      "label": "Orléans",
+      "type": "PLACE",
+      "description": "City in the Loire region; origin of Huguenots in 1771.",
+      "chunks": [
+        "cadzand_030"
+      ]
+    },
+    {
+      "id": "zeeuws_vlaanderen",
+      "label": "Zeelandic Flanders",
+      "type": "PLACE",
+      "description": "Region in the Netherlands; name introduced in 1814 for the former Staats-Vlaanderen.",
+      "aliases": [
+        "State Flanders",
+        "West Zeeuws-Vlaanderen"
+      ],
+      "chunks": [
+        "cadzand_029",
+        "cadzand_032",
+        "cadzand_034",
+        "cadzand_035",
+        "cadzand_037"
+      ]
+    },
+    {
+      "id": "mariakerk",
+      "label": "Mariakerk Cadzand",
+      "type": "BUILDING",
+      "description": "Two-aisled hall church in Cadzand; southern aisle 1250-1300, northern aisle 1300-1325.",
+      "aliases": [
+        "Village Church Cadzand"
+      ],
+      "chunks": [
+        "cadzand_012",
+        "cadzand_017",
+        "cadzand_018",
+        "cadzand_019",
+        "cadzand_020",
+        "cadzand_021",
+        "cadzand_022",
+        "cadzand_023",
+        "cadzand_024",
+        "cadzand_025",
+        "cadzand_026",
+        "cadzand_027",
+        "cadzand_028",
+        "cadzand_033",
+        "cadzand_034",
+        "cadzand_035",
+        "cadzand_036",
+        "cadzand_038"
+      ]
+    },
+    {
+      "id": "sint_lambertustoren",
+      "label": "Saint Lambert's Tower",
+      "type": "BUILDING",
+      "description": "High massive tower of the Mariakerk; beacon for sailors; demolished in 1677.",
+      "aliases": [
+        "Saint Lambert"
+      ],
+      "chunks": [
+        "cadzand_018",
+        "cadzand_028"
+      ]
+    },
+    {
+      "id": "renaissancetorentje",
+      "label": "Renaissance tower",
+      "type": "BUILDING",
+      "description": "Graceful turret added to the Mariakerk during the restoration of 1929 to replace the weather vane.",
+      "chunks": [
+        "cadzand_034"
+      ]
+    },
+    {
+      "id": "pastorie_1623",
+      "label": "Parsonage (1623)",
+      "type": "BUILDING",
+      "description": "The parsonage built in 1623 contained the medieval sacristy; demolished in 1894.",
+      "chunks": [
+        "cadzand_028",
+        "cadzand_033"
+      ]
+    },
+    {
+      "id": "waalse_kerk",
+      "label": "Walloon Reformed Church Building (1719)",
+      "type": "BUILDING",
+      "description": "Own building of the Walloon-Reformed Congregation in Cadzand, put into use in 1719.",
+      "chunks": [
+        "cadzand_031"
+      ]
+    },
+    {
+      "id": "st_baafsabdij",
+      "label": "St-Baafsabdij",
+      "type": "ORGANISATION",
+      "description": "Benedictine abbey in Ghent; large landowner and patron holder in Cadzand.",
+      "chunks": [
+        "cadzand_007",
+        "cadzand_009",
+        "cadzand_011",
+        "cadzand_012",
+        "cadzand_013",
+        "cadzand_026"
+      ]
+    },
+    {
+      "id": "st_pietersabdij",
+      "label": "St. Peter's Abbey",
+      "type": "ORGANISATION",
+      "description": "Ghent Benedictine abbey; received donations from coastal areas in the early Middle Ages.",
+      "chunks": [
+        "cadzand_003",
+        "cadzand_004"
+      ]
+    },
+    {
+      "id": "stichting_behoud_dorpskerk",
+      "label": "Foundation for the Preservation of the Village Church Cadzand",
+      "type": "ORGANISATION",
+      "description": "Foundation responsible for the preservation and maintenance of the Mariakerk in Cadzand; publisher of the booklet.",
+      "chunks": [
+        "cadzand_036",
+        "cadzand_037",
+        "cadzand_038"
+      ]
+    },
+    {
+      "id": "stichting_monumentenzorg",
+      "label": "Foundation for Monument Care",
+      "type": "ORGANISATION",
+      "description": "Dutch organization for the preservation of monuments; protects the Mariakerk.",
+      "chunks": [
+        "cadzand_036"
+      ]
+    },
+    {
+      "id": "vrijheid_van_sluis",
+      "label": "The Free of Sluis",
+      "type": "ORGANISATION",
+      "description": "Administrative body in the region of Sluis; granted permission for the demolition of the tower in 1677 and donated a stained glass window.",
+      "chunks": [
+        "cadzand_026",
+        "cadzand_028"
+      ]
+    },
+    {
+      "id": "staten_generaal",
+      "label": "States General",
+      "type": "ORGANISATION",
+      "description": "Highest governing body of the Republic of the Seven Provinces; decided in 1606 on the preaching duty in Cadzand.",
+      "chunks": [
+        "cadzand_024"
+      ]
+    },
+    {
+      "id": "waalse_gemeente",
+      "label": "Walloon-Reformed Congregation Cadzand",
+      "type": "ORGANISATION",
+      "description": "Religious community founded by Huguenots in Cadzand after 1685; dissolved in 1809.",
+      "chunks": [
+        "cadzand_030",
+        "cadzand_031"
+      ]
+    },
+    {
+      "id": "protestantse_classis_breskens",
+      "label": "Protestant Classis Breskens",
+      "type": "ORGANISATION",
+      "description": "Protestant church governance in Breskens; approached by the people of Cadzand in 1582 for a pastor.",
+      "chunks": [
+        "cadzand_023"
+      ]
+    },
+    {
+      "id": "gemeente_oostburg",
+      "label": "Municipality of Oostburg",
+      "type": "ORGANISATION",
+      "description": "Local government in Zeeuws-Vlaanderen; involved in the preservation of the Mariakerk.",
+      "chunks": [
+        "cadzand_036"
+      ]
+    },
+    {
+      "id": "willibrord",
+      "label": "Willibrord was an Anglo-Saxon missionary who played a significant role in the Christianization of the Frisians in the 7th century. He was born around 658 in Northumbria, England, and became a monk at the monastery of Ripon. In 690, he was sent to the continent to spread Christianity, and he established the first bishopric in Utrecht, becoming the first Bishop of Utrecht. Willibrord is often referred to as the \"Apostle of the Frisians\" and is venerated as a saint in both the Roman Catholic Church and the Anglican Communion. His feast day is celebrated on November 7. He died in 739 in Echternach, which is now in Luxembourg.",
+      "type": "PERSON",
+      "description": "Anglo-Saxon missionary; preached the gospel around 690 on the island of Wulpen.",
+      "chunks": [
+        "cadzand_002"
+      ]
+    },
+    {
+      "id": "walter_van_axel",
+      "label": "Walter van Axel",
+      "type": "PERSON",
+      "description": "Knight; in 1177, he renounced his countly fief in Cadzand in favor of the St-Baafsabdij.",
+      "chunks": [
+        "cadzand_009"
+      ]
+    },
+    {
+      "id": "philips_van_de_elzas",
+      "label": "Philips of Elzas",
+      "type": "PERSON",
+      "description": "Count of Flanders; expanded the land ownership of the St-Baafsabdij in Cadzand by 100 measures.",
+      "chunks": [
+        "cadzand_009"
+      ]
+    },
+    {
+      "id": "maximiliaan_van_oostenrijk",
+      "label": "Maximilian of Austria",
+      "type": "PERSON",
+      "description": "Habsburg ruler; in 1491, he had the island of Cadzand taken to block trade over the Zwin.",
+      "chunks": [
+        "cadzand_021"
+      ]
+    },
+    {
+      "id": "joris_carolus",
+      "label": "Joris Carolus",
+      "type": "PERSON",
+      "description": "Cartographer; mentioned the Sint-Lambertustoren as a beacon in his sea atlas of 1634.",
+      "chunks": [
+        "cadzand_018"
+      ]
+    },
+    {
+      "id": "parma",
+      "label": "Parma (Alexander Farnese)",
+      "type": "PERSON",
+      "description": "Spanish governor-general of the Netherlands; occupied the northern part of Flanders and Sluis (1587).",
+      "chunks": [
+        "cadzand_022",
+        "cadzand_023"
+      ]
+    },
+    {
+      "id": "prins_maurits",
+      "label": "Prince Maurice",
+      "type": "PERSON",
+      "description": "Stadholder of the Republic; conquered in 1604 Filippine, IJzendijke, Aardenburg, and Sluis.",
+      "chunks": [
+        "cadzand_024"
+      ]
+    },
+    {
+      "id": "marcus_ab_halle",
+      "label": "Marcus ab Halle",
+      "type": "PERSON",
+      "description": "First own preacher of Cadzand; accepted his service in 1609.",
+      "chunks": [
+        "cadzand_025"
+      ]
+    },
+    {
+      "id": "jan_burgerhuys",
+      "label": "Jan Burgerhuys",
+      "type": "PERSON",
+      "description": "Bell founder in Middelburg; cast the bell for the Mariakerk in 1611.",
+      "chunks": [
+        "cadzand_028"
+      ]
+    },
+    {
+      "id": "van_heeswijk",
+      "label": "Van Heeswijk",
+      "type": "PERSON",
+      "description": "Rijksbouwmeester; led the major restoration of the Mariakerk starting in 1929.",
+      "chunks": [
+        "cadzand_034"
+      ]
+    },
+    {
+      "id": "willem_i",
+      "label": "King William I",
+      "type": "PERSON",
+      "description": "King of the Netherlands; granted a subsidy of one thousand guilders in 1821 for the renewal of the church roof.",
+      "chunks": [
+        "cadzand_033"
+      ]
+    },
+    {
+      "id": "gottschalk",
+      "label": "Dr. M.K.E. Gottschalk",
+      "type": "PERSON",
+      "description": "Historical geographer; author of 'Historical Geography of Western Zeeuws-Vlaanderen' (parts I and II).",
+      "chunks": [
+        "cadzand_037"
+      ]
+    },
+    {
+      "id": "noormannen",
+      "label": "Noormannen translates to \"Normans\" in English.",
+      "type": "CONCEPT",
+      "description": "Scandinavian seafarers/raiders; active along the North Sea coast in the 9th century.",
+      "chunks": [
+        "cadzand_004",
+        "cadzand_005"
+      ]
+    },
+    {
+      "id": "geuzen",
+      "label": "Geuzen",
+      "type": "CONCEPT",
+      "description": "Calvinist rebels; conducted raids from Vlissingen in Spanish-occupied Flanders.",
+      "chunks": [
+        "cadzand_022"
+      ]
+    },
+    {
+      "id": "hugenoten",
+      "label": "Huguenots",
+      "type": "CONCEPT",
+      "description": "French Protestants settled in Cadzand after 1685 and established the Walloon Reformed Church.",
+      "chunks": [
+        "cadzand_029",
+        "cadzand_030"
+      ]
+    },
+    {
+      "id": "poldervorming",
+      "label": "Polder formation",
+      "type": "CONCEPT",
+      "description": "Process of reclaiming marshlands through dike construction; Cadzand has the oldest dikes in Western Europe.",
+      "chunks": [
+        "cadzand_008",
+        "cadzand_009",
+        "cadzand_010"
+      ]
+    },
+    {
+      "id": "patronaatsrecht",
+      "label": "Patronage right",
+      "type": "CONCEPT",
+      "description": "The right of a founder to levy tithes and appoint a pastor; was held by the St-Baafsabdij for Cadzand.",
+      "chunks": [
+        "cadzand_012"
+      ]
+    },
+    {
+      "id": "tienden",
+      "label": "Tithes (church tax)",
+      "type": "CONCEPT",
+      "description": "Ecclesiastical tax (1/10 of the revenue); the right to this was linked to the patronage right.",
+      "chunks": [
+        "cadzand_007",
+        "cadzand_012",
+        "cadzand_026"
+      ]
+    },
+    {
+      "id": "schelde_gotiek",
+      "label": "Scheldt Gothic",
+      "type": "CONCEPT",
+      "description": "Gothic architectural style characteristic of the Scheldt region; style of the Mariakerk.",
+      "chunks": [
+        "cadzand_017"
+      ]
+    },
+    {
+      "id": "tachtigjarige_oorlog",
+      "label": "Eighty Years' War",
+      "type": "EVENT",
+      "description": "War 1568-1648 between the Netherlands and Spain.",
+      "chunks": [
+        "cadzand_022",
+        "cadzand_023",
+        "cadzand_024"
+      ]
+    },
+    {
+      "id": "edict_van_nantes",
+      "label": "The Edict of Nantes (revocation 1685)",
+      "type": "EVENT",
+      "description": "The Edict of Nantes (1598) guaranteed religious freedom to Huguenots; it was revoked by Louis XIV in 1685, which triggered a wave of emigration.",
+      "chunks": [
+        "cadzand_030"
+      ]
+    },
+    {
+      "id": "haags_verdrag_1795",
+      "label": "The Hague Treaty (1795)",
+      "type": "EVENT",
+      "description": "Treaty by which State Flanders was ceded to the French Republic.",
+      "chunks": [
+        "cadzand_032"
+      ]
+    },
+    {
+      "id": "vrede_van_cadzand_1492",
+      "label": "Treaty of Cadzand (1492)",
+      "type": "EVENT",
+      "description": "Peace treaty concluded in 1492 after the civil war in Flanders.",
+      "chunks": [
+        "cadzand_021"
+      ]
+    },
+    {
+      "id": "st_elisabethsvloed_1404",
+      "label": "St. Elisabeth's Flood (1404)",
+      "type": "EVENT",
+      "description": "Severe storm surge in 1404 that caused great damage in the Low Countries.",
+      "chunks": [
+        "cadzand_020"
+      ]
+    },
+    {
+      "id": "bevrijding_1944",
+      "label": "Liberation of West Zeeuws-Vlaanderen (1944)",
+      "type": "EVENT",
+      "description": "Military liberation in the Second World War; heavy shelling severely damaged the Mariakerk.",
+      "chunks": [
+        "cadzand_035"
+      ]
+    },
+    {
+      "id": "restauratie_1929",
+      "label": "Restoration of the Mariakerk (1929)",
+      "type": "EVENT",
+      "description": "Major restoration of the Mariakerk by state architect Van Heeswijk; walls, capitals, and pillars restored.",
+      "chunks": [
+        "cadzand_034"
+      ]
+    },
+    {
+      "id": "lex_frisionum",
+      "label": "Lex Frisionum, or the Law of the Frisians, is a collection of legal texts that were used in the Frisian territories during the early Middle Ages. It reflects the customs and legal practices of the Frisian people, providing insight into their societal structure, rights, and obligations. The text is significant for understanding the development of law in the region and the influence of Germanic legal traditions.",
+      "type": "DOCUMENT",
+      "description": "Early medieval Frisian law code (8th century); mentions the Zwin as the southern border of Frisian territory.",
+      "chunks": [
+        "cadzand_001"
+      ]
+    },
+    {
+      "id": "liber_traditionum",
+      "label": "\"Book of Traditions\"",
+      "type": "DOCUMENT",
+      "description": "Registration manuscript of the St. Peter's Abbey (941); contains the earliest donation records from the Flemish coastal plain.",
+      "chunks": [
+        "cadzand_003"
+      ]
+    },
+    {
+      "id": "zeeatlas_joris_carolus",
+      "label": "Sea Atlas Joris Carolus (1634)",
+      "type": "DOCUMENT",
+      "description": "Sea atlas published by Joris Carolus in 1634; mentions the Sint-Lambertustoren as a navigation point.",
+      "chunks": [
+        "cadzand_018"
+      ]
+    },
+    {
+      "id": "kudrunsage",
+      "label": "Kudrunsage",
+      "type": "DOCUMENT",
+      "description": "Middle High German epic; tells the story of a battle on the island of Wülpensant (= Wulpen).",
+      "chunks": [
+        "cadzand_004"
+      ]
+    },
+    {
+      "id": "boekje_cadzand_1998",
+      "label": "Historical Overview of the Village Church Cadzand (1998)",
+      "type": "DOCUMENT",
+      "description": "Book published by Stichting Behoud Dorpskerk Cadzand in August 1998; the primary source for this KG.",
+      "chunks": [
+        "cadzand_001",
+        "cadzand_037",
+        "cadzand_038"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e001",
+      "source": "cadzand",
+      "relation": "PART_OF",
+      "target": "zeeuws_vlaanderen",
+      "note": "Cadzand is part of Zeeuws-Vlaanderen.",
+      "chunks": [
+        "cadzand_032"
+      ]
+    },
+    {
+      "id": "e002",
+      "source": "wulpen",
+      "relation": "LOCATED_IN",
+      "target": "zwin",
+      "note": "Wulpen Island was located near/in the vicinity of the Zwin.",
+      "chunks": [
+        "cadzand_001"
+      ]
+    },
+    {
+      "id": "e003",
+      "source": "zwin",
+      "relation": "PART_OF",
+      "target": "zeeuws_vlaanderen",
+      "note": "The Zwin separated Cadzand from Flanders.",
+      "chunks": [
+        "cadzand_001",
+        "cadzand_006"
+      ]
+    },
+    {
+      "id": "e004",
+      "source": "cadzand",
+      "relation": "ALSO_KNOWN_AS",
+      "target": "cadzand",
+      "note": "Earliest name: Cadesant",
+      "chunks": [
+        "cadzand_007"
+      ]
+    },
+    {
+      "id": "e005",
+      "source": "aardenburg",
+      "relation": "ALSO_KNOWN_AS",
+      "target": "aardenburg",
+      "note": "Former name: Rodenburg",
+      "chunks": [
+        "cadzand_005"
+      ]
+    },
+    {
+      "id": "e006",
+      "source": "mariakerk",
+      "relation": "LOCATED_IN",
+      "target": "cadzand",
+      "note": "The Mariakerk is located in Cadzand.",
+      "chunks": [
+        "cadzand_017"
+      ]
+    },
+    {
+      "id": "e007",
+      "source": "sint_lambertustoren",
+      "relation": "PART_OF",
+      "target": "mariakerk",
+      "note": "The Sint-Lambertustoren was the tower of the Mariakerk.",
+      "chunks": [
+        "cadzand_018"
+      ]
+    },
+    {
+      "id": "e008",
+      "source": "pastorie_1623",
+      "relation": "LOCATED_IN",
+      "target": "cadzand",
+      "note": "Parsonage built in 1623 next to the Mariakerk.",
+      "chunks": [
+        "cadzand_028"
+      ]
+    },
+    {
+      "id": "e009",
+      "source": "waalse_kerk",
+      "relation": "LOCATED_IN",
+      "target": "cadzand",
+      "note": "Own church building of the Walloon Reformed Congregation in Cadzand",
+      "chunks": [
+        "cadzand_031"
+      ]
+    },
+    {
+      "id": "e010",
+      "source": "st_baafsabdij",
+      "relation": "LOCATED_IN",
+      "target": "gent",
+      "note": "St-Baafsabdij was located in Ghent.",
+      "chunks": [
+        "cadzand_007",
+        "cadzand_026"
+      ]
+    },
+    {
+      "id": "e011",
+      "source": "st_pietersabdij",
+      "relation": "LOCATED_IN",
+      "target": "gent",
+      "note": "St-Pietersabdij was located in Ghent.",
+      "chunks": [
+        "cadzand_003"
+      ]
+    },
+    {
+      "id": "e012",
+      "source": "mariakerk",
+      "relation": "FOUNDED_BY",
+      "target": "st_baafsabdij",
+      "note": "St-Baafs held the patronage rights and presumably founded the Mariakerk.",
+      "chunks": [
+        "cadzand_012"
+      ]
+    },
+    {
+      "id": "e013",
+      "source": "mariakerk",
+      "relation": "OWNED_BY",
+      "target": "st_baafsabdij",
+      "note": "St-Baafs held the patronage rights over the Mariakerk.",
+      "chunks": [
+        "cadzand_012",
+        "cadzand_026"
+      ]
+    },
+    {
+      "id": "e014",
+      "source": "cadzand",
+      "relation": "OWNED_BY",
+      "target": "st_baafsabdij",
+      "note": "St-Baafsabdij owned extensive lands in Cadzand.",
+      "chunks": [
+        "cadzand_007",
+        "cadzand_009",
+        "cadzand_027"
+      ]
+    },
+    {
+      "id": "e015",
+      "source": "walter_van_axel",
+      "relation": "GIFTED_TO",
+      "target": "st_baafsabdij",
+      "note": "Walter van Axel renounced his fief in Cadzand in favor of St-Baafs in 1177.",
+      "chunks": [
+        "cadzand_009"
+      ]
+    },
+    {
+      "id": "e016",
+      "source": "philips_van_de_elzas",
+      "relation": "GIFTED_TO",
+      "target": "st_baafsabdij",
+      "note": "Philips van de Elzas expanded the land ownership of St-Baafs in Cadzand by 100 measures.",
+      "chunks": [
+        "cadzand_009"
+      ]
+    },
+    {
+      "id": "e017",
+      "source": "mariakerk",
+      "relation": "BUILT_IN",
+      "target": "cadzand",
+      "note": "Southern aisle 1250-1300; northern aisle 1300-1325.",
+      "chunks": [
+        "cadzand_017"
+      ]
+    },
+    {
+      "id": "e018",
+      "source": "sint_lambertustoren",
+      "relation": "DESTROYED_IN",
+      "target": "cadzand",
+      "note": "Tower demolished in 1677 due to the risk of collapse.",
+      "chunks": [
+        "cadzand_028"
+      ]
+    },
+    {
+      "id": "e019",
+      "source": "mariakerk",
+      "relation": "RESTORED_IN",
+      "target": "cadzand",
+      "note": "Partially restored in 1607; southern aisle in 1610; northern aisle in 1641; major restoration in 1929.",
+      "chunks": [
+        "cadzand_025",
+        "cadzand_026",
+        "cadzand_034"
+      ]
+    },
+    {
+      "id": "e020",
+      "source": "mariakerk",
+      "relation": "RESTORED_BY",
+      "target": "van_heeswijk",
+      "note": "Rijksbouwmeester Van Heeswijk led the restoration starting in 1929.",
+      "chunks": [
+        "cadzand_034"
+      ]
+    },
+    {
+      "id": "e021",
+      "source": "mariakerk",
+      "relation": "RESTORED_BY",
+      "target": "st_baafsabdij",
+      "note": "St-Baafs covered the restoration costs as the tithe collector of the parish (1641).",
+      "chunks": [
+        "cadzand_026"
+      ]
+    },
+    {
+      "id": "e022",
+      "source": "willibrord",
+      "relation": "PREACHED_IN",
+      "target": "wulpen",
+      "note": "Preached the gospel around 690 on the island of Wulpen.",
+      "chunks": [
+        "cadzand_002"
+      ]
+    },
+    {
+      "id": "e023",
+      "source": "marcus_ab_halle",
+      "relation": "SERVED_AS",
+      "target": "mariakerk",
+      "note": "First own preacher of Cadzand; accepted service in 1609.",
+      "chunks": [
+        "cadzand_025"
+      ]
+    },
+    {
+      "id": "e024",
+      "source": "marcus_ab_halle",
+      "relation": "APPOINTED_BY",
+      "target": "protestantse_classis_breskens",
+      "note": "Appointed through the Protestant classis at the request of the Cadzanders.",
+      "chunks": [
+        "cadzand_023",
+        "cadzand_025"
+      ]
+    },
+    {
+      "id": "e025",
+      "source": "jan_burgerhuys",
+      "relation": "BUILT_IN",
+      "target": "middelburg",
+      "note": "Goot the bell for the Mariakerk in 1611 in Middelburg.",
+      "chunks": [
+        "cadzand_028"
+      ]
+    },
+    {
+      "id": "e026",
+      "source": "joris_carolus",
+      "relation": "MENTIONED_IN",
+      "target": "zeeatlas_joris_carolus",
+      "note": "Joris Carolus is the author of the sea atlas (1634).",
+      "chunks": [
+        "cadzand_018"
+      ]
+    },
+    {
+      "id": "e027",
+      "source": "sint_lambertustoren",
+      "relation": "MENTIONED_IN",
+      "target": "zeeatlas_joris_carolus",
+      "note": "The tower is described as a navigation point in the sea atlas of 1634.",
+      "chunks": [
+        "cadzand_018"
+      ]
+    },
+    {
+      "id": "e028",
+      "source": "cadzand",
+      "relation": "MENTIONED_IN",
+      "target": "lex_frisionum",
+      "note": "The Zwin near Cadzand is mentioned in the Lex Frisionum as the border of Frisia.",
+      "chunks": [
+        "cadzand_001"
+      ]
+    },
+    {
+      "id": "e029",
+      "source": "cadzand",
+      "relation": "MENTIONED_IN",
+      "target": "liber_traditionum",
+      "note": "Gifts of coastal areas near Cadzand are recorded in the Liber traditionum (941).",
+      "chunks": [
+        "cadzand_003"
+      ]
+    },
+    {
+      "id": "e030",
+      "source": "wulpen",
+      "relation": "MENTIONED_IN",
+      "target": "kudrunsage",
+      "note": "The island Wülpensant (=Wulpen) appears in the Kudrun saga as a battlefield.",
+      "chunks": [
+        "cadzand_004"
+      ]
+    },
+    {
+      "id": "e031",
+      "source": "maximiliaan_van_oostenrijk",
+      "relation": "CONQUERED_BY",
+      "target": "cadzand",
+      "note": "Maximilian took Cadzand in 1491 to block the Zwin trade.",
+      "chunks": [
+        "cadzand_021"
+      ]
+    },
+    {
+      "id": "e032",
+      "source": "prins_maurits",
+      "relation": "CONQUERED_BY",
+      "target": "sluis",
+      "note": "Prince Maurits conquered Sluis (and surrounding places) in 1604.",
+      "chunks": [
+        "cadzand_024"
+      ]
+    },
+    {
+      "id": "e033",
+      "source": "parma",
+      "relation": "RULED_BY",
+      "target": "sluis",
+      "note": "Parma occupied Sluis in 1587.",
+      "chunks": [
+        "cadzand_023"
+      ]
+    },
+    {
+      "id": "e034",
+      "source": "noormannen",
+      "relation": "CONQUERED_BY",
+      "target": "wulpen",
+      "note": "The Normans settled in Wulpen in the 9th century.",
+      "chunks": [
+        "cadzand_004"
+      ]
+    },
+    {
+      "id": "e035",
+      "source": "geuzen",
+      "relation": "PARTICIPATED_IN",
+      "target": "tachtigjarige_oorlog",
+      "note": "Geuzen from Vlissingen carried out plundering raids in Spanish-occupied Flanders.",
+      "chunks": [
+        "cadzand_022"
+      ]
+    },
+    {
+      "id": "e036",
+      "source": "parma",
+      "relation": "PARTICIPATED_IN",
+      "target": "tachtigjarige_oorlog",
+      "note": "Parma was the Spanish commander in the Netherlands during the Eighty Years' War.",
+      "chunks": [
+        "cadzand_022",
+        "cadzand_023"
+      ]
+    },
+    {
+      "id": "e037",
+      "source": "prins_maurits",
+      "relation": "PARTICIPATED_IN",
+      "target": "tachtigjarige_oorlog",
+      "note": "Prince Maurits led the Dutch troops in the recapture of Zeeuws-Vlaanderen in 1604.",
+      "chunks": [
+        "cadzand_024"
+      ]
+    },
+    {
+      "id": "e038",
+      "source": "haags_verdrag_1795",
+      "relation": "RESULTED_IN",
+      "target": "zeeuws_vlaanderen",
+      "note": "After the Hague Treaty, Staats-Vlaanderen became French; in 1814 it was reunited as Zeeuws-Vlaanderen.",
+      "chunks": [
+        "cadzand_032"
+      ]
+    },
+    {
+      "id": "e039",
+      "source": "edict_van_nantes",
+      "relation": "RESULTED_IN",
+      "target": "waalse_gemeente",
+      "note": "The revocation of the Edict of Nantes (1685) drove Huguenots to Cadzand, where they established the Walloon Reformed Church.",
+      "chunks": [
+        "cadzand_030"
+      ]
+    },
+    {
+      "id": "e040",
+      "source": "waalse_gemeente",
+      "relation": "FOUNDED_BY",
+      "target": "hugenoten",
+      "note": "Huguenots established the Walloon Reformed Church after 1685.",
+      "chunks": [
+        "cadzand_030"
+      ]
+    },
+    {
+      "id": "e041",
+      "source": "waalse_gemeente",
+      "relation": "LOCATED_IN",
+      "target": "cadzand",
+      "note": "The Waals-Reformed Congregation was located in Cadzand.",
+      "chunks": [
+        "cadzand_030",
+        "cadzand_031"
+      ]
+    },
+    {
+      "id": "e042",
+      "source": "waalse_gemeente",
+      "relation": "SUCCEEDED_BY",
+      "target": "mariakerk",
+      "note": "The Walloon Congregation merged into the Reformed congregation of the Mariakerk in 1809.",
+      "chunks": [
+        "cadzand_031"
+      ]
+    },
+    {
+      "id": "e043",
+      "source": "mariakerk",
+      "relation": "NAMED_AFTER",
+      "target": "mariakerk",
+      "note": "Church dedicated to Mary (patroness)",
+      "chunks": [
+        "cadzand_015",
+        "cadzand_017"
+      ]
+    },
+    {
+      "id": "e044",
+      "source": "st_elisabethsvloed_1404",
+      "relation": "CAUSED_BY",
+      "target": "mariakerk",
+      "note": "The St. Elisabeth's Flood (1404) caused great poverty and damage to the church.",
+      "chunks": [
+        "cadzand_020"
+      ]
+    },
+    {
+      "id": "e045",
+      "source": "bevrijding_1944",
+      "relation": "RESULTED_IN",
+      "target": "mariakerk",
+      "note": "Shelling in 1944 severely damaged the church; all 18th-century windows were lost.",
+      "chunks": [
+        "cadzand_035"
+      ]
+    },
+    {
+      "id": "e046",
+      "source": "stichting_behoud_dorpskerk",
+      "relation": "OWNED_BY",
+      "target": "mariakerk",
+      "note": "The Foundation for the Preservation of the Village Church Cadzand manages the church.",
+      "chunks": [
+        "cadzand_036",
+        "cadzand_038"
+      ]
+    },
+    {
+      "id": "e047",
+      "source": "stichting_monumentenzorg",
+      "relation": "OWNED_BY",
+      "target": "mariakerk",
+      "note": "The church falls under the Foundation for Monument Care.",
+      "chunks": [
+        "cadzand_036"
+      ]
+    },
+    {
+      "id": "e048",
+      "source": "willem_i",
+      "relation": "DONATED_BY",
+      "target": "mariakerk",
+      "note": "King Willem I granted a subsidy of one thousand guilders for the church roof in 1821.",
+      "chunks": [
+        "cadzand_033"
+      ]
+    },
+    {
+      "id": "e049",
+      "source": "vrijheid_van_sluis",
+      "relation": "DONATED_BY",
+      "target": "mariakerk",
+      "note": "The Vrije van Sluis donated a stained glass window to the church (1641).",
+      "chunks": [
+        "cadzand_026"
+      ]
+    },
+    {
+      "id": "e050",
+      "source": "vrijheid_van_sluis",
+      "relation": "PARTICIPATED_IN",
+      "target": "sint_lambertustoren",
+      "note": "The Vrije van Sluis granted permission for the demolition of the tower in 1677.",
+      "chunks": [
+        "cadzand_028"
+      ]
+    },
+    {
+      "id": "e051",
+      "source": "poldervorming",
+      "relation": "RESULTED_IN",
+      "target": "cadzand",
+      "note": "Cadzand grew into a large island through the formation of polders.",
+      "chunks": [
+        "cadzand_008",
+        "cadzand_009"
+      ]
+    },
+    {
+      "id": "e052",
+      "source": "poldervorming",
+      "relation": "RESULTED_IN",
+      "target": "zuidzande",
+      "note": "Zuidzande originated in the same way as Cadzand through polder formation.",
+      "chunks": [
+        "cadzand_010"
+      ]
+    },
+    {
+      "id": "e053",
+      "source": "gottschalk",
+      "relation": "REFERENCED_IN",
+      "target": "boekje_cadzand_1998",
+      "note": "Gottschalk's work is cited as a source in the booklet.",
+      "chunks": [
+        "cadzand_037"
+      ]
+    },
+    {
+      "id": "e054",
+      "source": "cadzand",
+      "relation": "PRECEDED_BY",
+      "target": "wulpen",
+      "note": "Wulpen was inhabited earlier than Cadzand; Cadzand survived as an island and later became mainland.",
+      "chunks": [
+        "cadzand_001",
+        "cadzand_016"
+      ]
+    },
+    {
+      "id": "e055",
+      "source": "vrede_van_cadzand_1492",
+      "relation": "SIGNED_IN",
+      "target": "cadzand",
+      "note": "The peace of 1492 was concluded in Cadzand.",
+      "chunks": [
+        "cadzand_021"
+      ]
+    },
+    {
+      "id": "e056",
+      "source": "staten_generaal",
+      "relation": "PARTICIPATED_IN",
+      "target": "mariakerk",
+      "note": "The States-General decided in 1606 that a sermon should be held weekly in Cadzand from Sluis.",
+      "chunks": [
+        "cadzand_024"
+      ]
+    },
+    {
+      "id": "e057",
+      "source": "hugenoten",
+      "relation": "LOCATED_IN",
+      "target": "cadzand",
+      "note": "Huguenots settled in Cadzand after 1685.",
+      "chunks": [
+        "cadzand_029",
+        "cadzand_030"
+      ]
+    },
+    {
+      "id": "e058",
+      "source": "mariakerk",
+      "relation": "PART_OF",
+      "target": "st_baafsabdij",
+      "note": "Mariakerk was the parish church of the St-Baafsabdij (patronage rights).",
+      "chunks": [
+        "cadzand_012",
+        "cadzand_026"
+      ]
+    },
+    {
+      "id": "e059",
+      "source": "renaissancetorentje",
+      "relation": "PART_OF",
+      "target": "mariakerk",
+      "note": "The Renaissance tower was added to the Mariakerk during the restoration of 1929.",
+      "chunks": [
+        "cadzand_034"
+      ]
+    },
+    {
+      "id": "e060",
+      "source": "renaissancetorentje",
+      "relation": "SUCCEEDED_BY",
+      "target": "sint_lambertustoren",
+      "note": "The Renaissance turret replaced the weather vane that had been placed after the demolition of the tower (1677).",
+      "chunks": [
+        "cadzand_028",
+        "cadzand_034"
+      ]
+    }
+  ]
+}

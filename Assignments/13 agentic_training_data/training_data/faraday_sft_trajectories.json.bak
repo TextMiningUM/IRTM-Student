@@ -1,0 +1,1277 @@
+[
+  {
+    "trajectory_id": "faraday_traj_001",
+    "task": "Retrieve information about Faraday's iron-ring electromagnetic induction experiment and explain why the galvanometer deflection was transient.",
+    "chunks_required": ["faraday_001"],
+    "steps": [
+      {
+        "step": 1,
+        "type": "plan",
+        "thought": "The question asks about Faraday's iron-ring experiment and the transient nature of the induced current. I need to retrieve the chunk covering Series I §1–6."
+      },
+      {
+        "step": 2,
+        "type": "retrieve",
+        "query": "iron ring electromagnetic induction transient galvanometer deflection",
+        "retrieved_chunk_ids": ["faraday_001"],
+        "rationale": "The iron-ring discovery is in Series I §1–6, chunk faraday_001."
+      },
+      {
+        "step": 3,
+        "type": "extract",
+        "chunk_id": "faraday_001",
+        "extracted_facts": [
+          "Iron ring: seven-eighths of an inch thick, six inches in external diameter",
+          "Coil A: three lengths totalling about 72 feet; connected to 100 pairs of plates",
+          "Coil B: two lengths of about 60 feet each; connected to galvanometer",
+          "Deflection transient: on completing circuit, needle deflects and returns; on breaking, deflects opposite and returns",
+          "Faraday §6: 'the effects on the needle were not permanent, but were merely indications of the sudden change in the electromagnetic condition of the coil'",
+          "No deflection while current was flowing steadily"
+        ]
+      },
+      {
+        "step": 4,
+        "type": "synthesise",
+        "answer": "Faraday's iron ring was seven-eighths of an inch thick and six inches in external diameter. He wound coil A (about 72 feet of wire, connected to a battery of 100 pairs) and coil B (about 120 feet of wire, connected to a galvanometer) around it. On closing the primary circuit a transient galvanometer deflection occurred; on opening the circuit a deflection in the opposite direction occurred. While the primary current was steady there was no deflection at all. The deflection was transient because induction depends on change: in §6 Faraday noted that 'the effects on the needle were not permanent, but were merely indications of the sudden change in the electromagnetic condition of the coil at the moments of making and breaking the circuit.' Only a changing magnetic flux induces an EMF; a steady flux does not."
+      }
+    ],
+    "evaluation_rubric": {
+      "ring_dimensions": 1,
+      "transient_explanation": 1,
+      "faraday_quote_or_paraphrase": 1,
+      "correct_series_reference": 1
+    },
+    "difficulty": "hard"
+  },
+  {
+    "trajectory_id": "faraday_traj_002",
+    "task": "Find Faraday's exact measurements in §371 for the platina-zinc wire experiment, including all wire dimensions, acid composition, and equivalent electrical output.",
+    "chunks_required": ["faraday_010"],
+    "steps": [
+      {
+        "step": 1,
+        "type": "plan",
+        "thought": "The task asks for specific quantitative details about the platina-zinc wire experiment in Series III §371. I need chunk faraday_010."
+      },
+      {
+        "step": 2,
+        "type": "retrieve",
+        "query": "platina zinc wire diameter apart depth vitriol water Leyden battery equivalent",
+        "retrieved_chunk_ids": ["faraday_010"],
+        "rationale": "Chunk faraday_010 covers §371, the platina-zinc wire experiment."
+      },
+      {
+        "step": 3,
+        "type": "extract",
+        "chunk_id": "faraday_010",
+        "extracted_facts": [
+          "Platina wire and zinc wire: each one-eighteenth of an inch in diameter (draw-plate hole)",
+          "Separation: five-sixteenths of an inch apart",
+          "Immersion depth: five-eighths of an inch",
+          "Acid: one drop of oil of vitriol in four ounces of distilled water at about 60°",
+          "Connector: copper wire eighteen feet long, one-eighteenth of an inch thick",
+          "Output: equivalent to Leyden battery charged by thirty turns of a very large plate electric machine"
+        ]
+      },
+      {
+        "step": 4,
+        "type": "synthesise",
+        "answer": "In §371 Faraday passed a platina wire and a zinc wire together through the same hole of a draw-plate, giving both a diameter of one-eighteenth of an inch. The wires were secured so that their lower ends projected, parallel and five-sixteenths of an inch apart, immersed to a depth of five-eighths of an inch in acid consisting of one drop of oil of vitriol in four ounces of distilled water at about 60°. The circuit was completed by a copper wire 18 feet long and one-eighteenth of an inch in diameter. This arrangement produced as much electricity in little more than three seconds as a Leyden battery charged by 30 turns of a very large and powerful plate electric machine in full action."
+      }
+    ],
+    "evaluation_rubric": {
+      "wire_diameter_1_18_inch": 1,
+      "separation_5_16_inch": 1,
+      "depth_5_8_inch": 1,
+      "acid_composition": 1,
+      "copper_connector_18_feet": 1,
+      "leyden_30_turns_equivalent": 1
+    },
+    "difficulty": "hard"
+  },
+  {
+    "trajectory_id": "faraday_traj_003",
+    "task": "Retrieve information about Faraday's 800,000 Leyden charges calculation (§861) and identify what he found in §864–868 about the electrochemical equivalent of zinc. How do the two results relate?",
+    "chunks_required": ["faraday_014", "faraday_015"],
+    "steps": [
+      {
+        "step": 1,
+        "type": "plan",
+        "thought": "This is a multi-hop question: §861 (faraday_014) gives the 800,000 Leyden charges needed to decompose one grain of water; §864–868 (faraday_015) uses that same Leyden battery reference to establish the electrochemical equivalent of zinc. I need to retrieve both and explain how they connect."
+      },
+      {
+        "step": 2,
+        "type": "retrieve",
+        "query": "800000 Leyden charges grain of water decompose electricity Series VII",
+        "retrieved_chunk_ids": ["faraday_014"],
+        "rationale": "faraday_014 covers §861–862, the 800,000 Leyden charges calculation."
+      },
+      {
+        "step": 3,
+        "type": "retrieve",
+        "query": "zinc plate weighed grains electrochemical equivalent 32.31 Series VII",
+        "retrieved_chunk_ids": ["faraday_015"],
+        "rationale": "faraday_015 covers §864–868, the zinc plate weighing experiment."
+      },
+      {
+        "step": 4,
+        "type": "extract",
+        "chunk_id": "faraday_014",
+        "extracted_facts": [
+          "§861: 800,000 Leyden battery charges needed to decompose one grain of water",
+          "Leyden battery reference: charged by thirty turns of a large plate electric machine",
+          "§862: the enormous electricity naturally associated with atoms"
+        ]
+      },
+      {
+        "step": 5,
+        "type": "extract",
+        "chunk_id": "faraday_015",
+        "extracted_facts": [
+          "Two amalgamated zinc plates: A = 163.1 grains, B = 148.3 grains",
+          "Dimensions: about 5 inches long, 0.4 of an inch wide",
+          "§868: chemical action on 32.31 parts (one equivalent) of zinc = same electricity as 800,000 Leyden charges"
+        ]
+      },
+      {
+        "step": 6,
+        "type": "synthesise",
+        "answer": "In §861 Faraday calculated that 800,000 charges of his reference Leyden battery (each charged by thirty turns of a large plate machine) were needed to supply enough electricity to decompose a single grain of water. In §864–868, weighing zinc plates A (163.1 grains) and B (148.3 grains, each about 5 inches long × 0.4 inch wide), he found that dissolving 32.31 parts (one chemical equivalent) of zinc in the voltaic circuit liberated the same total quantity of electricity as 800,000 Leyden battery charges. The two results are linked by the same Leyden battery reference standard: both experiments used the same unit (30-turn charge) to compare quantities of electricity released by completely different chemical systems, confirming that electricity is produced in strict proportion to chemical action regardless of the substance decomposed."
+      }
+    ],
+    "evaluation_rubric": {
+      "800000_Leyden_charges": 1,
+      "zinc_plate_masses_163_148": 1,
+      "plate_dimensions_5_inches_0_4": 1,
+      "electrochemical_equivalent_32_31": 1,
+      "connection_between_the_two_results": 1
+    },
+    "difficulty": "hard"
+  },
+  {
+    "trajectory_id": "faraday_traj_004",
+    "task": "Find the exact phrase Faraday used in §34 to describe the direction of the induced current when the primary circuit was made, and explain how this prefigures Lenz's Law.",
+    "chunks_required": ["faraday_005"],
+    "steps": [
+      {
+        "step": 1,
+        "type": "plan",
+        "thought": "I need the exact quotation from §34 about direction of induced current (chunk faraday_005) and to explain its relationship with Lenz's Law."
+      },
+      {
+        "step": 2,
+        "type": "retrieve",
+        "query": "direction induced current opposite primary circuit §34 Lenz law",
+        "retrieved_chunk_ids": ["faraday_005"],
+        "rationale": "faraday_005 covers §34–44, the direction of induced current."
+      },
+      {
+        "step": 3,
+        "type": "extract",
+        "chunk_id": "faraday_005",
+        "extracted_facts": [
+          "§34 exact phrase: 'in the opposite direction to that which the primary combination would have produced'",
+          "On making the primary: induced current opposite to primary",
+          "On breaking the primary: induced current same direction as primary",
+          "Verified with both iron-ring and bar-magnet helices",
+          "§44: results tabulated systematically",
+          "Lenz (1834): induced current always opposes the change that produces it"
+        ]
+      },
+      {
+        "step": 4,
+        "type": "synthesise",
+        "answer": "In §34 Faraday established that when a primary current was established, the induced current in the secondary coil flowed 'in the opposite direction to that which the primary combination would have produced.' Conversely, when the primary was broken, the induced current ran in the same direction as the primary. These observations directly prefigure Lenz's Law (published by Emil Lenz in 1834): the induced current always flows in such a direction as to oppose the change that produces it. When the primary is made, the induced current opposes the increasing primary flux by flowing in the opposite sense; when broken, it tries to sustain the collapsing flux by flowing in the same sense. Faraday's experimental finding is the empirical foundation on which Lenz's generalisation rests."
+      }
+    ],
+    "evaluation_rubric": {
+      "exact_phrase_opposite_direction": 1,
+      "breaking_circuit_same_direction": 1,
+      "lenz_law_connection": 1,
+      "correct_series_and_paragraph": 1
+    },
+    "difficulty": "hard"
+  },
+  {
+    "trajectory_id": "faraday_traj_005",
+    "task": "Find information about the discovery of self-induction in Series IX, including Mr. Jenkin's observation, the copper wire used in §1064, and what physiological effects were produced.",
+    "chunks_required": ["faraday_016"],
+    "steps": [
+      {
+        "step": 1,
+        "type": "plan",
+        "thought": "I need chunk faraday_016 which covers Series IX §1048–1064, the self-induction discovery with Jenkin's observation and the 132-foot wire experiment."
+      },
+      {
+        "step": 2,
+        "type": "retrieve",
+        "query": "Jenkin self-induction shock electro-magnet 132 feet copper wire convulse frog Series IX",
+        "retrieved_chunk_ids": ["faraday_016"],
+        "rationale": "faraday_016 covers Series IX §1048–1064, the self-induction discovery."
+      },
+      {
+        "step": 3,
+        "type": "extract",
+        "chunk_id": "faraday_016",
+        "extracted_facts": [
+          "Jenkin's observation: short wire → no shock on breaking; electro-magnet wire → strong shock on breaking",
+          "§1064: copper wire 0.18 inch diameter and 132 feet long, laid on laboratory floor",
+          "On making: no sensible spark; on breaking: bright spark",
+          "Physiological: 'powerful shocks upon the tongue and gums'; convulsed a flounder, an eel, or a frog"
+        ]
+      },
+      {
+        "step": 4,
+        "type": "synthesise",
+        "answer": "Self-induction was discovered by Faraday in Series IX through two complementary experiments. First, Mr. Jenkin communicated the observation that an ordinary short wire connecting a single pair of metals produces no shock when the circuit is broken, but the wire surrounding an electromagnet produces a strong shock each time contact is broken — the first evidence of back-EMF. Faraday then investigated self-induction in a plain wire: in §1064 he laid out 'a copper wire, 0.18 of an inch in diameter, and 132 feet in length' on the laboratory floor. On making contact no sensible spark appeared, but on breaking contact 'a bright one' appeared. Connecting silver plates to the wire extremities and placing the tongue between them produced 'powerful shocks upon the tongue and gums'; the wire was also powerful enough to convulse a flounder, an eel, or a frog."
+      }
+    ],
+    "evaluation_rubric": {
+      "jenkin_observation_electro_magnet": 1,
+      "wire_132_feet_0_18_inch": 1,
+      "no_spark_on_making_bright_on_breaking": 1,
+      "physiological_effects_tongue_frog": 1
+    },
+    "difficulty": "hard"
+  },
+  {
+    "trajectory_id": "faraday_traj_006",
+    "task": "Compare the specific inductive capacities of shell-lac and sulphur as measured by Faraday. What numerical values did he report, and what was the significance of the difference between insulators?",
+    "chunks_required": ["faraday_020", "faraday_021"],
+    "steps": [
+      {
+        "step": 1,
+        "type": "plan",
+        "thought": "A multi-hop question about two SIC measurements: shell-lac (faraday_020, §1252–1260) and sulphur (faraday_021, §1275–1280). I need to retrieve both and compare."
+      },
+      {
+        "step": 2,
+        "type": "retrieve",
+        "query": "specific inductive capacity shell-lac 1.558 176 113 dielectric constant Series XI",
+        "retrieved_chunk_ids": ["faraday_020"],
+        "rationale": "faraday_020 covers the shell-lac SIC measurement."
+      },
+      {
+        "step": 3,
+        "type": "retrieve",
+        "query": "specific inductive capacity sulphur 280 degrees 162 degrees 2.24 Series XI",
+        "retrieved_chunk_ids": ["faraday_021"],
+        "rationale": "faraday_021 covers the sulphur SIC measurement."
+      },
+      {
+        "step": 4,
+        "type": "extract",
+        "chunk_id": "faraday_020",
+        "extracted_facts": [
+          "Shell-lac SIC = 176/113 = 1.558 relative to air",
+          "Measured by dividing a charge between one hemisphere apparatus with shell-lac and one with air",
+          "Result unexpected in its amount"
+        ]
+      },
+      {
+        "step": 5,
+        "type": "extract",
+        "chunk_id": "faraday_021",
+        "extracted_facts": [
+          "Sulphur: initial reading 280 degrees; after division with sulphur apparatus: 162 degrees retained",
+          "SIC of sulphur approximately 2.24 relative to air",
+          "Higher than shell-lac (1.558)"
+        ]
+      },
+      {
+        "step": 6,
+        "type": "synthesise",
+        "answer": "Faraday measured the specific inductive capacity (SIC) of shell-lac in §1252–1260 by charging one inductive hemisphere filled with shell-lac and dividing the charge with a complementary air hemisphere. The shell-lac apparatus retained 176 degrees against 113 degrees for the air apparatus, giving SIC(shell-lac) = 176/113 ≈ 1.558 relative to air. For sulphur (§1275–1280), the initial charge was 280 degrees; after division with the sulphur apparatus it retained 162 degrees, yielding SIC(sulphur) ≈ 2.24 relative to air — higher than shell-lac. The significance was profound: prior electrical theory assumed all insulators were equivalent. Faraday proved for the first time that different dielectric materials have intrinsically different capacities for supporting induction, a finding later central to Maxwell's electromagnetic field theory and to the design of capacitors."
+      }
+    ],
+    "evaluation_rubric": {
+      "shell_lac_SIC_176_113_1558": 1,
+      "sulphur_SIC_280_162_approx_224": 1,
+      "sulphur_higher_than_shell_lac": 1,
+      "significance_insulators_not_equivalent": 1
+    },
+    "difficulty": "hard"
+  },
+  {
+    "trajectory_id": "faraday_traj_007",
+    "task": "Describe Faraday's discovery that ice is a non-conductor of electricity and the law he derived in §394–395. What other substance did he use to show the law was general?",
+    "chunks_required": ["faraday_011"],
+    "steps": [
+      {
+        "step": 1,
+        "type": "plan",
+        "thought": "I need chunk faraday_011 covering Series IV §380–395, the ice non-conductor discovery and the law of liquefaction."
+      },
+      {
+        "step": 2,
+        "type": "retrieve",
+        "query": "ice non-conductor law liquefaction chloride of lead 150 plates Series IV",
+        "retrieved_chunk_ids": ["faraday_011"],
+        "rationale": "faraday_011 covers Series IV §380–395."
+      },
+      {
+        "step": 3,
+        "type": "extract",
+        "chunk_id": "faraday_011",
+        "extracted_facts": [
+          "Ice discovered to be a non-conductor: thin film stops electricity even from 150 pairs of four-inch plates",
+          "All chemical decomposition ceases when ice is interposed",
+          "§394: law of liquefaction — conducting power acquired on melting, lost on freezing",
+          "§395: verified for chloride of lead: fused it conducted; solid it did not"
+        ]
+      },
+      {
+        "step": 4,
+        "type": "synthesise",
+        "answer": "In Series IV Faraday was working with ice-based experiments when he found that even a thin film of ice interposed in the circuit of a very powerful voltaic battery stopped all current flow and chemical decomposition entirely. He tested with batteries of up to 150 pairs of four-inch plates — still no sensible electricity passed through the ice. In §394 he generalised this to a law: liquefaction confers conducting power, and congelation (freezing) removes it. He tested the law immediately on another substance: in §395 he fused chloride of lead and found it conducted electricity well; when solid it did not. This confirmed the law was not peculiar to water but was a general principle governing the conducting state of matter."
+      }
+    ],
+    "evaluation_rubric": {
+      "ice_non_conductor_thin_film": 1,
+      "150_pairs_four_inch_plates": 1,
+      "law_liquefaction_congelation_general": 1,
+      "chloride_of_lead_verification": 1
+    },
+    "difficulty": "hard"
+  },
+  {
+    "trajectory_id": "faraday_traj_008",
+    "task": "Retrieve information about Faraday's discovery of diamagnetic substances in the 1845 Experimental Researches. What substance showed the clearest diamagnetic effect, how was it oriented, and how strong was the effect compared to iron?",
+    "chunks_required": ["faraday_027"],
+    "steps": [
+      {
+        "step": 1,
+        "type": "plan",
+        "thought": "I need chunk faraday_027 about diamagnetics (Series XIX–XX, Volume III, 1845). Bismuth is the key substance, equatorial orientation, and the 1/3400 comparison to iron."
+      },
+      {
+        "step": 2,
+        "type": "retrieve",
+        "query": "diamagnetics bismuth equatorial orientation repelled electromagnet 1/3400 iron 1845",
+        "retrieved_chunk_ids": ["faraday_027"],
+        "rationale": "faraday_027 covers diamagnetics, Series XIX Volume III."
+      },
+      {
+        "step": 3,
+        "type": "extract",
+        "chunk_id": "faraday_027",
+        "extracted_facts": [
+          "Bismuth rod repelled by both poles of a strong electromagnet",
+          "Bismuth suspended between poles set itself equatorially (perpendicular to field axis)",
+          "Iron sets itself axially (along field axis)",
+          "Repulsive force on bismuth ≈ 1/3,400 of attractive force on equal volume of iron",
+          "Faraday termed these substances 'diamagnetics'",
+          "Other diamagnetics found: antimony, phosphorus, arsenic",
+          "Diamagnetics acquire induced magnetic polarity opposite to inducing field",
+          "Series XIX–XX, Volume III, 1845 — not Volume I"
+        ]
+      },
+      {
+        "step": 4,
+        "type": "synthesise",
+        "answer": "Faraday's discovery of diamagnetics appears in Series XIX–XX of the Experimental Researches (Volume III, 1845), not in Volume I. He found that bismuth (and many other non-magnetic substances) is repelled by both poles of a strong electromagnet — the exact opposite of iron's behaviour. A bismuth rod suspended by a thin thread between the poles of a powerful electromagnet set itself equatorially: perpendicular to the line joining the poles, at right angles to the magnetic axis. An iron rod, by contrast, set itself axially. Faraday measured the repulsive force on bismuth as approximately 1/3,400 of the attractive force on an equivalent volume of iron in the same field. He concluded that diamagnetics acquire an induced magnetic polarity opposite in sense to the inducing field (unlike iron and paramagnetics, whose induced polarity aligns with the field), and he coined the name 'diamagnetics' for this new class. He also observed diamagnetism in antimony, phosphorus, and arsenic."
+      }
+    ],
+    "evaluation_rubric": {
+      "bismuth_equatorial_orientation": 1,
+      "repelled_by_both_poles": 1,
+      "1_3400_of_iron": 1,
+      "opposite_polarity_definition": 1,
+      "volume_III_attribution": 1
+    },
+    "difficulty": "hard"
+  },
+  {
+    "trajectory_id": "faraday_traj_009",
+    "task": "Retrieve the details of Faraday's 203-foot helix experiment and explain why it proved that changing current, not steady current, is the condition for induction.",
+    "chunks_required": ["faraday_002"],
+    "steps": [
+      {
+        "step": 1,
+        "type": "plan",
+        "thought": "I need the Series I section describing the 203-foot helix and the deflections at make/break only."
+      },
+      {
+        "step": 2,
+        "type": "retrieve",
+        "query": "203 feet helix make break deflection steady current no effect",
+        "retrieved_chunk_ids": ["faraday_002"],
+        "rationale": "Chunk faraday_002 contains the exact setup and inference from §10-11."
+      },
+      {
+        "step": 3,
+        "type": "extract",
+        "chunk_id": "faraday_002",
+        "extracted_facts": [
+          "Helix length was 203 feet of copper wire",
+          "Deflection appeared on starting and stopping primary current",
+          "No deflection during steady primary current",
+          "Direction reversed between make and break"
+        ]
+      },
+      {
+        "step": 4,
+        "type": "synthesise",
+        "answer": "Faraday wound a helix from 203 feet of copper wire and placed a current-carrying wire near it. The galvanometer deflected only when the primary current started or stopped, and the sign reversed between make and break. While the primary current remained steady, there was no deflection. This showed that induction depends on change in magnetic condition (flux change), not on the mere presence of current."
+      }
+    ],
+    "evaluation_rubric": {
+      "mentions_203_feet": 1,
+      "make_break_only": 1,
+      "steady_current_no_effect": 1,
+      "flux_change_principle": 1
+    },
+    "difficulty": "hard"
+  },
+  {
+    "trajectory_id": "faraday_traj_010",
+    "task": "Explain Faraday's bar magnet and 220-turn helix experiment and identify the key condition he stated in §26.",
+    "chunks_required": ["faraday_003"],
+    "steps": [
+      {
+        "step": 1,
+        "type": "plan",
+        "thought": "Need dimensions and the 'motion required' conclusion from Series I §17-26."
+      },
+      {
+        "step": 2,
+        "type": "retrieve",
+        "query": "12 inch bar magnet 220 turns no deflection at rest §26 cut magnetic curves",
+        "retrieved_chunk_ids": ["faraday_003"],
+        "rationale": "Chunk faraday_003 directly contains these facts."
+      },
+      {
+        "step": 3,
+        "type": "extract",
+        "chunk_id": "faraday_003",
+        "extracted_facts": [
+          "Magnet length 12 inches",
+          "Helix had 220 turns",
+          "No deflection while magnet rested inside coil",
+          "Deflections appeared when inserting/withdrawing",
+          "§26: conductor must cut magnetic curves of force"
+        ]
+      },
+      {
+        "step": 4,
+        "type": "synthesise",
+        "answer": "Faraday used a 12-inch bar magnet and a helix of 220 turns. The galvanometer stayed at zero when the magnet was motionless in the coil, but deflected when the magnet was pushed in or pulled out, with reversed direction for opposite motion. In §26 he generalized that EMF appears when a conductor cuts magnetic curves of force, so relative motion is essential."
+      }
+    ],
+    "evaluation_rubric": {
+      "magnet_12_inches": 1,
+      "helix_220_turns": 1,
+      "rest_no_deflection": 1,
+      "cut_curves_of_force_statement": 1
+    },
+    "difficulty": "hard"
+  },
+  {
+    "trajectory_id": "faraday_traj_011",
+    "task": "Retrieve the Waterloo Bridge tidal-electricity experiment details and explain why Faraday treated the result as inconclusive.",
+    "chunks_required": ["faraday_008"],
+    "steps": [
+      {
+        "step": 1,
+        "type": "plan",
+        "thought": "Need the bridge wire length, objective, and confounders from §188-189."
+      },
+      {
+        "step": 2,
+        "type": "retrieve",
+        "query": "Waterloo Bridge 960 feet wire tidal currents irregular deflections",
+        "retrieved_chunk_ids": ["faraday_008"],
+        "rationale": "Chunk faraday_008 contains exact setup and outcome."
+      },
+      {
+        "step": 3,
+        "type": "extract",
+        "chunk_id": "faraday_008",
+        "extracted_facts": [
+          "Faraday laid 960 feet of copper wire on Waterloo Bridge",
+          "He sought currents induced by tidal flow in the Thames",
+          "Deflections were irregular and attributable to other causes",
+          "After three days, no satisfactory proof"
+        ]
+      },
+      {
+        "step": 4,
+        "type": "synthesise",
+        "answer": "Faraday stretched 960 feet of copper wire on the parapet of Waterloo Bridge and completed the circuit through metal plates in the Thames to detect tidal-induced currents. Although deflections appeared, they were irregular and could be explained by confounders like water condition, temperature, and contact effects. After three days he judged the evidence inconclusive for the intended tidal signal."
+      }
+    ],
+    "evaluation_rubric": {
+      "wire_960_feet": 1,
+      "tidal_current_goal": 1,
+      "irregular_deflections": 1,
+      "three_day_inconclusive_result": 1
+    },
+    "difficulty": "hard"
+  },
+  {
+    "trajectory_id": "faraday_traj_012",
+    "task": "Summarize Faraday's evidence in Series III that common and voltaic electricity are identical in nature.",
+    "chunks_required": ["faraday_009"],
+    "steps": [
+      {
+        "step": 1,
+        "type": "plan",
+        "thought": "Need the five-effect comparison and conclusion around §307."
+      },
+      {
+        "step": 2,
+        "type": "retrieve",
+        "query": "identity of electricities five effects tension magnetism chemical physiological spark §307",
+        "retrieved_chunk_ids": ["faraday_009"],
+        "rationale": "Chunk faraday_009 is built for this synthesis."
+      },
+      {
+        "step": 3,
+        "type": "extract",
+        "chunk_id": "faraday_009",
+        "extracted_facts": [
+          "Faraday compared five effects: tension, magnetism, chemical, physiological, spark",
+          "Common electricity produced same classes of effects as voltaic",
+          "§307 states common electricity is as magnetic as voltaic if time is allowed"
+        ]
+      },
+      {
+        "step": 4,
+        "type": "synthesise",
+        "answer": "In Series III Faraday tested common and voltaic electricity against five effect classes: tension, magnetic action, chemical decomposition, physiological shock effects, and spark behavior. He found qualitative identity across these domains. In §307 he concluded that common electricity is as magnetic as voltaic electricity when experimental conditions allow sufficient action time, supporting one underlying electrical agency rather than separate kinds."
+      }
+    ],
+    "evaluation_rubric": {
+      "five_effects_named": 1,
+      "identity_claim": 1,
+      "includes_307_conclusion": 1
+    },
+    "difficulty": "medium"
+  },
+  {
+    "trajectory_id": "faraday_traj_013",
+    "task": "Explain Faraday's sulphuret of silver result and why it is considered a semiconductor precursor.",
+    "chunks_required": ["faraday_012"],
+    "steps": [
+      {
+        "step": 1,
+        "type": "plan",
+        "thought": "Need the contrast with metals and the heat-conductivity behavior in §432-435."
+      },
+      {
+        "step": 2,
+        "type": "retrieve",
+        "query": "sulphuret of silver heat increases conductivity opposite metals",
+        "retrieved_chunk_ids": ["faraday_012"],
+        "rationale": "Chunk faraday_012 captures the preparation and core behavior."
+      },
+      {
+        "step": 3,
+        "type": "extract",
+        "chunk_id": "faraday_012",
+        "extracted_facts": [
+          "Substance was sulphuret of silver",
+          "Conductivity increased with heating while below melting",
+          "This contrasted with metals where heat increases resistance",
+          "Faraday explicitly noted direct contrast with metallic behavior"
+        ]
+      },
+      {
+        "step": 4,
+        "type": "synthesise",
+        "answer": "Faraday found that sulphuret of silver became much more conductive as temperature rose, even before melting. That trend is opposite to typical metals, whose resistance rises with temperature. Because electrical transport in this material improves with heat, the observation is widely interpreted as an early semiconductor-like result, decades before formal semiconductor theory."
+      }
+    ],
+    "evaluation_rubric": {
+      "names_sulphuret_of_silver": 1,
+      "heat_increases_conductivity": 1,
+      "contrast_with_metals": 1,
+      "semiconductor_precursor_explanation": 1
+    },
+    "difficulty": "hard"
+  },
+  {
+    "trajectory_id": "faraday_traj_014",
+    "task": "Retrieve and explain the doubled-wire self-induction cancellation experiment in §1096.",
+    "chunks_required": ["faraday_017"],
+    "steps": [
+      {
+        "step": 1,
+        "type": "plan",
+        "thought": "Need the 40-foot doubled-wire setup and the no-spark versus spark contrast."
+      },
+      {
+        "step": 2,
+        "type": "retrieve",
+        "query": "40-foot silk-covered wire doubled no spark opened out very good spark",
+        "retrieved_chunk_ids": ["faraday_017"],
+        "rationale": "Chunk faraday_017 contains the exact experiment wording."
+      },
+      {
+        "step": 3,
+        "type": "extract",
+        "chunk_id": "faraday_017",
+        "extracted_facts": [
+          "Wire length 40 feet, silk-covered, folded back on itself",
+          "Doubled state gave scarcely perceptible spark",
+          "Separated state gave a very good spark",
+          "Shows cancellation of magnetic effects in opposite current directions"
+        ]
+      },
+      {
+        "step": 4,
+        "type": "synthesise",
+        "answer": "Faraday used a 40-foot silk-covered wire doubled so adjacent segments carried opposite current directions. In that folded configuration, spark on interruption was nearly absent. When he opened the wire so magnetic effects no longer canceled, a strong spark returned. The result demonstrated that self-induction depends on magnetic field buildup, not wire length alone."
+      }
+    ],
+    "evaluation_rubric": {
+      "mentions_40_foot_wire": 1,
+      "doubled_no_spark": 1,
+      "opened_good_spark": 1,
+      "magnetic_cancellation_interpretation": 1
+    },
+    "difficulty": "hard"
+  },
+  {
+    "trajectory_id": "faraday_traj_015",
+    "task": "Explain the opening argument of Series XI about induction and dielectric mediation, citing the key conceptual claim.",
+    "chunks_required": ["faraday_018", "faraday_022"],
+    "steps": [
+      {
+        "step": 1,
+        "type": "plan",
+        "thought": "Need Series XI opening motivation plus the formal contiguous-particles claim in §1295."
+      },
+      {
+        "step": 2,
+        "type": "retrieve",
+        "query": "Series XI induction fundamental principle dielectric contiguous particles §1162 §1295",
+        "retrieved_chunk_ids": ["faraday_018", "faraday_022"],
+        "rationale": "These two chunks together provide framing and formal conclusion."
+      },
+      {
+        "step": 3,
+        "type": "extract",
+        "chunk_id": "faraday_018",
+        "extracted_facts": [
+          "Induction described as first, essential, and fundamental principle",
+          "Faraday introduces dielectric mediation concept in Series XI"
+        ]
+      },
+      {
+        "step": 4,
+        "type": "extract",
+        "chunk_id": "faraday_022",
+        "extracted_facts": [
+          "§1295: induction is action of contiguous particles",
+          "Intervening space must be occupied by a dielectric"
+        ]
+      },
+      {
+        "step": 5,
+        "type": "synthesise",
+        "answer": "Faraday opened Series XI by claiming induction is the most fundamental electrical principle and likely involved in every electrical phenomenon. He then developed the dielectric view, culminating in §1295 where induction is described as an action propagated through contiguous particles, not mysterious direct action across empty space. This is the conceptual transition toward field-based thinking."
+      }
+    ],
+    "evaluation_rubric": {
+      "induction_fundamental_claim": 1,
+      "contiguous_particles_claim": 1,
+      "dielectric_intermediation": 1,
+      "field_theory_connection": 1
+    },
+    "difficulty": "medium"
+  },
+  {
+    "trajectory_id": "faraday_traj_016",
+    "task": "Use the shell-lac cylinder experiment to explain how Faraday argued that induction lines can be curved rather than strictly radial.",
+    "chunks_required": ["faraday_019"],
+    "steps": [
+      {
+        "step": 1,
+        "type": "plan",
+        "thought": "Need apparatus geometry plus off-axis measurement points."
+      },
+      {
+        "step": 2,
+        "type": "retrieve",
+        "query": "shell-lac cylinder 0.9 inch 7 inches k l m curved induction lines",
+        "retrieved_chunk_ids": ["faraday_019"],
+        "rationale": "Chunk faraday_019 contains the dimensions and inference."
+      },
+      {
+        "step": 3,
+        "type": "extract",
+        "chunk_id": "faraday_019",
+        "extracted_facts": [
+          "Cylinder dimensions 0.9 inch diameter, 7 inches long",
+          "Upper half excited by friction",
+          "Carrier-ball charge measured at off-axis positions",
+          "Detected induction away from straight radial expectation"
+        ]
+      },
+      {
+        "step": 4,
+        "type": "synthesise",
+        "answer": "Faraday's shell-lac cylinder setup (0.9 inch by 7 inches) let him excite one region and probe induced effects at multiple angular positions with a carrier ball. Detectable induction at off-axis positions showed that force transfer did not follow only straight radial paths. He used this to support the idea of curved lines of inductive action through the medium."
+      }
+    ],
+    "evaluation_rubric": {
+      "apparatus_dimensions": 1,
+      "off_axis_measurement_logic": 1,
+      "curved_lines_conclusion": 1
+    },
+    "difficulty": "hard"
+  },
+  {
+    "trajectory_id": "faraday_traj_017",
+    "task": "Explain Faraday's claim that conduction and induction differ by degree rather than kind, using his Series XII framing.",
+    "chunks_required": ["faraday_023"],
+    "steps": [
+      {
+        "step": 1,
+        "type": "plan",
+        "thought": "Need the explicit continuum claim and at least one supporting interpretation."
+      },
+      {
+        "step": 2,
+        "type": "retrieve",
+        "query": "Series XII conduction induction same principle differ in degree §1320 §1334",
+        "retrieved_chunk_ids": ["faraday_023"],
+        "rationale": "Chunk faraday_023 includes the key quotations and conclusion."
+      },
+      {
+        "step": 3,
+        "type": "extract",
+        "chunk_id": "faraday_023",
+        "extracted_facts": [
+          "§1320: conduction and induction are same principle with different degree",
+          "§1334: conductors and non-conductors differ by degree, not opposition of kind",
+          "Uses leakage/imperfection intuition for both extremes"
+        ]
+      },
+      {
+        "step": 4,
+        "type": "synthesise",
+        "answer": "Faraday argued in Series XII that conduction is an extreme case of the same process seen weakly in induction. In §1320 he frames both as one principle operating at different intensity, and in §1334 he concludes conductors and insulators are separated by degree, not by fundamentally different physical laws."
+      }
+    ],
+    "evaluation_rubric": {
+      "mentions_1320_or_equivalent": 1,
+      "mentions_1334_or_equivalent": 1,
+      "degree_not_kind_explanation": 1
+    },
+    "difficulty": "medium"
+  },
+  {
+    "trajectory_id": "faraday_traj_018",
+    "task": "Compare Faraday's neutral stance on one-fluid/two-fluid theories with his emphasis on force distribution and experimental law-finding.",
+    "chunks_required": ["faraday_024"],
+    "steps": [
+      {
+        "step": 1,
+        "type": "plan",
+        "thought": "Need to separate ontology neutrality from methodological commitment."
+      },
+      {
+        "step": 2,
+        "type": "retrieve",
+        "query": "Series XIV does not assume new nature of force only distribution one-fluid two-fluid",
+        "retrieved_chunk_ids": ["faraday_024"],
+        "rationale": "Chunk faraday_024 is exactly about this methodological framing."
+      },
+      {
+        "step": 3,
+        "type": "extract",
+        "chunk_id": "faraday_024",
+        "extracted_facts": [
+          "Faraday says theory assumes nothing new about nature of electricity",
+          "Compatible with one-fluid, two-fluid, or vibration views",
+          "Primary objective is mapping arrangement/distribution and laws"
+        ]
+      },
+      {
+        "step": 4,
+        "type": "synthesise",
+        "answer": "In Series XIV Faraday avoids committing to a specific ontological model (one fluid, two fluids, or vibration-style account). His emphasis is instead on experimentally discovering how forces are distributed through matter and what laws govern that distribution. So he is theory-neutral about 'what electricity is' but strongly theory-driven about measurable field arrangement and propagation behavior."
+      }
+    ],
+    "evaluation_rubric": {
+      "neutral_between_competing_theories": 1,
+      "distribution_focus": 1,
+      "experimental_law_focus": 1
+    },
+    "difficulty": "medium"
+  },
+  {
+    "trajectory_id": "faraday_traj_019",
+    "task": "Explain how Faraday linked electric and magnetic action through intervening particles in Series XIV, including apparatus spacing evidence.",
+    "chunks_required": ["faraday_025"],
+    "steps": [
+      {
+        "step": 1,
+        "type": "plan",
+        "thought": "Need the 1.75-inch helix spacing and the analogical argument to electrostatic induction."
+      },
+      {
+        "step": 2,
+        "type": "retrieve",
+        "query": "1.75 inch interval between helices relation electric and magnetic forces §1729 §1731",
+        "retrieved_chunk_ids": ["faraday_025"],
+        "rationale": "Chunk faraday_025 has setup and conclusions."
+      },
+      {
+        "step": 3,
+        "type": "extract",
+        "chunk_id": "faraday_025",
+        "extracted_facts": [
+          "Two helices separated by about 1.75 inches",
+          "Magnetic changes induced current effects across this space",
+          "Faraday argues magnetic force acts through intervening particles",
+          "Draws analogy with induction of static electricity"
+        ]
+      },
+      {
+        "step": 4,
+        "type": "synthesise",
+        "answer": "Faraday used two magneto-electric helices with an approximately 1.75-inch gap and showed induction effects could be mediated across the interval when magnetic conditions changed. He interpreted this as evidence that magnetic action, like electrostatic induction, operates through intervening particles rather than by unexplained direct distant pull. The experiment supported his unified, medium-based field intuition linking electric and magnetic phenomena."
+      }
+    ],
+    "evaluation_rubric": {
+      "mentions_1_75_inch_gap": 1,
+      "intervening_particles_claim": 1,
+      "analogy_to_electrostatic_induction": 1
+    },
+    "difficulty": "hard"
+  },
+  {
+    "trajectory_id": "faraday_traj_020",
+    "task": "Summarize Faraday's §872 conclusion on the source of voltaic current and his caution in §873.",
+    "chunks_required": ["faraday_028"],
+    "steps": [
+      {
+        "step": 1,
+        "type": "plan",
+        "thought": "Need the strong claim favoring chemical action plus the reserved statement on contact."
+      },
+      {
+        "step": 2,
+        "type": "retrieve",
+        "query": "§872 chemical action sustains voltaic current not contact only §873 reserve opinion",
+        "retrieved_chunk_ids": ["faraday_028"],
+        "rationale": "Chunk faraday_028 has both the conclusion and qualification."
+      },
+      {
+        "step": 3,
+        "type": "extract",
+        "chunk_id": "faraday_028",
+        "extracted_facts": [
+          "§872: current sustained by chemical action, not contact only",
+          "§873: Faraday reserves judgment on exact role of contact",
+          "He frames future battery improvements as likely from better principles"
+        ]
+      },
+      {
+        "step": 4,
+        "type": "synthesise",
+        "answer": "Faraday concludes in §872 that quantitative evidence supports chemical action as the sustaining source of voltaic current, rather than mere metallic contact. Yet in §873 he explicitly withholds a final judgment on the exact role of contact, leaving room for it as a facilitating condition. So the stance is strong but not dogmatic: chemistry is central, while contact theory is not simply dismissed without remainder."
+      }
+    ],
+    "evaluation_rubric": {
+      "chemical_action_primary_claim": 1,
+      "contact_only_rejected": 1,
+      "reserved_opinion_noted": 1
+    },
+    "difficulty": "medium"
+  },
+  {
+    "trajectory_id": "faraday_traj_021",
+    "task": "Multi-hop: connect the dramatic galvanometer spin in §31 with Faraday's directional law in §34 to explain both strength and sign of induced effects.",
+    "chunks_required": ["faraday_004", "faraday_005"],
+    "steps": [
+      {
+        "step": 1,
+        "type": "plan",
+        "thought": "Need one chunk for magnitude signal (needle spinning) and one for direction rule."
+      },
+      {
+        "step": 2,
+        "type": "retrieve",
+        "query": "§31 needle spin four or five times 100 pairs and §34 opposite direction",
+        "retrieved_chunk_ids": ["faraday_004", "faraday_005"],
+        "rationale": "Together they encode amplitude and direction aspects of induction."
+      },
+      {
+        "step": 3,
+        "type": "extract",
+        "chunk_id": "faraday_004",
+        "extracted_facts": [
+          "100 pairs caused needle to spin four or five times",
+          "Represents very strong transient impulse"
+        ]
+      },
+      {
+        "step": 4,
+        "type": "extract",
+        "chunk_id": "faraday_005",
+        "extracted_facts": [
+          "On making, induced current opposite to primary",
+          "On breaking, induced current same direction as primary"
+        ]
+      },
+      {
+        "step": 5,
+        "type": "synthesise",
+        "answer": "Section §31 quantifies induction strength: with 100 battery pairs, the induced impulse was so large the needle spun four to five full turns. Section §34 then gives the sign law: the induced current opposes the primary on make and aligns on break. Taken together, Faraday's data separates two dimensions of induction behavior: magnitude (large transient pulse) and direction (change-opposing polarity)."
+      }
+    ],
+    "evaluation_rubric": {
+      "includes_spin_4_5_times": 1,
+      "includes_opposite_on_make": 1,
+      "includes_same_on_break": 1,
+      "integrated_strength_vs_sign_explanation": 1
+    },
+    "difficulty": "hard"
+  },
+  {
+    "trajectory_id": "faraday_traj_022",
+    "task": "Multi-hop: relate Faraday's law of definite electrolytic action to his zinc-equivalent experiment and give the quantitative equivalent value.",
+    "chunks_required": ["faraday_013", "faraday_015"],
+    "steps": [
+      {
+        "step": 1,
+        "type": "plan",
+        "thought": "Use Series VII theoretical law chunk plus zinc weighing quantitative chunk."
+      },
+      {
+        "step": 2,
+        "type": "retrieve",
+        "query": "law definite electrolytic action direct proportion quantity electricity 32.31 zinc equivalent",
+        "retrieved_chunk_ids": ["faraday_013", "faraday_015"],
+        "rationale": "The pair supports principle-to-measurement explanation."
+      },
+      {
+        "step": 3,
+        "type": "extract",
+        "chunk_id": "faraday_013",
+        "extracted_facts": [
+          "Chemical power proportional to absolute quantity of electricity",
+          "Series experiments confirm proportionality across electrolytes"
+        ]
+      },
+      {
+        "step": 4,
+        "type": "extract",
+        "chunk_id": "faraday_015",
+        "extracted_facts": [
+          "Zinc plate weighing gave one equivalent as 32.31 parts",
+          "Linked to fixed electricity quantity benchmark"
+        ]
+      },
+      {
+        "step": 5,
+        "type": "synthesise",
+        "answer": "Faraday's Series VII law states that chemical decomposition scales directly with the amount of electricity passed. The zinc plate weighing experiment operationalizes that law: by controlled dissolution and weighing, he identified one electrochemical equivalent of zinc as 32.31 parts. This numeric result is an instance of the general proportionality principle, not an isolated material-specific curiosity."
+      }
+    ],
+    "evaluation_rubric": {
+      "states_proportionality_law": 1,
+      "includes_32_31_value": 1,
+      "links_theory_to_experiment": 1
+    },
+    "difficulty": "hard"
+  },
+  {
+    "trajectory_id": "faraday_traj_023",
+    "task": "Multi-hop: compare self-induction evidence from Jenkin/Faraday's long wire experiment with the doubled-wire cancellation experiment.",
+    "chunks_required": ["faraday_016", "faraday_017"],
+    "steps": [
+      {
+        "step": 1,
+        "type": "plan",
+        "thought": "Need one chunk showing strong interruption effects and one showing cancellation by geometry."
+      },
+      {
+        "step": 2,
+        "type": "retrieve",
+        "query": "self-induction 132 feet wire bright spark and doubled wire cancellation",
+        "retrieved_chunk_ids": ["faraday_016", "faraday_017"],
+        "rationale": "Together they form a causal argument for magnetic origin."
+      },
+      {
+        "step": 3,
+        "type": "extract",
+        "chunk_id": "faraday_016",
+        "extracted_facts": [
+          "132-foot wire gave bright break spark and physiological shocks",
+          "Jenkin observation highlighted break-shock in electromagnet wire"
+        ]
+      },
+      {
+        "step": 4,
+        "type": "extract",
+        "chunk_id": "faraday_017",
+        "extracted_facts": [
+          "Doubled opposite-direction segments suppressed spark",
+          "Separating segments restored strong spark"
+        ]
+      },
+      {
+        "step": 5,
+        "type": "synthesise",
+        "answer": "The long-wire and Jenkin observations show self-induction as a strong interruption phenomenon, producing bright sparks and shocks when current collapses. The doubled-wire test then supplies mechanism: opposite adjacent current directions cancel magnetic buildup, suppressing induction; separating them restores it. Together they provide both effect and control evidence that self-induction is magnetic-field mediated."
+      }
+    ],
+    "evaluation_rubric": {
+      "long_wire_effects_noted": 1,
+      "doubled_wire_cancellation_noted": 1,
+      "mechanistic_link_magnetic_origin": 1
+    },
+    "difficulty": "hard"
+  },
+  {
+    "trajectory_id": "faraday_traj_024",
+    "task": "Multi-hop: integrate the shell-lac cylinder curved-line evidence with specific inductive capacity measurements to argue that dielectrics are active media, not passive emptiness.",
+    "chunks_required": ["faraday_019", "faraday_020", "faraday_021"],
+    "steps": [
+      {
+        "step": 1,
+        "type": "plan",
+        "thought": "Combine geometric path evidence with material-dependent SIC values."
+      },
+      {
+        "step": 2,
+        "type": "retrieve",
+        "query": "curved induction lines shell-lac cylinder and SIC shell-lac 1.558 sulphur 2.24",
+        "retrieved_chunk_ids": ["faraday_019", "faraday_020", "faraday_021"],
+        "rationale": "Three chunks jointly support a strong dielectric-activity argument."
+      },
+      {
+        "step": 3,
+        "type": "extract",
+        "chunk_id": "faraday_019",
+        "extracted_facts": [
+          "Induction path can be curved through surrounding medium"
+        ]
+      },
+      {
+        "step": 4,
+        "type": "extract",
+        "chunk_id": "faraday_020",
+        "extracted_facts": [
+          "Shell-lac SIC measured as 1.558 relative to air"
+        ]
+      },
+      {
+        "step": 5,
+        "type": "extract",
+        "chunk_id": "faraday_021",
+        "extracted_facts": [
+          "Sulphur SIC approximately 2.24, distinct from shell-lac"
+        ]
+      },
+      {
+        "step": 6,
+        "type": "synthesise",
+        "answer": "Faraday's shell-lac cylinder experiments showed that induction follows shaped paths through a medium, not only direct straight-line action. His SIC measurements then quantified that different dielectrics respond differently: shell-lac about 1.558 and sulphur about 2.24 relative to air. Path dependence plus material dependence implies dielectrics actively participate in induction rather than merely separating charged bodies."
+      }
+    ],
+    "evaluation_rubric": {
+      "curved_line_evidence": 1,
+      "shell_lac_value_1_558": 1,
+      "sulphur_value_2_24": 1,
+      "active_dielectric_argument": 1
+    },
+    "difficulty": "hard"
+  },
+  {
+    "trajectory_id": "faraday_traj_025",
+    "task": "Multi-hop: connect Faraday's claim that conductors/insulators differ by degree with his Series XI contiguous-particles model.",
+    "chunks_required": ["faraday_022", "faraday_023"],
+    "steps": [
+      {
+        "step": 1,
+        "type": "plan",
+        "thought": "Need conceptual model from §1295 and continuum claim from Series XII."
+      },
+      {
+        "step": 2,
+        "type": "retrieve",
+        "query": "contiguous particles induction §1295 conductors non-conductors degree not kind",
+        "retrieved_chunk_ids": ["faraday_022", "faraday_023"],
+        "rationale": "These chunks are the theoretical pair."
+      },
+      {
+        "step": 3,
+        "type": "extract",
+        "chunk_id": "faraday_022",
+        "extracted_facts": [
+          "Induction propagates via contiguous particles in dielectric"
+        ]
+      },
+      {
+        "step": 4,
+        "type": "extract",
+        "chunk_id": "faraday_023",
+        "extracted_facts": [
+          "Conduction and induction same principle with degree differences",
+          "Conductors and insulators differ by degree, not kind"
+        ]
+      },
+      {
+        "step": 5,
+        "type": "synthesise",
+        "answer": "If induction is mediated stepwise through contiguous particles, then conduction can be seen as the high-throughput limit of the same process. This is exactly Faraday's Series XII claim: conductor versus insulator is not a categorical divide but a continuum of degree. The contiguous-particle model therefore underwrites his unification of conduction and induction."
+      }
+    ],
+    "evaluation_rubric": {
+      "contiguous_particles_model": 1,
+      "degree_not_kind_claim": 1,
+      "logical_connection_between_them": 1
+    },
+    "difficulty": "medium"
+  },
+  {
+    "trajectory_id": "faraday_traj_026",
+    "task": "Multi-hop: explain how Faraday's Series XIV view of force distribution supports his electric-magnetic linkage argument in §1709-1735.",
+    "chunks_required": ["faraday_024", "faraday_025"],
+    "steps": [
+      {
+        "step": 1,
+        "type": "plan",
+        "thought": "Need methodological claim about distribution and then the specific linkage argument."
+      },
+      {
+        "step": 2,
+        "type": "retrieve",
+        "query": "Series XIV distribution of electric force and relation electric magnetic forces intervening particles",
+        "retrieved_chunk_ids": ["faraday_024", "faraday_025"],
+        "rationale": "These chunks provide premise and application."
+      },
+      {
+        "step": 3,
+        "type": "extract",
+        "chunk_id": "faraday_024",
+        "extracted_facts": [
+          "Faraday emphasizes distribution/arrangement over speculative force ontology"
+        ]
+      },
+      {
+        "step": 4,
+        "type": "extract",
+        "chunk_id": "faraday_025",
+        "extracted_facts": [
+          "Argues magnetic effects act through intervening particles",
+          "Frames analogy with induction in electricity"
+        ]
+      },
+      {
+        "step": 5,
+        "type": "synthesise",
+        "answer": "Series XIV first sets a method: prioritize experimentally mapped force distribution rather than metaphysical commitment to one-fluid or two-fluid accounts. Applying that method, Faraday argues in §1709-1735 that magnetic and electric effects are both mediated through intervening matter. The electric-magnetic linkage is thus not an abstract analogy alone; it is a shared distributional mechanism."
+      }
+    ],
+    "evaluation_rubric": {
+      "distribution_method_identified": 1,
+      "intervening_particles_linkage": 1,
+      "premise_to_application_reasoning": 1
+    },
+    "difficulty": "hard"
+  },
+  {
+    "trajectory_id": "faraday_traj_027",
+    "task": "Multi-hop: connect Faraday's magneto-optical discovery with his diamagnetics work as part of a broader 1845 program linking magnetism to other physical domains.",
+    "chunks_required": ["faraday_026", "faraday_027"],
+    "steps": [
+      {
+        "step": 1,
+        "type": "plan",
+        "thought": "Need one chunk for light-magnetism coupling and one for diamagnetic class discovery."
+      },
+      {
+        "step": 2,
+        "type": "retrieve",
+        "query": "1845 Faraday effect rotation polarized light and diamagnetics bismuth",
+        "retrieved_chunk_ids": ["faraday_026", "faraday_027"],
+        "rationale": "Both are 1845 Volume III results showing cross-domain magnetic action."
+      },
+      {
+        "step": 3,
+        "type": "extract",
+        "chunk_id": "faraday_026",
+        "extracted_facts": [
+          "Magnetic field rotates plane of polarized light",
+          "Rotation scales with field and path length"
+        ]
+      },
+      {
+        "step": 4,
+        "type": "extract",
+        "chunk_id": "faraday_027",
+        "extracted_facts": [
+          "Bismuth repelled by poles and aligns equatorially",
+          "Diamagnetics show induced polarity opposite to field"
+        ]
+      },
+      {
+        "step": 5,
+        "type": "synthesise",
+        "answer": "Faraday's 1845 work shows magnetism acting beyond ordinary iron-like attraction. In the Faraday effect, magnetism modifies optical polarization in transparent media; in diamagnetism, magnetism induces opposite-sense polarity in materials like bismuth. Together they form a broader program demonstrating that magnetic influence extends across optics and material response classes, supporting a more universal field concept."
+      }
+    ],
+    "evaluation_rubric": {
+      "mentions_optical_rotation": 1,
+      "mentions_diamagnetic_repulsion_or_equatorial_alignment": 1,
+      "unified_1845_program_interpretation": 1,
+      "volume_III_context": 1
+    },
+    "difficulty": "hard"
+  },
+  {
+    "trajectory_id": "faraday_traj_028",
+    "task": "Multi-hop: contrast Faraday's unsuccessful tidal-electricity field test with his successful copper-disc generator result to explain the role of control and signal-to-noise in discovery.",
+    "chunks_required": ["faraday_006", "faraday_008"],
+    "steps": [
+      {
+        "step": 1,
+        "type": "plan",
+        "thought": "Need one controlled positive case and one noisy field case."
+      },
+      {
+        "step": 2,
+        "type": "retrieve",
+        "query": "copper disc generator continuous EMF versus Waterloo Bridge tidal experiment inconclusive",
+        "retrieved_chunk_ids": ["faraday_006", "faraday_008"],
+        "rationale": "These two experiments are ideal contrast cases."
+      },
+      {
+        "step": 3,
+        "type": "extract",
+        "chunk_id": "faraday_006",
+        "extracted_facts": [
+          "Controlled rotating-disc setup gave continuous measurable EMF",
+          "Output verified by galvanometer and chemical effect"
+        ]
+      },
+      {
+        "step": 4,
+        "type": "extract",
+        "chunk_id": "faraday_008",
+        "extracted_facts": [
+          "Bridge experiment produced irregular deflections with many confounders",
+          "No decisive result after several days"
+        ]
+      },
+      {
+        "step": 5,
+        "type": "synthesise",
+        "answer": "The copper-disc generator succeeded because Faraday controlled geometry, motion, contacts, and verification channels, producing a stable continuous signal. The tidal-electricity bridge test failed to isolate the target signal from environmental variability and contact artifacts. The contrast highlights that discovery in electromagnetism depended not only on theory but on experiment designs with strong control and high signal-to-noise."
+      }
+    ],
+    "evaluation_rubric": {
+      "disc_generator_success_characterized": 1,
+      "bridge_inconclusive_characterized": 1,
+      "methodological_signal_noise_lesson": 1
+    },
+    "difficulty": "hard"
+  }
+]

@@ -1,0 +1,212 @@
+[
+  {
+    "pair_id": "mitre_001",
+    "tactic_id": "TA0001",
+    "tactic": "Initial Access",
+    "technique_id": "T1566.001",
+    "technique": "Phishing: Spearphishing Attachment",
+    "framing": "attack_then_defend",
+    "context": "An attacker sends a targeted email to a finance employee containing a malicious Office document with an embedded macro. The email appears to come from the CFO's address (spoofed). The attachment is named 'Q4_Budget_Final.docm'. When opened and macros enabled, it downloads a Cobalt Strike beacon.",
+    "attacker_goal": "Gain initial foothold by tricking an employee into executing malware.",
+    "chosen_action": "Defend: (1) Configure email gateway to block .docm/.xlsm attachments from external senders. (2) Enable DMARC/DKIM/SPF to prevent CFO address spoofing — DMARC reject policy blocks spoofed emails. (3) Disable Office macros by Group Policy for all users except a named whitelist. (4) Deploy sandboxed email attachment scanning (e.g., Microsoft Defender ATP Safe Attachments). (5) Train employees to verify unexpected attachments via phone before opening.",
+    "chosen_reasoning": "Layered controls (technical + human) at the delivery and execution stages break the attack chain before the macro runs. DMARC alone blocks the spoofed sender address. Macro disablement prevents execution even if the file is opened.",
+    "rejected_action": "Allow all attachment types because blocking them disrupts business workflows. Rely on employees to 'be careful' without technical controls.",
+    "rejected_reasoning": "Humans are the weakest link in phishing defence. Without technical controls, one lapse by one employee provides the attacker with a foothold. Business disruption from filtering is far lower than the cost of a breach.",
+    "detection_signals": [
+      "Email gateway alert: external .docm attachment blocked",
+      "DMARC failure report for spoofed CFO address",
+      "SIEM alert: Office process (WINWORD.EXE) spawning PowerShell child process",
+      "DNS query to unknown external domain from workstation"
+    ],
+    "mitre_mitigations": ["M1049 - Antivirus/Antimalware", "M1031 - Network Intrusion Prevention", "M1017 - User Training", "M1054 - Software Configuration"]
+  },
+  {
+    "pair_id": "mitre_002",
+    "tactic_id": "TA0006",
+    "tactic": "Credential Access",
+    "technique_id": "T1110.001",
+    "technique": "Brute Force: Password Guessing",
+    "framing": "attack_then_defend",
+    "context": "An attacker with a list of 500 common passwords attempts to authenticate to a company's VPN portal and web application login page. They use a low-and-slow approach (1 attempt per minute per account) to avoid triggering simple lockout policies. They target accounts found via LinkedIn (IT administrators).",
+    "attacker_goal": "Gain valid credentials to log into the VPN or web application without triggering account lockout.",
+    "chosen_action": "Defend: (1) Enforce MFA on all remote access (VPN, web app login) — even correct password is useless without the second factor. (2) Implement account lockout after 5 failed attempts with a 30-minute reset window. (3) Deploy rate limiting at the application layer: maximum 10 attempts per IP per 10 minutes. (4) Monitor for distributed brute force (many IPs, same username) with SIEM correlation rule. (5) Use CAPTCHA on public-facing login forms to block automated tools.",
+    "chosen_reasoning": "MFA is the single most effective control — it makes credential theft largely irrelevant for remote access. Rate limiting and lockout address automated brute force. SIEM detection catches slow-and-low campaigns that evade simple lockout.",
+    "rejected_action": "Rely on a strong password policy alone (12+ characters, complexity). Do not lock out accounts to avoid disrupting legitimate users.",
+    "rejected_reasoning": "Strong password policies are necessary but not sufficient. Brute force against a 12-character password is still feasible with GPU-accelerated tools if hashes are obtained. Without MFA and lockout, the attacker has unlimited attempts.",
+    "detection_signals": [
+      "SIEM alert: >5 failed authentications for username 'j.smith@acme.com' in 10 minutes",
+      "WAF alert: repeated POST /login from same IP with different passwords",
+      "Auth log: multiple accounts showing failed logins from same source IP",
+      "Spike in CAPTCHA challenges on login page"
+    ],
+    "mitre_mitigations": ["M1036 - Account Use Policies", "M1032 - Multi-factor Authentication", "M1027 - Password Policies"]
+  },
+  {
+    "pair_id": "mitre_003",
+    "tactic_id": "TA0004",
+    "tactic": "Privilege Escalation",
+    "technique_id": "T1068",
+    "technique": "Exploitation for Privilege Escalation",
+    "framing": "attack_then_defend",
+    "context": "An attacker with a low-privilege user account on a Windows Server exploits CVE-2021-34527 (PrintNightmare) — a Windows Print Spooler vulnerability. By sending a crafted RPC request, they load a malicious DLL as SYSTEM, gaining full administrative control of the server.",
+    "attacker_goal": "Escalate from low-privilege user to SYSTEM/Administrator on a Windows host.",
+    "chosen_action": "Defend: (1) Apply Microsoft security patches immediately — PrintNightmare was patched in July 2021; unpatched systems are inexcusable in 2025. (2) Disable the Print Spooler service on servers that do not need printing (domain controllers, application servers). (3) Restrict who can install printer drivers: Group Policy 'Point and Print Restrictions' set to 'Do not allow'. (4) Use a vulnerability scanner (Qualys, Tenable) to detect unpatched systems weekly. (5) Monitor for spoolsv.exe spawning unexpected child processes.",
+    "chosen_reasoning": "Patching eliminates the vulnerability entirely. Disabling unused services reduces attack surface. Detection via process monitoring catches exploitation attempts even on unpatched systems.",
+    "rejected_action": "Accept the risk of running unpatched systems because patching requires a maintenance window and risks breaking applications.",
+    "rejected_reasoning": "Delaying patches for operational convenience is the most common cause of preventable breaches. A SYSTEM-level compromise enables the attacker to steal all credentials on the host, disable security tools, and move laterally — far more costly than a maintenance window.",
+    "detection_signals": [
+      "Windows Event 808 / Sysmon Event 7: DLL loaded into spoolsv.exe from unusual path",
+      "Process creation: spoolsv.exe → cmd.exe or powershell.exe child process",
+      "Vulnerability scanner alert: CVE-2021-34527 on unpatched host",
+      "EDR alert: SYSTEM-level process spawned from Print Spooler"
+    ],
+    "mitre_mitigations": ["M1051 - Update Software", "M1042 - Disable or Remove Feature or Program", "M1026 - Privileged Account Management"]
+  },
+  {
+    "pair_id": "mitre_004",
+    "tactic_id": "TA0008",
+    "tactic": "Lateral Movement",
+    "technique_id": "T1021.001",
+    "technique": "Remote Services: RDP",
+    "framing": "attack_then_defend",
+    "context": "An attacker who has compromised one Windows workstation extracts NTLM hashes using mimikatz. They perform Pass-the-Hash against other machines on the same subnet using RDP, logging in as a local administrator account that shares the same password across all workstations (a common misconfiguration).",
+    "attacker_goal": "Move laterally from compromised workstation to other machines on the network using stolen credentials.",
+    "chosen_action": "Defend: (1) Enable Microsoft LAPS (Local Administrator Password Solution) to give every machine a unique, auto-rotating local admin password — kills Pass-the-Hash lateral movement instantly. (2) Block RDP (port 3389) between workstations using host-based firewall rules; allow only from a dedicated jump server. (3) Enable Restricted Admin mode for RDP to prevent credential caching. (4) Deploy a PAM (Privileged Access Management) solution for all administrative access. (5) Alert on RDP connections originating from non-jump-server IPs.",
+    "chosen_reasoning": "LAPS is free, built into Windows, and eliminates the shared local admin password problem that enables mass lateral movement. Network segmentation limits blast radius even if one host is compromised.",
+    "rejected_action": "Use the same local administrator password across all workstations for ease of management. Allow RDP between all machines on the internal network.",
+    "rejected_reasoning": "A single compromised password gives the attacker access to every machine in the environment. This is the primary enabler of ransomware spreading rapidly across an entire organisation.",
+    "detection_signals": [
+      "SIEM alert: RDP connection from workstation IP (not jump server) to another workstation",
+      "Windows Security Event 4624 (Type 10 - Remote Interactive): logon from unexpected source",
+      "EDR alert: lsass.exe memory access (credential dumping precursor)",
+      "Multiple successful RDP logons in rapid succession from same source"
+    ],
+    "mitre_mitigations": ["M1027 - Password Policies", "M1035 - Limit Access to Resource Over Network", "M1026 - Privileged Account Management", "M1028 - Operating System Configuration"]
+  },
+  {
+    "pair_id": "mitre_005",
+    "tactic_id": "TA0010",
+    "tactic": "Exfiltration",
+    "technique_id": "T1048",
+    "technique": "Exfiltration Over Alternative Protocol (DNS Tunnelling)",
+    "framing": "attack_then_defend",
+    "context": "An attacker with internal network access uses DNS tunnelling (dnscat2 or iodine) to exfiltrate sensitive data. They encode stolen files as Base64 strings embedded in DNS TXT query payloads, sent to an attacker-controlled DNS server. Because port 53 UDP is almost never blocked, this bypasses most egress firewall rules.",
+    "attacker_goal": "Exfiltrate data while evading egress filtering by hiding data inside DNS traffic.",
+    "chosen_action": "Defend: (1) Deploy a DNS security solution (Cisco Umbrella, Cloudflare Gateway, or BIND RPZ) that inspects DNS query frequency, payload length, and entropy — DNS tunnelling creates abnormally long, high-entropy subdomains. (2) Block outbound DNS to all servers except designated internal resolvers; internal resolvers forward to trusted upstreams only. (3) Set SIEM alert: any DNS query with a subdomain longer than 50 characters or high Shannon entropy. (4) Enable DNS logging on all resolvers and forward logs to SIEM. (5) Block or alert on DNS TXT and NULL record queries from workstations (unusual for normal traffic).",
+    "chosen_reasoning": "Restricting DNS to internal resolvers prevents direct communication with attacker-controlled DNS servers. DNS security platforms detect tunnelling behaviorally (query volume, entropy) even when the content is encrypted.",
+    "rejected_action": "Allow unrestricted outbound DNS (port 53) because blocking it would break internet access for employees.",
+    "rejected_reasoning": "Employees never need to query arbitrary external DNS servers directly. Routing all DNS through internal resolvers with filtering adds zero friction for legitimate users while blocking a major exfiltration channel.",
+    "detection_signals": [
+      "DNS resolver log: subdomain query > 60 chars (e.g., 'aGVsbG8gd29ybGQ.attacker.com')",
+      "SIEM alert: >100 DNS queries/minute from single workstation to single external domain",
+      "Network flow: sustained UDP port 53 traffic to non-corporate DNS server",
+      "DNS security platform alert: high-entropy subdomain pattern detected"
+    ],
+    "mitre_mitigations": ["M1037 - Filter Network Traffic", "M1031 - Network Intrusion Prevention", "M1021 - Restrict Web-Based Content"]
+  },
+  {
+    "pair_id": "mitre_006",
+    "tactic_id": "TA0003",
+    "tactic": "Persistence",
+    "technique_id": "T1543.003",
+    "technique": "Create or Modify System Process: Windows Service",
+    "framing": "attack_then_defend",
+    "context": "After gaining SYSTEM access, an attacker installs a malicious Windows service named 'WindowsUpdateSvc' (mimicking a legitimate service name) that launches a reverse shell on system startup. The service binary is placed in C:\\Windows\\Temp\\ and configured to auto-start. This ensures the attacker regains access after a reboot.",
+    "attacker_goal": "Maintain persistent access to a compromised system across reboots without being detected.",
+    "chosen_action": "Defend: (1) Monitor Windows Event 7045 (A new service was installed) and alert on any service installation outside of approved change management windows. (2) Use application whitelisting (AppLocker or Windows Defender Application Control) to prevent execution of binaries from Temp directories. (3) Audit service binaries weekly: any service pointing to an unusual path (Temp, AppData, ProgramData) is suspicious. (4) Deploy an EDR solution that detects and blocks service creation by non-installer processes. (5) Require code signing for all service executables.",
+    "chosen_reasoning": "Legitimate software almost never installs services from Temp directories. Monitoring Event 7045 with an alert on non-standard paths catches this technique reliably. Application whitelisting prevents the malicious binary from executing at all.",
+    "rejected_action": "Do not monitor service creation events because there are too many legitimate service installations to filter through.",
+    "rejected_reasoning": "Service creation is a rare, high-value event on production systems. Any new service should trigger a review. Alert fatigue from legitimate services is manageable with a baseline allowlist; missing a malicious persistence mechanism is not.",
+    "detection_signals": [
+      "Windows Event 7045: new service 'WindowsUpdateSvc' installed",
+      "Service binary path: C:\\Windows\\Temp\\svc.exe (non-standard location)",
+      "Sysmon Event 1: process creation for binary in Temp folder",
+      "EDR alert: service executable fails code signing verification"
+    ],
+    "mitre_mitigations": ["M1047 - Audit", "M1038 - Execution Prevention", "M1040 - Behavior Prevention on Endpoint", "M1018 - User Account Management"]
+  },
+  {
+    "pair_id": "mitre_007",
+    "tactic_id": "TA0005",
+    "tactic": "Defense Evasion",
+    "technique_id": "T1562.001",
+    "technique": "Impair Defenses: Disable or Modify Tools",
+    "framing": "attack_then_defend",
+    "context": "After gaining administrator access, an attacker uses PowerShell to disable Windows Defender real-time protection (Set-MpPreference -DisableRealtimeMonitoring $true) and clears the Windows Security Event log (wevtutil cl Security) to remove evidence of the intrusion.",
+    "attacker_goal": "Disable security tools and erase logs to prevent detection and forensic investigation.",
+    "chosen_action": "Defend: (1) Forward all security logs to a centralised SIEM in real time — log clearing on the host cannot erase logs already sent to the SIEM. (2) Monitor for Windows Event 104 (log cleared) and 1102 (audit log cleared) as high-severity alerts. (3) Protect Windows Defender settings with tamper protection (enabled in Microsoft Defender for Endpoint) — prevents modification even by local admins. (4) Alert on PowerShell commands containing 'Set-MpPreference' or 'DisableRealtimeMonitoring'. (5) Deploy a SIEM rule: if Windows Defender reports itself as disabled, treat as critical incident.",
+    "chosen_reasoning": "Centralised logging makes log clearing irrelevant — the attacker can erase local logs but cannot erase what was already shipped to the SIEM. Tamper protection prevents Defender from being turned off without Microsoft's cloud-based approval.",
+    "rejected_action": "Rely solely on local Windows Event logs for security monitoring. Do not forward logs externally because it is expensive.",
+    "rejected_reasoning": "Local-only logging is a single point of failure. Any attacker with admin rights can erase local logs in seconds, destroying all forensic evidence. Centralised logging is a fundamental security baseline, not an optional expense.",
+    "detection_signals": [
+      "SIEM alert: Windows Event 104 or 1102 (security log cleared)",
+      "SIEM alert: Windows Defender real-time protection status changed to disabled",
+      "PowerShell logging: command containing 'DisableRealtimeMonitoring'",
+      "EDR alert: wevtutil.exe called with 'cl Security' argument"
+    ],
+    "mitre_mitigations": ["M1022 - Restrict File and Directory Permissions", "M1024 - Restrict Registry Permissions", "M1054 - Software Configuration", "M1047 - Audit"]
+  },
+  {
+    "pair_id": "mitre_008",
+    "tactic_id": "TA0040",
+    "tactic": "Impact",
+    "technique_id": "T1486",
+    "technique": "Data Encrypted for Impact (Ransomware)",
+    "framing": "attack_then_defend",
+    "context": "A ransomware group (LockBit affiliate) has achieved domain admin access after lateral movement. They deploy ransomware simultaneously on 200 servers using PsExec, encrypting all files and deleting shadow copies (vssadmin delete shadows /all). A ransom note is left on every encrypted system demanding $4M in Bitcoin within 72 hours.",
+    "attacker_goal": "Encrypt all organisational data and destroy backups to maximise pressure for ransom payment.",
+    "chosen_action": "Defend (BEFORE incident): (1) Maintain immutable, air-gapped backups that cannot be deleted or encrypted by a compromised domain admin — test restore monthly. (2) Implement network segmentation so a compromised domain admin cannot reach all 200 servers via PsExec. (3) Monitor for mass file rename events (ransomware signature) with EDR — trigger automated isolation of affected hosts. (4) Block vssadmin, wmic, and bcdedit for non-administrative processes. (5) Implement Privileged Access Workstations (PAWs) so domain admin credentials are never used on regular workstations. Defend (DURING incident): (1) Activate IR plan immediately. (2) Isolate affected network segments. (3) Restore from immutable backups. (4) Do NOT pay the ransom — it funds further attacks and does not guarantee decryption.",
+    "chosen_reasoning": "Immutable backups are the only complete defence against ransomware's ultimate goal. Network segmentation limits the blast radius. Behavioral detection triggers automatic isolation before full encryption completes.",
+    "rejected_action": "Maintain standard backups on the same network domain. Pay the ransom if attacked because it is the fastest way to restore operations.",
+    "rejected_reasoning": "Standard backups accessible by domain admins will be encrypted or deleted along with everything else. Ransom payment has a 40% non-decryption rate (Sophos 2024 report) and directly funds the criminal ecosystem. The average ransomware recovery cost is 10x the ransom demand when downtime, legal fees, and reputational damage are included.",
+    "detection_signals": [
+      "EDR alert: mass file extension changes (.lockbit, .encrypted) across multiple hosts simultaneously",
+      "SIEM alert: vssadmin delete shadows executed on >5 hosts in 1 minute",
+      "Network flow: PsExec lateral movement from domain controller to 200 servers in rapid succession",
+      "File integrity monitoring: >1000 file modifications per minute on file server"
+    ],
+    "mitre_mitigations": ["M1053 - Data Backup", "M1026 - Privileged Account Management", "M1037 - Filter Network Traffic", "M1040 - Behavior Prevention on Endpoint"]
+  },
+  {
+    "pair_id": "mitre_009",
+    "tactic_id": "TA0043",
+    "tactic": "Reconnaissance",
+    "technique_id": "T1595.002",
+    "technique": "Active Scanning: Vulnerability Scanning",
+    "framing": "attack_then_defend",
+    "context": "Before attacking, a threat actor runs Shodan searches and Masscan against the organisation's public IP ranges to identify open ports, running services, and software versions. They identify an unpatched Apache server (CVE-2021-41773 - path traversal) and an exposed Elasticsearch instance with no authentication.",
+    "attacker_goal": "Map the target's external attack surface to identify the easiest entry points before launching an attack.",
+    "chosen_action": "Defend: (1) Run your own external attack surface scan FIRST (e.g., Shodan Monitor, Censys, or commercial ASM tools) — know what attackers see before they do. (2) Immediately remediate any unintended exposures found (the Elasticsearch instance should never be public). (3) Keep a current asset inventory — you cannot protect assets you do not know exist. (4) Set up Shodan Monitor alerts for your IP ranges to be notified when new services appear publicly. (5) Patch promptly: CVE-2021-41773 had a patch available on the same day as disclosure.",
+    "chosen_reasoning": "Attackers scan constantly. The only way to reduce your attack surface is to actively manage it. Running your own scans before attackers do gives you the intelligence advantage.",
+    "rejected_action": "Do not scan your own external infrastructure because it is expensive and time-consuming. Assume the firewall blocks everything that should not be exposed.",
+    "rejected_reasoning": "Firewall rules drift over time — new services get provisioned, cloud instances get spun up, and contractors open temporary ports that are never closed. Assumption of security without verification is not security.",
+    "detection_signals": [
+      "WAF/IDS alert: port scan signature from external IP (Masscan characteristic SYN packets)",
+      "Web server log: unusual number of 404s for common vulnerability paths",
+      "Shodan Monitor alert: new service discovered on company IP range",
+      "Firewall log: SYN packets to all 65535 ports from single external IP"
+    ],
+    "mitre_mitigations": ["M1056 - Pre-compromise", "M1030 - Network Segmentation", "M1035 - Limit Access to Resource Over Network"]
+  },
+  {
+    "pair_id": "mitre_010",
+    "tactic_id": "TA0007",
+    "tactic": "Discovery",
+    "technique_id": "T1082",
+    "technique": "System Information Discovery",
+    "framing": "attack_then_defend",
+    "context": "After gaining a foothold, an attacker runs a series of built-in Windows commands to understand their environment: 'systeminfo', 'net user', 'net group /domain', 'ipconfig /all', 'arp -a'. This tells them the OS version, patch level, domain name, user accounts, and network topology — all needed to plan the next step.",
+    "attacker_goal": "Understand the compromised environment to plan privilege escalation and lateral movement.",
+    "chosen_action": "Defend: (1) Log and monitor execution of enumeration commands (systeminfo, net user, net group) via Sysmon Event 1 (process creation) — alert on these run in rapid succession from a non-administrative process. (2) Restrict 'net group /domain' to domain admins only via Group Policy. (3) Implement application whitelisting to prevent unusual processes from running these commands. (4) Deploy a honeypot account (a fake admin account that is never used legitimately) — any query for this account is a guaranteed detection signal. (5) Use network access control to limit which hosts can query the domain controller.",
+    "chosen_reasoning": "Legitimate users rarely run 'systeminfo' followed by 'net group /domain' from a user workstation. This sequence is a strong behavioral indicator of post-compromise discovery. Detection at this early stage — before privilege escalation — limits the blast radius.",
+    "rejected_action": "Allow all built-in Windows commands to run unrestricted on all hosts because restricting them breaks administrative workflows.",
+    "rejected_reasoning": "Monitoring command execution does not restrict it — alerts can fire without blocking. Even if restriction is needed, legitimate administrative commands should be run from designated jump servers, not user workstations.",
+    "detection_signals": [
+      "Sysmon Event 1: net.exe executed with 'group /domain' argument from non-admin host",
+      "Sysmon Event 1: systeminfo.exe followed by ipconfig.exe within 60 seconds same process tree",
+      "SIEM correlation: 5 enumeration commands run in sequence from same process/user",
+      "Domain controller log: excessive LDAP queries from workstation IP"
+    ],
+    "mitre_mitigations": ["M1028 - Operating System Configuration", "M1026 - Privileged Account Management", "M1018 - User Account Management"]
+  }
+]

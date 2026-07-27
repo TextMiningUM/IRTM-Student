@@ -1,0 +1,83 @@
+[
+  {
+    "pair_id": "pref_297af4e90b",
+    "context": "Chapter: The Ethics of Ethical Hacking",
+    "chosen_action": "to prevent any likelihood of unauthorized access to confidential data, you are essentially exposing yourself to the possibility of hackers exploiting any existing loopholes to their advantage.",
+    "chosen_reasoning": "This follows security best practices as described in the text.",
+    "rejected_action": "Not following: to prevent any likelihood of unauthorized access to confidential data, you are e",
+    "rejected_reasoning": "This approach exposes vulnerabilities or fails to implement proper defenses.",
+    "category": "security"
+  },
+  {
+    "pair_id": "pref_8097b8fa66",
+    "context": "Chapter: How to Set Up Burp Proxy",
+    "chosen_action": "The recommendation is to use Firefox with Burp because by doing so, you will be able to set it up without having to make any changes to the system wide settings which would affect a couple of programs.",
+    "chosen_reasoning": "This follows security best practices as described in the text.",
+    "rejected_action": "Not following: The recommendation is to use Firefox with Burp because by doing so, you will be",
+    "rejected_reasoning": "This approach exposes vulnerabilities or fails to implement proper defenses.",
+    "category": "security"
+  },
+  {
+    "pair_id": "pref_3e6eeedf69",
+    "context": "Chapter: How to Set Up Burp Proxy",
+    "chosen_action": "You should receive the server response almost immediately.",
+    "chosen_reasoning": "This follows security best practices as described in the text.",
+    "rejected_action": "Not following: You should receive the server response almost immediately.",
+    "rejected_reasoning": "This approach exposes vulnerabilities or fails to implement proper defenses.",
+    "category": "security"
+  },
+  {
+    "pair_id": "pref_88597309c6",
+    "context": "Chapter: Leaking Data",
+    "chosen_action": "The most effective way to prevent these kinds of attacks is to return a constant error message for any unsuccessful login attempt.",
+    "chosen_reasoning": "This follows security best practices as described in the text.",
+    "rejected_action": "exposed whether the username was valid or invalid.",
+    "rejected_reasoning": "This approach exposes vulnerabilities or fails to implement proper defenses.",
+    "category": "security"
+  },
+  {
+    "pair_id": "pref_b9312f71a4",
+    "context": "Chapter: Leaking Data",
+    "chosen_action": "You should not give hackers suggestions with wordy error messages.",
+    "chosen_reasoning": "This follows security best practices as described in the text.",
+    "rejected_action": "exposed whether the username was valid or invalid.",
+    "rejected_reasoning": "This approach exposes vulnerabilities or fails to implement proper defenses.",
+    "category": "security"
+  },
+  {
+    "pair_id": "pref_ea5afa8275",
+    "context": "Chapter: Account Lockout",
+    "chosen_action": "you should now try to strengthen the login to avoid any brute force password guessing attacks.",
+    "chosen_reasoning": "This follows security best practices as described in the text.",
+    "rejected_action": "fail to login a particular number of times.",
+    "rejected_reasoning": "This approach exposes vulnerabilities or fails to implement proper defenses.",
+    "category": "security"
+  },
+  {
+    "pair_id": "pref_6a1fe9aff9",
+    "context": "Chapter: Account Lockout",
+    "chosen_action": "To achieve this, you will have to add an account lockout to users the moment they fail to login a particular number of times.",
+    "chosen_reasoning": "This follows security best practices as described in the text.",
+    "rejected_action": "fail to login a particular number of times.",
+    "rejected_reasoning": "This approach exposes vulnerabilities or fails to implement proper defenses.",
+    "category": "security"
+  },
+  {
+    "pair_id": "pref_b0c664847e",
+    "context": "Chapter: The Complexity of the Password",
+    "chosen_action": "you should know how to make your password complex.",
+    "chosen_reasoning": "This follows security best practices as described in the text.",
+    "rejected_action": "Not following: you should know how to make your password complex.",
+    "rejected_reasoning": "This approach exposes vulnerabilities or fails to implement proper defenses.",
+    "category": "security"
+  },
+  {
+    "pair_id": "pref_b823b0495e",
+    "context": "Chapter: Conclusion",
+    "chosen_action": "to prevent people from getting in.",
+    "chosen_reasoning": "This follows security best practices as described in the text.",
+    "rejected_action": "Not following: to prevent people from getting in.",
+    "rejected_reasoning": "This approach exposes vulnerabilities or fails to implement proper defenses.",
+    "category": "security"
+  }
+]

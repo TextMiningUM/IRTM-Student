@@ -1,0 +1,530 @@
+[
+  {
+    "id": "faraday_q001",
+    "source_benchmark": "Faraday Series I §1–6",
+    "category": "specific_fact",
+    "question": "In Faraday's original 1831 iron-ring experiment, what were the exact dimensions of the iron ring, and why was the induced galvanometer deflection transient rather than sustained?",
+    "reference_answer": "The iron ring was seven-eighths of an inch thick and six inches in external diameter. The deflection was transient because induction only occurs during a change in the primary current: while the battery current was steady, the galvanometer needle returned to zero. Faraday noted this in §6.",
+    "expected_points": [
+      "seven-eighths of an inch thick",
+      "six inches in external diameter",
+      "deflection transient because induction requires change not steady state",
+      "needle returned to zero when current was steady (§6)"
+    ],
+    "safety_focus": "",
+    "difficulty": "hard"
+  },
+  {
+    "id": "faraday_q002",
+    "source_benchmark": "Faraday Series I §10–11",
+    "category": "specific_fact",
+    "question": "How long was the helix wire Faraday used in §10 to show that a permanent magnet was unnecessary for electromagnetic induction, and what essential condition did he identify?",
+    "reference_answer": "Faraday used a helix wound from 203 feet of copper wire. The essential condition was change (flux change): neither a steady current nor a steady magnet produced any induction; only a changing current produced the transient deflection.",
+    "expected_points": [
+      "203 feet of wire wound into a helix",
+      "essential condition is change or flux change",
+      "permanent magnet not necessary",
+      "steady current produces no deflection"
+    ],
+    "safety_focus": "",
+    "difficulty": "hard"
+  },
+  {
+    "id": "faraday_q003",
+    "source_benchmark": "Faraday Series I §17–26",
+    "category": "specific_fact",
+    "question": "Describe the bar-magnet helix experiment in §17: what were the magnet length and helix turn count, and what conclusion did Faraday state in §26?",
+    "reference_answer": "A cylindrical bar magnet 12 inches long was thrust into a helix of 220 turns wound on a hollow pasteboard cylinder. While the magnet was at rest no deflection occurred; only on inserting or withdrawing it did a transient deflection appear. In §26 Faraday concluded that a conductor must cut across the magnetic curves of force to generate an EMF.",
+    "expected_points": [
+      "bar magnet 12 inches long",
+      "helix of 220 turns",
+      "no deflection while magnet at rest inside",
+      "direction of deflection reversed when direction of motion reversed",
+      "§26: conductor must cut magnetic curves of force"
+    ],
+    "safety_focus": "",
+    "difficulty": "hard"
+  },
+  {
+    "id": "faraday_q004",
+    "source_benchmark": "Faraday Series I §31",
+    "category": "specific_fact",
+    "question": "What happened to the galvanometer needle when Faraday used one hundred pairs of plates with his iron-ring apparatus in §31?",
+    "reference_answer": "With 100 pairs of plates, the impulse at the galvanometer when contact was completed or broken 'was so great as to make the needle spin round rapidly four or five times, before the air and terrestrial magnetism could reduce its motion to mere oscillation.'",
+    "expected_points": [
+      "one hundred pairs of plates",
+      "needle spun round rapidly four or five times",
+      "required air and terrestrial magnetism to reduce motion to oscillation",
+      "on both making and breaking contact"
+    ],
+    "safety_focus": "",
+    "difficulty": "hard"
+  },
+  {
+    "id": "faraday_q005",
+    "source_benchmark": "Faraday Series I §34",
+    "category": "specific_fact",
+    "question": "What was the direction of the induced current when the primary circuit was made, as Faraday stated in §34? Quote his exact phrase, and what modern law do these observations prefigure?",
+    "reference_answer": "On making the primary circuit, the induced current flowed 'in the opposite direction to that which the primary combination would have produced.' On breaking the circuit the induced current was in the same direction as the primary. These observations prefigure Lenz's Law (1834): the induced current always opposes the change that produces it.",
+    "expected_points": [
+      "exact phrase: 'in the opposite direction to that which the primary combination would have produced'",
+      "on making: opposite direction; on breaking: same direction",
+      "prefigures Lenz's Law (1834)"
+    ],
+    "safety_focus": "",
+    "difficulty": "hard"
+  },
+  {
+    "id": "faraday_q006",
+    "source_benchmark": "Faraday Series I §55–71",
+    "category": "specific_fact",
+    "question": "Describe the first electromagnetic generator Faraday built in §55–71: what were its dimensions, what was novel about its output, and how did he verify it?",
+    "reference_answer": "Faraday built a copper disc 12 inches in diameter, rotated between the poles of a horseshoe magnet, with electrical contacts at the rim and at the axle. Unlike all previous induction effects (which were transient), this produced a continuous (non-transient) EMF. He verified it with a galvanometer deflection and a chemical decomposition test; the current was proportional to rotational speed.",
+    "expected_points": [
+      "copper disc 12 inches in diameter",
+      "rotated between poles of horseshoe magnet",
+      "contacts at rim and at axle",
+      "produced continuous non-transient EMF — first of its kind",
+      "verified by galvanometer and chemical decomposition",
+      "current proportional to rotational speed"
+    ],
+    "safety_focus": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "faraday_q007",
+    "source_benchmark": "Faraday Series II §113",
+    "category": "specific_fact",
+    "question": "What were the dimensions of the bar magnets Faraday used to repeat all his magneto-electric experiments in §113, and why does he mention them?",
+    "reference_answer": "The bar magnets were two feet long, one inch and a half wide, and half an inch thick. Faraday mentions them to show that the large Royal Society magnet was not essential — all the revolving-plate and induction experiments could be repeated 'with the most striking results' using these ordinary bar magnets.",
+    "expected_points": [
+      "two feet long",
+      "one inch and a half wide",
+      "half an inch thick",
+      "purpose: show large magnet not needed",
+      "all experiments repeated with striking results"
+    ],
+    "safety_focus": "",
+    "difficulty": "hard"
+  },
+  {
+    "id": "faraday_q008",
+    "source_benchmark": "Faraday Series II §188–189",
+    "category": "specific_fact",
+    "question": "Describe Faraday's Waterloo Bridge experiment in §188–189: what was the length of wire used, what did he hope to detect, and what was the outcome?",
+    "reference_answer": "Faraday extended 'a copper wire nine hundred and sixty feet in length upon the parapet of the bridge', connecting its ends to plates in the Thames. He hoped to detect electric currents induced by the tidal flow of water cutting the Earth's magnetic field lines. After three days of experiments he obtained only irregular deflections attributable to temperature differences, water purity variations, and contact effects — not the sought tidal currents.",
+    "expected_points": [
+      "copper wire 960 feet long on parapet of Waterloo Bridge",
+      "plates dipped into Thames water",
+      "hoped to detect tidal induced currents",
+      "result: irregular deflections only, inconclusive after three days"
+    ],
+    "safety_focus": "",
+    "difficulty": "hard"
+  },
+  {
+    "id": "faraday_q009",
+    "source_benchmark": "Faraday Series III §371",
+    "category": "specific_fact",
+    "question": "State the exact dimensions Faraday used in §371 for his platina-zinc wire experiment, the composition of the acid, and how much electricity was produced.",
+    "reference_answer": "The platina and zinc wires were each one-eighteenth of an inch in diameter, placed five-sixteenths of an inch apart, immersed to five-eighths of an inch depth in acid consisting of one drop of oil of vitriol and four ounces of distilled water at about 60°F, connected by a copper wire 18 feet long and one-eighteenth of an inch thick. This arrangement yielded electricity equal to a Leyden battery charged by thirty turns of a large plate electric machine.",
+    "expected_points": [
+      "1/18 inch diameter (both wires)",
+      "5/16 inch apart",
+      "5/8 inch depth of immersion",
+      "one drop oil of vitriol in four ounces distilled water at 60°",
+      "18-foot copper connector, 1/18 inch thick",
+      "equivalent to Leyden battery charged by 30 turns of large machine"
+    ],
+    "safety_focus": "",
+    "difficulty": "hard"
+  },
+  {
+    "id": "faraday_q010",
+    "source_benchmark": "Faraday Series IV §381–395",
+    "category": "specific_fact",
+    "question": "What did Faraday discover about ice in Series IV §381, what battery did he use to test it, and how general did he find the law in §394–395?",
+    "reference_answer": "Faraday found that ice is an electrical non-conductor: even a thin film of ice in the circuit of a very powerful voltaic battery stopped all current flow and chemical decomposition. He tested with a battery of up to 150 pairs of four-inch plates — still no current passed through the ice. In §394 he found the law was general: liquefaction confers conducting power, congelation removes it. In §395 he verified this for chloride of lead: fused, it conducted; solid, it did not.",
+    "expected_points": [
+      "ice is a non-conductor of electricity",
+      "tested with up to 150 pairs of four-inch plates",
+      "law of liquefaction: conducting power acquired on melting, lost on freezing",
+      "§395: verified for fused chloride of lead"
+    ],
+    "safety_focus": "",
+    "difficulty": "hard"
+  },
+  {
+    "id": "faraday_q011",
+    "source_benchmark": "Faraday Series VII §861–862",
+    "category": "specific_fact",
+    "question": "What was Faraday's calculation in §861 about the quantity of electricity needed to decompose one grain of water, and what Leyden battery did he use as his reference?",
+    "reference_answer": "Faraday calculated in §861 that 800,000 charges of his reference Leyden battery would be necessary to supply enough electricity to decompose a single grain of water. His reference Leyden battery was one charged by thirty turns of a very large and powerful plate electric machine in full action (as established in §371).",
+    "expected_points": [
+      "800,000 Leyden battery charges needed",
+      "to decompose one grain of water",
+      "Leyden battery reference: charged by 30 turns of large plate machine",
+      "this electricity is naturally associated with the atoms in that water"
+    ],
+    "safety_focus": "",
+    "difficulty": "hard"
+  },
+  {
+    "id": "faraday_q012",
+    "source_benchmark": "Faraday Series VII §864–868",
+    "category": "specific_fact",
+    "question": "In §864 Faraday weighed two amalgamated zinc plates for his electrochemical equivalent experiment. What were the exact weights and dimensions of the plates, and what electrochemical equivalent did he obtain in §868?",
+    "reference_answer": "Plate A weighed 163.1 grains; plate B weighed 148.3 grains. Both were about five inches long and 0.4 of an inch wide. From the experiment Faraday determined in §868 that 'the chemical action upon 32.31 parts, or one equivalent of zinc' was attended by the evolution of the same quantity of electricity as 800,000 charges of the reference Leyden battery. The electrochemical equivalent of zinc is therefore 32.31 parts (grains).",
+    "expected_points": [
+      "plate A: 163.1 grains",
+      "plate B: 148.3 grains",
+      "both 5 inches long and 0.4 inch wide",
+      "electrochemical equivalent of zinc = 32.31 parts"
+    ],
+    "safety_focus": "",
+    "difficulty": "hard"
+  },
+  {
+    "id": "faraday_q013",
+    "source_benchmark": "Faraday Series IX §1049–1064",
+    "category": "specific_fact",
+    "question": "What was the original observation by Mr. Jenkin that led Faraday to discover self-induction (§1049), and what dimensions were the plain copper wire he tested in §1064?",
+    "reference_answer": "Jenkin observed that if a short ordinary wire connects a single pair of metals, no shock is felt on breaking the circuit; but if the wire of an electro-magnet is used instead, a strong shock is felt each time the contact is broken. In §1064 Faraday tested self-induction in a plain (non-coiled) wire: 'A copper wire, 0.18 of an inch in diameter, and 132 feet in length, was laid out upon the floor of the laboratory.' On breaking contact it produced a bright spark, and with silver plates at the ends could convulse a frog.",
+    "expected_points": [
+      "Jenkin: shock from breaking electro-magnet circuit, not from plain wire",
+      "§1064: copper wire 0.18 inch diameter",
+      "132 feet in length, laid on laboratory floor",
+      "produced spark on breaking, could convulse a frog"
+    ],
+    "safety_focus": "",
+    "difficulty": "hard"
+  },
+  {
+    "id": "faraday_q014",
+    "source_benchmark": "Faraday Series XI §1218–1224",
+    "category": "specific_fact",
+    "question": "Describe the shell-lac cylinder experiment Faraday performed in §1218 to prove induction in curved lines: what were the dimensions of the cylinder and what did the measurements at positions k, l, m show?",
+    "reference_answer": "Faraday used 'a cylinder of solid shell-lac, 0.9 of an inch in diameter and seven inches in length, fixed upright in a wooden foot', with the upper half excited negatively by friction with warm flannel. Using a carrier ball at positions k (108°), l (65°), m (35°) around the brass hemisphere placed on top (§1224), he showed that inductive force existed at positions not directly above the excited surface, proving that lines of inductive force follow curved paths — not straight lines.",
+    "expected_points": [
+      "shell-lac cylinder 0.9 inch diameter and 7 inches long",
+      "excited negatively by friction with warm flannel",
+      "carrier ball measurements at k=108°, l=65°, m=35°",
+      "proved induction follows curved lines, not straight"
+    ],
+    "safety_focus": "",
+    "difficulty": "hard"
+  },
+  {
+    "id": "faraday_q015",
+    "source_benchmark": "Faraday Series XI §1256–1260",
+    "category": "specific_fact",
+    "question": "What numerical value did Faraday calculate for the specific inductive capacity of shell-lac in §1260, using what apparatus, and why was the result 'so unexpected in its amount'?",
+    "reference_answer": "Using two inductive hemisphere apparatus (app. i. with shell-lac, app. ii. with air), Faraday divided a charge and found the shell-lac apparatus received 176 degrees while the air apparatus received 113 degrees. The SIC of shell-lac = 176/113 = 1.558 relative to air. The result was unexpected because previous electrical theory had assumed all insulators were equivalent; it proved for the first time that different dielectrics have intrinsically different capacities for induction.",
+    "expected_points": [
+      "shell-lac SIC = 176/113 = approximately 1.558 relative to air",
+      "apparatus: two inductive hemisphere apparatus (one with shell-lac, one with air)",
+      "176 degrees vs 113 degrees after division",
+      "unexpected because previous theory assumed all insulators equivalent"
+    ],
+    "safety_focus": "",
+    "difficulty": "hard"
+  },
+  {
+    "id": "faraday_v_001",
+    "source_benchmark": "Faraday Experimental Researches Vol. I",
+    "category": "factual",
+    "question": "What happens to the induced current when the wires are approximated, receded, or stationary according to Faraday's observations?",
+    "reference_answer": "When the wires are approximated, the induced current flows in the contrary direction to the inducing current. Conversely, when the wires recede, the induced current flows in the same direction as the inducing current. If the wires remain stationary, there is no induced current at all.",
+    "expected_points": [
+      "induced current in contrary direction when approximated",
+      "induced current in same direction when receded",
+      "no induced current when stationary"
+    ],
+    "safety_focus": "",
+    "_source_chunk_id": "faraday_v1_0019_0022",
+    "_chapter": "Series I §19-22"
+  },
+  {
+    "id": "faraday_v_002",
+    "source_benchmark": "Faraday Experimental Researches Vol. I",
+    "category": "factual",
+    "question": "What happens to the galvanometer needle when the helix is inverted with end A uppermost compared to when end B is uppermost?",
+    "reference_answer": "When the helix is inverted with end A uppermost, the galvanometer needle deflects in the same direction regardless of the inversion direction. However, when end B is uppermost, the inversion causes the needle to deflect in the opposite direction compared to the case when end A is uppermost.",
+    "expected_points": [
+      "helix inverted with end A uppermost",
+      "needle deflects in the same direction",
+      "helix inverted with end B uppermost",
+      "needle deflects in the opposite direction"
+    ],
+    "safety_focus": "",
+    "_source_chunk_id": "faraday_v1_0142_0144",
+    "_chapter": "Series II §142-144"
+  },
+  {
+    "id": "faraday_v_003",
+    "source_benchmark": "Faraday Experimental Researches Vol. I",
+    "category": "factual",
+    "question": "What was the observable effect at point _p_ when a drop of solution of iodide of potassium mingled with starch was used in Faraday's experiment?",
+    "reference_answer": "When a drop of solution of iodide of potassium mingled with starch was placed at point _p_ and the machine was turned, iodine was evolved at point _p_. This indicates that electro-chemical action occurred at that point, while no such effect was observed at point _n_.",
+    "expected_points": [
+      "iodine evolved at _p_",
+      "no effect at _n_",
+      "solution of iodide of potassium and starch",
+      "electro-chemical action",
+      "machine was turned"
+    ],
+    "safety_focus": "",
+    "_source_chunk_id": "faraday_v1_0313_0316",
+    "_chapter": "Series III §313-316"
+  },
+  {
+    "id": "faraday_v_004",
+    "source_benchmark": "Faraday Experimental Researches Vol. I",
+    "category": "factual",
+    "question": "What substances were mentioned in the passage that produced iodine at the positive pole during electrolysis?",
+    "reference_answer": "The substances mentioned in the passage that produced iodine at the positive pole during electrolysis are iodides of potassium and lead. When these iodides were subjected to electrolysis, iodine was observed at the positive pole, while potassium or lead was found at the negative pole.",
+    "expected_points": [
+      "iodides of potassium",
+      "iodides of lead",
+      "iodine at the positive pole",
+      "potassium or lead at the negative pole"
+    ],
+    "safety_focus": "",
+    "_source_chunk_id": "faraday_v1_0400_0401",
+    "_chapter": "Series IV §400-401"
+  },
+  {
+    "id": "faraday_v_005",
+    "source_benchmark": "Faraday Experimental Researches Vol. I",
+    "category": "factual",
+    "question": "What does Grotthuss state about the behavior of hydrogen and oxygen in relation to the poles of the voltaic pile?",
+    "reference_answer": "Grotthuss states that the pole from which resinous electricity issues attracts hydrogen and repels oxygen, while the pole from which vitreous electricity proceeds attracts oxygen and repels hydrogen. This indicates that each element of a water molecule experiences both attractive and repulsive forces acting in opposite directions.",
+    "expected_points": [
+      "resinous electricity attracts hydrogen",
+      "resinous electricity repels oxygen",
+      "vitreous electricity attracts oxygen",
+      "vitreous electricity repels hydrogen",
+      "forces act in contrary directions"
+    ],
+    "safety_focus": "",
+    "_source_chunk_id": "faraday_v1_0481_0481",
+    "_chapter": "Series V §481"
+  },
+  {
+    "id": "faraday_v_006",
+    "source_benchmark": "Faraday Experimental Researches Vol. I",
+    "category": "factual",
+    "question": "What effect does rinsing a platina plate in water have compared to leaving it in distilled water before introducing it to mixed oxygen and hydrogen?",
+    "reference_answer": "Rinsing a platina plate in water after it has been a positive pole allows it to act effectively in mixed oxygen and hydrogen, condensing about one and a half cubic inches of gas in six or seven minutes. In contrast, if the plate is left in distilled water for twelve to fifteen minutes, it is likely to ignite and generally explode the gases when introduced to the mixture, with ignition sometimes taking up to forty minutes to occur.",
+    "expected_points": [
+      "Rinsing in water allows effective gas condensation",
+      "Condenses one and a half cubic inches in six or seven minutes",
+      "Leaving in distilled water leads to ignition and explosion",
+      "Ignition can take up to forty minutes",
+      "Removal of acid affects the plate's power"
+    ],
+    "safety_focus": "",
+    "_source_chunk_id": "faraday_v1_0582_0583",
+    "_chapter": "Series VI §582-583"
+  },
+  {
+    "id": "faraday_v_007",
+    "source_benchmark": "Faraday Experimental Researches Vol. I",
+    "category": "factual",
+    "question": "What does Faraday suggest about the composition of the protochloride and protoxide formed from the new sulphuret when dissolved in muriatic acid?",
+    "reference_answer": "Faraday suggests that the protochloride formed from the new sulphuret when dissolved in muriatic acid consists of single proportionals. He also believes that a true protoxide can be obtained from this protochloride through the use of alkalies, and that this protoxide also consists of single proportionals.",
+    "expected_points": [
+      "protochloride consists of single proportionals",
+      "protoxide can be obtained from protochloride",
+      "protoxide also consists of single proportionals",
+      "formed from new sulphuret in muriatic acid",
+      "alkalies used to obtain protoxide"
+    ],
+    "safety_focus": "",
+    "_source_chunk_id": "faraday_v1_0695_0697",
+    "_chapter": "Series VII §695-697"
+  },
+  {
+    "id": "faraday_v_008",
+    "source_benchmark": "Faraday Experimental Researches Vol. I",
+    "category": "factual",
+    "question": "What was the total volume of gas evolved by the whole battery of fifty pairs of plates in half a minute according to the passage?",
+    "reference_answer": "The total volume of gas evolved by the whole battery of fifty pairs of plates in half a minute was 0.9 cubic inches. This measurement was taken after the battery had been used in the experiment and was connected with a volta-electrometer.",
+    "expected_points": [
+      "0.9 cubic inches",
+      "total volume of gas",
+      "fifty pairs of plates",
+      "in half a minute"
+    ],
+    "safety_focus": "",
+    "_source_chunk_id": "faraday_v1_1043_1044",
+    "_chapter": "Series VIII §1043-1044"
+  },
+  {
+    "id": "faraday_v_009",
+    "source_benchmark": "Faraday Experimental Researches Vol. I",
+    "category": "factual",
+    "question": "What were the observed effects when using a copper wire as a connecting conductor in Faraday's experiments?",
+    "reference_answer": "In Faraday's experiments, a copper wire measuring 0.18 inches in diameter and 132 feet in length produced no sensible spark when making contact, but generated a bright spark upon breaking contact. Additionally, while attempting to obtain an electric shock at the moment contact was broken, Faraday succeeded in producing powerful shocks on the tongue and gums by using two silver plates connected to the wire, although these effects could not be achieved directly from the electromotor.",
+    "expected_points": [
+      "copper wire 0.18 inches in diameter",
+      "132 feet in length",
+      "no sensible spark on making contact",
+      "bright spark on breaking contact",
+      "powerful shocks on tongue and gums"
+    ],
+    "safety_focus": "",
+    "_source_chunk_id": "faraday_v1_1064_1064",
+    "_chapter": "Series IX §1064"
+  },
+  {
+    "id": "faraday_v_010",
+    "source_benchmark": "Faraday Experimental Researches Vol. I",
+    "category": "factual",
+    "question": "What is the primary reason for the effectiveness of double coppers compared to single plates in Faraday's experiments?",
+    "reference_answer": "The primary reason for the effectiveness of double coppers over single plates is that they virtually double the acting surface of the zinc. This increase in surface area allows for more efficient transfer of electricity, as the acid can act upon a greater portion of the zinc plate, converting more of the action into transferable force.",
+    "expected_points": [
+      "virtually double the acting surface of the zinc",
+      "increased efficiency in electricity transfer",
+      "greater portion of zinc plate is acted upon by acid",
+      "conversion of action into transferable force"
+    ],
+    "safety_focus": "",
+    "_source_chunk_id": "faraday_v1_1149_1149",
+    "_chapter": "Series X §1149"
+  },
+  {
+    "id": "faraday_v_011",
+    "source_benchmark": "Faraday Experimental Researches Vol. I",
+    "category": "factual",
+    "question": "What consequence did Faraday identify that would be incompatible with the theory of action at a distance?",
+    "reference_answer": "Faraday identified that if inductive action could be exerted in curved lines, it would be a natural result of the action of contiguous particles. This would be utterly incompatible with the theory of action at a distance, which assumes that action occurs only in straight lines. He emphasized that such a consequence would challenge the received theories of the time.",
+    "expected_points": [
+      "inductive action in curved lines",
+      "action of contiguous particles",
+      "incompatible with action at a distance",
+      "received theories assume straight lines"
+    ],
+    "safety_focus": "",
+    "_source_chunk_id": "faraday_v1_1166_1167",
+    "_chapter": "Series XI §1166-1167"
+  },
+  {
+    "id": "faraday_v_012",
+    "source_benchmark": "Faraday Experimental Researches Vol. I",
+    "category": "factual",
+    "question": "What role does induction play in the conduction process as described by Faraday in the passage?",
+    "reference_answer": "Induction is described as a necessary preliminary to conduction in Faraday's work. It brings the contiguous particles of the dielectric into a certain condition that can either lead to insulation or conduction, depending on whether the power is retained or communicated between particles. If the induction lowers the condition of the particles, conduction occurs; otherwise, insulation is maintained.",
+    "expected_points": [
+      "Induction is a preliminary to conduction",
+      "Induction brings contiguous particles into a certain condition",
+      "Condition can lead to insulation or conduction",
+      "Power communication lowers the condition for conduction",
+      "Insulation is maintained if the condition is retained"
+    ],
+    "safety_focus": "",
+    "_source_chunk_id": "faraday_v1_1323_1324",
+    "_chapter": "Series XII §1323-1324"
+  },
+  {
+    "id": "faraday_v_013",
+    "source_benchmark": "Faraday Experimental Researches Vol. I",
+    "category": "factual",
+    "question": "What are the dimensions and arrangement of the balls A, B, C, and D in the apparatus described in §1506?",
+    "reference_answer": "In the apparatus described in §1506, balls A and D are each two inches in diameter, while balls B and C are only 0.15 of an inch in diameter. The balls C and D are positioned three and a quarter inches apart, with their height above the pump plate being five inches. Additionally, the distance between any of the balls and the glass of the jar is at least one inch and three quarters, and generally more.",
+    "expected_points": [
+      "Balls A and D: 2 inches in diameter",
+      "Balls B and C: 0.15 inches in diameter",
+      "C and D: 3.25 inches apart",
+      "Height above pump plate: 5 inches",
+      "Distance from balls to jar glass: at least 1.75 inches"
+    ],
+    "safety_focus": "",
+    "_source_chunk_id": "faraday_v1_1506_1506",
+    "_chapter": "Series XIII §1506"
+  },
+  {
+    "id": "faraday_v_014",
+    "source_benchmark": "Faraday Experimental Researches Vol. I",
+    "category": "factual",
+    "question": "According to Faraday, what is the role of molecules in the polarization of insulating dielectrics?",
+    "reference_answer": "Faraday concluded that it is the molecules of the substance that polarize as wholes during the induction process. He argued that regardless of the complexity of a body's composition, all particles or atoms held together by chemical affinity act as one conducting mass when polarization occurs.",
+    "expected_points": [
+      "molecules of the substance polarize as wholes",
+      "particles held together by chemical affinity",
+      "act as one conducting mass",
+      "induction process",
+      "polarization occurs"
+    ],
+    "safety_focus": "",
+    "_source_chunk_id": "faraday_v1_1699_1701",
+    "_chapter": "Series XIV §1699-1701"
+  },
+  {
+    "id": "faraday_v_015",
+    "source_benchmark": "Faraday Experimental Researches Vol. I",
+    "category": "factual",
+    "question": "What was the effect of making and breaking magnetic contact with the iron cylinder in Faraday's experiment?",
+    "reference_answer": "When magnetic contact was made with the iron cylinder, the needle of the galvanometer was deflected, indicating an induced current of electricity. Upon continuing the contact, the needle became indifferent and resumed its original position. Breaking the contact resulted in a deflection in the opposite direction, demonstrating that the magnetism of the iron cylinder could be reversed at will.",
+    "expected_points": [
+      "needle deflected upon making contact",
+      "needle became indifferent after continued contact",
+      "deflection reversed upon breaking contact",
+      "magnetism of iron cylinder could be reversed",
+      "induced current of electricity indicated"
+    ],
+    "safety_focus": "",
+    "_source_chunk_id": "faraday_v1_0036_0038",
+    "_chapter": "Series I §36-38"
+  },
+  {
+    "id": "faraday_v_016",
+    "source_benchmark": "Faraday Experimental Researches Vol. I",
+    "category": "factual",
+    "question": "What did Faraday find regarding the deflection of the magnetic needle when a constant current of electricity was sent through a series of wires made of different materials?",
+    "reference_answer": "Faraday found that when a constant current of electricity was sent successively through a series of wires made of copper, platina, zinc, silver, lead, and tin, all drawn to the same diameter, the deflection of the magnetic needle was exactly equal for all of them. This indicates that the conducting power of these substances, when rotated near the magnetic needle, produced the same effect on the needle's deflection.",
+    "expected_points": [
+      "constant current of electricity",
+      "series of wires",
+      "copper, platina, zinc, silver, lead, tin",
+      "deflection of the needle was exactly equal",
+      "conducting power of the substances"
+    ],
+    "safety_focus": "",
+    "_source_chunk_id": "faraday_v1_0214_0216",
+    "_chapter": "Series II §214-216"
+  },
+  {
+    "id": "faraday_v_017",
+    "source_benchmark": "Faraday Experimental Researches Vol. I",
+    "category": "factual",
+    "question": "What was the purpose of the experimental setup described in §369 of Faraday's *Experimental Researches in Electricity*?",
+    "reference_answer": "The purpose of the experimental setup described in §369 was to arrange a voltaic apparatus that could produce an effect equal to the deflection of the magnetic needle caused by the discharge of ordinary electricity from a battery. This was achieved by immersing the apparatus in a diluted acid for a time much shorter than that required for the needle to swing in one direction, while still achieving equal deflection.",
+    "expected_points": [
+      "arrange a voltaic apparatus",
+      "produce an effect equal to ordinary electricity discharge",
+      "immersion in diluted acid",
+      "time much less than needle swing",
+      "achieve equal deflection"
+    ],
+    "safety_focus": "",
+    "_source_chunk_id": "faraday_v1_0368_0369",
+    "_chapter": "Series III §368-369"
+  },
+  {
+    "id": "faraday_v_018",
+    "source_benchmark": "Faraday Experimental Researches Vol. I",
+    "category": "factual",
+    "question": "What was the key observation Faraday made regarding ice during his experiments on electro-chemical decomposition?",
+    "reference_answer": "Faraday observed that ice acted as a non-conductor of electricity when used in his experiments. Specifically, he found that when a thin film of ice was interposed in the circuit of a powerful voltaic battery, it prevented the transmission of electricity and halted all decomposition.",
+    "expected_points": [
+      "ice as a non-conductor",
+      "thin film of ice interposed",
+      "prevented transmission of electricity",
+      "halted all decomposition"
+    ],
+    "safety_focus": "",
+    "_source_chunk_id": "faraday_v1_0380_0382",
+    "_chapter": "Series IV §380-382"
+  }
+]

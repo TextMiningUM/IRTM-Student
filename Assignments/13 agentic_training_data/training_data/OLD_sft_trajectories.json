@@ -1,0 +1,222 @@
+[
+  {
+    "scenario_id": "traj_59bace38c3",
+    "chapter": "How to Set Up Burp Proxy",
+    "scenario": "Scenario based on: How to Set Up Burp Proxy",
+    "steps": [
+      {
+        "step_number": 1,
+        "observation": "Initial state: preparing to begin",
+        "thought": "Based on the current state, the next action should address: Begin by downloading and installing the app. Since it is a java app, you may nee...",
+        "action": "Begin by downloading and installing the app. Since it is a java app, you may need to install java JRE. To ensure that your browser uses Burp, you have to configure a few settings. The recommendation is to use Firefox with Burp because by doing so, you will be able to set it up without having to make any changes to the system wide settings which would affect a couple of programs. Once you have downloaded, installed, and started Burp, click 'proxy tab' and then 'options.' Ensure the 'proxy listeners' is running and note the interface, which by default, is 127.0.0.1:8080. After that, move down to the sections of and and ensure that the top level and have been checked. In addition, check the third checkbox under that says 'or request was intercepted.' The settings should be similar to the ones below. This will enable Burp to capture both the browser requests and the responses of the server. Next, we have to setup Firefox so that it can use Burp as a proxy. Just click on 'Firefox' and after that 'preferences.' Click the advanced icon and then the network button. As shown below: The last step will be to change network settings. How do you do that? Well, under Connection, proceed to configure how Mozilla Firefox will be connecting to the internet by first clicking on the settings button.",
+        "action_type": "setup",
+        "tool_used": "Burp Proxy",
+        "expected_result": "Ready for next step: Adjust the settings to match the picture below....",
+        "concepts": [
+          "proxy"
+        ]
+      },
+      {
+        "step_number": 2,
+        "observation": "Current state after step 1",
+        "thought": "Based on the current state, the next action should address: Adjust the settings to match the picture below....",
+        "action": "Adjust the settings to match the picture below.",
+        "action_type": "analysis",
+        "tool_used": "manual",
+        "expected_result": "Ready for next step: Go to the manual proxy configuration and have the IP address and the port matching the Burp's settin...",
+        "concepts": []
+      },
+      {
+        "step_number": 3,
+        "observation": "Current state after step 2",
+        "thought": "Based on the current state, the next action should address: Go to the manual proxy configuration and have the IP address and the port matchi...",
+        "action": "Go to the manual proxy configuration and have the IP address and the port matching the Burp's settings that by default should be 127.0.0.1 port 8080.",
+        "action_type": "analysis",
+        "tool_used": "Burp Proxy",
+        "expected_result": "Ready for next step: Check the box to 'use this proxy server for all protocols.' Finally, do away with the settings in th...",
+        "concepts": [
+          "proxy"
+        ]
+      },
+      {
+        "step_number": 4,
+        "observation": "Current state after step 3",
+        "thought": "Based on the current state, the next action should address: Check the box to 'use this proxy server for all protocols.' Finally, do away wit...",
+        "action": "Check the box to 'use this proxy server for all protocols.' Finally, do away with the settings in the box that states 'no proxy for' so that you can capture the local traffic.",
+        "action_type": "analysis",
+        "tool_used": "manual",
+        "expected_result": "Ready for next step: Click ok and you are set to begin. At this point, you have to test your setup to make sure it works....",
+        "concepts": [
+          "proxy"
+        ]
+      },
+      {
+        "step_number": 5,
+        "observation": "Current state after step 4",
+        "thought": "Based on the current state, the next action should address: Click ok and you are set to begin. At this point, you have to test your setup to...",
+        "action": "Click ok and you are set to begin. At this point, you have to test your setup to make sure it works. Go back to Firefox and key in google.com and then click enter. If everything is set up correctly, your browser should hang there waiting for the website. After this, when Burp has captured your request, return to Burp expecting to see the HTTP request in the proxy to Google, then intercept the tab.",
+        "action_type": "setup",
+        "tool_used": "Burp Proxy",
+        "expected_result": "Ready for next step: Ensure you are looking at the right screen on Burp. There are very many options but it should genera...",
+        "concepts": [
+          "proxy",
+          "http request"
+        ]
+      },
+      {
+        "step_number": 6,
+        "observation": "Current state after step 5",
+        "thought": "Based on the current state, the next action should address: Ensure you are looking at the right screen on Burp. There are very many options ...",
+        "action": "Ensure you are looking at the right screen on Burp. There are very many options but it should generally look like this: Send the request to the server by clicking the forward button. You should receive the server response almost immediately.",
+        "action_type": "analysis",
+        "tool_used": "Burp Proxy",
+        "expected_result": "Ready for next step: Click the forward button once more and send to the browser the server response. The server response ...",
+        "concepts": []
+      },
+      {
+        "step_number": 7,
+        "observation": "Current state after step 6",
+        "thought": "Based on the current state, the next action should address: Click the forward button once more and send to the browser the server response. ...",
+        "action": "Click the forward button once more and send to the browser the server response. The server response to our original request to Google is a redirection of 301, which will inform your browser the location header to go to www.google.com. The browser makes this automatic request for you so you can safely forward the request and the response. Google will once again redirect to the SSL version of Google, which will definitely present another issue. For Burp to connect to the SSL sites, it will make an interception to the connection and gives its own SSL certificate to the browser. This enables Burp to decrypt the HTTP request and response even if SSL is in use. The browser is however smart enough to tell whether the SSL certificate is okay or not to provide a warning to the user if the SSL certificate is valid and will give a warning to the user about the certificate being invalid for this site. Now that we know Burp is intercepting the request, you can click on the 'I understand the risks' and the 'add exception' to add the Burps SSL certificate. You can then click 'confirm security exception' so that the browser will let you use Burp for this SSL connection. When accepting this, take care and ensure you are using Burp, otherwise, you do not add the exception. The browser now makes the SSL request, and Burp captures it once again. Just keep forwarding the responses and requests until you see the Google homepage on the browser. If you've done everything we've learnt so far, your appetite for moving a little further should be at its highest. Let's move on to the next chapter to take this a little further.",
+        "action_type": "analysis",
+        "tool_used": "Burp Proxy",
+        "expected_result": "Procedure completed",
+        "concepts": [
+          "ssl certificate",
+          "http request"
+        ]
+      }
+    ]
+  },
+  {
+    "scenario_id": "traj_3a49efdfe4",
+    "chapter": "Whetting Your Hacking Appetite: Common Hacking Attacks",
+    "scenario": "Scenario based on: Whetting Your Hacking Appetite: Common Hacking Attacks",
+    "steps": [
+      {
+        "step_number": 1,
+        "observation": "Initial state: preparing to begin",
+        "thought": "Based on the current state, the next action should address: Which common attacks do hackers use to hack into a system? You need to understan...",
+        "action": "Which common attacks do hackers use to hack into a system? You need to understand these attacks so you can test your sites and then code for these weaknesses. Many hackers direct a brute force attacks on website login page where they try thousands of passwords and usernames until they key in a correct combination. Brute force attacks compromise the very concept applied to resetting passwords, the secret questions, promotional and discount codes, and other information that is secret and used to reveal the identity of the user. To perform brute attacks, you will need the following: Confirm the account lockout-the request throttling is disabled or simple to bypass. Decide the username's format Make a list of the potential usernames Confirm the valid usernames Run tests on the passwords for every valid username Begin by deciding whether an account lockout exists. You can do this by failing the login for a user. Next, determine the format of the username. These can be from one site or another; nevertheless, the current trend is to use an email address, which is easier to remember and it can come in handy when conducting password resets. Assume the site you are targeting has such a login page as the one below.",
+        "action_type": "reconnaissance",
+        "tool_used": "manual",
+        "expected_result": "Ready for next step: Notice that the username is an email address, otherwise, if the login screen did not tell us that, y...",
+        "concepts": [
+          "account lockout",
+          "brute force"
+        ]
+      },
+      {
+        "step_number": 2,
+        "observation": "Current state after step 1",
+        "thought": "Based on the current state, the next action should address: Notice that the username is an email address, otherwise, if the login screen did...",
+        "action": "Notice that the username is an email address, otherwise, if the login screen did not tell us that, you would have to determine that by registering or signing up for an account. Obviously, from the signup page, you can tell that the username is an email address. If you are dealing with a large public site, people usually sign up with yahoo, G-mail, and other popular email domains. It is rather unfortunate that because internet hacking is popular, presently, it is easy to get long lists of email addresses from compromised databases. Take this example; if you want to target Franco James, you will first key in jamesfranco@gmail.com (or his email account) followed by a password before you click login. You will probably get an error message stating that the email (jamesfranco@gmail.com) does not exist.",
+        "action_type": "reconnaissance",
+        "tool_used": "manual",
+        "expected_result": "Procedure completed",
+        "concepts": []
+      }
+    ]
+  },
+  {
+    "scenario_id": "traj_bbb37d499c",
+    "chapter": "Let Us Guess Accounts",
+    "scenario": "Scenario based on: Let Us Guess Accounts",
+    "steps": [
+      {
+        "step_number": 1,
+        "observation": "Initial state: preparing to begin",
+        "thought": "Based on the current state, the next action should address: To find a valid username, it might be necessary to guess a few accounts....",
+        "action": "To find a valid username, it might be necessary to guess a few accounts.",
+        "action_type": "reconnaissance",
+        "tool_used": "manual",
+        "expected_result": "Ready for next step: Begin doing so by manually testing some of the common usernames ensuring to have @onemonthsimple.com...",
+        "concepts": []
+      },
+      {
+        "step_number": 2,
+        "observation": "Current state after step 1",
+        "thought": "Based on the current state, the next action should address: Begin doing so by manually testing some of the common usernames ensuring to have...",
+        "action": "Begin doing so by manually testing some of the common usernames ensuring to have @onemonthsimple.com domain. You can use any name such as Jacobs, Mary, Dave, Jonah, Jon, Calvin, Emily.",
+        "action_type": "analysis",
+        "tool_used": "manual",
+        "expected_result": "Ready for next step: Try each one of them out. You will find that at least one of them will work. When you make a correct...",
+        "concepts": []
+      },
+      {
+        "step_number": 3,
+        "observation": "Current state after step 2",
+        "thought": "Based on the current state, the next action should address: Try each one of them out. You will find that at least one of them will work. Whe...",
+        "action": "Try each one of them out. You will find that at least one of them will work. When you make a correct username guess, you will get an error message about the password being incorrect. However, having a valid email address is a good step to breaking in. Ergo Usernames are email addresses and the application will inform you whether or not the address is valid. You may find a valid email address but that contains a wrong password, and therefore, an 'incorrect password' message will appear. Since the application is a corporate HR, you will be right to guess that most users have the @onemonthsimple.com as the email. You will use this to create your own list of common names to find new users. It may take a while to guess the usernames; therefore, an attacker would make the process automatic, which is, trying usernames and matching the error messages with the valid ones.",
+        "action_type": "reconnaissance",
+        "tool_used": "manual",
+        "expected_result": "Procedure completed",
+        "concepts": []
+      }
+    ]
+  },
+  {
+    "scenario_id": "traj_154ae0199a",
+    "chapter": "Get the Right Exploit",
+    "scenario": "Scenario based on: Get the Right Exploit",
+    "steps": [
+      {
+        "step_number": 1,
+        "observation": "Initial state: preparing to begin",
+        "thought": "Based on the current state, the next action should address: Let us assume you want to use Adobe reader. You can find the right exploit by se...",
+        "action": "Let us assume you want to use Adobe reader. You can find the right exploit by searching metasploit for one that will accommodate the adobe reader's version. If you look at the image above, you can tell that metasploit included all the exploits that met the criteria.",
+        "action_type": "reconnaissance",
+        "tool_used": "Metasploit",
+        "expected_result": "Ready for next step: Check the information that is available about this particular exploit. In the description, Metasploi...",
+        "concepts": [
+          "exploit",
+          "metasploit"
+        ]
+      },
+      {
+        "step_number": 2,
+        "observation": "Current state after step 1",
+        "thought": "Based on the current state, the next action should address: Check the information that is available about this particular exploit. In the de...",
+        "action": "Check the information that is available about this particular exploit. In the description, Metasploit shows that it embeds a payload of metasploit into the existing PDF file. You can use the resulting PDF as part of a social engineering attack. Besides that, you can also use it to invite the victim to download it when you embed it into a website.",
+        "action_type": "setup",
+        "tool_used": "Metasploit",
+        "expected_result": "Procedure completed",
+        "concepts": [
+          "payload",
+          "social engineering",
+          "exploit",
+          "metasploit"
+        ]
+      }
+    ]
+  },
+  {
+    "scenario_id": "traj_89db2ad881",
+    "chapter": "Conclusion",
+    "scenario": "Scenario based on: Conclusion",
+    "steps": [
+      {
+        "step_number": 1,
+        "observation": "Initial state: preparing to begin",
+        "thought": "Based on the current state, the next action should address: I hope the book has taught you something about hacking. Learning how to hack is ...",
+        "action": "I hope the book has taught you something about hacking. Learning how to hack is a handy skill whether you are a security professional or not because it helps you implement the toughest security practices possible. Learning how to hack is as much about finding security weaknesses and fixing them as it is about anticipating them. To resolve hacking issues preemptively, it is important to learn the hacking methods black hat hackers use to penetrate systems. If you lack such knowledge, you will definitely have a hard time securing computer systems. Think of the computer network as a yard that has a fence around it to prevent people from getting in. You have something valuable in the yard that someone may want to steal. Ethical hacking comes in as a measure to check for weaknesses inside the yard and around the fence so you can reinforce the weak areas before anyone attempts to gain access. Today, very many business operations depend on the understanding of software-related risks made vulnerable to hacking. Even beyond business, the average person should have a clear understanding of the role of a hacker. Cloud computing, mobile technology, and the internet have changed our daily reality. As individuals, you are part of a bigger global online network; this exposes you to cybercrime and threats. In the face of cyber-attacks, there is great need to have more resilient computer systems. It is, therefore, prudent to gain a deep knowledge of the hacker's tactics and methodsas a precondition. Thank you again for downloading this book! I hope this book was able to help you to understand how to be a hacker (especially an ethical hacker). The next step is to implement what you have learnt. Finally, if you enjoyed this book, would you be kind enough to leave a review for this book on Amazon?",
+        "action_type": "setup",
+        "tool_used": "manual",
+        "expected_result": "Ready for next step: Click here to leave a review for this book on Amazon! Thank you and good luck!...",
+        "concepts": [
+          "ethical hacking"
+        ]
+      },
+      {
+        "step_number": 2,
+        "observation": "Current state after step 1",
+        "thought": "Based on the current state, the next action should address: Click here to leave a review for this book on Amazon! Thank you and good luck!...",
+        "action": "Click here to leave a review for this book on Amazon! Thank you and good luck!",
+        "action_type": "analysis",
+        "tool_used": "manual",
+        "expected_result": "Procedure completed",
+        "concepts": []
+      }
+    ]
+  }
+]

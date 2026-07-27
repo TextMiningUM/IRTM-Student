@@ -1,0 +1,402 @@
+[
+  {
+    "pair_id": "faraday_pref_001",
+    "context": "Series I §1-6 iron-ring induction experiment with precise apparatus dimensions.",
+    "chosen_action": "Answer with exact apparatus values and mechanism: ring seven-eighths inch thick, six-inch external diameter, and induction is transient at make/break only.",
+    "chosen_reasoning": "Grounded historical QA should prioritize exact measured values and causal conditions from the cited paragraph range.",
+    "rejected_action": "Give only a generic statement that Faraday discovered induction without dimensions or transient-condition detail.",
+    "rejected_reasoning": "Omitting key measured facts reduces faithfulness and fails high-precision retrieval objectives.",
+    "category": "historical_precision",
+    "source_chunk_ids": ["faraday_001"]
+  },
+  {
+    "pair_id": "faraday_pref_002",
+    "context": "Series I §10-11 helix experiment.",
+    "chosen_action": "State that the helix used 203 feet of wire and that only changes in current produced deflection.",
+    "chosen_reasoning": "This captures both the quantitative and conceptual target of the experiment.",
+    "rejected_action": "Claim that a steady current continuously induced a signal in the secondary helix.",
+    "rejected_reasoning": "That contradicts Faraday's observed no-deflection steady-state result.",
+    "category": "factual_correctness",
+    "source_chunk_ids": ["faraday_002"]
+  },
+  {
+    "pair_id": "faraday_pref_003",
+    "context": "Series I §17-26 bar magnet and helix experiment.",
+    "chosen_action": "Include 12-inch magnet and 220-turn helix, and explain that motion through magnetic curves is required.",
+    "chosen_reasoning": "The answer should preserve exact setup and the principle Faraday generalized in §26.",
+    "rejected_action": "State that simply holding the magnet inside the coil produces a sustained induced current.",
+    "rejected_reasoning": "This reverses the experimental finding and teaches the wrong mechanism.",
+    "category": "mechanistic_reasoning",
+    "source_chunk_ids": ["faraday_003"]
+  },
+  {
+    "pair_id": "faraday_pref_004",
+    "context": "Series I §31 high-power battery impulse observation.",
+    "chosen_action": "Report that with 100 pairs the galvanometer needle spun around four or five times.",
+    "chosen_reasoning": "Precise numerical reporting is central to validation and demonstrates strong induction amplitude.",
+    "rejected_action": "Describe the result vaguely as 'a bigger deflection' without numeric detail.",
+    "rejected_reasoning": "Vague phrasing weakens traceability against expected points.",
+    "category": "quantitative_reporting",
+    "source_chunk_ids": ["faraday_004"]
+  },
+  {
+    "pair_id": "faraday_pref_005",
+    "context": "Series I §34 direction of induced current and Lenz precursor.",
+    "chosen_action": "Quote or closely paraphrase the phrase 'in the opposite direction to that which the primary combination would have produced'.",
+    "chosen_reasoning": "Exact directional language is the core historical evidence linking to Lenz-like behavior.",
+    "rejected_action": "Swap the sign rule and claim induced current matches the primary on circuit make.",
+    "rejected_reasoning": "That introduces a directional error and degrades conceptual correctness.",
+    "category": "sign_convention",
+    "source_chunk_ids": ["faraday_005"]
+  },
+  {
+    "pair_id": "faraday_pref_006",
+    "context": "Series I §55-71 copper disc generator.",
+    "chosen_action": "Emphasize that rotating a 12-inch copper disc between magnet poles produced continuous EMF, unlike transient earlier effects.",
+    "chosen_reasoning": "This distinguishes a milestone machine from prior make/break-only induction.",
+    "rejected_action": "Treat the disc machine as just another transient pulse experiment.",
+    "rejected_reasoning": "It misses the defining contribution of continuous output.",
+    "category": "historical_significance",
+    "source_chunk_ids": ["faraday_006"]
+  },
+  {
+    "pair_id": "faraday_pref_007",
+    "context": "Series II §113 magnet dimensions for repeatability.",
+    "chosen_action": "Include the bar magnet dimensions exactly: 2 feet by 1.5 inches by 0.5 inch.",
+    "chosen_reasoning": "Dimension-level detail supports reproducibility and objective grading.",
+    "rejected_action": "Use approximate wording like 'some smaller magnets' without measurements.",
+    "rejected_reasoning": "Approximation discards key retrievable facts.",
+    "category": "reproducibility",
+    "source_chunk_ids": ["faraday_007"]
+  },
+  {
+    "pair_id": "faraday_pref_008",
+    "context": "Series II §188-189 Waterloo Bridge tidal test.",
+    "chosen_action": "Report 960-foot wire setup and conclude that results remained inconclusive due to confounds.",
+    "chosen_reasoning": "Faithful responses preserve both experimental attempt and negative outcome.",
+    "rejected_action": "Present the experiment as a confirmed discovery of tidal electricity.",
+    "rejected_reasoning": "That overstates evidence and hallucinates success.",
+    "category": "uncertainty_handling",
+    "source_chunk_ids": ["faraday_008"]
+  },
+  {
+    "pair_id": "faraday_pref_009",
+    "context": "Series III identity of electricities.",
+    "chosen_action": "Name the multi-effect comparison (magnetic, chemical, physiological, etc.) and conclude identity by observed equivalence.",
+    "chosen_reasoning": "The argument is evidentially cumulative, not single-observation.",
+    "rejected_action": "Claim identity based on one anecdote without listing comparison domains.",
+    "rejected_reasoning": "That weakens the evidential structure of Faraday's case.",
+    "category": "argument_quality",
+    "source_chunk_ids": ["faraday_009"]
+  },
+  {
+    "pair_id": "faraday_pref_010",
+    "context": "Series III §371 quantitative platina-zinc setup.",
+    "chosen_action": "Provide the full measured setup: 1/18-inch wires, 5/16-inch separation, 5/8-inch immersion, and acid composition.",
+    "chosen_reasoning": "Complete procedural specificity is essential for high-fidelity scientific QA.",
+    "rejected_action": "Drop the geometry and chemistry details and only mention a 'wire experiment'.",
+    "rejected_reasoning": "Loss of setup detail undermines reliability and verification.",
+    "category": "procedural_fidelity",
+    "source_chunk_ids": ["faraday_010"]
+  },
+  {
+    "pair_id": "faraday_pref_011",
+    "context": "Series IV ice as non-conductor under strong battery conditions.",
+    "chosen_action": "State that even with up to 150 pairs of plates, thin ice blocked current and decomposition.",
+    "chosen_reasoning": "The strength of the battery context is crucial to the claim's force.",
+    "rejected_action": "Say ice was a poor conductor but still allowed some decomposition.",
+    "rejected_reasoning": "This contradicts the reported complete interruption effect.",
+    "category": "factual_correctness",
+    "source_chunk_ids": ["faraday_011"]
+  },
+  {
+    "pair_id": "faraday_pref_012",
+    "context": "Series IV sulphuret of silver thermal behavior.",
+    "chosen_action": "Describe that conductivity increased with heat, opposite to ordinary metals.",
+    "chosen_reasoning": "This contrast is the scientifically distinctive takeaway.",
+    "rejected_action": "Treat sulphuret of silver as following normal metallic resistance behavior.",
+    "rejected_reasoning": "That erases the novelty and inverts the observation.",
+    "category": "contrastive_reasoning",
+    "source_chunk_ids": ["faraday_012"]
+  },
+  {
+    "pair_id": "faraday_pref_013",
+    "context": "Series VII law of definite electrolytic action.",
+    "chosen_action": "State explicitly that chemical effect is proportional to quantity of electricity passed.",
+    "chosen_reasoning": "This is the central law and should be foregrounded.",
+    "rejected_action": "Describe electrolysis as irregular and not quantitatively linked to charge.",
+    "rejected_reasoning": "This directly conflicts with Faraday's law.",
+    "category": "law_statement",
+    "source_chunk_ids": ["faraday_013"]
+  },
+  {
+    "pair_id": "faraday_pref_014",
+    "context": "Series VII §861-862 large electricity estimate.",
+    "chosen_action": "Report the 800,000 Leyden-charge estimate per grain of water and preserve it as an order-of-magnitude statement.",
+    "chosen_reasoning": "The number is a key anchor and should not be rounded away to vague language.",
+    "rejected_action": "Replace the estimate with an invented small number such as 8,000.",
+    "rejected_reasoning": "Fabricated magnitudes are major hallucinations in this dataset.",
+    "category": "numeric_accuracy",
+    "source_chunk_ids": ["faraday_014"]
+  },
+  {
+    "pair_id": "faraday_pref_015",
+    "context": "Series VII §864-868 zinc equivalent experiment.",
+    "chosen_action": "Include plate masses (163.1 and 148.3 grains) and the 32.31-part equivalent conclusion.",
+    "chosen_reasoning": "These values are core expected points and should be retained.",
+    "rejected_action": "Discuss zinc dissolution generally without masses or equivalent value.",
+    "rejected_reasoning": "Missing quantitative anchors lowers evidential value.",
+    "category": "quantitative_reporting",
+    "source_chunk_ids": ["faraday_015"]
+  },
+  {
+    "pair_id": "faraday_pref_016",
+    "context": "Series IX self-induction discovery and long-wire test.",
+    "chosen_action": "Mention Jenkin's break-shock observation and Faraday's 132-foot, 0.18-inch wire result.",
+    "chosen_reasoning": "Both historical source and controlled follow-up evidence are needed.",
+    "rejected_action": "Attribute self-induction discovery to random spark noise without experimental structure.",
+    "rejected_reasoning": "This removes methodological grounding.",
+    "category": "evidence_chain",
+    "source_chunk_ids": ["faraday_016"]
+  },
+  {
+    "pair_id": "faraday_pref_017",
+    "context": "Series IX doubled-wire cancellation experiment.",
+    "chosen_action": "Explain that folding opposite current paths suppressed spark and separating restored it.",
+    "chosen_reasoning": "The cancellation/restoration contrast supports magnetic-origin interpretation.",
+    "rejected_action": "Claim doubled wire increased spark due to doubled metal length.",
+    "rejected_reasoning": "That is opposite to observed behavior.",
+    "category": "causal_inference",
+    "source_chunk_ids": ["faraday_017"]
+  },
+  {
+    "pair_id": "faraday_pref_018",
+    "context": "Series XI opening claims about induction and dielectric mediation.",
+    "chosen_action": "Frame induction as fundamental and connect to dielectric-mediated propagation through matter.",
+    "chosen_reasoning": "This captures Faraday's conceptual pivot.",
+    "rejected_action": "Describe induction as peripheral and unrelated to broader electrical theory.",
+    "rejected_reasoning": "This misrepresents Series XI motivation.",
+    "category": "conceptual_fidelity",
+    "source_chunk_ids": ["faraday_018"]
+  },
+  {
+    "pair_id": "faraday_pref_019",
+    "context": "Series XI shell-lac cylinder geometry experiment.",
+    "chosen_action": "Keep apparatus dimensions (0.9-inch diameter, 7-inch length) and use them to support curved-line induction.",
+    "chosen_reasoning": "Geometry is part of the argument, not incidental detail.",
+    "rejected_action": "Ignore geometry and assert curved lines without experimental basis.",
+    "rejected_reasoning": "Unsupported conclusions are dispreferred in grounded QA.",
+    "category": "grounded_reasoning",
+    "source_chunk_ids": ["faraday_019"]
+  },
+  {
+    "pair_id": "faraday_pref_020",
+    "context": "Series XI shell-lac specific inductive capacity.",
+    "chosen_action": "State SIC(shell-lac) as 176/113 = 1.558 relative to air.",
+    "chosen_reasoning": "This exact ratio is a high-value factual target.",
+    "rejected_action": "Replace with an approximate invented value like 1.2 without ratio.",
+    "rejected_reasoning": "Invented approximations reduce benchmark integrity.",
+    "category": "ratio_accuracy",
+    "source_chunk_ids": ["faraday_020"]
+  },
+  {
+    "pair_id": "faraday_pref_021",
+    "context": "Series XI sulphur specific inductive capacity.",
+    "chosen_action": "Report initial 280-degree reading and post-division 162-degree result, concluding approximately 2.24 relative to air.",
+    "chosen_reasoning": "Answer should preserve measured sequence, not only the final number.",
+    "rejected_action": "Confuse sulphur result with shell-lac and report 1.558.",
+    "rejected_reasoning": "Cross-material value confusion is a common hallucination to avoid.",
+    "category": "material_disambiguation",
+    "source_chunk_ids": ["faraday_021"]
+  },
+  {
+    "pair_id": "faraday_pref_022",
+    "context": "Series XI §1295 contiguous particles statement.",
+    "chosen_action": "Present induction as action of contiguous particles with dielectric-filled intervening space.",
+    "chosen_reasoning": "This is the formal conceptual claim and should be explicit.",
+    "rejected_action": "Explain induction as pure action-at-distance with no medium role.",
+    "rejected_reasoning": "That conflicts with Faraday's stated interpretation.",
+    "category": "theory_alignment",
+    "source_chunk_ids": ["faraday_022"]
+  },
+  {
+    "pair_id": "faraday_pref_023",
+    "context": "Series XII conduction as extreme induction.",
+    "chosen_action": "State that conductors and insulators differ by degree, not kind, in Faraday's framing.",
+    "chosen_reasoning": "Capturing the degree-vs-kind distinction is central.",
+    "rejected_action": "Claim Faraday treated conduction and induction as unrelated phenomena.",
+    "rejected_reasoning": "This is opposite to the Series XII argument.",
+    "category": "conceptual_correctness",
+    "source_chunk_ids": ["faraday_023"]
+  },
+  {
+    "pair_id": "faraday_pref_024",
+    "context": "Series XIV methodological stance on force nature versus distribution.",
+    "chosen_action": "Emphasize that Faraday remained neutral on fluid ontology while focusing on force distribution laws.",
+    "chosen_reasoning": "This avoids false overcommitment to one historical model.",
+    "rejected_action": "Attribute a dogmatic one-fluid commitment to Faraday in this section.",
+    "rejected_reasoning": "That misstates his explicit neutrality.",
+    "category": "historical_interpretation",
+    "source_chunk_ids": ["faraday_024"]
+  },
+  {
+    "pair_id": "faraday_pref_025",
+    "context": "Series XIV electric-magnetic relation experiments.",
+    "chosen_action": "Include the 1.75-inch helix interval evidence and Faraday's intervening-particles interpretation.",
+    "chosen_reasoning": "Experimental geometry and interpretation should stay linked.",
+    "rejected_action": "Ignore apparatus evidence and claim Faraday offered only speculation.",
+    "rejected_reasoning": "This discards the empirical support in the section.",
+    "category": "evidence_linking",
+    "source_chunk_ids": ["faraday_025"]
+  },
+  {
+    "pair_id": "faraday_pref_026",
+    "context": "Series XIX Volume III Faraday effect.",
+    "chosen_action": "Attribute magneto-optical rotation to Volume III and describe rotation proportionality to field and path length.",
+    "chosen_reasoning": "Correct volume attribution and scaling relation are key targets.",
+    "rejected_action": "Place Faraday effect in Volume I around §1709.",
+    "rejected_reasoning": "This is a known misattribution error.",
+    "category": "volume_attribution",
+    "source_chunk_ids": ["faraday_026"]
+  },
+  {
+    "pair_id": "faraday_pref_027",
+    "context": "Series XIX-XX Volume III diamagnetics discovery.",
+    "chosen_action": "State bismuth's equatorial orientation, repulsion character, and approximate 1/3400 strength versus iron.",
+    "chosen_reasoning": "These are high-information discriminators for correct recall.",
+    "rejected_action": "Describe diamagnetics as a Volume I Series XI result.",
+    "rejected_reasoning": "Wrong volume/series assignment undermines retrieval reliability.",
+    "category": "source_attribution",
+    "source_chunk_ids": ["faraday_027"]
+  },
+  {
+    "pair_id": "faraday_pref_028",
+    "context": "Series VII §872-874 contact vs chemical source of current.",
+    "chosen_action": "Report Faraday's conclusion favoring chemical action while noting his explicit reservation about contact's exact role.",
+    "chosen_reasoning": "Balanced reporting of conclusion plus caveat is preferred.",
+    "rejected_action": "Present Faraday as claiming contact plays absolutely no role under any interpretation.",
+    "rejected_reasoning": "Overstating certainty distorts the text.",
+    "category": "nuance_preservation",
+    "source_chunk_ids": ["faraday_028"]
+  },
+  {
+    "pair_id": "faraday_pref_029",
+    "context": "Cross-chunk question combining §31 impulse strength and §34 direction rule.",
+    "chosen_action": "Integrate both amplitude (needle spun 4-5 times) and polarity behavior (opposite on make, same on break).",
+    "chosen_reasoning": "Multi-hop answers should combine complementary evidence rather than pick one facet.",
+    "rejected_action": "Answer only direction and ignore quantitative strength evidence.",
+    "rejected_reasoning": "Partial answers underperform expected-point coverage.",
+    "category": "multihop_coverage",
+    "source_chunk_ids": ["faraday_004", "faraday_005"]
+  },
+  {
+    "pair_id": "faraday_pref_030",
+    "context": "Cross-chunk question on electrochemical quantity links.",
+    "chosen_action": "Connect the 800,000-charge estimate for water with zinc equivalent result (32.31 parts) under a shared quantity-of-electricity framing.",
+    "chosen_reasoning": "The preferred behavior is to explicitly link the two quantitative claims.",
+    "rejected_action": "Treat the two numbers as unrelated and present them as separate trivia.",
+    "rejected_reasoning": "Misses the conceptual relation Faraday emphasized.",
+    "category": "relational_reasoning",
+    "source_chunk_ids": ["faraday_014", "faraday_015"]
+  },
+  {
+    "pair_id": "faraday_pref_031",
+    "context": "Cross-chunk self-induction mechanism.",
+    "chosen_action": "Use long-wire break-spark evidence and doubled-wire cancellation to infer magnetic-field mediation.",
+    "chosen_reasoning": "Preferred answers infer mechanism from paired positive/negative controls.",
+    "rejected_action": "Explain sparks as random battery instability with no structural effect.",
+    "rejected_reasoning": "Ignores controlled geometry changes and observed cancellation.",
+    "category": "causal_multihop",
+    "source_chunk_ids": ["faraday_016", "faraday_017"]
+  },
+  {
+    "pair_id": "faraday_pref_032",
+    "context": "Cross-chunk dielectric argument (curved lines + SIC measurements).",
+    "chosen_action": "Argue dielectrics actively mediate induction using curved-line evidence plus different SIC values for shell-lac and sulphur.",
+    "chosen_reasoning": "Combining geometry and material constants yields a stronger explanatory answer.",
+    "rejected_action": "Claim all insulators behave identically and SIC differences are measurement noise.",
+    "rejected_reasoning": "Contradicts Faraday's repeated, material-dependent findings.",
+    "category": "integrative_reasoning",
+    "source_chunk_ids": ["faraday_019", "faraday_020", "faraday_021"]
+  },
+  {
+    "pair_id": "faraday_pref_033",
+    "context": "Cross-chunk induction-to-conduction continuum argument.",
+    "chosen_action": "Link contiguous-particle induction model to the 'difference by degree, not kind' conclusion for conductors vs insulators.",
+    "chosen_reasoning": "Preferred output should tie model to downstream theoretical consequence.",
+    "rejected_action": "Present these as unrelated claims from disconnected sections.",
+    "rejected_reasoning": "Breaks conceptual continuity and weakens explanation quality.",
+    "category": "theory_synthesis",
+    "source_chunk_ids": ["faraday_022", "faraday_023"]
+  },
+  {
+    "pair_id": "faraday_pref_034",
+    "context": "Cross-chunk Series XIV method and electric-magnetic linkage.",
+    "chosen_action": "Use distribution-focused methodology to motivate the intervening-particles electric-magnetic relation claim.",
+    "chosen_reasoning": "This is a coherent premise-to-application chain.",
+    "rejected_action": "Treat the relation claim as disconnected from the method section.",
+    "rejected_reasoning": "Ignores how Faraday builds argument structure across sections.",
+    "category": "argument_structure",
+    "source_chunk_ids": ["faraday_024", "faraday_025"]
+  },
+  {
+    "pair_id": "faraday_pref_035",
+    "context": "Cross-chunk 1845 discoveries in Volume III.",
+    "chosen_action": "Present Faraday effect and diamagnetics together as parallel evidence of broad magnetic influence across optics and matter classes.",
+    "chosen_reasoning": "Paired interpretation reflects the scientific program of that period.",
+    "rejected_action": "Explain Faraday effect and diamagnetics as unrelated isolated curiosities.",
+    "rejected_reasoning": "Misses the unifying conceptual direction.",
+    "category": "programmatic_interpretation",
+    "source_chunk_ids": ["faraday_026", "faraday_027"]
+  },
+  {
+    "pair_id": "faraday_pref_036",
+    "context": "Cross-chunk method lesson from successful lab machine and inconclusive field test.",
+    "chosen_action": "Contrast controlled copper-disc setup with confounded Waterloo Bridge setup to explain signal-to-noise and control importance.",
+    "chosen_reasoning": "Preferred outputs extract methodological lessons, not only facts.",
+    "rejected_action": "Conclude Faraday's methods were inconsistent because one experiment failed.",
+    "rejected_reasoning": "Failure under confounds does not negate methodological rigor; it highlights limits.",
+    "category": "scientific_method",
+    "source_chunk_ids": ["faraday_006", "faraday_008"]
+  },
+  {
+    "pair_id": "faraday_pref_037",
+    "context": "Source-grounded response policy for Faraday QA.",
+    "chosen_action": "When uncertain, explicitly state uncertainty and request specific chunk evidence instead of fabricating paragraph numbers or values.",
+    "chosen_reasoning": "Alignment should reward calibrated uncertainty over confident hallucination.",
+    "rejected_action": "Invent plausible-sounding paragraph numbers and values to keep the answer fluent.",
+    "rejected_reasoning": "Fabrication is high-risk behavior in scholarly retrieval tasks.",
+    "category": "hallucination_control",
+    "source_chunk_ids": ["faraday_001", "faraday_020", "faraday_027"]
+  },
+  {
+    "pair_id": "faraday_pref_038",
+    "context": "Volume attribution safety check.",
+    "chosen_action": "Explicitly mark Volume III items (Faraday effect, diamagnetics) as outside Gutenberg Volume I paragraph stream.",
+    "chosen_reasoning": "Attribution boundaries prevent common cross-volume hallucinations.",
+    "rejected_action": "Merge all paragraph references into one continuous Volume I narrative.",
+    "rejected_reasoning": "This creates systematic citation errors.",
+    "category": "citation_safety",
+    "source_chunk_ids": ["faraday_026", "faraday_027"]
+  },
+  {
+    "pair_id": "faraday_pref_039",
+    "context": "Precision-first QA style for historical experiments.",
+    "chosen_action": "Prioritize exact numbers, units, and quoted phrases before high-level interpretation.",
+    "chosen_reasoning": "In this corpus, factual precision is the grading bottleneck and supports trustworthy synthesis.",
+    "rejected_action": "Provide elegant historical narrative while skipping measurements and units.",
+    "rejected_reasoning": "Narrative-only output fails expected-point coverage.",
+    "category": "answer_style",
+    "source_chunk_ids": ["faraday_010", "faraday_015", "faraday_020"]
+  },
+  {
+    "pair_id": "faraday_pref_040",
+    "context": "Cross-domain adaptation of RLHF behavior to Faraday corpus.",
+    "chosen_action": "Prefer grounded, citation-like, uncertainty-calibrated answers that separate observed data from interpretation.",
+    "chosen_reasoning": "This behavior generalizes reliable assistant conduct to proprietary-style historical text tasks.",
+    "rejected_action": "Optimize for confidence and fluency even when evidence is weak or absent.",
+    "rejected_reasoning": "Confidence without evidence increases hallucination risk and harms trust.",
+    "category": "alignment_policy",
+    "source_chunk_ids": ["faraday_001", "faraday_014", "faraday_024", "faraday_028"]
+  }
+]

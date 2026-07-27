@@ -1,0 +1,102 @@
+[
+  {
+    "chain_id": "hop_faraday_001",
+    "source": "Faraday's Experimental Researches in Electricity",
+    "question": "How did Faraday establish that magneto-electric and volta-electric induction are the same phenomenon, and what experiment best demonstrates this equivalence?",
+    "hops": [
+      {
+        "hop_number": 1,
+        "observation": "Series I §1-6: Iron ring experiment. Coil A connected to battery; Coil B to galvanometer. Deflection is transient — occurs only at make and break of the primary circuit. §6: 'the effects on the needle were not permanent, but were merely indications of the sudden change in the electromagnetic condition of the coil at the moments of making and breaking the circuit.'",
+        "inference": "The key is flux change, not flux itself. Volta-electric induction requires a changing primary current — a static current in Coil A produces no deflection in Coil B. The transient nature implies that the rate of change of the magnetic state is the causal factor."
+      },
+      {
+        "hop_number": 2,
+        "observation": "Series I §17-26: Bar magnet experiment. A 12-inch bar magnet thrust into a 220-turn helix produces a transient galvanometer deflection. §26: 'a conductor must cut across the magnetic curves of force to generate an electromotive force.' No deflection when magnet is at rest inside the helix.",
+        "inference": "Magneto-electric induction (permanent magnet → induced current) obeys the same rule: flux change, not flux magnitude. The bar magnet at rest produces no effect; motion produces a transient. This maps identically to the iron ring: the rate of change of flux is the driver in both cases."
+      },
+      {
+        "hop_number": 3,
+        "observation": "Series II §140-147: Faraday rotates a copper disc between the poles of a horseshoe magnet. The disc generates a continuous current measured by a galvanometer connected to the axis and rim. This is the first electromagnetic generator (Faraday disc). Continuous rotation yields continuous current; stopping rotation ceases the current.",
+        "inference": "Both volta-electric induction (iron ring) and magneto-electric induction (bar magnet helix) produce the same type of response under the same condition: changing flux linkage. The Faraday disc unifies both phenomena by showing that continuous current requires continuous flux-cutting, confirming a single principle across all modes of induction."
+      }
+    ],
+    "conclusion": "Faraday established equivalence through a three-experiment chain: (1) Iron ring shows that changing primary current induces secondary current (volta-electric). (2) Bar magnet shows that relative motion of a magnet induces current identically (magneto-electric). (3) Faraday disc shows both obey the same flux-cutting principle, producing continuous current through continuous mechanical rotation. The unifying conclusion is that EMF depends solely on the rate of change of magnetic flux linkage, regardless of the flux source — a principle later formalised by Maxwell as Faraday's Law of Induction.",
+    "chapter_refs": ["Series I §1-6 Iron Ring", "Series I §17-26 Bar Magnet", "Series II §140-147 Faraday Disc"],
+    "concepts": ["electromagnetic_induction", "magneto_electric_induction", "volta_electric_induction", "flux_change", "faraday_disc", "transient_deflection", "equivalence_of_induction_types", "EMF", "rate_of_change"]
+  },
+  {
+    "chain_id": "hop_faraday_002",
+    "source": "Faraday's Experimental Researches in Electricity",
+    "question": "Trace the multi-step experimental reasoning Faraday used to establish that the quantity of electricity is proportional to the quantity of chemical change in electrolysis.",
+    "hops": [
+      {
+        "hop_number": 1,
+        "observation": "Series VII §783-845: Faraday passes the same current through different electrolytic cells in series — zinc sulphate, dilute sulphuric acid, hydrochloric acid. He measures the mass of metal deposited or gas evolved at each electrode and finds that the same electrical charge always produces chemically equivalent amounts of decomposition products across all cells simultaneously.",
+        "inference": "If the same charge through different electrolytes always produces stoichiometrically equivalent deposits simultaneously, then charge is being consumed in fixed chemical equivalents. This means there is a precise relationship between electrical quantity and chemical change, and that the electrolyte chemistry does not modify the proportionality — only the equivalent mass changes."
+      },
+      {
+        "hop_number": 2,
+        "observation": "Series VII §869: Faraday introduces the voltameter (water electrolysis tube measuring evolved hydrogen volume) as a precise instrument for measuring the quantity of electricity passed. He uses this to show that the same charge always liberates 1 gram of hydrogen, 8 grams of oxygen, 36.5 grams of chlorine, 108 grams of silver — exactly the chemical equivalents in their known ratios.",
+        "inference": "The voltameter translates electrical quantity into measurable gas volume, making the proportionality quantitatively exact. This establishes a fundamental unit of charge associated with each chemical equivalent — the precursor to the concept of the electron and the Faraday constant."
+      },
+      {
+        "hop_number": 3,
+        "observation": "Series XI §1328-1340: Faraday revisits the electrolysis experiments with improved apparatus and confirms exact proportionality across diverse substances including organic compounds. He introduces the terminology: electrodes (anode/cathode), electrolyte, and ion. He states that equivalent quantities of different ions always require the same quantity of electricity for their discharge.",
+        "inference": "The consistent proportionality across all substances — inorganic and organic — implies a universal constant: one electrochemical equivalent (96,485 coulombs per mole, later named the Faraday constant F). Faraday's two laws of electrolysis crystallise: (1) mass deposited is proportional to charge; (2) for the same charge, masses of different substances are in ratio of their chemical equivalents."
+      }
+    ],
+    "conclusion": "Faraday's three-series experimental chain establishes the laws of electrolysis: (1) Series VII parallel-cell experiments prove proportionality by showing chemically equivalent deposits under identical charge. (2) The voltameter provides a precise charge-to-chemistry conversion instrument, making the proportionality quantitative. (3) Series XI extends this to all substances, leading to the two quantitative laws of electrolysis and the concept of the Faraday constant (F ≈ 96,485 C/mol). This is a model of multi-hop experimental reasoning — each series builds on the previous to narrow the conclusion from qualitative proportionality to a universal constant.",
+    "chapter_refs": ["Series VII §783-845 Electrolytic Equivalents", "Series VII §869 Voltameter", "Series XI §1328-1340 Universal Proportionality"],
+    "concepts": ["electrolysis", "electrochemical_equivalents", "faraday_constant", "voltameter", "faraday_laws_of_electrolysis", "ion", "anode", "cathode", "charge_proportionality", "stoichiometry"]
+  },
+  {
+    "chain_id": "hop_faraday_003",
+    "source": "Faraday's Experimental Researches in Electricity",
+    "question": "How did Faraday use lines of force and the medium-dependence of induction to argue for field theory over action-at-a-distance?",
+    "hops": [
+      {
+        "hop_number": 1,
+        "observation": "Series I §26: 'a conductor must cut across the magnetic curves of force to generate an electromotive force.' Faraday visualises the magnetic field as physical lines of force filling space, not as a mathematical abstraction. The bar magnet experiment shows that the induced EMF is proportional to the rate at which conductors cut these lines.",
+        "inference": "Faraday rejects the Newtonian action-at-a-distance model for induction. His lines of force are physical entities in space that the conductor interacts with locally. The induced current is not caused by the distant magnet directly, but by the conductor's local interaction with the field — implying the field itself is the mediating agent."
+      },
+      {
+        "hop_number": 2,
+        "observation": "Series XI §1161-1232 (Dielectric experiments): Faraday places different non-conducting materials (shellac, glass, sulphur, oil) between charged spheres and measures the specific inductive capacity of each medium. He finds that induction through dielectrics depends on the material — different substances transmit induction with different efficiencies, characterised by specific inductive capacity (relative permittivity).",
+        "inference": "Action-at-a-distance theories predict that the intervening medium cannot change the force between charges, since force acts directly across empty space. The observation that replacing one dielectric with another changes the induction is a direct falsification of action-at-a-distance. The medium participates — induction is a property of the space between the conductors, not a direct charge-to-charge interaction."
+      },
+      {
+        "hop_number": 3,
+        "observation": "Series XIX §2146-2242 (Magnetic field and matter): Faraday discovers that all materials — not just iron — are affected by magnetic fields. Paramagnetic substances (oxygen, iron) are attracted to strong field regions; diamagnetic substances (bismuth, phosphorus, even a flame) are repelled. This requires that magnetic lines of force physically permeate all matter and space.",
+        "inference": "Paramagnetism and diamagnetism in all matter require a physical field that interacts locally with any substance placed within it — not a remote force between magnetic poles. The field concept is now essential: the lines of force in space determine the behaviour of any object placed within them. This directly prefigures Maxwell's electromagnetic field theory, where the field carries energy and momentum independently of sources."
+      }
+    ],
+    "conclusion": "Faraday's multi-hop chain — flux-cutting in induction (Series I), medium-dependent specific inductive capacity (Series XI), para/diamagnetism in all matter (Series XIX) — builds an irrefutable case for field theory. Each experiment adds a layer: (1) Induction depends on local cutting of field lines, not distance from source. (2) The intervening medium modifies induction, proving the field is real and material. (3) All matter interacts with the field, not just magnetic materials, proving the field permeates all space. Maxwell later formalised these insights into his four equations unifying electricity, magnetism, and light.",
+    "chapter_refs": ["Series I §26 Lines of Force", "Series XI §1161-1232 Specific Inductive Capacity", "Series XIX §2146-2242 Paramagnetism and Diamagnetism"],
+    "concepts": ["lines_of_force", "field_theory", "action_at_a_distance", "specific_inductive_capacity", "dielectric", "paramagnetism", "diamagnetism", "maxwell_field_equations", "medium_dependence", "relative_permittivity"]
+  },
+  {
+    "chain_id": "hop_faraday_004",
+    "source": "Faraday's Experimental Researches in Electricity",
+    "question": "How did Faraday experimentally verify that electricity from different sources — voltaic battery, magnetic induction, electrostatic machines, thermoelectricity — is physically identical?",
+    "hops": [
+      {
+        "hop_number": 1,
+        "observation": "Series III §265-351: Faraday applies electricity from four sources to identical test apparatus: a voltaic battery, a magneto-electric machine (induction coil), a friction electrostatic machine, and a thermoelectric pile. Each source produces identical qualitative effects: sparks of the same character, magnetic needle deflection, and electrolytic decomposition of the same substances.",
+        "inference": "Qualitative identity of effects across all four sources is a necessary but not sufficient condition for physical identity. If the sources produced different kinds of electricity, at least one effect should differ. The uniformity of effects strongly suggests — but does not yet prove — that the same physical entity underlies all four sources."
+      },
+      {
+        "hop_number": 2,
+        "observation": "Series III §351: Faraday uses the voltameter from Series VII as a quantitative comparator. The same volume of hydrogen is evolved per unit charge from every source. He also measures galvanometer deflection and confirms proportionality. Physiological experiments (shocks) on himself show qualitatively identical sensation from low-quantity high-tension static electricity and high-quantity low-tension voltaic electricity when charge is equalised.",
+        "inference": "Quantitative identity — not just qualitative similarity — confirms the physical identity of electricity from all sources. The voltameter provides a common chemical scale: one unit of charge always liberates the same amount of hydrogen regardless of the electrical source. The two-dimensional description (tension × quantity = charge) explains why the sources appear different while being the same entity."
+      },
+      {
+        "hop_number": 3,
+        "observation": "Series III §352-361: Faraday extends the comparison to animal electricity (torpedo fish) and thermoelectricity. He concludes that 'the electricity of the voltaic pile' and 'the electricity of the electrical machine' are 'the same power.' He identifies tension (voltage) and quantity (charge) as the two independent dimensions of electricity.",
+        "inference": "By establishing the identity of electricity from all known sources through systematic comparison, Faraday eliminates the possibility that different generators produce different fluids — a view held by some contemporaries. The insight is that sources differ only in the tension and quantity they can supply of the same underlying entity. This directly supports Maxwell's later treatment of electricity as a single unified field phenomenon."
+      }
+    ],
+    "conclusion": "Faraday's three-step comparative programme in Series III establishes the identity of electricity from all sources: (1) Qualitative identity — all sources produce identical phenomena (spark, deflection, decomposition). (2) Quantitative identity — the voltameter confirms the same charge-chemistry ratio regardless of source. (3) Conceptual synthesis — two-dimensional characterisation (tension × quantity) explains apparent differences while confirming a single entity. This is exemplary multi-hop experimental reasoning: each hop eliminates an alternative hypothesis until only one conclusion is consistent with all observations.",
+    "chapter_refs": ["Series III §265-351 Identity of Electricities", "Series III §351 Voltameter as Comparator", "Series VII §869 Voltameter Method"],
+    "concepts": ["identity_of_electricities", "voltaic_electricity", "magneto_electric_induction", "static_electricity", "thermoelectricity", "animal_electricity", "tension_and_quantity", "unified_electricity", "comparative_experiment", "faraday_constant"]
+  }
+]

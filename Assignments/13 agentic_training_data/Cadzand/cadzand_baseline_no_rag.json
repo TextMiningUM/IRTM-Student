@@ -1,0 +1,439 @@
+{
+  "answer_model": "gpt-4o-mini",
+  "judge_model": "gpt-4o-mini",
+  "summary": {
+    "n_questions": 15,
+    "n_points": 39,
+    "substring_hits": 3,
+    "judge_hits": 5,
+    "overall": {
+      "CORRECT": 1,
+      "PARTIAL": 3,
+      "WRONG": 9,
+      "HALLUCINATED": 2,
+      "ERROR": 0
+    }
+  },
+  "rows": [
+    {
+      "id": "cad-001",
+      "question": "Onder welke historische naam staat het Zwin in de oudste documenten vermeld, en in welke wet uit de 8ste eeuw vormt het de zuidelijke grens van het Friezenland?",
+      "answer": "Het Zwin staat in de oudste documenten vermeld onder de naam \"Swinna\". In de wet \"Lex Frisionum\", die uit de 8ste eeuw dateert, vormt het de zuidelijke grens van het Friezenland.",
+      "expected_points": [
+        "Sincfal",
+        "Lex Frisionum"
+      ],
+      "substring_hits": [
+        "Lex Frisionum"
+      ],
+      "judge_per_point": [
+        {
+          "point": "Swinna",
+          "verdict": "MISS",
+          "reason": "verkeerde historische naam"
+        },
+        {
+          "point": "Lex Frisionum",
+          "verdict": "HIT",
+          "reason": "correcte wet uit de 8ste eeuw"
+        }
+      ],
+      "judge_overall": "PARTIAL",
+      "judge_note": "één feit correct, één feit fout"
+    },
+    {
+      "id": "cad-002",
+      "question": "Welke Gentse abdij bezat het patronaatsrecht over de Mariakerk in Cadzand, en welk recht hield dat concreet in?",
+      "answer": "De Gentse abdij die het patronaatsrecht over de Mariakerk in Cadzand bezat, is de Abdij van Saint-Bertin. Het patronaatsrecht hield in dat de abdij het recht had om de pastoor van de Mariakerk aan te stellen en te ontslaan, evenals het recht om te bepalen wie de kerkelijke diensten in de kerk mocht uitvoeren. Dit recht gaf de abdij aanzienlijke invloed op de religieuze en sociale zaken in de regio.",
+      "expected_points": [
+        "St-Baafsabdij",
+        "tienden heffen",
+        "pastoor benoemen"
+      ],
+      "substring_hits": [],
+      "judge_per_point": [
+        {
+          "point": "St-Baafsabdij",
+          "verdict": "MISS",
+          "reason": "Verkeerde abdij genoemd."
+        },
+        {
+          "point": "tienden heffen",
+          "verdict": "MISS",
+          "reason": "Dit feit ontbreekt."
+        },
+        {
+          "point": "pastoor benoemen",
+          "verdict": "HIT",
+          "reason": "Correcte informatie over het recht."
+        }
+      ],
+      "judge_overall": "PARTIAL",
+      "judge_note": "Twee feiten missen of zijn fout."
+    },
+    {
+      "id": "cad-003",
+      "question": "In welk jaar werd voor het eerst over polders op Cadzand geschreven, en welke ridder deed toen afstand van zijn leengoed ten gunste van de St-Baafsabdij?",
+      "answer": "In 1134 werd voor het eerst over polders op Cadzand geschreven. De ridder die toen afstand deed van zijn leengoed ten gunste van de St-Baafsabdij was ridder Wouter van Cadzand.",
+      "expected_points": [
+        "1177",
+        "Walter van Axel"
+      ],
+      "substring_hits": [],
+      "judge_per_point": [
+        {
+          "point": "1134",
+          "verdict": "MISS",
+          "reason": "jaartal is incorrect"
+        },
+        {
+          "point": "ridder Wouter van Cadzand",
+          "verdict": "MISS",
+          "reason": "naam is incorrect"
+        }
+      ],
+      "judge_overall": "WRONG",
+      "judge_note": "geen feiten goed maar netjes 'weet niet'"
+    },
+    {
+      "id": "cad-004",
+      "question": "Wanneer werden de zuidelijke en de noordelijke beuk van de Mariakerk gebouwd, en in welke stijl met welke opvallende afwijking?",
+      "answer": "De Mariakerk in Groningen, ook wel bekend als de Martinikerk, heeft een rijke geschiedenis. De bouw van de noordelijke beuk begon in 1220 en werd voltooid in 1250. De zuidelijke beuk werd later gebouwd, tussen 1320 en 1350. \n\nDe stijl van de Mariakerk is voornamelijk gotisch, wat kenmerkend is voor de bouwperiode. Een opvallende afwijking in de architectuur is dat de kerk een asymmetrische indeling heeft, wat betekent dat de noordelijke en zuidelijke beuken niet exact gelijk zijn in hoogte en breedte. Dit is ongebruikelijk voor gotische kerken, die vaak symmetrisch zijn ontworpen.",
+      "expected_points": [
+        "zuidelijke beuk 1250-1300",
+        "noordelijke beuk 1300-1325",
+        "Schelde-gotiek (vroeg-gotisch)",
+        "Romaanse zuilen"
+      ],
+      "substring_hits": [],
+      "judge_per_point": [
+        {
+          "point": "zuidelijke beuk werd later gebouwd, tussen 1320 en 1350.",
+          "verdict": "MISS",
+          "reason": "jaartallen kloppen niet, juiste periode is 1250-1300."
+        },
+        {
+          "point": "De bouw van de noordelijke beuk begon in 1220 en werd voltooid in 1250.",
+          "verdict": "MISS",
+          "reason": "jaartallen kloppen niet, juiste periode is 1300-1325."
+        },
+        {
+          "point": "De stijl van de Mariakerk is voornamelijk gotisch.",
+          "verdict": "MISS",
+          "reason": "de stijl is Schelde-gotiek (vroeg-gotisch)."
+        },
+        {
+          "point": "Een opvallende afwijking in de architectuur is dat de kerk een asymmetrische indeling heeft.",
+          "verdict": "MISS",
+          "reason": "geen vermelding van Romaanse zuilen."
+        }
+      ],
+      "judge_overall": "WRONG",
+      "judge_note": "geen feiten goed maar netjes 'weet niet'."
+    },
+    {
+      "id": "cad-005",
+      "question": "Hoe heette de oorspronkelijke toren van de Mariakerk en in welke zeeatlas uit welk jaar wordt hij door Joris Carolus als baken beschreven?",
+      "answer": "De oorspronkelijke toren van de Mariakerk heette de \"Mariakerk toren\" of \"toren van de Mariakerk\". Joris Carolus beschrijft deze toren als baken in zijn zeeatlas \"Zee-Atlas\", die in 1620 werd gepubliceerd.",
+      "expected_points": [
+        "Sint-Lambertustoren",
+        "zeeatlas 1634"
+      ],
+      "substring_hits": [],
+      "judge_per_point": [
+        {
+          "point": "de oorspronkelijke toren van de Mariakerk heette de \"Mariakerk toren\" of \"toren van de Mariakerk\"",
+          "verdict": "MISS",
+          "reason": "de juiste naam is Sint-Lambertustoren"
+        },
+        {
+          "point": "Joris Carolus beschrijft deze toren als baken in zijn zeeatlas \"Zee-Atlas\", die in 1620 werd gepubliceerd",
+          "verdict": "MISS",
+          "reason": "de juiste publicatiedatum is 1634"
+        }
+      ],
+      "judge_overall": "WRONG",
+      "judge_note": "geen feiten goed maar netjes 'weet niet'"
+    },
+    {
+      "id": "cad-006",
+      "question": "In welk jaar werd de Vrede van Cadzand gesloten en welke vorst had het eiland het jaar daarvoor laten innemen?",
+      "answer": "De Vrede van Cadzand werd gesloten in 1667. Het jaar daarvoor, in 1666, had de Franse koning Lodewijk XIV het eiland laten innemen.",
+      "expected_points": [
+        "1492",
+        "1491",
+        "Maximiliaan van Oostenrijk"
+      ],
+      "substring_hits": [],
+      "judge_per_point": [
+        {
+          "point": "1492",
+          "verdict": "MISS",
+          "reason": "niet genoemd"
+        },
+        {
+          "point": "1491",
+          "verdict": "MISS",
+          "reason": "niet genoemd"
+        },
+        {
+          "point": "Maximiliaan van Oostenrijk",
+          "verdict": "MISS",
+          "reason": "niet genoemd"
+        }
+      ],
+      "judge_overall": "WRONG",
+      "judge_note": "geen feiten goed maar netjes 'weet niet'"
+    },
+    {
+      "id": "cad-007",
+      "question": "Wie was de eerste eigen predikant van Cadzand, in welk jaar aanvaardde hij zijn dienst, en in welk jaar daarvoor besloten de Staten-Generaal tot een wekelijkse predikbeurt vanuit Sluis?",
+      "answer": "De eerste eigen predikant van Cadzand was Johannes de Vries. Hij aanvaardde zijn dienst in 1585. Daarvoor, in 1584, besloten de Staten-Generaal tot een wekelijkse predikbeurt vanuit Sluis.",
+      "expected_points": [
+        "Marcus ab Halle",
+        "1609",
+        "1606"
+      ],
+      "substring_hits": [],
+      "judge_per_point": [
+        {
+          "point": "eerste eigen predikant van Cadzand was Johannes de Vries",
+          "verdict": "MISS",
+          "reason": "verkeerde naam"
+        },
+        {
+          "point": "Hij aanvaardde zijn dienst in 1585",
+          "verdict": "MISS",
+          "reason": "verkeerd jaar"
+        },
+        {
+          "point": "in 1584, besloten de Staten-Generaal tot een wekelijkse predikbeurt vanuit Sluis",
+          "verdict": "MISS",
+          "reason": "verkeerd jaar"
+        }
+      ],
+      "judge_overall": "WRONG",
+      "judge_note": "geen feiten goed maar netjes 'weet niet'"
+    },
+    {
+      "id": "cad-008",
+      "question": "Tot welk jaar bleef de noordelijke beuk als ruïne liggen, en wie schonk bij het herstel een gebrandschilderd raam?",
+      "answer": "De noordelijke beuk van de Sint-Bavokerk in Haarlem bleef als ruïne liggen tot 1970. Bij het herstel van de kerk schonk de kunstenaar en ontwerper Jan Toorop een gebrandschilderd raam.",
+      "expected_points": [
+        "1641",
+        "Het Vrije van Sluis"
+      ],
+      "substring_hits": [],
+      "judge_per_point": [
+        {
+          "point": "1970",
+          "verdict": "MISS",
+          "reason": "jaartal is fout"
+        },
+        {
+          "point": "Jan Toorop",
+          "verdict": "HIT",
+          "reason": "correcte schenker van het raam"
+        }
+      ],
+      "judge_overall": "PARTIAL",
+      "judge_note": "één feit goed, één feit fout"
+    },
+    {
+      "id": "cad-009",
+      "question": "Hoeveel hectare grondbezit had de kerk van Cadzand in 1610 vergeleken met 1665, en wat gebeurde er in 1677 met de landerijen én met de toren?",
+      "answer": "In 1610 bezat de kerk van Cadzand ongeveer 1.200 hectare grond. In 1665 was dit grondbezit afgenomen tot ongeveer 800 hectare. \n\nIn 1677 vond er een grote overstroming plaats, de zogenaamde \"Zeeuwse inundatie\", die leidde tot het onder water lopen van veel landerijen in de regio. Ook de toren van de kerk in Cadzand werd zwaar beschadigd door deze overstroming. De toren is uiteindelijk ingestort en is nooit meer herbouwd.",
+      "expected_points": [
+        "1610: bijna 100 ha",
+        "1665: ~58 ha",
+        "1677 landerijen verkocht",
+        "1677 toren afgebroken"
+      ],
+      "substring_hits": [
+        "1665: ~58 ha"
+      ],
+      "judge_per_point": [
+        {
+          "point": "1610: bijna 100 ha",
+          "verdict": "MISS",
+          "reason": "fout aantal hectare"
+        },
+        {
+          "point": "1665: ~58 ha",
+          "verdict": "MISS",
+          "reason": "fout aantal hectare"
+        },
+        {
+          "point": "1677 landerijen verkocht",
+          "verdict": "MISS",
+          "reason": "ontbrekend feit"
+        },
+        {
+          "point": "1677 toren afgebroken",
+          "verdict": "MISS",
+          "reason": "ontbrekend feit"
+        }
+      ],
+      "judge_overall": "HALLUCINATED",
+      "judge_note": "geen feiten goed en verzonnen informatie"
+    },
+    {
+      "id": "cad-010",
+      "question": "Door wie en in welke stad werd de huidige klok van Cadzand gegoten, en in welk jaar?",
+      "answer": "De huidige klok van Cadzand werd gegoten door de klokkengieterij Petit & Fritsen in de stad Aarle-Rixtel, Nederland. De klok werd gegoten in het jaar 1950.",
+      "expected_points": [
+        "Jan Burgerhuys",
+        "Middelburg",
+        "1611"
+      ],
+      "substring_hits": [],
+      "judge_per_point": [
+        {
+          "point": "Jan Burgerhuys",
+          "verdict": "MISS",
+          "reason": "verkeerde naam"
+        },
+        {
+          "point": "Middelburg",
+          "verdict": "MISS",
+          "reason": "verkeerde stad"
+        },
+        {
+          "point": "1611",
+          "verdict": "MISS",
+          "reason": "verkeerd jaar"
+        }
+      ],
+      "judge_overall": "WRONG",
+      "judge_note": "geen feiten goed maar netjes 'weet niet'"
+    },
+    {
+      "id": "cad-011",
+      "question": "In welke drie golven (jaren en herkomstgebieden) kwamen de Hugenoten/Waalse vluchtelingen naar Cadzand?",
+      "answer": "De Hugenoten en Waalse vluchtelingen kwamen in drie belangrijke golven naar Cadzand:\n\n1. **Eerste golf (1568-1620)**: Deze golf begon na de godsdienstoorlogen in Frankrijk, waarbij veel Hugenoten (protestanten) naar het buitenland vluchtten. Cadzand, gelegen in Zeeland, was een van de plaatsen waar zij zich vestigden.\n\n2. **Tweede golf (1620-1685)**: Na de Edict van Nantes in 1598, dat enige religieuze vrijheid bood, werden de Hugenoten opnieuw vervolgd na de herroeping van dit edict in 1685 door Lodewijk XIV. Dit leidde tot een nieuwe stroom van vluchtelingen naar Nederland, waaronder Cadzand.\n\n3. **Derde golf (1685-1700)**: Deze golf omvatte de grootste groep vluchtelingen, die na de herroeping van het Edict van Nantes in 1685 naar Nederland kwamen. Veel van deze vluchtelingen waren afkomstig uit de regio's rondom Parijs en de Provence.\n\nDeze drie golven brachten een aanzienlijke groep Hugenoten en Waalse vluchtelingen naar Cadzand, waar zij bijdroegen aan de lokale economie en cultuur.",
+      "expected_points": [
+        "1685 omgeving Calais (na herroeping Edict van Nantes)",
+        "1713 omgeving Rijssel",
+        "1771 Picardië/Champagne/Orléans"
+      ],
+      "substring_hits": [],
+      "judge_per_point": [
+        {
+          "point": "Eerste golf (1568-1620)",
+          "verdict": "MISS",
+          "reason": "jaartal klopt, maar herkomstgebied ontbreekt."
+        },
+        {
+          "point": "Tweede golf (1620-1685)",
+          "verdict": "MISS",
+          "reason": "jaartal klopt, maar herkomstgebied ontbreekt."
+        },
+        {
+          "point": "Derde golf (1685-1700)",
+          "verdict": "MISS",
+          "reason": "jaartal klopt, maar herkomstgebied is niet correct."
+        }
+      ],
+      "judge_overall": "HALLUCINATED",
+      "judge_note": "geen feiten goed en geen juiste herkomstgebieden genoemd."
+    },
+    {
+      "id": "cad-012",
+      "question": "In welk jaar ging de Waals-Hervormde Gemeente op in de Hervormde Gemeente van Cadzand, en welk fysiek voorwerp in de kerk herinnert nu nog aan haar?",
+      "answer": "De Waals-Hervormde Gemeente ging in 1970 op in de Hervormde Gemeente van Cadzand. Een fysiek voorwerp dat nog herinnert aan de Waals-Hervormde Gemeente is de oude doopvont, die in de kerk bewaard is gebleven.",
+      "expected_points": [
+        "1809",
+        "lichtkroon midden in de kerk"
+      ],
+      "substring_hits": [],
+      "judge_per_point": [
+        {
+          "point": "1970",
+          "verdict": "MISS",
+          "reason": "jaartal is fout, het juiste jaar is 1809."
+        },
+        {
+          "point": "oude doopvont",
+          "verdict": "MISS",
+          "reason": "fysiek voorwerp is fout, het juiste voorwerp is de lichtkroon."
+        }
+      ],
+      "judge_overall": "WRONG",
+      "judge_note": "geen feiten goed maar netjes 'weet niet'."
+    },
+    {
+      "id": "cad-013",
+      "question": "Welk verdrag uit welk jaar droeg Staats-Vlaanderen over aan de Franse Republiek, en in welk jaar kreeg het gebied de naam Zeeuws-Vlaanderen?",
+      "answer": "Het verdrag dat Staats-Vlaanderen overdroeg aan de Franse Republiek was het Verdrag van de Pyreneeën, dat werd ondertekend op 7 november 1659. Het gebied kreeg de naam Zeeuws-Vlaanderen in 1664.",
+      "expected_points": [
+        "Haags Verdrag 1795",
+        "1814"
+      ],
+      "substring_hits": [],
+      "judge_per_point": [
+        {
+          "point": "Haags Verdrag 1795",
+          "verdict": "MISS",
+          "reason": "Het verdrag dat genoemd wordt is het Verdrag van de Pyreneeën, niet het Haags Verdrag."
+        },
+        {
+          "point": "1814",
+          "verdict": "MISS",
+          "reason": "Het antwoord noemt 1664 als het jaar waarin het gebied de naam Zeeuws-Vlaanderen kreeg, niet 1814."
+        }
+      ],
+      "judge_overall": "WRONG",
+      "judge_note": "Geen feiten goed maar netjes 'weet niet'."
+    },
+    {
+      "id": "cad-014",
+      "question": "Welke koning schonk in 1821 een subsidie voor het nieuwe dak van de kerk, en hoeveel gulden bedroeg die subsidie?",
+      "answer": "In 1821 schonk koning Willem I een subsidie van 1.000 gulden voor het nieuwe dak van de kerk.",
+      "expected_points": [
+        "Willem I",
+        "1000 gulden"
+      ],
+      "substring_hits": [
+        "Willem I"
+      ],
+      "judge_per_point": [
+        {
+          "point": "Willem I",
+          "verdict": "HIT",
+          "reason": "correcte naam van de koning"
+        },
+        {
+          "point": "1000 gulden",
+          "verdict": "HIT",
+          "reason": "correct bedrag van de subsidie"
+        }
+      ],
+      "judge_overall": "CORRECT",
+      "judge_note": "alle feiten goed"
+    },
+    {
+      "id": "cad-015",
+      "question": "Welke rijksbouwmeester leidde de restauratie vanaf 1929, en wat verving het oude dakruitertje als torenoplossing tegen de kerk?",
+      "answer": "De rijksbouwmeester die de restauratie vanaf 1929 leidde was J. J. P. Oud. Het oude dakruitertje werd vervangen door een nieuwe toren, die in 1930 werd gerealiseerd.",
+      "expected_points": [
+        "Van Heeswijk",
+        "renaissance-torentje (door burgerlijke gemeente aangebouwd)"
+      ],
+      "substring_hits": [],
+      "judge_per_point": [
+        {
+          "point": "Van Heeswijk",
+          "verdict": "MISS",
+          "reason": "naam is fout"
+        },
+        {
+          "point": "renaissance-torentje (door burgerlijke gemeente aangebouwd)",
+          "verdict": "MISS",
+          "reason": "omschrijving is fout"
+        }
+      ],
+      "judge_overall": "WRONG",
+      "judge_note": "geen feiten goed maar netjes 'weet niet'"
+    }
+  ]
+}

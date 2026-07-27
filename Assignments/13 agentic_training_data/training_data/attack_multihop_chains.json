@@ -1,0 +1,162 @@
+[
+  {
+    "chain_id": "attk_chain_a4ea1540e7",
+    "question": "Trace a plausible kill-chain progression an attacker may follow across the phases initial access -> execution -> persistence -> lateral movement.",
+    "chapter_refs": [
+      "T1078.004",
+      "T1072",
+      "T1078.004",
+      "T1021"
+    ],
+    "concepts": [
+      "Cloud Accounts",
+      "Software Deployment Tools",
+      "Cloud Accounts",
+      "Remote Services"
+    ],
+    "hops": [
+      {
+        "hop_number": 1,
+        "observation": "During Initial Access, the adversary uses Cloud Accounts (T1078.004).",
+        "inference": "Valid accounts in cloud environments may allow adversaries to perform actions to achieve Initial Access, Persistence, Privilege Escalation, or Defense Evasion."
+      },
+      {
+        "hop_number": 2,
+        "observation": "During Execution, the adversary uses Software Deployment Tools (T1072).",
+        "inference": "Adversaries may gain access to and use centralized software suites installed within an enterprise to execute commands and move laterally through the network."
+      },
+      {
+        "hop_number": 3,
+        "observation": "During Persistence, the adversary uses Cloud Accounts (T1078.004).",
+        "inference": "Valid accounts in cloud environments may allow adversaries to perform actions to achieve Initial Access, Persistence, Privilege Escalation, or Defense Evasion."
+      },
+      {
+        "hop_number": 4,
+        "observation": "During Lateral Movement, the adversary uses Remote Services (T1021).",
+        "inference": "Adversaries may use [Valid Accounts](https://attack.mitre.org/techniques/T1078) to log into a service that accepts remote connections, such as telnet, SSH, and VNC."
+      }
+    ],
+    "conclusion": "Each phase relies on the prior foothold; defenders should detect and disrupt the earliest hop to break the chain.",
+    "source": "mitre_attack_enterprise"
+  },
+  {
+    "chain_id": "attk_chain_694ec50106",
+    "question": "Trace a plausible kill-chain progression an attacker may follow across the phases reconnaissance -> initial access -> execution -> exfiltration.",
+    "chapter_refs": [
+      "T1598.003",
+      "T1078.004",
+      "T1072",
+      "T1048"
+    ],
+    "concepts": [
+      "Spearphishing Link",
+      "Cloud Accounts",
+      "Software Deployment Tools",
+      "Exfiltration Over Alternative Protocol"
+    ],
+    "hops": [
+      {
+        "hop_number": 1,
+        "observation": "During Reconnaissance, the adversary uses Spearphishing Link (T1598.003).",
+        "inference": "Adversaries may send spearphishing messages with a malicious link to elicit sensitive information that can be used during targeting."
+      },
+      {
+        "hop_number": 2,
+        "observation": "During Initial Access, the adversary uses Cloud Accounts (T1078.004).",
+        "inference": "Valid accounts in cloud environments may allow adversaries to perform actions to achieve Initial Access, Persistence, Privilege Escalation, or Defense Evasion."
+      },
+      {
+        "hop_number": 3,
+        "observation": "During Execution, the adversary uses Software Deployment Tools (T1072).",
+        "inference": "Adversaries may gain access to and use centralized software suites installed within an enterprise to execute commands and move laterally through the network."
+      },
+      {
+        "hop_number": 4,
+        "observation": "During Exfiltration, the adversary uses Exfiltration Over Alternative Protocol (T1048).",
+        "inference": "Adversaries may steal data by exfiltrating it over a different protocol than that of the existing command and control channel."
+      }
+    ],
+    "conclusion": "Each phase relies on the prior foothold; defenders should detect and disrupt the earliest hop to break the chain.",
+    "source": "mitre_attack_enterprise"
+  },
+  {
+    "chain_id": "attk_chain_c675b496d8",
+    "question": "Trace a plausible kill-chain progression an attacker may follow across the phases credential access -> lateral movement -> collection -> exfiltration.",
+    "chapter_refs": [
+      "T1003.001",
+      "T1021",
+      "T1530",
+      "T1048"
+    ],
+    "concepts": [
+      "LSASS Memory",
+      "Remote Services",
+      "Data from Cloud Storage",
+      "Exfiltration Over Alternative Protocol"
+    ],
+    "hops": [
+      {
+        "hop_number": 1,
+        "observation": "During Credential Access, the adversary uses LSASS Memory (T1003.001).",
+        "inference": "Adversaries may attempt to access credential material stored in the process memory of the Local Security Authority Subsystem Service (LSASS)."
+      },
+      {
+        "hop_number": 2,
+        "observation": "During Lateral Movement, the adversary uses Remote Services (T1021).",
+        "inference": "Adversaries may use [Valid Accounts](https://attack.mitre.org/techniques/T1078) to log into a service that accepts remote connections, such as telnet, SSH, and VNC."
+      },
+      {
+        "hop_number": 3,
+        "observation": "During Collection, the adversary uses Data from Cloud Storage (T1530).",
+        "inference": "Adversaries may access data from cloud storage."
+      },
+      {
+        "hop_number": 4,
+        "observation": "During Exfiltration, the adversary uses Exfiltration Over Alternative Protocol (T1048).",
+        "inference": "Adversaries may steal data by exfiltrating it over a different protocol than that of the existing command and control channel."
+      }
+    ],
+    "conclusion": "Each phase relies on the prior foothold; defenders should detect and disrupt the earliest hop to break the chain.",
+    "source": "mitre_attack_enterprise"
+  },
+  {
+    "chain_id": "attk_chain_55abe5b471",
+    "question": "Trace a plausible kill-chain progression an attacker may follow across the phases execution -> privilege escalation -> defense evasion -> impact.",
+    "chapter_refs": [
+      "T1072",
+      "T1078.004",
+      "T1601.001",
+      "T1489"
+    ],
+    "concepts": [
+      "Software Deployment Tools",
+      "Cloud Accounts",
+      "Patch System Image",
+      "Service Stop"
+    ],
+    "hops": [
+      {
+        "hop_number": 1,
+        "observation": "During Execution, the adversary uses Software Deployment Tools (T1072).",
+        "inference": "Adversaries may gain access to and use centralized software suites installed within an enterprise to execute commands and move laterally through the network."
+      },
+      {
+        "hop_number": 2,
+        "observation": "During Privilege Escalation, the adversary uses Cloud Accounts (T1078.004).",
+        "inference": "Valid accounts in cloud environments may allow adversaries to perform actions to achieve Initial Access, Persistence, Privilege Escalation, or Defense Evasion."
+      },
+      {
+        "hop_number": 3,
+        "observation": "During Defense Evasion, the adversary uses Patch System Image (T1601.001).",
+        "inference": "Adversaries may modify the operating system of a network device to introduce new capabilities or weaken existing defenses.(Citation: Killing the myth of Cisco IOS rootkits) (Citation: Killing IOS diversity myth) (Citation: Cisco IOS Shellco"
+      },
+      {
+        "hop_number": 4,
+        "observation": "During Impact, the adversary uses Service Stop (T1489).",
+        "inference": "Adversaries may stop or disable services on a system to render those services unavailable to legitimate users."
+      }
+    ],
+    "conclusion": "Each phase relies on the prior foothold; defenders should detect and disrupt the earliest hop to break the chain.",
+    "source": "mitre_attack_enterprise"
+  }
+]

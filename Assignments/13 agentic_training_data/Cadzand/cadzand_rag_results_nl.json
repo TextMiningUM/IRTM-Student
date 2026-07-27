@@ -1,0 +1,456 @@
+{
+  "kind": "rag",
+  "answer_model": "gpt-4o-mini",
+  "judge_model": "gpt-4o-mini",
+  "embed_model": "text-embedding-3-small",
+  "top_k": 5,
+  "summary": {
+    "n_questions": 15,
+    "n_points": 39,
+    "judge_hits": 31,
+    "overall": {
+      "CORRECT": 11,
+      "PARTIAL": 2,
+      "WRONG": 2,
+      "HALLUCINATED": 0,
+      "ERROR": 0
+    }
+  },
+  "rows": [
+    {
+      "id": "cad-001",
+      "question": "Onder welke historische naam staat het Zwin in de oudste documenten vermeld, en in welke wet uit de 8ste eeuw vormt het de zuidelijke grens van het Friezenland?",
+      "retrieved_ids": [
+        "cadzand_001",
+        "cadzand_006",
+        "cadzand_004",
+        "cadzand_009",
+        "cadzand_005"
+      ],
+      "answer": "Het Zwin staat in de oudste historische documenten vermeld onder de naam Sincfal. In de Lex Frisionum uit de 8ste eeuw vormt het de zuidelijke grens van het land der Friezen.",
+      "judge_per_point": [
+        {
+          "point": "Sincfal",
+          "verdict": "HIT",
+          "reason": "correct historical name"
+        },
+        {
+          "point": "Lex Frisionum",
+          "verdict": "HIT",
+          "reason": "correct legal document"
+        }
+      ],
+      "judge_overall": "CORRECT",
+      "judge_note": "all facts are accurate"
+    },
+    {
+      "id": "cad-002",
+      "question": "Welke Gentse abdij bezat het patronaatsrecht over de Mariakerk in Cadzand, en welk recht hield dat concreet in?",
+      "retrieved_ids": [
+        "cadzand_012",
+        "cadzand_027",
+        "cadzand_007",
+        "cadzand_017",
+        "cadzand_023"
+      ],
+      "answer": "De Gentse abdij die het patronaatsrecht over de Mariakerk in Cadzand bezat, is de St-Baafsabdij. Dit patronaatsrecht hield in dat de abdij het recht had om tienden te heffen en een pastoor te benoemen wanneer men een kerk stichtte.",
+      "judge_per_point": [
+        {
+          "point": "St-Baafsabdij",
+          "verdict": "HIT",
+          "reason": "correct name"
+        },
+        {
+          "point": "tienden heffen",
+          "verdict": "HIT",
+          "reason": "correct description of the right"
+        },
+        {
+          "point": "pastoor benoemen",
+          "verdict": "HIT",
+          "reason": "correct description of the right"
+        }
+      ],
+      "judge_overall": "CORRECT",
+      "judge_note": "All expected facts are present and accurate."
+    },
+    {
+      "id": "cad-003",
+      "question": "In welk jaar werd voor het eerst over polders op Cadzand geschreven, en welke ridder deed toen afstand van zijn leengoed ten gunste van de St-Baafsabdij?",
+      "retrieved_ids": [
+        "cadzand_009",
+        "cadzand_007",
+        "cadzand_012",
+        "cadzand_027",
+        "cadzand_019"
+      ],
+      "answer": "In 1177 werd voor het eerst geschreven over polders op Cadzand, en ridder Walter van Axel deed toen afstand van zijn leengoed ten gunste van de St-Baafsabdij.",
+      "judge_per_point": [
+        {
+          "point": "1177",
+          "verdict": "HIT",
+          "reason": "correct year"
+        },
+        {
+          "point": "Walter van Axel",
+          "verdict": "HIT",
+          "reason": "correct name"
+        }
+      ],
+      "judge_overall": "CORRECT",
+      "judge_note": "all facts hit"
+    },
+    {
+      "id": "cad-004",
+      "question": "Wanneer werden de zuidelijke en de noordelijke beuk van de Mariakerk gebouwd, en in welke stijl met welke opvallende afwijking?",
+      "retrieved_ids": [
+        "cadzand_017",
+        "cadzand_026",
+        "cadzand_034",
+        "cadzand_028",
+        "cadzand_033"
+      ],
+      "answer": "De zuidelijke beuk van de Mariakerk werd vermoedelijk gebouwd tussen 1250 en 1300, en de noordelijke beuk tussen 1300 en 1325. De stijl is in hoofdzaak vroeg-gotisch (Schelde-gotiek), maar de zware zuilen zijn nog Romaans.",
+      "judge_per_point": [
+        {
+          "point": "zuidelijke beuk 1250-1300",
+          "verdict": "HIT",
+          "reason": "exact match"
+        },
+        {
+          "point": "noordelijke beuk 1300-1325",
+          "verdict": "HIT",
+          "reason": "exact match"
+        },
+        {
+          "point": "Schelde-gotiek (vroeg-gotisch)",
+          "verdict": "HIT",
+          "reason": "exact match"
+        },
+        {
+          "point": "Romaanse zuilen",
+          "verdict": "HIT",
+          "reason": "exact match"
+        }
+      ],
+      "judge_overall": "CORRECT",
+      "judge_note": "All expected facts are present and accurate."
+    },
+    {
+      "id": "cad-005",
+      "question": "Hoe heette de oorspronkelijke toren van de Mariakerk en in welke zeeatlas uit welk jaar wordt hij door Joris Carolus als baken beschreven?",
+      "retrieved_ids": [
+        "cadzand_018",
+        "cadzand_017",
+        "cadzand_028",
+        "cadzand_034",
+        "cadzand_012"
+      ],
+      "answer": "De oorspronkelijke toren van de Mariakerk heette de Sint-Lambertustoren. Joris Carolus beschrijft deze toren als baken in zijn zeeatlas van 1634.",
+      "judge_per_point": [
+        {
+          "point": "Sint-Lambertustoren",
+          "verdict": "HIT",
+          "reason": "correct name"
+        },
+        {
+          "point": "zeeatlas 1634",
+          "verdict": "HIT",
+          "reason": "correct year"
+        }
+      ],
+      "judge_overall": "CORRECT",
+      "judge_note": "all facts hit"
+    },
+    {
+      "id": "cad-006",
+      "question": "In welk jaar werd de Vrede van Cadzand gesloten en welke vorst had het eiland het jaar daarvoor laten innemen?",
+      "retrieved_ids": [
+        "cadzand_021",
+        "cadzand_007",
+        "cadzand_009",
+        "cadzand_016",
+        "cadzand_019"
+      ],
+      "answer": "De Vrede van Cadzand werd gesloten in 1492 en het eiland werd het jaar daarvoor, in 1491, ingenomen door Maximiliaan van Oostenrijk.",
+      "judge_per_point": [
+        {
+          "point": "1492",
+          "verdict": "HIT",
+          "reason": "correct year for the treaty"
+        },
+        {
+          "point": "1491",
+          "verdict": "HIT",
+          "reason": "correct year for the island's occupation"
+        },
+        {
+          "point": "Maximiliaan van Oostenrijk",
+          "verdict": "HIT",
+          "reason": "correct name of the ruler"
+        }
+      ],
+      "judge_overall": "CORRECT",
+      "judge_note": "All facts are accurate."
+    },
+    {
+      "id": "cad-007",
+      "question": "Wie was de eerste eigen predikant van Cadzand, in welk jaar aanvaardde hij zijn dienst, en in welk jaar daarvoor besloten de Staten-Generaal tot een wekelijkse predikbeurt vanuit Sluis?",
+      "retrieved_ids": [
+        "cadzand_023",
+        "cadzand_024",
+        "cadzand_007",
+        "cadzand_013",
+        "cadzand_012"
+      ],
+      "answer": "Ik kan dit niet vinden in de bron.",
+      "judge_per_point": [
+        {
+          "point": "Marcus ab Halle",
+          "verdict": "MISS",
+          "reason": "not mentioned"
+        },
+        {
+          "point": "1609",
+          "verdict": "MISS",
+          "reason": "not mentioned"
+        },
+        {
+          "point": "1606",
+          "verdict": "MISS",
+          "reason": "not mentioned"
+        }
+      ],
+      "judge_overall": "WRONG",
+      "judge_note": "no hits but says 'don't know'"
+    },
+    {
+      "id": "cad-008",
+      "question": "Tot welk jaar bleef de noordelijke beuk als ruïne liggen, en wie schonk bij het herstel een gebrandschilderd raam?",
+      "retrieved_ids": [
+        "cadzand_026",
+        "cadzand_035",
+        "cadzand_034",
+        "cadzand_033",
+        "cadzand_028"
+      ],
+      "answer": "De noordelijke beuk bleef als ruïne liggen tot 1641, en het Vrije van Sluis schonk bij het herstel een gebrandschilderd raam.",
+      "judge_per_point": [
+        {
+          "point": "1641",
+          "verdict": "HIT",
+          "reason": "correct year"
+        },
+        {
+          "point": "Het Vrije van Sluis",
+          "verdict": "HIT",
+          "reason": "correct donor"
+        }
+      ],
+      "judge_overall": "CORRECT",
+      "judge_note": "all facts hit"
+    },
+    {
+      "id": "cad-009",
+      "question": "Hoeveel hectare grondbezit had de kerk van Cadzand in 1610 vergeleken met 1665, en wat gebeurde er in 1677 met de landerijen én met de toren?",
+      "retrieved_ids": [
+        "cadzand_027",
+        "cadzand_019",
+        "cadzand_009",
+        "cadzand_012",
+        "cadzand_007"
+      ],
+      "answer": "In 1610 had de kerk van Cadzand bijna 100 hectare grondbezit. In 1665 was dit geslonken tot ongeveer 58 hectare. In 1677 moesten alle landerijen verkocht worden om de leningen en achterstallige renten te betalen. De context bevat geen informatie over wat er met de toren gebeurde.",
+      "judge_per_point": [
+        {
+          "point": "1610: bijna 100 ha",
+          "verdict": "HIT",
+          "reason": "exact match"
+        },
+        {
+          "point": "1665: ~58 ha",
+          "verdict": "HIT",
+          "reason": "exact match"
+        },
+        {
+          "point": "1677 landerijen verkocht",
+          "verdict": "HIT",
+          "reason": "exact match"
+        },
+        {
+          "point": "1677 toren afgebroken",
+          "verdict": "MISS",
+          "reason": "not mentioned in the answer"
+        }
+      ],
+      "judge_overall": "PARTIAL",
+      "judge_note": "One fact missing about the tower."
+    },
+    {
+      "id": "cad-010",
+      "question": "Door wie en in welke stad werd de huidige klok van Cadzand gegoten, en in welk jaar?",
+      "retrieved_ids": [
+        "cadzand_006",
+        "cadzand_012",
+        "cadzand_007",
+        "cadzand_008",
+        "cadzand_017"
+      ],
+      "answer": "I cannot find this in the source.",
+      "judge_per_point": [
+        {
+          "point": "Jan Burgerhuys",
+          "verdict": "MISS",
+          "reason": "not mentioned in the model answer"
+        },
+        {
+          "point": "Middelburg",
+          "verdict": "MISS",
+          "reason": "not mentioned in the model answer"
+        },
+        {
+          "point": "1611",
+          "verdict": "MISS",
+          "reason": "not mentioned in the model answer"
+        }
+      ],
+      "judge_overall": "WRONG",
+      "judge_note": "no hits and says 'don't know'"
+    },
+    {
+      "id": "cad-011",
+      "question": "In welke drie golven (jaren en herkomstgebieden) kwamen de Hugenoten/Waalse vluchtelingen naar Cadzand?",
+      "retrieved_ids": [
+        "cadzand_030",
+        "cadzand_029",
+        "cadzand_006",
+        "cadzand_019",
+        "cadzand_001"
+      ],
+      "answer": "De Hugenoten kwamen in drie golven naar Cadzand:\n\n1. Na de herroeping van het Edict van Nantes in 1685, voornamelijk uit de omgeving van Calais.\n2. In 1713, door geloofsgenoten uit de omstreek van Rijssel.\n3. In 1771, nog enkelen uit het gebied van Picardië, Champagne en het gebied van Orléans.",
+      "judge_per_point": [
+        {
+          "point": "1685 omgeving Calais (na herroeping Edict van Nantes)",
+          "verdict": "HIT",
+          "reason": "exact match"
+        },
+        {
+          "point": "1713 omgeving Rijssel",
+          "verdict": "HIT",
+          "reason": "exact match"
+        },
+        {
+          "point": "1771 Picardië/Champagne/Orléans",
+          "verdict": "HIT",
+          "reason": "exact match"
+        }
+      ],
+      "judge_overall": "CORRECT",
+      "judge_note": "All expected facts are present and accurate."
+    },
+    {
+      "id": "cad-012",
+      "question": "In welk jaar ging de Waals-Hervormde Gemeente op in de Hervormde Gemeente van Cadzand, en welk fysiek voorwerp in de kerk herinnert nu nog aan haar?",
+      "retrieved_ids": [
+        "cadzand_031",
+        "cadzand_030",
+        "cadzand_027",
+        "cadzand_012",
+        "cadzand_017"
+      ],
+      "answer": "De Waals-Hervormde Gemeente ging op in de Hervormde Gemeente van Cadzand in 1809. Het enige fysieke voorwerp dat nu nog aan haar herinnert, is de lichtkroon midden in de kerk.",
+      "judge_per_point": [
+        {
+          "point": "1809",
+          "verdict": "HIT",
+          "reason": "correct year"
+        },
+        {
+          "point": "lichtkroon midden in de kerk",
+          "verdict": "HIT",
+          "reason": "correct physical object"
+        }
+      ],
+      "judge_overall": "CORRECT",
+      "judge_note": "all facts hit"
+    },
+    {
+      "id": "cad-013",
+      "question": "Welk verdrag uit welk jaar droeg Staats-Vlaanderen over aan de Franse Republiek, en in welk jaar kreeg het gebied de naam Zeeuws-Vlaanderen?",
+      "retrieved_ids": [
+        "cadzand_032",
+        "cadzand_001",
+        "cadzand_029",
+        "cadzand_024",
+        "cadzand_021"
+      ],
+      "answer": "Het Haags Verdrag uit 1795 droeg Staats-Vlaanderen over aan de Franse Republiek, en in 1814 kreeg het gebied de naam Zeeuws-Vlaanderen.",
+      "judge_per_point": [
+        {
+          "point": "Haags Verdrag 1795",
+          "verdict": "HIT",
+          "reason": "exact match"
+        },
+        {
+          "point": "1814",
+          "verdict": "HIT",
+          "reason": "exact match"
+        }
+      ],
+      "judge_overall": "CORRECT",
+      "judge_note": "all facts hit"
+    },
+    {
+      "id": "cad-014",
+      "question": "Welke koning schonk in 1821 een subsidie voor het nieuwe dak van de kerk, en hoeveel gulden bedroeg die subsidie?",
+      "retrieved_ids": [
+        "cadzand_033",
+        "cadzand_026",
+        "cadzand_034",
+        "cadzand_028",
+        "cadzand_027"
+      ],
+      "answer": "Koning Willem I schonk in 1821 een subsidie van duizend gulden voor het nieuwe dak van de kerk.",
+      "judge_per_point": [
+        {
+          "point": "Willem I",
+          "verdict": "HIT",
+          "reason": "correct name"
+        },
+        {
+          "point": "1000 gulden",
+          "verdict": "HIT",
+          "reason": "correct amount"
+        }
+      ],
+      "judge_overall": "CORRECT",
+      "judge_note": "all facts hit"
+    },
+    {
+      "id": "cad-015",
+      "question": "Welke rijksbouwmeester leidde de restauratie vanaf 1929, en wat verving het oude dakruitertje als torenoplossing tegen de kerk?",
+      "retrieved_ids": [
+        "cadzand_034",
+        "cadzand_028",
+        "cadzand_033",
+        "cadzand_026",
+        "cadzand_036"
+      ],
+      "answer": "De restauratie vanaf 1929 werd geleid door rijksbouwmeester Van Heeswijk. Het oude dakruitertje werd vervangen door een sierlijk renaissancetorentje dat tegen de kerk werd aangebouwd.",
+      "judge_per_point": [
+        {
+          "point": "Van Heeswijk",
+          "verdict": "HIT",
+          "reason": "correct name"
+        },
+        {
+          "point": "renaissance-torentje (door burgerlijke gemeente aangebouwd)",
+          "verdict": "MISS",
+          "reason": "missing 'door burgerlijke gemeente'"
+        }
+      ],
+      "judge_overall": "PARTIAL",
+      "judge_note": "One fact hit, one fact missing."
+    }
+  ]
+}

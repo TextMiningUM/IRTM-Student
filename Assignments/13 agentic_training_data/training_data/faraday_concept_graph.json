@@ -1,0 +1,3710 @@
+[
+  {
+    "concept": "electromagnetic induction",
+    "definition": "Generation of electromotive effects from changing magnetic conditions.",
+    "category": "foundational",
+    "chapter_refs": [
+      "faraday_001",
+      "faraday_002",
+      "faraday_003"
+    ],
+    "related_to": [
+      "transient current",
+      "flux change",
+      "galvanometer deflection",
+      "lines of force"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "transient current",
+    "definition": "Induced current that appears on circuit changes and vanishes at steady state.",
+    "category": "foundational",
+    "chapter_refs": [
+      "faraday_001",
+      "faraday_002",
+      "faraday_003",
+      "faraday_004"
+    ],
+    "related_to": [
+      "electromagnetic induction",
+      "flux change",
+      "galvanometer deflection"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "flux change",
+    "definition": "Condition required for induction effects in Faraday's early experiments.",
+    "category": "foundational",
+    "chapter_refs": [
+      "faraday_001",
+      "faraday_002",
+      "faraday_003"
+    ],
+    "related_to": [
+      "electromagnetic induction",
+      "transient current",
+      "lenz precursor"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "galvanometer deflection",
+    "definition": "Measured indicator of induced current direction and strength.",
+    "category": "instrumentation",
+    "chapter_refs": [
+      "faraday_001",
+      "faraday_004",
+      "faraday_005"
+    ],
+    "related_to": [
+      "transient current",
+      "needle spin",
+      "direction of induced current"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "needle spin",
+    "definition": "Strong impulse response in §31 under 100 pairs of plates.",
+    "category": "quantitative",
+    "chapter_refs": [
+      "faraday_004"
+    ],
+    "related_to": [
+      "galvanometer deflection",
+      "battery strength",
+      "induction amplitude"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "direction of induced current",
+    "definition": "Observed orientation of induced flow relative to the primary current changes.",
+    "category": "foundational",
+    "chapter_refs": [
+      "faraday_005"
+    ],
+    "related_to": [
+      "lenz precursor",
+      "make-break asymmetry",
+      "opposition to change"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "lenz precursor",
+    "definition": "Faraday's directional observation later formalized as Lenz's Law.",
+    "category": "historical",
+    "chapter_refs": [
+      "faraday_005"
+    ],
+    "related_to": [
+      "direction of induced current",
+      "flux change",
+      "opposition to change"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "homopolar generator",
+    "definition": "Rotating-disc apparatus producing continuous EMF.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "faraday_006"
+    ],
+    "related_to": [
+      "continuous emf",
+      "electromagnetic induction",
+      "horseshoe magnet"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "continuous emf",
+    "definition": "Continuous electrical output from rotational induction machine.",
+    "category": "quantitative",
+    "chapter_refs": [
+      "faraday_006"
+    ],
+    "related_to": [
+      "homopolar generator",
+      "rotational speed",
+      "electrochemical verification"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "waterloo bridge experiment",
+    "definition": "Large-scale field attempt to detect tidal magneto-electric currents.",
+    "category": "field_experiment",
+    "chapter_refs": [
+      "faraday_008"
+    ],
+    "related_to": [
+      "confounding variables",
+      "inconclusive result",
+      "960-foot wire"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "identity of electricities",
+    "definition": "Series III argument that multiple electrical sources produce the same classes of effects.",
+    "category": "theory",
+    "chapter_refs": [
+      "faraday_009",
+      "Series III §265"
+    ],
+    "related_to": [
+      "magnetic effect",
+      "chemical decomposition",
+      "physiological effect",
+      "spark effect",
+      "common electricity",
+      "animal electricity",
+      "voltaic electricity"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "electrochemical quantification",
+    "definition": "Use of controlled geometry and chemistry to compare electrical quantities.",
+    "category": "quantitative",
+    "chapter_refs": [
+      "faraday_010",
+      "faraday_014",
+      "faraday_015"
+    ],
+    "related_to": [
+      "platina-zinc experiment",
+      "leyden battery equivalence",
+      "electrochemical equivalent"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "platina-zinc experiment",
+    "definition": "Calibrated arrangement comparing voltaic action to Leyden machine charging.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "faraday_010"
+    ],
+    "related_to": [
+      "electrochemical quantification",
+      "leyden battery equivalence",
+      "acid composition"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "leyden battery equivalence",
+    "definition": "Reference benchmark used in Faraday's quantitative electricity comparisons.",
+    "category": "quantitative",
+    "chapter_refs": [
+      "faraday_010",
+      "faraday_014",
+      "faraday_015"
+    ],
+    "related_to": [
+      "platina-zinc experiment",
+      "800000 charges",
+      "electrochemical equivalent"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "ice non-conductor",
+    "definition": "Observation that thin ice interrupted current even under strong batteries.",
+    "category": "materials",
+    "chapter_refs": [
+      "faraday_011"
+    ],
+    "related_to": [
+      "law of liquefaction",
+      "chloride of lead",
+      "phase-dependent conduction"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "law of liquefaction",
+    "definition": "Faraday's generalization that melting enables conduction while freezing removes it in tested cases.",
+    "category": "theory",
+    "chapter_refs": [
+      "faraday_011"
+    ],
+    "related_to": [
+      "ice non-conductor",
+      "chloride of lead",
+      "electrolytic conduction"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "sulphuret of silver",
+    "definition": "Material showing conductivity increase with temperature, opposite to ordinary metals.",
+    "category": "materials",
+    "chapter_refs": [
+      "faraday_012",
+      "Series IV §430-433"
+    ],
+    "related_to": [
+      "semiconductor-like behavior",
+      "negative temperature coefficient",
+      "material contrast",
+      "conducting power"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "semiconductor-like behavior",
+    "definition": "Behavior where conductivity rises with heating in certain non-metallic compounds.",
+    "category": "materials",
+    "chapter_refs": [
+      "faraday_012"
+    ],
+    "related_to": [
+      "sulphuret of silver",
+      "temperature dependence",
+      "material transport"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "definite electrolytic action",
+    "definition": "Law that chemical action is proportional to electricity quantity passed.",
+    "category": "electrochemistry",
+    "chapter_refs": [
+      "faraday_013",
+      "faraday_015"
+    ],
+    "related_to": [
+      "electrochemical equivalent",
+      "series circuit proof",
+      "combining weights"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "electrochemical equivalent",
+    "definition": "Mass equivalent associated with a fixed quantity of electricity.",
+    "category": "electrochemistry",
+    "chapter_refs": [
+      "faraday_015"
+    ],
+    "related_to": [
+      "definite electrolytic action",
+      "32.31 zinc",
+      "leyden battery equivalence"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "800000 charges",
+    "definition": "Estimated quantity of charge needed to decompose one grain of water.",
+    "category": "quantitative",
+    "chapter_refs": [
+      "faraday_014",
+      "faraday_015"
+    ],
+    "related_to": [
+      "leyden battery equivalence",
+      "electrochemical quantification",
+      "electrochemical equivalent"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "self-induction",
+    "definition": "Circuit's own changing current producing opposing electromotive effects.",
+    "category": "electrodynamics",
+    "chapter_refs": [
+      "faraday_016",
+      "faraday_017"
+    ],
+    "related_to": [
+      "break spark",
+      "doubled wire cancellation",
+      "jenkin observation"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "jenkin observation",
+    "definition": "Reported stronger break-shock behavior in electromagnet-connected wire paths.",
+    "category": "historical",
+    "chapter_refs": [
+      "faraday_016"
+    ],
+    "related_to": [
+      "self-induction",
+      "break spark",
+      "long wire effects"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "doubled wire cancellation",
+    "definition": "Suppression of spark when adjacent segments carry opposing magnetic contributions.",
+    "category": "electrodynamics",
+    "chapter_refs": [
+      "faraday_017"
+    ],
+    "related_to": [
+      "self-induction",
+      "magnetic field cancellation",
+      "break spark"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "dielectric",
+    "definition": "Material medium through which induction is propagated in Faraday's model.",
+    "category": "field_theory",
+    "chapter_refs": [
+      "faraday_018",
+      "faraday_022",
+      "Series XIII §1565-1566",
+      "Series XII §1360-1361"
+    ],
+    "related_to": [
+      "contiguous particles",
+      "specific inductive capacity",
+      "induction",
+      "electric spark",
+      "conductors"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "specific inductive capacity",
+    "definition": "Relative ability of a dielectric medium to support induction.",
+    "category": "field_theory",
+    "chapter_refs": [
+      "faraday_020",
+      "faraday_021"
+    ],
+    "related_to": [
+      "shell-lac sic",
+      "sulphur sic",
+      "dielectric"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "shell-lac sic",
+    "definition": "Measured specific inductive capacity for shell-lac relative to air.",
+    "category": "quantitative",
+    "chapter_refs": [
+      "faraday_019",
+      "faraday_020"
+    ],
+    "related_to": [
+      "specific inductive capacity",
+      "shell-lac cylinder",
+      "dielectric"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "sulphur sic",
+    "definition": "Measured specific inductive capacity for sulphur relative to air.",
+    "category": "quantitative",
+    "chapter_refs": [
+      "faraday_021"
+    ],
+    "related_to": [
+      "specific inductive capacity",
+      "shell-lac sic",
+      "dielectric comparison"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "contiguous particles",
+    "definition": "Faraday's claim that induction propagates through adjacent particles in dielectric matter.",
+    "category": "field_theory",
+    "chapter_refs": [
+      "faraday_022",
+      "faraday_023"
+    ],
+    "related_to": [
+      "dielectric",
+      "field mediation",
+      "conduction-induction continuum"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "conduction-induction continuum",
+    "definition": "Claim that conductors and insulators differ by degree within one broad mechanism.",
+    "category": "field_theory",
+    "chapter_refs": [
+      "faraday_023"
+    ],
+    "related_to": [
+      "contiguous particles",
+      "dielectric",
+      "conduction"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "force distribution",
+    "definition": "Methodological focus on how electric forces are arranged rather than ontological fluid commitments.",
+    "category": "methodology",
+    "chapter_refs": [
+      "faraday_024",
+      "faraday_025"
+    ],
+    "related_to": [
+      "one-fluid theory",
+      "two-fluid theory",
+      "intervening particles"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "one-fluid theory",
+    "definition": "Historical electric model that Faraday treated as compatible with his distribution framing.",
+    "category": "historical_theory",
+    "chapter_refs": [
+      "faraday_024"
+    ],
+    "related_to": [
+      "two-fluid theory",
+      "force distribution",
+      "methodological neutrality"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "two-fluid theory",
+    "definition": "Historical model of electrical action considered alongside one-fluid accounts.",
+    "category": "historical_theory",
+    "chapter_refs": [
+      "faraday_024"
+    ],
+    "related_to": [
+      "one-fluid theory",
+      "force distribution",
+      "methodological neutrality"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "intervening particles",
+    "definition": "Interpretation that electric and magnetic effects act through matter between bodies.",
+    "category": "field_theory",
+    "chapter_refs": [
+      "faraday_025"
+    ],
+    "related_to": [
+      "force distribution",
+      "contiguous particles",
+      "electric-magnetic relation"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "electric-magnetic relation",
+    "definition": "Faraday's argument for deep analogies and mediation principles across electric and magnetic actions.",
+    "category": "field_theory",
+    "chapter_refs": [
+      "faraday_025"
+    ],
+    "related_to": [
+      "intervening particles",
+      "lines of force",
+      "field theory precursor"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "faraday effect",
+    "definition": "Rotation of polarized light in a medium under magnetic field influence.",
+    "category": "optics",
+    "chapter_refs": [
+      "faraday_026"
+    ],
+    "related_to": [
+      "polarization rotation",
+      "field-length proportionality",
+      "volume iii"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "polarization rotation",
+    "definition": "Observable angle change of polarized light used in Faraday effect experiments.",
+    "category": "optics",
+    "chapter_refs": [
+      "faraday_026"
+    ],
+    "related_to": [
+      "faraday effect",
+      "field-length proportionality",
+      "heavy glass"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "diamagnetics",
+    "definition": "Substances repelled by both magnetic poles with induced polarity opposite the applied field.",
+    "category": "magnetism",
+    "chapter_refs": [
+      "faraday_027"
+    ],
+    "related_to": [
+      "bismuth",
+      "equatorial orientation",
+      "opposite polarity"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "bismuth",
+    "definition": "Material used to demonstrate strong diamagnetic response and equatorial setting.",
+    "category": "materials",
+    "chapter_refs": [
+      "faraday_027"
+    ],
+    "related_to": [
+      "diamagnetics",
+      "equatorial orientation",
+      "1/3400 comparison"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "equatorial orientation",
+    "definition": "Characteristic orientation of diamagnetic rods between magnetic poles.",
+    "category": "magnetism",
+    "chapter_refs": [
+      "faraday_027"
+    ],
+    "related_to": [
+      "diamagnetics",
+      "bismuth",
+      "opposite polarity"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "chemical action in voltaic pile",
+    "definition": "Faraday's conclusion that chemical action sustains voltaic current rather than contact alone.",
+    "category": "electrochemistry",
+    "chapter_refs": [
+      "faraday_028"
+    ],
+    "related_to": [
+      "contact theory",
+      "electrochemical quantification",
+      "series vii conclusion"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "contact theory",
+    "definition": "Competing explanation for battery current discussed and qualified by Faraday.",
+    "category": "historical_theory",
+    "chapter_refs": [
+      "faraday_028"
+    ],
+    "related_to": [
+      "chemical action in voltaic pile",
+      "series vii conclusion",
+      "experimental caution"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "lines of force",
+    "definition": "Geometric representation of directional field action central to Faraday's interpretation.",
+    "category": "field_theory",
+    "chapter_refs": [
+      "faraday_003",
+      "faraday_018",
+      "faraday_025",
+      "Series XI §1225-1226"
+    ],
+    "related_to": [
+      "flux change",
+      "electric-magnetic relation",
+      "contiguous particles",
+      "inductive force",
+      "induction"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "make-break asymmetry",
+    "definition": "Opposite induced directions on circuit establishment and interruption.",
+    "category": "electrodynamics",
+    "chapter_refs": [
+      "faraday_001",
+      "faraday_005"
+    ],
+    "related_to": [
+      "direction of induced current",
+      "lenz precursor",
+      "transient current"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "field-theory precursor",
+    "definition": "Faraday's medium-mediated interpretations that influenced later field formalism.",
+    "category": "historical",
+    "chapter_refs": [
+      "faraday_022",
+      "faraday_025"
+    ],
+    "related_to": [
+      "contiguous particles",
+      "electric-magnetic relation",
+      "dielectric"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "uncertainty calibration",
+    "definition": "Reporting negative or uncertain outcomes explicitly instead of overstating findings.",
+    "category": "methodology",
+    "chapter_refs": [
+      "faraday_008"
+    ],
+    "related_to": [
+      "waterloo bridge experiment",
+      "field experiment",
+      "hallucination control"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "volume iii attribution",
+    "definition": "Requirement to attribute Faraday effect and diamagnetics to Volume III sections.",
+    "category": "provenance",
+    "chapter_refs": [
+      "faraday_026",
+      "faraday_027"
+    ],
+    "related_to": [
+      "faraday effect",
+      "diamagnetics",
+      "citation safety"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "galvanometer",
+    "definition": "The galvanometer is an instrument designed to detect and measure electric current, indicated by the movement of a magnetized needle.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series I §87-88",
+      "Series I §128-130",
+      "Series I §29-30",
+      "Series I §40-43",
+      "Series III §366-367",
+      "Series IX §1057-1060",
+      "Series IX §1052-1053",
+      "Series XIV §1730-1731",
+      "Series III §293-295",
+      "Series I §110-112"
+    ],
+    "related_to": [
+      "induced currents",
+      "magnet",
+      "helix",
+      "deflecting force",
+      "electric current",
+      "helices",
+      "magnetic power",
+      "discharging train"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "magnetization",
+    "definition": "Magnetization refers to the process of making a material magnetic, as demonstrated by the sewing-needles fixed to the galvanometer.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series I §87-88"
+    ],
+    "related_to": [
+      "galvanometer"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "magnetic meridian",
+    "definition": "The magnetic meridian is the direction of the magnetic field in which the galvanometer is aligned, affecting the orientation of the needle.",
+    "category": "observation",
+    "chapter_refs": [
+      "Series I §87-88"
+    ],
+    "related_to": [
+      "galvanometer"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "copper disc",
+    "definition": "The copper disc is a component of the experimental setup that interacts with magnetic poles to influence the galvanometer's readings.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series I §87-88"
+    ],
+    "related_to": [
+      "galvanometer",
+      "magnetization"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "magneto-electric induction",
+    "definition": "Magneto-electric induction is the agency exerted by ordinary magnets, which is similar to the action of electro-magnets or volta-electric currents.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series I §58-59",
+      "Series II §158-160"
+    ],
+    "related_to": [
+      "volta-electric induction",
+      "electro-magnets"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "volta-electric induction",
+    "definition": "Volta-electric induction is characterized by its suddenness in comparison to magneto-electric induction, which requires a sensible amount of time.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series I §58-59"
+    ],
+    "related_to": [
+      "magneto-electric induction"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "ampere's theory",
+    "definition": "Ampere's theory suggests that the actions of common magnets and electro-magnets or volta-electric currents are fundamentally the same.",
+    "category": "law",
+    "chapter_refs": [
+      "Series I §58-59"
+    ],
+    "related_to": [
+      "magneto-electric induction",
+      "volta-electric induction"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "electro-tonic state",
+    "definition": "The electro-tonic state is a condition of matter that later investigations suggest can be explained without its admission.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series I §58-59"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "induction of magnetism",
+    "definition": "The induction of magnetism refers to the process by which a material, such as iron, becomes magnetized without direct contact with a magnet.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series I §128-130"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "electro-magnets",
+    "definition": "Electro-magnets are magnets created by the flow of electric current, as demonstrated by M. Ampere in contrast to ordinary magnets.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series I §128-130"
+    ],
+    "related_to": [
+      "induction of magnetism"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "induced currents",
+    "definition": "Induced currents are electric currents generated in a conductor due to the influence of a changing magnetic field or other electric currents, as observed in Faraday's experiments.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series I §128-130"
+    ],
+    "related_to": [
+      "electro-magnets"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "induced current",
+    "definition": "Induced current refers to the current that is generated in a circuit as a result of a change in magnetic field or the making and breaking of a battery contact.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series I §29-30"
+    ],
+    "related_to": [
+      "galvanometer"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "battery contact",
+    "definition": "Battery contact is the connection made to a battery that allows current to flow through a circuit, affecting the galvanometer's needle deflection.",
+    "category": "method",
+    "chapter_refs": [
+      "Series I §29-30"
+    ],
+    "related_to": [
+      "galvanometer",
+      "induced current"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "deflection",
+    "definition": "Deflection is the movement of the galvanometer needle in response to electric current, indicating the direction and presence of induced currents.",
+    "category": "observation",
+    "chapter_refs": [
+      "Series I §29-30",
+      "Series I §40-43",
+      "Series II §214-216",
+      "Series II §226-228"
+    ],
+    "related_to": [
+      "galvanometer",
+      "induced current",
+      "magnet",
+      "helix",
+      "conducting power",
+      "galvanometer needle",
+      "current"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "magnet",
+    "definition": "The magnet's movement in and out of the helix causes a deflection in the galvanometer needle.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series I §40-43",
+      "Series II §214-216",
+      "Series II §226-228"
+    ],
+    "related_to": [
+      "helix",
+      "galvanometer",
+      "conducting power",
+      "needle",
+      "current"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "helix",
+    "definition": "The hollow helix described is essential for observing the deflection of the galvanometer needle when a magnet is introduced.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series I §40-43"
+    ],
+    "related_to": [
+      "magnet",
+      "galvanometer"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "arago's experiment",
+    "definition": "Arago's experiment involves a circular plate of metal that vibrates like a pendulum when subjected to magnetic poles.",
+    "category": "method",
+    "chapter_refs": [
+      "Series II §249-250"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "vibrations",
+    "definition": "The number of vibrations of the metal plates is measured to determine the effect of magnetic poles on their motion.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series II §249-250"
+    ],
+    "related_to": [
+      "arago's experiment"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "magnetic poles",
+    "definition": "The experiment compares the effects of opposite and similar magnetic poles on the vibrations of metal plates.",
+    "category": "observation",
+    "chapter_refs": [
+      "Series II §249-250"
+    ],
+    "related_to": [
+      "vibrations"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "retarding effect",
+    "definition": "The retarding effect is greatest when opposite magnetic poles are used, while similar poles produce little to no effect.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series II §249-250"
+    ],
+    "related_to": [
+      "magnetic poles",
+      "vibrations"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "metallic globe",
+    "definition": "A hollow, thin brass sphere that can revolve and is used to study the effects of electric currents produced within it.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series II §161-162"
+    ],
+    "related_to": [
+      "electric currents",
+      "magnetic curves"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "electric currents",
+    "definition": "Circulating flows of electricity generated within the metallic globe as it revolves, particularly when the axis of rotation is perpendicular to the magnetic dip.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series II §161-162"
+    ],
+    "related_to": [
+      "metallic globe",
+      "magnetic curves"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "magnetic curves",
+    "definition": "The lines of magnetic force that are intersected by the moving parts of the metallic globe, influencing the direction of the electric currents.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series II §161-162"
+    ],
+    "related_to": [
+      "electric currents",
+      "metallic globe"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "rotation axis",
+    "definition": "The imaginary line around which the metallic globe revolves, affecting the production and direction of electric currents within it.",
+    "category": "law",
+    "chapter_refs": [
+      "Series II §161-162"
+    ],
+    "related_to": [
+      "electric currents",
+      "metallic globe"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "helix inversion",
+    "definition": "The inversion of the helix, regardless of direction, consistently causes the galvanometer needle to deflect in a specific manner.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series II §142-144"
+    ],
+    "related_to": [
+      "galvanometer needle",
+      "iron core"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "galvanometer needle",
+    "definition": "The galvanometer needle deflects in opposite directions depending on the orientation of the helix during inversion.",
+    "category": "observation",
+    "chapter_refs": [
+      "Series II §142-144",
+      "Series II §226-228"
+    ],
+    "related_to": [
+      "helix inversion",
+      "iron core"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "iron core",
+    "definition": "The presence of an iron core in the helix influences the behavior of the galvanometer needle during inversion.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series II §142-144"
+    ],
+    "related_to": [
+      "helix inversion",
+      "galvanometer needle"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "magnet introduction",
+    "definition": "Introducing a magnet with its marked pole downwards into the inverted helix produces a deflection in the galvanometer needle.",
+    "category": "method",
+    "chapter_refs": [
+      "Series II §142-144"
+    ],
+    "related_to": [
+      "galvanometer needle",
+      "helix inversion"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "conducting power",
+    "definition": "The conducting power of a substance is directly related to the effects it has on a magnet when rotated near it.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series II §214-216",
+      "Series IV §409-410",
+      "Series IV §430-433",
+      "Series IV §411-413"
+    ],
+    "related_to": [
+      "magnet",
+      "needle",
+      "water",
+      "salts",
+      "decomposition",
+      "solidification"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "induced electric currents",
+    "definition": "The effects observed in certain experiments may be due to induced electric currents rather than ordinary magnetic attractions.",
+    "category": "law",
+    "chapter_refs": [
+      "Series II §214-216"
+    ],
+    "related_to": [
+      "magnet",
+      "conducting power"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "current",
+    "definition": "The current flows from point A to B and through the magnet and copper rod, indicating the presence of an electric circuit.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series II §226-228",
+      "Series IX §1079-1080",
+      "Series VII §859-860"
+    ],
+    "related_to": [
+      "galvanometer needle",
+      "shock",
+      "spark",
+      "electromagnet",
+      "decomposition",
+      "acting cells"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "deflecting force",
+    "definition": "The deflecting force of an electric current is directly proportional to the absolute quantity of electricity passed, regardless of its intensity.",
+    "category": "law",
+    "chapter_refs": [
+      "Series III §366-367"
+    ],
+    "related_to": [
+      "electric current",
+      "galvanometer"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "electric current",
+    "definition": "Electric current refers to the flow of electricity that can produce a deflecting force on a magnetic needle in a galvanometer.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series III §366-367",
+      "Series V §547",
+      "Series VII §801",
+      "Series VIII §934-935",
+      "Series VIII §995-996",
+      "Series IX §1114",
+      "Series X §1119-1120",
+      "Series XIV §1742-1743",
+      "Series II §158-160"
+    ],
+    "related_to": [
+      "deflecting force",
+      "galvanometer",
+      "protoxide of antimony",
+      "dilute sulphuric acid",
+      "sulphate of ammonia",
+      "electrolytic action",
+      "decomposition",
+      "magnetic forces",
+      "electric force",
+      "voltaic trough",
+      "voltaic battery",
+      "revolving discs apparatus",
+      "magneto-electric induction"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "litmus paper",
+    "definition": "Litmus paper, moistened in a strong solution of iodide of potassium, serves as a simple means to illustrate the formation of nitric acid from the atmosphere.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series III §326-327"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "decomposition of water",
+    "definition": "Wollaston's experiment demonstrated that water can be decomposed by electricity passing through insulated wires immersed in it, producing streams of gas resembling those from voltaic electricity.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series III §326-327"
+    ],
+    "related_to": [
+      "voltaic electricity",
+      "galvanic phenomena"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "voltaic electricity",
+    "definition": "Voltaic electricity refers to the electrical current produced by a voltaic pile, which is distinct from the current that Wollaston used in his experiment.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series III §326-327",
+      "Series III §265"
+    ],
+    "related_to": [
+      "decomposition of water",
+      "galvanic phenomena",
+      "identity of electricities",
+      "common electricity",
+      "animal electricity"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "galvanic phenomena",
+    "definition": "Galvanic phenomena describe the effects observed in electrical experiments, particularly those involving the generation of gases from electrodes, which Wollaston noted were similar but not identical to his findings.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series III §326-327"
+    ],
+    "related_to": [
+      "decomposition of water",
+      "voltaic electricity"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "chemical action",
+    "definition": "The passage discusses the identity in chemical action between common and voltaic electricity as demonstrated by Mr. Barry's experiment.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series III §338",
+      "Series III §372-373",
+      "Series VI §610-611"
+    ],
+    "related_to": [
+      "elevation of temperature",
+      "spongy platina"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "voltaic decomposition",
+    "definition": "Voltaic decomposition is illustrated by the use of tubes with wires for the electrolysis of a sulphate of soda solution.",
+    "category": "method",
+    "chapter_refs": [
+      "Series III §338"
+    ],
+    "related_to": [
+      "chemical action"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "electrical kite",
+    "definition": "An insulated electrical kite was used to connect one of the wires in the experiment, allowing for the observation of hydrogen production.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series III §338"
+    ],
+    "related_to": [
+      "voltaic decomposition"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "atmospheric electricity",
+    "definition": "The strength of atmospheric electricity was indicated by the shocks felt when touching the string of the kite.",
+    "category": "observation",
+    "chapter_refs": [
+      "Series III §338"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "voltaic current",
+    "definition": "A constant voltaic current is indicated by the permanent deflection of the needle, which corresponds to the electrical output of a battery charged by thirty turns of a machine.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series III §372-373"
+    ],
+    "related_to": [
+      "chemical action"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "test paper",
+    "definition": "The test paper is a medium used to observe the effects of chemical action, supported on a spatula and moistened with a standard solution.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series III §372-373"
+    ],
+    "related_to": [
+      "chemical action"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "voltaic apparatus",
+    "definition": "The voltaic apparatus is a device used to generate a constant electrical current, which is connected to the platina wire in the experiment.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series III §372-373",
+      "Series IV §422-424",
+      "Series IV §398-399"
+    ],
+    "related_to": [
+      "voltaic current",
+      "test paper",
+      "electricity",
+      "discharge"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "electro-chemical decomposition",
+    "definition": "The experiment demonstrates that the electro-chemical decomposition does not occur as a result of mutual dependence between the poles.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series III §328",
+      "Series IV §398-399",
+      "Series V §472-473"
+    ],
+    "related_to": [
+      "voltaic battery",
+      "water"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "poles",
+    "definition": "The poles in the experiment operate independently, allowing for the decomposition of water at both poles without mutual influence.",
+    "category": "observation",
+    "chapter_refs": [
+      "Series III §328"
+    ],
+    "related_to": [
+      "electro-chemical decomposition"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "transference law",
+    "definition": "The law that regulates the transference and final place of the evolved bodies does not apply in this experiment.",
+    "category": "law",
+    "chapter_refs": [
+      "Series III §328"
+    ],
+    "related_to": [
+      "electro-chemical decomposition"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "experimental method",
+    "definition": "The method involves substituting a wire or finger for one of the poles to demonstrate the independence of the poles in the decomposition process.",
+    "category": "method",
+    "chapter_refs": [
+      "Series III §328"
+    ],
+    "related_to": [
+      "poles"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "sulphuric acid",
+    "definition": "A chemical compound with a specific gravity of 1.783 that can crystallize at low temperatures when mixed with the correct proportion of water.",
+    "category": "substance",
+    "chapter_refs": [
+      "Series IV §409-410",
+      "Series VI §584-585",
+      "Series X §1138-1139"
+    ],
+    "related_to": [
+      "platina plates",
+      "positive pole",
+      "nitric acid",
+      "muriatic acid"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "liquidity",
+    "definition": "The state of being liquid, which confers a high degree of conducting power to certain substances.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series IV §409-410"
+    ],
+    "related_to": [
+      "conducting power"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "solidification",
+    "definition": "The process of a liquid turning into a solid, which can be affected by the presence of water in the crystallization of sulphuric acid.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series IV §409-410",
+      "Series IV §411-413"
+    ],
+    "related_to": [
+      "sulphuric acid",
+      "conducting power",
+      "decomposition"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "conductivity",
+    "definition": "The passage indicates that the salt is a far better conductor than ice, demonstrating varying levels of conductivity in different states of matter.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series IV §422-424"
+    ],
+    "related_to": [
+      "solid state",
+      "fluid state"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "discharge",
+    "definition": "The discharge from the voltaic apparatus was strong enough to continue through four-tenths of an inch of air, indicating significant electrical activity.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series IV §422-424",
+      "Series XII §1385-1386",
+      "Series XII §1319",
+      "Series XII §1360-1361"
+    ],
+    "related_to": [
+      "voltaic apparatus",
+      "electrometer",
+      "gas",
+      "interval",
+      "resistance",
+      "electric spark",
+      "conductors"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "electrometer",
+    "definition": "The gold-leaf electrometer was used to measure the electrical discharge, as evidenced by its ability to open nearly a quarter of an inch.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series IV §422-424"
+    ],
+    "related_to": [
+      "discharge"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "conductors of galvanism",
+    "definition": "Substances like dry nitre, caustic potash, and soda that can conduct electrical current when heated to a fluid state.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series IV §398-399",
+      "Series V §472-473"
+    ],
+    "related_to": [
+      "electro-chemical decomposition"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "insulation of battery current",
+    "definition": "The ability of solid substances to prevent the flow of electrical current, even at high temperatures.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series IV §398-399"
+    ],
+    "related_to": [
+      "conductors of galvanism"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "voltaic pile",
+    "definition": "The voltaic pile is a source of electricity that exhibits different conducting properties compared to other sources when influenced by heat.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series IV §430-433"
+    ],
+    "related_to": [
+      "conducting power"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "identity of electricity",
+    "definition": "The identity of electricity derived from different sources is supported by the agreement of effects produced by various electrical apparatus.",
+    "category": "law",
+    "chapter_refs": [
+      "Series IV §430-433"
+    ],
+    "related_to": [
+      "voltaic pile"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "decomposition",
+    "definition": "Decomposition occurs when conduction takes place, and when decomposition ceases, conduction ceases also.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series IV §411-413",
+      "Series V §539-541",
+      "Series V §531-532",
+      "Series VII §815-816",
+      "Series VIII §995-996",
+      "Series VII §859-860"
+    ],
+    "related_to": [
+      "conducting power",
+      "conduction",
+      "chloride of lead",
+      "negative pole",
+      "positive pole",
+      "electric machine",
+      "saline solutions",
+      "voltaic battery",
+      "electric current",
+      "electrolytic action",
+      "current",
+      "acting cells"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "conduction",
+    "definition": "Conduction is the process that may be a consequence of the act of decomposition in certain substances.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series IV §411-413",
+      "Series XII §1319",
+      "Series XII §1337-1338"
+    ],
+    "related_to": [
+      "conducting power",
+      "decomposition",
+      "discharge",
+      "induction",
+      "polarized state"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "negative pole",
+    "definition": "The negative pole is where lead is evolved during the decomposition of chloride of lead and iodide of lead.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series V §539-541"
+    ],
+    "related_to": [
+      "decomposition",
+      "chloride of lead",
+      "iodide of lead"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "positive pole",
+    "definition": "The positive pole is where chlorine is evolved from chloride of lead and iodine is produced from iodide of lead.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series V §539-541",
+      "Series VI §584-585"
+    ],
+    "related_to": [
+      "decomposition",
+      "chloride of lead",
+      "iodide of lead",
+      "platina plates",
+      "sulphuric acid",
+      "heat treatment"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "chloride of silver",
+    "definition": "Chloride of silver, when decomposed, shows the evolution of silver at the negative pole and absorption at the positive pole without releasing chlorine.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series V §539-541"
+    ],
+    "related_to": [
+      "decomposition",
+      "negative pole",
+      "positive pole"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "free substance",
+    "definition": "The free substance cannot travel, as opposed to the combined one which can.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series V §543-544"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "combined substance",
+    "definition": "The combined substance can travel, unlike the free substance.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series V §543-544"
+    ],
+    "related_to": [
+      "free substance"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "solutions",
+    "definition": "Solutions of acids or alkalies do not illustrate the point due to their inherent attraction and mixing properties.",
+    "category": "observation",
+    "chapter_refs": [
+      "Series V §543-544"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "sulphate of magnesia",
+    "definition": "The case of sulphate of magnesia demonstrates that one element or principle only has no power of transference towards either pole.",
+    "category": "observation",
+    "chapter_refs": [
+      "Series V §543-544"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "voltaic battery",
+    "definition": "A device that converts chemical energy into electrical energy through electro-chemical reactions, often requiring specific conditions such as the presence of water.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series V §472-473",
+      "Series V §547",
+      "Series VII §815-816",
+      "Series XIV §1742-1743"
+    ],
+    "related_to": [
+      "electro-chemical decomposition",
+      "water",
+      "electric current",
+      "volta-electrometer"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "water",
+    "definition": "A fluid that several philosophers believe is essential for both electro-chemical decomposition and the functioning of the voltaic battery.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series V §472-473"
+    ],
+    "related_to": [
+      "electro-chemical decomposition",
+      "voltaic battery"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "sulphate",
+    "definition": "The experiments showed that more sulphate was obtained from vessel _a_ than from vessel _b_, indicating the presence of saline bases affecting the results.",
+    "category": "observation",
+    "chapter_refs": [
+      "Series V §531-532"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "electric machine",
+    "definition": "The electric machine was used to work on a piece of bibulous paper or asbestus moistened in a saline solution to facilitate the decomposition of the solution.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series V §531-532"
+    ],
+    "related_to": [
+      "decomposition",
+      "saline solutions"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "saline solutions",
+    "definition": "Saline solutions were the subject of the experiments, which were intended to be decomposed using electric action.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series V §531-532"
+    ],
+    "related_to": [
+      "decomposition",
+      "electric machine"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "chemical affinity",
+    "definition": "Chemical affinity refers to the tendency of a substance to react chemically with another substance, which was not observed in the mixtures tested with the electric current.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series V §547"
+    ],
+    "related_to": [
+      "electric current"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "indifference to electric current",
+    "definition": "Indifference to electric current describes the state of certain substances that do not respond to the electric field when they are in a diffused state within a fluid.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series V §547"
+    ],
+    "related_to": [
+      "electric current",
+      "chemical affinity"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "voltaic element",
+    "definition": "A voltaic element is described as a system where platina and hydrogen act similarly to a conventional arrangement with zinc, where hydrogen attracts oxygen and combines with it.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series VI §610-611"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "elevation of temperature",
+    "definition": "Elevation of temperature is noted to favor the action of metals and other materials in facilitating chemical reactions without altering the fundamental character of those reactions.",
+    "category": "observation",
+    "chapter_refs": [
+      "Series VI §610-611"
+    ],
+    "related_to": [
+      "voltaic element"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "spongy platina",
+    "definition": "Spongy platina is highlighted as a material that exhibits significant chemical activity, similar to incandescent platina wire, particularly when heated.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series VI §610-611"
+    ],
+    "related_to": [
+      "elevation of temperature"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "heat treatment",
+    "definition": "The process of heating prepared platina plates to enhance their reactivity with gases.",
+    "category": "method",
+    "chapter_refs": [
+      "Series VI §584-585"
+    ],
+    "related_to": [
+      "platina plates",
+      "positive pole",
+      "sulphuric acid"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "platina plates",
+    "definition": "Platina plates that have been treated to acquire a positive charge in a sulphuric acid solution.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series VI §584-585"
+    ],
+    "related_to": [
+      "heat treatment",
+      "positive pole",
+      "sulphuric acid"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "perfect miscibility",
+    "definition": "Perfect miscibility refers to the ability of fluid bodies capable of combining to mix without waiting for any other determining circumstance.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series VI §628-629"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "combination under pressure",
+    "definition": "Combination under pressure occurs when substances, such as carbonic acid and lime, remain combined at elevated pressures and specific temperatures that would not support their combination otherwise.",
+    "category": "observation",
+    "chapter_refs": [
+      "Series VI §628-629"
+    ],
+    "related_to": [
+      "perfect miscibility"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "direct combination",
+    "definition": "Direct combination is the process where substances like chlorine can combine with water to form a crystalline hydrate only under specific conditions, such as pressure.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series VI §628-629"
+    ],
+    "related_to": [
+      "combination under pressure"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "affinity",
+    "definition": "Affinity is the natural tendency of elements, like oxygen and hydrogen, to unite under various circumstances, though they may not combine merely by mixing.",
+    "category": "law",
+    "chapter_refs": [
+      "Series VI §628-629"
+    ],
+    "related_to": [
+      "perfect miscibility"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "carbonic oxide and oxygen mixture",
+    "definition": "A mixture of two volumes of carbonic oxide and one volume of oxygen was unaffected by the prepared platina plate over several days.",
+    "category": "observation",
+    "chapter_refs": [
+      "Series VI §574-576"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "chlorine and hydrogen reaction",
+    "definition": "A mixture of equal volumes of chlorine and hydrogen showed a diminution of bulk, with nearly all the chlorine disappearing after thirty-six hours, while the volume of hydrogen remained unchanged.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series VI §574-576"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "prepared plates",
+    "definition": "Prepared plates were used in experiments with mixtures of gases, showing varying degrees of action depending on the purity of the gases.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series VI §574-576"
+    ],
+    "related_to": [
+      "oxygen and hydrogen mixture"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "oxygen and hydrogen mixture",
+    "definition": "The action of prepared plates on mixtures of oxygen and hydrogen could continue for over thirty hours, with slow combination observed even after eighty hours.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series VI §574-576"
+    ],
+    "related_to": [
+      "prepared plates"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "gaseous body",
+    "definition": "A gaseous body, regardless of its density or compression, behaves as a vacuum to another gas or vapor.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series VI §627"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "water vapour",
+    "definition": "Water vapour can rise in a vessel containing a dry gas at high pressure as if it were in a perfect vacuum.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series VI §627"
+    ],
+    "related_to": [
+      "gaseous body"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "elastic powers",
+    "definition": "The elastic powers of gas particles influence their interactions, particularly in relation to particles of their own kind.",
+    "category": "law",
+    "chapter_refs": [
+      "Series VI §627"
+    ],
+    "related_to": [
+      "gaseous body"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "contact with platina",
+    "definition": "Particles of hydrogen or other gases in proximity to platina behave as if they are in a liquid state, being much closer to the metal than to each other.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series VI §627"
+    ],
+    "related_to": [
+      "gaseous body",
+      "elastic powers"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "chloride of lead",
+    "definition": "Chloride of lead was introduced into the tube and carefully fused for the experiment.",
+    "category": "material",
+    "chapter_refs": [
+      "Series VII §815-816"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "volta-electrometer",
+    "definition": "A volta-electrometer was included in the circuit to measure the electrical changes during the experiment.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series VII §815-816",
+      "Series VII §747-748",
+      "Series VII §738-740",
+      "Series X §1155-1157"
+    ],
+    "related_to": [
+      "voltaic battery",
+      "decomposition",
+      "electrolyzation",
+      "degree",
+      "simultaneous decompositions"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "constant electro-chemical action",
+    "definition": "This law relates to the consistent behavior of electro-chemical processes, particularly in the context of electrolyzation.",
+    "category": "law",
+    "chapter_refs": [
+      "Series VII §747-748"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "electrolyzation",
+    "definition": "Electrolyzation is the process by which substances are decomposed into their constituent elements through the application of an electric current.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series VII §747-748",
+      "Series X §1138-1139",
+      "Series XIV §1708",
+      "Series XI §1166-1167"
+    ],
+    "related_to": [
+      "constant electro-chemical action",
+      "nitric acid",
+      "electricity",
+      "transferable power",
+      "bichloride of tin",
+      "inductive action"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "electrode",
+    "definition": "An electrode is a conductor through which electricity enters or leaves an electrochemical cell, with the anode being the positive electrode and the cathode being the negative one.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series VII §747-748"
+    ],
+    "related_to": [
+      "electrolyzation"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "protochloride",
+    "definition": "A true protochloride is formed from a new sulphuret dissolved in muriatic acid, consisting of single proportionals.",
+    "category": "compound",
+    "chapter_refs": [
+      "Series VII §695-697"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "protoxide",
+    "definition": "A true protoxide, also consisting of single proportionals, can be obtained from the protochloride by using alkalies.",
+    "category": "compound",
+    "chapter_refs": [
+      "Series VII §695-697"
+    ],
+    "related_to": [
+      "protochloride"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "electrolytic decomposition",
+    "definition": "The presence of variable proportions of oxides in what is commonly called protoxide can cause uncertainty in analysis and lead to electrolytic decomposition.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series VII §695-697"
+    ],
+    "related_to": [
+      "protoxide"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "liquido-conduction",
+    "definition": "The law of liquido-conduction states that binary compounds of elementary bodies can be electrolyzed when fluid, but not while solid.",
+    "category": "law",
+    "chapter_refs": [
+      "Series VII §695-697"
+    ],
+    "related_to": [
+      "electrolytic decomposition"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "protoxide of antimony",
+    "definition": "A chemical compound consisting of one proportional of antimony and one and a half of oxygen, which can be decomposed by an electric current.",
+    "category": "substance",
+    "chapter_refs": [
+      "Series VII §801"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "higher oxide",
+    "definition": "A compound formed at the positive electrode during the electrolysis of protoxide of antimony, which prevents further transmission of electricity.",
+    "category": "substance",
+    "chapter_refs": [
+      "Series VII §801"
+    ],
+    "related_to": [
+      "electric current",
+      "protoxide of antimony"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "positive electrode",
+    "definition": "The electrode where oxidation occurs, leading to the formation of a higher oxide in the case of the protoxide of antimony.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series VII §801"
+    ],
+    "related_to": [
+      "higher oxide",
+      "electric current"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "degree",
+    "definition": "The term 'degree' is applied in analogy to measure electricity, similar to how it is used to measure heat through the expansion of substances.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series VII §738-740"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "measuring volta-electricity",
+    "definition": "Another mode of measuring volta-electricity involves the quantities of metals or other substances evolved as primary or secondary results.",
+    "category": "method",
+    "chapter_refs": [
+      "Series VII §738-740"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "voltaic action",
+    "definition": "Voltaic action refers to the processes and conditions under which electric currents interact with electrolytes, leading to decomposition or resistance.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series VIII §966-968",
+      "Series VIII §1037-1038"
+    ],
+    "related_to": [
+      "chemical action",
+      "acid film",
+      "oxidation"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "electrolyte",
+    "definition": "An electrolyte is a substance that can conduct electricity when dissolved in a solvent, but may resist decomposition under certain current intensities.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series VIII §966-968"
+    ],
+    "related_to": [
+      "voltaic action"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "current intensity",
+    "definition": "Current intensity is the measure of the strength of an electric current, which influences whether an electrolyte will decompose or act as an insulator.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series VIII §966-968"
+    ],
+    "related_to": [
+      "voltaic action",
+      "electrolyte"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "experimental arrangement",
+    "definition": "The experimental arrangement involves a setup with glass vessels and electrodes to investigate the behavior of electrolytes under electric current.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series VIII §966-968"
+    ],
+    "related_to": [
+      "voltaic action",
+      "electrolyte"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "resistance",
+    "definition": "Resistance refers to the differing degrees of opposition to the flow of electricity in various substances, which can be measured according to the affinities of their elements.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series VIII §911-912"
+    ],
+    "related_to": [
+      "voltaic forces",
+      "acting force"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "acting force",
+    "definition": "Acting force is the intensity of the electrical current that can be measured and compared across different substances based on their resistance.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series VIII §911-912"
+    ],
+    "related_to": [
+      "resistance"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "voltaic forces",
+    "definition": "Voltaic forces are the elementary electrical currents generated from a single pair of plates, which can decompose electrolytic substances in a specific order based on current intensity.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series VIII §911-912"
+    ],
+    "related_to": [
+      "resistance"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "electrolytic order",
+    "definition": "Electrolytic order is the sequence in which different substances are decomposed by an electric current, starting from those that require the lowest intensity.",
+    "category": "observation",
+    "chapter_refs": [
+      "Series VIII §911-912"
+    ],
+    "related_to": [
+      "voltaic forces"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "ammonia solution",
+    "definition": "Ammonia solution, when pure, is a bad conductor of electricity, similar to water.",
+    "category": "observation",
+    "chapter_refs": [
+      "Series VIII §934-935"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "sulphate of ammonia",
+    "definition": "Sulphate of ammonia can improve the conductivity of ammonia solution.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series VIII §934-935"
+    ],
+    "related_to": [
+      "ammonia solution"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "dilute sulphuric acid",
+    "definition": "Dilute sulphuric acid was used in experiments to compare its effects with those of a solution of potassa.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series VIII §934-935"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "electrolytic action",
+    "definition": "Electrolytic action refers to the chemical processes that occur during the passage of an electric current through an electrolyte, which can be influenced by the intensity of the current.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series VIII §995-996"
+    ],
+    "related_to": [
+      "electric current",
+      "decomposition"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "chemical forces",
+    "definition": "Chemical forces are the interactions within an electrolyte that determine how substances like zinc and water react under the influence of an electric current.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series VIII §995-996"
+    ],
+    "related_to": [
+      "electrolytic action",
+      "electric current"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "acid film",
+    "definition": "The acid film in contact with the zinc plate is neutralized by the oxide formed, affecting the voltaic action.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series VIII §1037-1038"
+    ],
+    "related_to": [
+      "voltaic action",
+      "oxidation",
+      "chemical action"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "oxidation",
+    "definition": "The oxidation of the zinc plate is impeded when the acid film is neutralized, leading to a decrease in voltaic action.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series VIII §1037-1038"
+    ],
+    "related_to": [
+      "voltaic action",
+      "acid film",
+      "chemical action"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "irregularity of action",
+    "definition": "The irregularity of action in the voltaic apparatus is influenced by the small portion of matter in contact with the oxidizable metal.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series VIII §1037-1038"
+    ],
+    "related_to": [
+      "voltaic action",
+      "oxidizable metal",
+      "chemical action"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "compound helix",
+    "definition": "A compound helix consists of two helices that can be connected to allow current to travel in the same or opposite directions.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series IX §1098-1099"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "current division",
+    "definition": "The current moving through the thick wires is divided into two equal portions in the two helices.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series IX §1098-1099"
+    ],
+    "related_to": [
+      "compound helix"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "induction",
+    "definition": "The currents in the two helices can affect each other by induction when they are in close proximity.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series IX §1098-1099",
+      "Series XI §1162-1163",
+      "Series XI §1295-1296",
+      "Series XI §1265-1267",
+      "Series XII §1337-1338",
+      "Series XIII §1565-1566",
+      "Series XIV §1739-1740"
+    ],
+    "related_to": [
+      "compound helix",
+      "current division",
+      "dielectrics",
+      "specific inductive capacities",
+      "shell-lac apparatus",
+      "capacity",
+      "conduction",
+      "polarized state",
+      "excited electrical state"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "disjunction",
+    "definition": "Disjunction refers to breaking the connection at a specific point to stop the current flow in the helices.",
+    "category": "method",
+    "chapter_refs": [
+      "Series IX §1098-1099"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "electro-magnet",
+    "definition": "An electro-magnet is created by introducing a soft iron rod into a helix, which enhances its magnetic properties.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series IX §1057-1060"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "conductor",
+    "definition": "The conductor is essential for completing the communication between the zinc and copper plates of the electromotor and can take various forms such as a helix or wire.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series IX §1057-1060",
+      "Series XII §1435"
+    ],
+    "related_to": [
+      "electro-magnet",
+      "disruptive discharge",
+      "electric force",
+      "charged air"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "spark",
+    "definition": "A spark is produced when breaking contact in the electromotor, which is bright and accompanied by combustion of mercury, unlike the absence of a spark when making contact.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series IX §1057-1060",
+      "Series IX §1079-1080"
+    ],
+    "related_to": [
+      "conductor",
+      "current",
+      "shock"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "shock",
+    "definition": "The shock from the current in the cross wire is produced regardless of whether D is a long wire, a helix, or an electro-magnet.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series IX §1079-1080"
+    ],
+    "related_to": [
+      "current",
+      "spark"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "electromagnet",
+    "definition": "The electro-magnet is used in the experiment to create conditions for producing the spark at the cross wire.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series IX §1079-1080"
+    ],
+    "related_to": [
+      "current",
+      "spark"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "electromotor",
+    "definition": "The electromotor used consisted of a cylinder of zinc introduced between two parts of a double cylinder of copper, insulated from metallic contact by corks.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series IX §1052-1053"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "helices",
+    "definition": "Helices were constructed using copper wires wound around a pasteboard tube, with convolutions separated by string and prevented from touching by intervening calico.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series IX §1052-1053"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "circuit",
+    "definition": "Contacts of wires, helices, or electro-magnets used to complete the circuit were made or broken at cups containing mercury.",
+    "category": "method",
+    "chapter_refs": [
+      "Series IX §1052-1053"
+    ],
+    "related_to": [
+      "electromotor",
+      "helices"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "magnetic forces",
+    "definition": "Magnetic forces are considered to constitute the power that produces different results at the commencement and termination of an electric current.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series IX §1114"
+    ],
+    "related_to": [
+      "electric current",
+      "electric force"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "convertibility of forces",
+    "definition": "The concept suggests that electric and magnetic forces can be converted into each other to a certain degree, depending on the conditions present.",
+    "category": "law",
+    "chapter_refs": [
+      "Series IX §1114"
+    ],
+    "related_to": [
+      "electric current",
+      "magnetic forces"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "reaction of currents",
+    "definition": "The passage discusses how a current can sustain a state that, upon cessation, produces a second current with greater intensity and quantity than the original.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series IX §1114"
+    ],
+    "related_to": [
+      "electric current",
+      "convertibility of forces"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "nitric acid",
+    "definition": "Nitric acid proves to be the best for favoring the electrolyzation of the liquid in the cells of the trough.",
+    "category": "substance",
+    "chapter_refs": [
+      "Series X §1138-1139"
+    ],
+    "related_to": [
+      "sulphuric acid",
+      "muriatic acid",
+      "electrolyzation"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "muriatic acid",
+    "definition": "Muriatic acid, when combined with nitric acid, also shows a decrease in zinc consumption in the battery.",
+    "category": "substance",
+    "chapter_refs": [
+      "Series X §1138-1139"
+    ],
+    "related_to": [
+      "nitric acid",
+      "sulphuric acid"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "battery configuration",
+    "definition": "The arrangement of large and small plates in a battery affects the efficiency of electricity transmission, as small plates can diminish the power of larger ones unless appropriately excited by a stronger acid.",
+    "category": "observation",
+    "chapter_refs": [
+      "Series X §1155-1157"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "simultaneous decompositions",
+    "definition": "When the number of plates in a battery exceeds the optimal proportion, multiple decompositions can occur simultaneously, leading to varied gas production in volta-electrometers.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series X §1155-1157"
+    ],
+    "related_to": [
+      "battery configuration"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "equivalents consumption",
+    "definition": "The amount of metal consumed during electrolysis is measured in equivalents, which can differ based on the experimental setup and the number of volta-electrometers used.",
+    "category": "law",
+    "chapter_refs": [
+      "Series X §1155-1157"
+    ],
+    "related_to": [
+      "simultaneous decompositions",
+      "volta-electrometer"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "voltaic trough",
+    "definition": "The voltaic trough is a device examined for improvements in its construction and use in generating electric current.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series X §1119-1120",
+      "Series X §1123-1124"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "local action",
+    "definition": "Local action refers to the portion of chemical forces in a voltaic circuit that is exerted locally and is generally lost or wasted.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series X §1119-1120",
+      "Series X §1133",
+      "Series XIV §1741"
+    ],
+    "related_to": [
+      "electric current",
+      "precipitation of copper",
+      "acid",
+      "current force",
+      "electrolyte"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "chemical power",
+    "definition": "Chemical power in the context of a voltaic battery refers to the energy that can be converted into electricity, with its efficiency varying based on the circuit's configuration.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series X §1119-1120"
+    ],
+    "related_to": [
+      "electric current",
+      "local action"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "copper plates",
+    "definition": "Copper plates are conductive elements used in the voltaic trough, arranged to work in conjunction with zinc plates to facilitate electrochemical reactions.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series X §1123-1124"
+    ],
+    "related_to": [
+      "voltaic trough",
+      "zinc plates"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "zinc plates",
+    "definition": "Zinc plates serve as the anode in the voltaic trough, providing electrons for the electrochemical reaction when paired with copper plates.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series X §1123-1124"
+    ],
+    "related_to": [
+      "voltaic trough",
+      "copper plates"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "non-conductive barriers",
+    "definition": "Non-conductive barriers, such as paper or wood, are used to separate the copper and zinc plates in the voltaic trough to prevent direct metallic contact.",
+    "category": "method",
+    "chapter_refs": [
+      "Series X §1123-1124"
+    ],
+    "related_to": [
+      "voltaic trough",
+      "copper plates",
+      "zinc plates"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "wooden trough",
+    "definition": "A wooden trough is used in voltaic instruments but faces challenges in maintaining water-tightness under varying conditions.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series X §1133"
+    ],
+    "related_to": [
+      "voltaic instrument",
+      "porcelain trough"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "precipitation of copper",
+    "definition": "The precipitation of copper on zinc plates occurs due to acid retained in the papers between the coppers, leading to a reduction in the battery's power.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series X §1133"
+    ],
+    "related_to": [
+      "zinc plates",
+      "acid",
+      "local action"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "porcelain trough",
+    "definition": "Porcelain troughs are being developed to overcome the water-tightness issues faced by wooden troughs in voltaic instruments.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series X §1133"
+    ],
+    "related_to": [
+      "wooden trough",
+      "voltaic instrument"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "two forces",
+    "definition": "The necessity of admitting two forms or directions of force in electricity is highlighted, which cannot be separated in either statical electricity or current phenomena.",
+    "category": "law",
+    "chapter_refs": [
+      "Series XI §1162-1163",
+      "Series XIII §1626-1627"
+    ],
+    "related_to": [
+      "induction",
+      "current of force"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "charging matter",
+    "definition": "It is impossible to charge matter with only one type of electricity, emphasizing the complexity of electrical interactions.",
+    "category": "observation",
+    "chapter_refs": [
+      "Series XI §1162-1163"
+    ],
+    "related_to": [
+      "two forces",
+      "induction"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "dielectrics",
+    "definition": "Dielectrics are insulating media whose thickness significantly influences the degree of induction.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XI §1295-1296"
+    ],
+    "related_to": [
+      "induction",
+      "specific inductive capacities"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "specific inductive capacities",
+    "definition": "Specific inductive capacities refer to the differences in induction properties among solid bodies and between them and gases.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XI §1295-1296"
+    ],
+    "related_to": [
+      "induction",
+      "dielectrics"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "inductive capacity",
+    "definition": "Inductive capacity refers to the ability of a material, such as glass, to favor induction, which is measured by the specific inductive capacity values obtained during the experiments.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XI §1272-1273"
+    ],
+    "related_to": [
+      "glass",
+      "air"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "shell-lac",
+    "definition": "Shell-lac is a material used to coat the glass apparatus in the experiments to investigate its effects on induction.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series XI §1272-1273"
+    ],
+    "related_to": [
+      "glass",
+      "inductive capacity"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "air",
+    "definition": "Air is used as a comparative medium in the experiments to evaluate the superior inductive properties of glass.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XI §1272-1273"
+    ],
+    "related_to": [
+      "glass",
+      "inductive capacity"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "experimental errors",
+    "definition": "Experimental errors are slight variations in results that were considered possible inaccuracies in measuring the effects of glass and air on induction.",
+    "category": "observation",
+    "chapter_refs": [
+      "Series XI §1272-1273"
+    ],
+    "related_to": [
+      "inductive capacity",
+      "shell-lac"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "inductive force",
+    "definition": "Inductive force is directed towards uninsulated conducting matter when brought near an excited shell-lac stem and is absent on the top of the hemisphere.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XI §1225-1226",
+      "Series XIII §1659-1660"
+    ],
+    "related_to": [
+      "induction",
+      "lines of force",
+      "static electricity",
+      "transverse force"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "curved inductive action",
+    "definition": "Curved inductive action refers to the behavior of inductive forces in gases, which was consistent across different gases like carbonic acid and hydrogen.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XI §1225-1226"
+    ],
+    "related_to": [
+      "inductive force",
+      "gases"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "experiment method",
+    "definition": "A good method for conducting the experiment is to allow large currents of gases to ascend or descend through the air.",
+    "category": "method",
+    "chapter_refs": [
+      "Series XI §1225-1226"
+    ],
+    "related_to": [
+      "curved inductive action"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "capacity",
+    "definition": "The capacity of the shell-lac apparatus is expressed as 1.49, indicating its ability to hold charge compared to air.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XI §1265-1267"
+    ],
+    "related_to": [
+      "shell-lac apparatus",
+      "charge"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "shell-lac apparatus",
+    "definition": "The shell-lac apparatus demonstrates a superior capacity for induction compared to air, with an average capacity close to 1.5.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series XI §1265-1267"
+    ],
+    "related_to": [
+      "capacity",
+      "induction"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "conducting particles",
+    "definition": "Conducting particles in the shell-lac can diminish the effectiveness of the dielectric, affecting the apparatus's performance.",
+    "category": "observation",
+    "chapter_refs": [
+      "Series XI §1265-1267"
+    ],
+    "related_to": [
+      "shell-lac apparatus",
+      "dielectric"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "disruptive discharge",
+    "definition": "Disruptive discharge is a phenomenon that favors itself by creating a tottering equilibrium, where the initial act of discharge enhances its continuation and increase.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XII §1418-1420",
+      "Series XII §1319",
+      "Series XII §1435"
+    ],
+    "related_to": [
+      "discharge",
+      "electric force",
+      "conductor",
+      "charged air"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "electric spark",
+    "definition": "The electric spark is a visible effect of discharge, where the quantity that determines the discharge is not the whole but a small portion of force that reaches maximum tension.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XII §1418-1420",
+      "Series XII §1360-1361"
+    ],
+    "related_to": [
+      "disruptive discharge",
+      "discharge",
+      "dielectric"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "maximum tension",
+    "definition": "Maximum tension refers to the critical point at which a molecule's forces are subverted, allowing for the discharge to commence.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XII §1418-1420"
+    ],
+    "related_to": [
+      "electric spark"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "favouring circumstances",
+    "definition": "Favouring circumstances are conditions that influence the path of discharge, allowing portions of power to be discharged in ways they would not otherwise take.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XII §1418-1420"
+    ],
+    "related_to": [
+      "disruptive discharge",
+      "electric spark"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "gas",
+    "definition": "The type of gas introduced into the vessel affects the behavior of the electrical discharge.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XII §1385-1386"
+    ],
+    "related_to": [
+      "discharge",
+      "interval",
+      "receiver"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "interval",
+    "definition": "The interval at which discharge occurs can be varied and is used as a measure of resistance to discharge through the gas.",
+    "category": "observation",
+    "chapter_refs": [
+      "Series XII §1385-1386"
+    ],
+    "related_to": [
+      "discharge",
+      "gas",
+      "receiver"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "receiver",
+    "definition": "The receiver is the apparatus where the electrical discharge is observed, specifically at intervals _u_ and _v_.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series XII §1385-1386"
+    ],
+    "related_to": [
+      "discharge",
+      "gas",
+      "interval"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "electrolytic discharge",
+    "definition": "Electrolytic discharge is a mode of discharge in which chemical action occurs and particles are displaced to some degree.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XII §1319"
+    ],
+    "related_to": [
+      "discharge"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "polarized state",
+    "definition": "A polarized state is a condition where particles acquire a separation of charges, which is essential for both induction and conduction.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XII §1337-1338"
+    ],
+    "related_to": [
+      "induction",
+      "conduction"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "insulation",
+    "definition": "Insulation is the condition where the induction remains undiminished, allowing particles to retain their polarized state.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XII §1337-1338"
+    ],
+    "related_to": [
+      "induction",
+      "conduction"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "electric force",
+    "definition": "Electric force accumulates in a conductor and facilitates the discharge process, particularly at points where disruptive discharge has begun.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XII §1435"
+    ],
+    "related_to": [
+      "disruptive discharge",
+      "conductor",
+      "charged air"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "charged air",
+    "definition": "Charged air refers to the condition of the air surrounding the end of a wire after a discharge, which remains in a charged state until dispersed.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XII §1435"
+    ],
+    "related_to": [
+      "disruptive discharge",
+      "electric force",
+      "conductor"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "lateral forces of the current",
+    "definition": "The lateral or transverse forces of the current refer to the magnetic actions that occur as a result of electric currents, which have been significantly advanced by the work of various scientists.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XIII §1653-1654"
+    ],
+    "related_to": [
+      "magnetic action",
+      "transverse magnetic action"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "magnetic action",
+    "definition": "Magnetic action is recognized as the only lateral action of the current, which has been extensively studied and simplified through the theories of various scientists.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XIII §1653-1654"
+    ],
+    "related_to": [
+      "lateral forces of the current",
+      "transverse magnetic action"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "transverse magnetic action",
+    "definition": "Transverse magnetic action is the consistent magnetic effect produced by the current regardless of its mode of discharge, indicating its independence from variations in current flow.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XIII §1653-1654"
+    ],
+    "related_to": [
+      "lateral forces of the current",
+      "magnetic action"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "discharging ball",
+    "definition": "The discharging ball is an object that, when brought near a liquid drop, can convert its glow into brushes and induce vibrations.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series XIII §1585-1587"
+    ],
+    "related_to": [
+      "drop",
+      "vibrating motion",
+      "brushes"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "vibrating motion",
+    "definition": "The vibrating motion of the drop occurs as it changes form between discharging brushes, becoming more acute at specific moments.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XIII §1585-1587"
+    ],
+    "related_to": [
+      "drop",
+      "discharging ball",
+      "brushes"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "carrying current of air",
+    "definition": "The carrying current of air is formed around the drop and influences its shape, demonstrating its existence through the drop's conical form.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XIII §1585-1587"
+    ],
+    "related_to": [
+      "drop",
+      "conical form",
+      "sharp point"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "conical form",
+    "definition": "The conical form of the drop is primarily shaped by the current of air, which can change the drop's shape when influenced by nearby objects.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XIII §1585-1587"
+    ],
+    "related_to": [
+      "drop",
+      "carrying current of air",
+      "sharp point"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "conductors",
+    "definition": "The ball being a conductor removes the resistance of the particles of the dielectric, allowing for more inductric action.",
+    "category": "method",
+    "chapter_refs": [
+      "Series XIII §1565-1566",
+      "Series XII §1360-1361"
+    ],
+    "related_to": [
+      "induction",
+      "dielectric",
+      "electric spark",
+      "discharge"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "inductric polarity",
+    "definition": "The inductric polarity is exalted due to the ball being projected further out from the boiler, allowing it to act more freely through the dielectric.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XIII §1565-1566"
+    ],
+    "related_to": [
+      "induction",
+      "conductors"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "heat production in electrolytes",
+    "definition": "The production of heat observed in electrolytes during decomposition is a complex phenomenon that has been investigated by researchers such as De la Rive.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XIII §1626-1627"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "current of force",
+    "definition": "The current is characterized by the presence of two forces that are always present and uniform throughout the current.",
+    "category": "observation",
+    "chapter_refs": [
+      "Series XIII §1626-1627"
+    ],
+    "related_to": [
+      "two forces"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "absolute charge",
+    "definition": "The concept of giving an absolute charge to matter is deemed impossible, similar to the assumption of a predominance of one force in the current.",
+    "category": "law",
+    "chapter_refs": [
+      "Series XIII §1626-1627"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "spark to glow transition",
+    "definition": "The transition from spark to glow occurs through an intermediate condition of stream in a vessel containing air that is more or less rarefied.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XIII §1542-1544"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "luminous discharge",
+    "definition": "The luminous discharge accompanied by negative glow is characterized by a continuous glow at the negative rod while the positive rod remains dark during separation.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XIII §1542-1544"
+    ],
+    "related_to": [
+      "spark to glow transition"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "negative glow",
+    "definition": "The negative glow is a continuous luminous effect observed at the end of a negatively charged rod when separated from a positively charged rod in a rarefied air environment.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XIII §1542-1544"
+    ],
+    "related_to": [
+      "luminous discharge"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "purple stream",
+    "definition": "A purple stream or haze appears at the end of the positive rod when the distance from the negative rod is increased, elongating without ever joining the negative glow.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XIII §1542-1544"
+    ],
+    "related_to": [
+      "luminous discharge"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "current force",
+    "definition": "Current force is produced when the forces acting on particles in an electrolyte lead to the movement of charge, particularly when one particle is in combination with another.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XIV §1741"
+    ],
+    "related_to": [
+      "local action",
+      "electrolyte"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "static induction",
+    "definition": "Static induction is the condition where forces between particles create an effect that can be extended to sensible distances, leading to the discharge of currents.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XIV §1741"
+    ],
+    "related_to": [
+      "current force",
+      "local action"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "inductive forces",
+    "definition": "Inductive forces are the interactions between particles, such as zinc and oxygen, that can lead to combination and influence the behavior of other particles in the system.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XIV §1741"
+    ],
+    "related_to": [
+      "local action",
+      "current force"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "molecular theory of induction",
+    "definition": "The molecular theory of induction explains how molecules can convey opposite forces through their separation, leading to phenomena like decomposition and transfer.",
+    "category": "law",
+    "chapter_refs": [
+      "Series XIV §1708"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "liquid dielectric",
+    "definition": "A liquid dielectric, such as chloride of tin, consists of molecules that can convey equivalent opposite forces when polarized.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XIV §1708"
+    ],
+    "related_to": [
+      "molecular theory of induction"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "bichloride of tin",
+    "definition": "Bichloride of tin is a compound where the arrangement of particles complicates the behavior of the molecule under induction compared to simpler compounds.",
+    "category": "observation",
+    "chapter_refs": [
+      "Series XIV §1708"
+    ],
+    "related_to": [
+      "molecular theory of induction",
+      "liquid dielectric"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "inductive action",
+    "definition": "Inductive action refers to the hypothetical view of how particles interact, influencing the movement of the electric current in the battery.",
+    "category": "law",
+    "chapter_refs": [
+      "Series XIV §1742-1743",
+      "Series XI §1166-1167"
+    ],
+    "related_to": [
+      "electric current"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "particle interaction",
+    "definition": "Particle interaction in the context of the battery involves the forces acting between particles of oxygen, zinc, and hydrogen, which contribute to the generation of electric current.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XIV §1742-1743"
+    ],
+    "related_to": [
+      "electric current",
+      "inductive action"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "opposite states",
+    "definition": "Certain particles have the ability to assume opposite states when in presence of each other, which can increase in intensity under specific conditions.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XIV §1739-1740"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "excited electrical state",
+    "definition": "The tendency of particles to enter an excited electrical state, which is likely polar in non-conducting matter, is considered a primary fact.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XIV §1739-1740"
+    ],
+    "related_to": [
+      "opposite states",
+      "induction"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "combination",
+    "definition": "A combination of particles occurs at a certain point of intensity, resulting in a discharge and the formation of a particle that acts as a conductor.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XIV §1739-1740"
+    ],
+    "related_to": [
+      "opposite states"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "induced actions",
+    "definition": "Induced actions on the helices or cores may rise to the same degree with different intervening substances but not necessarily in the same time.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XIV §1730-1731"
+    ],
+    "related_to": [
+      "galvanometer"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "lateral force of electrical currents",
+    "definition": "The lateral or transverse force of electrical currents could establish a distinction between the natures of electrical and magnetic forces if proven influential at a distance.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XIV §1730-1731"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "magnetic power",
+    "definition": "Magnetic power is considered potentially influential at a distance and is associated with electrical currents.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XIV §1730-1731",
+      "Series III §293-295"
+    ],
+    "related_to": [
+      "lateral force of electrical currents",
+      "galvanometer",
+      "shock"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "revolving discs apparatus",
+    "definition": "The revolving discs apparatus consists of several metallic discs connected by mercury, which are rotated alternately in opposite directions to enhance electric current generation.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series II §158-160"
+    ],
+    "related_to": [
+      "magneto-electric induction"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "insulation of effects",
+    "definition": "Insulation of effects refers to the separation of electric current effects from those caused by changes in magnetism, as suggested by the rotation of a copper globe.",
+    "category": "observation",
+    "chapter_refs": [
+      "Series II §158-160"
+    ],
+    "related_to": [
+      "electric current"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "action at a distance",
+    "definition": "Action at a distance is the concept that forces can act between bodies without any physical connection, traditionally assumed to occur in straight lines according to established theories.",
+    "category": "law",
+    "chapter_refs": [
+      "Series XI §1166-1167"
+    ],
+    "related_to": [
+      "inductive action"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "specific electric induction",
+    "definition": "Specific electric induction is a proposed relationship indicating that different materials may exhibit unique responses to inductive action, suggesting a dependence on their constituent particles.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XI §1166-1167"
+    ],
+    "related_to": [
+      "inductive action"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "discharging train",
+    "definition": "The discharging train is a setup that connects the galvanometer and its coatings to facilitate the observation of electrical effects.",
+    "category": "method",
+    "chapter_refs": [
+      "Series III §293-295"
+    ],
+    "related_to": [
+      "galvanometer",
+      "coatings"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "bad conductors",
+    "definition": "Bad conductors have a retarding power that can diminish the intensity of electricity without altering its quantity, which can help common electricity mimic voltaic electricity.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series III §293-295"
+    ],
+    "related_to": [
+      "intensity",
+      "quantity"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "acting cells",
+    "definition": "Acting cells are those that produce decompositions through ordinary chemical actions, leading to the generation of electrical current.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series VII §859-860"
+    ],
+    "related_to": [
+      "current",
+      "decomposition"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "leyden battery",
+    "definition": "A Leyden battery is a device that can store electrical energy, and in this context, it is compared to the electricity produced by a small setup of wires and acid.",
+    "category": "apparatus",
+    "chapter_refs": [
+      "Series VII §859-860"
+    ],
+    "related_to": [
+      "current"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "common electricity",
+    "definition": "Common electricity is one of the types of electricity that philosophers have debated regarding its identity with other forms.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series III §265"
+    ],
+    "related_to": [
+      "identity of electricities",
+      "animal electricity",
+      "voltaic electricity"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "animal electricity",
+    "definition": "Animal electricity is considered by some philosophers to potentially be of a peculiar kind, distinct from common and voltaic electricity.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series III §265"
+    ],
+    "related_to": [
+      "identity of electricities",
+      "common electricity",
+      "voltaic electricity"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "electro-magnetic poles",
+    "definition": "Electro-magnetic poles are created by the use of copper helices or spirals, which produce a greater action when iron cores are included.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series I §110-112"
+    ],
+    "related_to": [
+      "galvanometer"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "flat spiral",
+    "definition": "A flat spiral, when passed edgewise between magnetic poles, causes a curious action in the galvanometer where the needle deflects and then reverses direction.",
+    "category": "method",
+    "chapter_refs": [
+      "Series I §110-112"
+    ],
+    "related_to": [
+      "galvanometer",
+      "electro-magnetic poles"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "double action",
+    "definition": "The double action refers to the behavior of the galvanometer needle which first deflects in one direction and then reverses, depending on the orientation of the flat spiral.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series I §110-112"
+    ],
+    "related_to": [
+      "flat spiral",
+      "galvanometer"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "brushy discharge",
+    "definition": "The brushy discharge refers to the phenomenon where a metallic wire with a rounded termination produces brush-like electrical discharges, which vary in size depending on the charge polarity.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XII §1467"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "positive charge",
+    "definition": "A positive charge on a large metal ball allows for the formation of a star-shaped electrical effect at a distance when a fine uninsulated point is brought near it.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XII §1467"
+    ],
+    "related_to": [
+      "brushy discharge"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "negative charge",
+    "definition": "A negative charge on a large metal ball leads to the formation of a brush effect on a fine uninsulated point when brought close, which transitions to bright sparks at very close distances.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XII §1467"
+    ],
+    "related_to": [
+      "brushy discharge",
+      "positive charge"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "discharging character",
+    "definition": "The discharging character refers to the tendency of a negative surface to maintain its ability to discharge consistently, unlike a positive surface which shows greater variability.",
+    "category": "observation",
+    "chapter_refs": [
+      "Series XII §1467"
+    ],
+    "related_to": [
+      "positive charge",
+      "negative charge"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "transverse force",
+    "definition": "The transverse force of a current can be represented by its attraction for a similar current and its repulsion of a contrary current.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XIII §1659-1660"
+    ],
+    "related_to": [
+      "static electricity",
+      "inductive action"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "static electricity",
+    "definition": "The equivalent transverse force of static electricity may be represented by the lateral tension or repulsion of the lines of inductive action.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XIII §1659-1660"
+    ],
+    "related_to": [
+      "transverse force",
+      "lines of inductive force"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "induction among currents",
+    "definition": "The phenomena of induction amongst currents involve the tendency of a newly formed current to produce a contrary current in surrounding matter.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XIII §1659-1660"
+    ],
+    "related_to": [
+      "current electricity",
+      "conducting properties"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "muriatic acid gas discharge",
+    "definition": "The discharge through muriatic acid gas at a pressure of 29.97 inches produces bright sparks at small distances, but generally results in small brushes and glow when the distance is increased.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XIII §1555-1557"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "coal gas discharge",
+    "definition": "In coal gas, the discharge at common pressures shows short brushes with a dark interval between them, despite the presence of a sharp sound characteristic of a dull spark.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XIII §1555-1557"
+    ],
+    "related_to": [
+      "muriatic acid gas discharge"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "spark characteristics",
+    "definition": "The characteristics of spark discharge can vary, with bright sparks sometimes appearing red or green, and sudden dark parts occurring next to the brightest sections.",
+    "category": "observation",
+    "chapter_refs": [
+      "Series XIII §1555-1557"
+    ],
+    "related_to": [
+      "muriatic acid gas discharge",
+      "coal gas discharge"
+    ],
+    "source": "faraday_book"
+  },
+  {
+    "concept": "hydrogen spark",
+    "definition": "Hydrogen frequently produces sparks that can be bright red or dull pale gray, indicating variability in spark appearance.",
+    "category": "phenomenon",
+    "chapter_refs": [
+      "Series XIII §1555-1557"
+    ],
+    "related_to": [],
+    "source": "faraday_book"
+  }
+]

@@ -1,0 +1,131 @@
+[
+  {
+    "id": "cad-001",
+    "question": "Under what historical name is the Zwin recorded in the oldest documents, and in which 8th-century law does it form the southern border of Friezenland (Frisia)?",
+    "expected_points": [
+      "Sincfal",
+      "Lex Frisionum"
+    ]
+  },
+  {
+    "id": "cad-002",
+    "question": "Which Ghent abbey held the right of patronage (patronaatsrecht) over the Mariakerk in Cadzand, and what did that right concretely entail?",
+    "expected_points": [
+      "St-Baafs Abbey",
+      "levy tithes",
+      "appoint the parish priest"
+    ]
+  },
+  {
+    "id": "cad-003",
+    "question": "In what year were polders on Cadzand first written about, and which knight then ceded his fief in favour of the St-Baafs abbey?",
+    "expected_points": [
+      "1177",
+      "Walter of Axel"
+    ]
+  },
+  {
+    "id": "cad-004",
+    "question": "When were the southern and northern aisles of the Mariakerk built, in what style, and with what striking deviation?",
+    "expected_points": [
+      "southern aisle 1250-1300",
+      "northern aisle 1300-1325",
+      "Scheldt Gothic (early Gothic)",
+      "Romanesque columns"
+    ]
+  },
+  {
+    "id": "cad-005",
+    "question": "What was the name of the original tower of the Mariakerk, and in which sea-atlas of which year does Joris Carolus describe it as a beacon?",
+    "expected_points": [
+      "Sint-Lambertus tower",
+      "sea-atlas 1634"
+    ]
+  },
+  {
+    "id": "cad-006",
+    "question": "In what year was the Peace of Cadzand concluded, and which sovereign had had the island taken the year before?",
+    "expected_points": [
+      "1492",
+      "1491",
+      "Maximilian of Austria"
+    ]
+  },
+  {
+    "id": "cad-007",
+    "question": "Who was the first dedicated minister (predikant) of Cadzand, in what year did he take up his post, and in what year before that did the States-General decide on a weekly preaching turn from Sluis?",
+    "expected_points": [
+      "Marcus ab Halle",
+      "1609",
+      "1606"
+    ]
+  },
+  {
+    "id": "cad-008",
+    "question": "Until what year did the northern aisle remain in ruins, and who donated a stained-glass window during its restoration?",
+    "expected_points": [
+      "1641",
+      "Het Vrije van Sluis (Free Region of Sluis)"
+    ]
+  },
+  {
+    "id": "cad-009",
+    "question": "How many hectares of land did the church of Cadzand own in 1610 compared with 1665, and what happened in 1677 to both the lands and the tower?",
+    "expected_points": [
+      "1610: nearly 100 ha",
+      "1665: ~58 ha",
+      "1677 lands sold",
+      "1677 tower demolished"
+    ]
+  },
+  {
+    "id": "cad-010",
+    "question": "By whom and in which city was the current bell of Cadzand cast, and in what year?",
+    "expected_points": [
+      "Jan Burgerhuys",
+      "Middelburg",
+      "1611"
+    ]
+  },
+  {
+    "id": "cad-011",
+    "question": "In which three waves (years and regions of origin) did the Huguenot / Walloon refugees come to Cadzand?",
+    "expected_points": [
+      "1685 region of Calais (after revocation of the Edict of Nantes)",
+      "1713 region of Lille",
+      "1771 Picardy / Champagne / Orleans"
+    ]
+  },
+  {
+    "id": "cad-012",
+    "question": "In what year did the Walloon-Reformed Congregation merge into the Reformed Congregation of Cadzand, and what physical object in the church still commemorates it today?",
+    "expected_points": [
+      "1809",
+      "chandelier in the middle of the church"
+    ]
+  },
+  {
+    "id": "cad-013",
+    "question": "Which treaty of which year ceded Staats-Vlaanderen to the French Republic, and in what year did the area receive the name Zeeuws-Vlaanderen?",
+    "expected_points": [
+      "Treaty of The Hague 1795",
+      "1814"
+    ]
+  },
+  {
+    "id": "cad-014",
+    "question": "Which king granted a subsidy in 1821 for the new roof of the church, and how many guilders did that subsidy amount to?",
+    "expected_points": [
+      "William I",
+      "1000 guilders"
+    ]
+  },
+  {
+    "id": "cad-015",
+    "question": "Which state architect (rijksbouwmeester) led the restoration from 1929 onward, and what replaced the old roof turret as the tower solution against the church?",
+    "expected_points": [
+      "Van Heeswijk",
+      "Renaissance-style turret (built by the civil municipality)"
+    ]
+  }
+]

@@ -1,0 +1,172 @@
+[
+  {
+    "chain_id": "chain_59bace38c3",
+    "question": "How does the process described in 'How to Set Up Burp Proxy' work step by step?",
+    "hops": [
+      {
+        "hop_number": 1,
+        "observation": "The recommendation is to use Firefox with Burp because by doing so, you will be able to set it up without having to make any changes to the system wide settings which would affect a couple of programs.",
+        "inference": "This implies a causal relationship: The recommendation is to use Firefox with Burp because by doing so, you will be able to set it up wi..."
+      },
+      {
+        "hop_number": 2,
+        "observation": "Once you have downloaded, installed, and started Burp, click 'proxy tab' and then 'options.' Ensure the 'proxy listeners' is running and note the interface, which by default, is 127.0.0.1:8080.",
+        "inference": "This is a prerequisite step that enables subsequent actions."
+      },
+      {
+        "hop_number": 3,
+        "observation": "After that, move down to the sections of and and ensure that the top level and have been checked.",
+        "inference": "This provides context that informs the next decision in the reasoning chain."
+      },
+      {
+        "hop_number": 4,
+        "observation": "In addition, check the third checkbox under that says 'or request was intercepted.' The settings should be similar to the ones below.",
+        "inference": "This provides context that informs the next decision in the reasoning chain."
+      },
+      {
+        "hop_number": 5,
+        "observation": "This will enable Burp to capture both the browser requests and the responses of the server.",
+        "inference": "This provides context that informs the next decision in the reasoning chain."
+      },
+      {
+        "hop_number": 6,
+        "observation": "Just click on 'Firefox' and after that 'preferences.' Click the advanced icon and then the network button.",
+        "inference": "This provides context that informs the next decision in the reasoning chain."
+      }
+    ],
+    "conclusion": "The process involves 6 connected steps, starting from The recommendation is to use Firefox with Burp because by do... and concluding with Just click on 'Firefox' and after that 'preferences.' Click ...",
+    "chapter_refs": [
+      "How to Set Up Burp Proxy",
+      "Whetting Your Hacking Appetite: Common Hacking Attacks"
+    ]
+  },
+  {
+    "chain_id": "chain_49b98b4750",
+    "question": "How does the process described in 'The Code Is As Follows:' work step by step?",
+    "hops": [
+      {
+        "hop_number": 1,
+        "observation": "For every valid user, try thousands of different passwords until the 'incorrect password' message disappears.",
+        "inference": "This provides context that informs the next decision in the reasoning chain."
+      },
+      {
+        "hop_number": 2,
+        "observation": "Now you know a bit about how black hat hackers do their thing with brute force attacks.",
+        "inference": "This provides context that informs the next decision in the reasoning chain."
+      },
+      {
+        "hop_number": 3,
+        "observation": "In the next bit of this book, we will learn how to keep these off as an ethical hacker.",
+        "inference": "This is a prerequisite step that enables subsequent actions."
+      }
+    ],
+    "conclusion": "The process involves 3 connected steps, starting from For every valid user, try thousands of different passwords u... and concluding with In the next bit of this book, we will learn how to keep thes...",
+    "chapter_refs": [
+      "The Code Is As Follows:",
+      "How to Defend Against Brute Force Attacks"
+    ]
+  },
+  {
+    "chain_id": "chain_dbfc3fb1f8",
+    "question": "How does the process described in 'The Complexity of the Password' work step by step?",
+    "hops": [
+      {
+        "hop_number": 1,
+        "observation": "However, the most preferred method is to use the DSE (Devise Security Extension) that offers the capacity to configure a couple of security controls around passwords, which includes complexity.",
+        "inference": "This provides context that informs the next decision in the reasoning chain."
+      },
+      {
+        "hop_number": 2,
+        "observation": "Without devise, there is another good option of creating a regular expression and ensuring that all the new passwords meet the requirements.",
+        "inference": "This provides context that informs the next decision in the reasoning chain."
+      },
+      {
+        "hop_number": 3,
+        "observation": "Generally, it is best to require at least one number and one special character and a password not less than ten characters.",
+        "inference": "This provides context that informs the next decision in the reasoning chain."
+      },
+      {
+        "hop_number": 4,
+        "observation": "Now that you know how to keep off brute force attacks, we will take this a little further in the next chapter by discussing how to take full charge of your network.",
+        "inference": "This is a prerequisite step that enables subsequent actions."
+      }
+    ],
+    "conclusion": "The process involves 4 connected steps, starting from However, the most preferred method is to use the DSE (Devise... and concluding with Now that you know how to keep off brute force attacks, we wi...",
+    "chapter_refs": [
+      "The Complexity of the Password",
+      "Taking Charge Of An Entire Network As A Hacker"
+    ]
+  },
+  {
+    "chain_id": "chain_154ae0199a",
+    "question": "How does the process described in 'Get the Right Exploit' work step by step?",
+    "hops": [
+      {
+        "hop_number": 1,
+        "observation": "You can find the right exploit by searching metasploit for one that will accommodate the adobe reader's version.",
+        "inference": "This provides context that informs the next decision in the reasoning chain."
+      },
+      {
+        "hop_number": 2,
+        "observation": "If you look at the image above, you can tell that metasploit included all the exploits that met the criteria.",
+        "inference": "This is a conditional: when the condition is met, the consequence follows."
+      },
+      {
+        "hop_number": 3,
+        "observation": "In the description, Metasploit shows that it embeds a payload of metasploit into the existing PDF file.",
+        "inference": "This provides context that informs the next decision in the reasoning chain."
+      },
+      {
+        "hop_number": 4,
+        "observation": "Besides that, you can also use it to invite the victim to download it when you embed it into a website.",
+        "inference": "This provides context that informs the next decision in the reasoning chain."
+      }
+    ],
+    "conclusion": "The process involves 4 connected steps, starting from You can find the right exploit by searching metasploit for o... and concluding with Besides that, you can also use it to invite the victim to do...",
+    "chapter_refs": [
+      "Get the Right Exploit",
+      "Scan the Network"
+    ]
+  },
+  {
+    "chain_id": "chain_c13eff1402",
+    "question": "How does the process described in 'The Final Step: Add A Route' work step by step?",
+    "hops": [
+      {
+        "hop_number": 1,
+        "observation": "You have to background your meterpreter session, which will put your meterpreter session into the background meaning it is still running.",
+        "inference": "This provides context that informs the next decision in the reasoning chain."
+      },
+      {
+        "hop_number": 2,
+        "observation": "You can however return to the metasploit console and implement the other commands.",
+        "inference": "This provides context that informs the next decision in the reasoning chain."
+      },
+      {
+        "hop_number": 3,
+        "observation": "After that, you will add a route to the compromised system from the default gateway so that you get access to all the systems and subnets that have access to the default gatewaya good opportunity to compromise them.",
+        "inference": "This provides context that informs the next decision in the reasoning chain."
+      },
+      {
+        "hop_number": 4,
+        "observation": "Having successfully made a route between the victim's computer and the default gateway, the network will therefore be for all purposes, yours.",
+        "inference": "This implies a causal relationship: Having successfully made a route between the victim's computer and the default gateway, the network ..."
+      },
+      {
+        "hop_number": 5,
+        "observation": "You can now go ahead and use the single compromised machine to launch attacks on any system on the network within the subnet of the engineering or all the subnets that use the default gateway.",
+        "inference": "This provides context that informs the next decision in the reasoning chain."
+      },
+      {
+        "hop_number": 6,
+        "observation": "To own machines, you will have to take the last step of exploiting each one of them.",
+        "inference": "This provides context that informs the next decision in the reasoning chain."
+      }
+    ],
+    "conclusion": "The process involves 6 connected steps, starting from You have to background your meterpreter session, which will ... and concluding with To own machines, you will have to take the last step of expl...",
+    "chapter_refs": [
+      "The Final Step: Add A Route",
+      "Conclusion"
+    ]
+  }
+]

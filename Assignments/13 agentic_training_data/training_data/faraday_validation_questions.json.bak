@@ -1,0 +1,217 @@
+[
+  {
+    "id": "faraday_q001",
+    "category": "specific_fact",
+    "source": "Faraday Series I §1–6",
+    "question": "In Faraday's original 1831 iron-ring experiment, what were the exact dimensions of the iron ring, and why was the induced galvanometer deflection transient rather than sustained?",
+    "gold_answer": "The iron ring was seven-eighths of an inch thick and six inches in external diameter. The deflection was transient because induction only occurs during a change in the primary current: while the battery current was steady, the galvanometer needle returned to zero. Faraday noted this in §6.",
+    "expected_points": [
+      "seven-eighths of an inch thick",
+      "six inches in external diameter",
+      "deflection transient because induction requires change not steady state",
+      "needle returned to zero when current was steady (§6)"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "faraday_q002",
+    "category": "specific_fact",
+    "source": "Faraday Series I §10–11",
+    "question": "How long was the helix wire Faraday used in §10 to show that a permanent magnet was unnecessary for electromagnetic induction, and what essential condition did he identify?",
+    "gold_answer": "Faraday used a helix wound from 203 feet of copper wire. The essential condition was change (flux change): neither a steady current nor a steady magnet produced any induction; only a changing current produced the transient deflection.",
+    "expected_points": [
+      "203 feet of wire wound into a helix",
+      "essential condition is change or flux change",
+      "permanent magnet not necessary",
+      "steady current produces no deflection"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "faraday_q003",
+    "category": "specific_fact",
+    "source": "Faraday Series I §17–26",
+    "question": "Describe the bar-magnet helix experiment in §17: what were the magnet length and helix turn count, and what conclusion did Faraday state in §26?",
+    "gold_answer": "A cylindrical bar magnet 12 inches long was thrust into a helix of 220 turns wound on a hollow pasteboard cylinder. While the magnet was at rest no deflection occurred; only on inserting or withdrawing it did a transient deflection appear. In §26 Faraday concluded that a conductor must cut across the magnetic curves of force to generate an EMF.",
+    "expected_points": [
+      "bar magnet 12 inches long",
+      "helix of 220 turns",
+      "no deflection while magnet at rest inside",
+      "direction of deflection reversed when direction of motion reversed",
+      "§26: conductor must cut magnetic curves of force"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "faraday_q004",
+    "category": "specific_fact",
+    "source": "Faraday Series I §31",
+    "question": "What happened to the galvanometer needle when Faraday used one hundred pairs of plates with his iron-ring apparatus in §31?",
+    "gold_answer": "With 100 pairs of plates, the impulse at the galvanometer when contact was completed or broken 'was so great as to make the needle spin round rapidly four or five times, before the air and terrestrial magnetism could reduce its motion to mere oscillation.'",
+    "expected_points": [
+      "one hundred pairs of plates",
+      "needle spun round rapidly four or five times",
+      "required air and terrestrial magnetism to reduce motion to oscillation",
+      "on both making and breaking contact"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "faraday_q005",
+    "category": "specific_fact",
+    "source": "Faraday Series I §34",
+    "question": "What was the direction of the induced current when the primary circuit was made, as Faraday stated in §34? Quote his exact phrase, and what modern law do these observations prefigure?",
+    "gold_answer": "On making the primary circuit, the induced current flowed 'in the opposite direction to that which the primary combination would have produced.' On breaking the circuit the induced current was in the same direction as the primary. These observations prefigure Lenz's Law (1834): the induced current always opposes the change that produces it.",
+    "expected_points": [
+      "exact phrase: 'in the opposite direction to that which the primary combination would have produced'",
+      "on making: opposite direction; on breaking: same direction",
+      "prefigures Lenz's Law (1834)"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "faraday_q006",
+    "category": "specific_fact",
+    "source": "Faraday Series I §55–71",
+    "question": "Describe the first electromagnetic generator Faraday built in §55–71: what were its dimensions, what was novel about its output, and how did he verify it?",
+    "gold_answer": "Faraday built a copper disc 12 inches in diameter, rotated between the poles of a horseshoe magnet, with electrical contacts at the rim and at the axle. Unlike all previous induction effects (which were transient), this produced a continuous (non-transient) EMF. He verified it with a galvanometer deflection and a chemical decomposition test; the current was proportional to rotational speed.",
+    "expected_points": [
+      "copper disc 12 inches in diameter",
+      "rotated between poles of horseshoe magnet",
+      "contacts at rim and at axle",
+      "produced continuous non-transient EMF — first of its kind",
+      "verified by galvanometer and chemical decomposition",
+      "current proportional to rotational speed"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "faraday_q007",
+    "category": "specific_fact",
+    "source": "Faraday Series II §113",
+    "question": "What were the dimensions of the bar magnets Faraday used to repeat all his magneto-electric experiments in §113, and why does he mention them?",
+    "gold_answer": "The bar magnets were two feet long, one inch and a half wide, and half an inch thick. Faraday mentions them to show that the large Royal Society magnet was not essential — all the revolving-plate and induction experiments could be repeated 'with the most striking results' using these ordinary bar magnets.",
+    "expected_points": [
+      "two feet long",
+      "one inch and a half wide",
+      "half an inch thick",
+      "purpose: show large magnet not needed",
+      "all experiments repeated with striking results"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "faraday_q008",
+    "category": "specific_fact",
+    "source": "Faraday Series II §188–189",
+    "question": "Describe Faraday's Waterloo Bridge experiment in §188–189: what was the length of wire used, what did he hope to detect, and what was the outcome?",
+    "gold_answer": "Faraday extended 'a copper wire nine hundred and sixty feet in length upon the parapet of the bridge', connecting its ends to plates in the Thames. He hoped to detect electric currents induced by the tidal flow of water cutting the Earth's magnetic field lines. After three days of experiments he obtained only irregular deflections attributable to temperature differences, water purity variations, and contact effects — not the sought tidal currents.",
+    "expected_points": [
+      "copper wire 960 feet long on parapet of Waterloo Bridge",
+      "plates dipped into Thames water",
+      "hoped to detect tidal induced currents",
+      "result: irregular deflections only, inconclusive after three days"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "faraday_q009",
+    "category": "specific_fact",
+    "source": "Faraday Series III §371",
+    "question": "State the exact dimensions Faraday used in §371 for his platina-zinc wire experiment, the composition of the acid, and how much electricity was produced.",
+    "gold_answer": "The platina and zinc wires were each one-eighteenth of an inch in diameter, placed five-sixteenths of an inch apart, immersed to five-eighths of an inch depth in acid consisting of one drop of oil of vitriol and four ounces of distilled water at about 60°F, connected by a copper wire 18 feet long and one-eighteenth of an inch thick. This arrangement yielded electricity equal to a Leyden battery charged by thirty turns of a large plate electric machine.",
+    "expected_points": [
+      "1/18 inch diameter (both wires)",
+      "5/16 inch apart",
+      "5/8 inch depth of immersion",
+      "one drop oil of vitriol in four ounces distilled water at 60°",
+      "18-foot copper connector, 1/18 inch thick",
+      "equivalent to Leyden battery charged by 30 turns of large machine"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "faraday_q010",
+    "category": "specific_fact",
+    "source": "Faraday Series IV §381–395",
+    "question": "What did Faraday discover about ice in Series IV §381, what battery did he use to test it, and how general did he find the law in §394–395?",
+    "gold_answer": "Faraday found that ice is an electrical non-conductor: even a thin film of ice in the circuit of a very powerful voltaic battery stopped all current flow and chemical decomposition. He tested with a battery of up to 150 pairs of four-inch plates — still no current passed through the ice. In §394 he found the law was general: liquefaction confers conducting power, congelation removes it. In §395 he verified this for chloride of lead: fused, it conducted; solid, it did not.",
+    "expected_points": [
+      "ice is a non-conductor of electricity",
+      "tested with up to 150 pairs of four-inch plates",
+      "law of liquefaction: conducting power acquired on melting, lost on freezing",
+      "§395: verified for fused chloride of lead"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "faraday_q011",
+    "category": "specific_fact",
+    "source": "Faraday Series VII §861–862",
+    "question": "What was Faraday's calculation in §861 about the quantity of electricity needed to decompose one grain of water, and what Leyden battery did he use as his reference?",
+    "gold_answer": "Faraday calculated in §861 that 800,000 charges of his reference Leyden battery would be necessary to supply enough electricity to decompose a single grain of water. His reference Leyden battery was one charged by thirty turns of a very large and powerful plate electric machine in full action (as established in §371).",
+    "expected_points": [
+      "800,000 Leyden battery charges needed",
+      "to decompose one grain of water",
+      "Leyden battery reference: charged by 30 turns of large plate machine",
+      "this electricity is naturally associated with the atoms in that water"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "faraday_q012",
+    "category": "specific_fact",
+    "source": "Faraday Series VII §864–868",
+    "question": "In §864 Faraday weighed two amalgamated zinc plates for his electrochemical equivalent experiment. What were the exact weights and dimensions of the plates, and what electrochemical equivalent did he obtain in §868?",
+    "gold_answer": "Plate A weighed 163.1 grains; plate B weighed 148.3 grains. Both were about five inches long and 0.4 of an inch wide. From the experiment Faraday determined in §868 that 'the chemical action upon 32.31 parts, or one equivalent of zinc' was attended by the evolution of the same quantity of electricity as 800,000 charges of the reference Leyden battery. The electrochemical equivalent of zinc is therefore 32.31 parts (grains).",
+    "expected_points": [
+      "plate A: 163.1 grains",
+      "plate B: 148.3 grains",
+      "both 5 inches long and 0.4 inch wide",
+      "electrochemical equivalent of zinc = 32.31 parts"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "faraday_q013",
+    "category": "specific_fact",
+    "source": "Faraday Series IX §1049–1064",
+    "question": "What was the original observation by Mr. Jenkin that led Faraday to discover self-induction (§1049), and what dimensions were the plain copper wire he tested in §1064?",
+    "gold_answer": "Jenkin observed that if a short ordinary wire connects a single pair of metals, no shock is felt on breaking the circuit; but if the wire of an electro-magnet is used instead, a strong shock is felt each time the contact is broken. In §1064 Faraday tested self-induction in a plain (non-coiled) wire: 'A copper wire, 0.18 of an inch in diameter, and 132 feet in length, was laid out upon the floor of the laboratory.' On breaking contact it produced a bright spark, and with silver plates at the ends could convulse a frog.",
+    "expected_points": [
+      "Jenkin: shock from breaking electro-magnet circuit, not from plain wire",
+      "§1064: copper wire 0.18 inch diameter",
+      "132 feet in length, laid on laboratory floor",
+      "produced spark on breaking, could convulse a frog"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "faraday_q014",
+    "category": "specific_fact",
+    "source": "Faraday Series XI §1218–1224",
+    "question": "Describe the shell-lac cylinder experiment Faraday performed in §1218 to prove induction in curved lines: what were the dimensions of the cylinder and what did the measurements at positions k, l, m show?",
+    "gold_answer": "Faraday used 'a cylinder of solid shell-lac, 0.9 of an inch in diameter and seven inches in length, fixed upright in a wooden foot', with the upper half excited negatively by friction with warm flannel. Using a carrier ball at positions k (108°), l (65°), m (35°) around the brass hemisphere placed on top (§1224), he showed that inductive force existed at positions not directly above the excited surface, proving that lines of inductive force follow curved paths — not straight lines.",
+    "expected_points": [
+      "shell-lac cylinder 0.9 inch diameter and 7 inches long",
+      "excited negatively by friction with warm flannel",
+      "carrier ball measurements at k=108°, l=65°, m=35°",
+      "proved induction follows curved lines, not straight"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "faraday_q015",
+    "category": "specific_fact",
+    "source": "Faraday Series XI §1256–1260",
+    "question": "What numerical value did Faraday calculate for the specific inductive capacity of shell-lac in §1260, using what apparatus, and why was the result 'so unexpected in its amount'?",
+    "gold_answer": "Using two inductive hemisphere apparatus (app. i. with shell-lac, app. ii. with air), Faraday divided a charge and found the shell-lac apparatus received 176 degrees while the air apparatus received 113 degrees. The SIC of shell-lac = 176/113 = 1.558 relative to air. The result was unexpected because previous electrical theory had assumed all insulators were equivalent; it proved for the first time that different dielectrics have intrinsically different capacities for induction.",
+    "expected_points": [
+      "shell-lac SIC = 176/113 = approximately 1.558 relative to air",
+      "apparatus: two inductive hemisphere apparatus (one with shell-lac, one with air)",
+      "176 degrees vs 113 degrees after division",
+      "unexpected because previous theory assumed all insulators equivalent"
+    ],
+    "difficulty": "hard"
+  }
+]
